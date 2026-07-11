@@ -6,7 +6,9 @@
   <title>НПО ГЕОКРИОЛОГ — Буровая техника TYSIM в России</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/kr300m-1-1.jpg" fetchpriority="high">
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
   <style>
@@ -220,7 +222,7 @@
 <!-- === NAV === -->
 <div class="nav-wrap">
   <nav class="nav">
-    <a class="n-l" href="#home"><img src="images/logo.svg" alt="НПО ГЕОКРИОЛОГ" style="height:32px;width:auto;display:block"></a>
+    <a class="n-l" href="#home"><img src="images/logo.svg" alt="НПО ГЕОКРИОЛОГ" width="160" height="30" style="display:block"></a>
     <button class="n-t active" data-goto="home">Главная</button>
     <button class="n-t" data-goto="equip">Оснастка</button>
     <button class="n-t" data-goto="adapt">Адаптация</button>
@@ -242,7 +244,7 @@
     <a class="b b-f" href="#catalog">Смотреть каталог <span class="a">→</span></a>
     <a class="b b-g" href="#cta">Получить КП</a>
   </div>
-  <div class="h-i rv"><img src="images/kr300m-1-1.jpg" alt="TYSIM KR300M" style="width:100%;display:block"></div>
+  <div class="h-i rv"><img src="images/kr300m-1-1.jpg" alt="TYSIM KR300M" width="920" height="690" style="width:100%;display:block" fetchpriority="high"></div>
 </div>
 </section>
 
@@ -402,7 +404,7 @@
           <div style="margin-top:8px"><span class="sb sb-a">В наличии · СПб</span></div>
           <div class="pt">60 000 000 ₽</div>
         </div>
-        <div style="flex-shrink:0"><img src="images/kr300m-3-1.jpg" alt="KR300M" class="cc-img-r"></div>
+        <div style="flex-shrink:0"><img src="images/kr300m-3-1.jpg" alt="KR300M" class="cc-img-r" loading="lazy" decoding="async" width="200" height="180"></div>
       </div>
     </div></div>
     <div class="cc"><div class="cci">
@@ -428,7 +430,7 @@
   <div class="sh" style="margin-bottom:24px;margin-top:56px"><h2 style="font-size:clamp(24px,3vw,40px)">Обсадное оборудование</h2></div>
   <div class="cg">
     <div class="cc ccw"><div class="cci" style="text-align:left">
-      <img src="images/rco1500_p0_2.jpg" alt="RCO1500" class="cc-img-r2">
+      <img src="images/rco1500_p0_2.jpg" alt="RCO1500" class="cc-img-r2" loading="lazy" decoding="async" width="220" height="160">
       <div class="model" style="text-align:left">Обсадной стол RCO1500</div>
       <div class="spec" style="margin-top:4px">Макс. Ø обсадной трубы <b>1 500 мм</b> · Крутящий момент <b>1 500 кН·м</b><br>Рабочее давление <b>350 бар</b> · Масса <b>7 200 кг</b><br>Совместим: TYSIM · XCMG · SANY · Liebherr · Casagrande · Soilmec<br>Поставлено <b>10+ единиц</b> в РФ · Гарантия 1 год</div>
       <div style="margin-top:8px"><span class="sb sb-a">В наличии · СПб</span></div>
@@ -447,12 +449,12 @@
 
   <div class="sh" style="margin-bottom:24px;margin-top:56px"><h2 style="font-size:clamp(24px,3vw,40px)">Буровой инструмент</h2></div>
   <div class="cg">
-    <div class="cc"><div class="cci"><img src="images/tmpz-shneki.jpg" alt="Шнеки" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Шнеки грунтовые</div><div class="spec">Двухзаходные.<br>Совместимость: Casagrande, BAUER, Liebherr, Soilmec, SANY, Delmag, MAIT, Zoomlion, XCMG, TRIVELSONDA.</div></div></div>
-    <div class="cc"><div class="cci"><img src="images/tmpz-kovshebur.jpg" alt="Ковшебур" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Ковшебуры телескопические</div><div class="spec">Различные диаметры и глубины.</div></div></div>
-    <div class="cc"><div class="cci"><img src="images/tmpz-obsadnie.jpg" alt="Трубы" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Обсадные инвентарные трубы</div><div class="spec">Ножевые секции в комплекте.</div></div></div>
-    <div class="cc"><div class="cci"><img src="images/tremie-fes.jpg" alt="Бетонолит" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Бетонолитные трубы</div><div class="spec">Для подачи бетона в скважину.</div></div></div>
-    <div class="cc"><div class="cci"><img src="images/tmpz-dreiteller.jpg" alt="Дрейтеллер" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Дрейтеллеры</div><div class="spec">Очистка обсадных труб.</div></div></div>
-    <div class="cc"><div class="cci"><img src="images/bucket-fes.jpg" alt="Навеска" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Навеска на экскаватор</div><div class="spec">KR50 Attachment · 10–24 м<br>Носитель 8–30 т · CFA</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/tmpz-shneki.jpg" alt="Шнеки" width="280" height="140" loading="lazy" decoding="async" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Шнеки грунтовые</div><div class="spec">Двухзаходные.<br>Совместимость: Casagrande, BAUER, Liebherr, Soilmec, SANY, Delmag, MAIT, Zoomlion, XCMG, TRIVELSONDA.</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/tmpz-kovshebur.jpg" alt="Ковшебур" width="280" height="140" loading="lazy" decoding="async" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Ковшебуры телескопические</div><div class="spec">Различные диаметры и глубины.</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/tmpz-obsadnie.jpg" alt="Трубы" width="280" height="140" loading="lazy" decoding="async" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Обсадные инвентарные трубы</div><div class="spec">Ножевые секции в комплекте.</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/tremie-fes.jpg" alt="Бетонолит" width="280" height="140" loading="lazy" decoding="async" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Бетонолитные трубы</div><div class="spec">Для подачи бетона в скважину.</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/tmpz-dreiteller.jpg" alt="Дрейтеллер" width="280" height="140" loading="lazy" decoding="async" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Дрейтеллеры</div><div class="spec">Очистка обсадных труб.</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/bucket-fes.jpg" alt="Навеска" width="280" height="140" loading="lazy" decoding="async" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Навеска на экскаватор</div><div class="spec">KR50 Attachment · 10–24 м<br>Носитель 8–30 т · CFA</div></div></div>
   </div>
 </div>
 </section>
