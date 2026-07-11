@@ -116,7 +116,7 @@
 
     /* === TAG CLOUD === */
     .ct{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-    .ct s{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,0.4);box-shadow:0 0 0 1px var(--hairline);font-size:12px;color:var(--muted)}
+    .ct span{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,0.4);box-shadow:0 0 0 1px var(--hairline);font-size:12px;color:var(--muted)}
 
     /* === CHECKLIST === */
     .cl{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:14px;color:var(--muted)}
@@ -222,6 +222,7 @@
     <button class="n-t active" data-goto="home">Главная</button>
     <button class="n-t" data-goto="equip">Оснастка</button>
     <button class="n-t" data-goto="adapt">Адаптация</button>
+    <button class="n-t" data-goto="about">О нас</button>
     <button class="n-t" data-goto="catalog">Каталог</button>
     <button class="n-t" data-goto="price">Цены</button>
     <button class="n-c" data-goto="cta">Связаться</button>
@@ -294,6 +295,34 @@
 </div>
 </section>
 
+<!-- === ABOUT === -->
+<section class="s-m" id="about">
+<div class="wrap">
+  <div class="sh rv">
+    <span class="e">О компании</span>
+    <h2>НПО «ГЕОКРИОЛОГ» —<br>ваш партнёр в России</h2>
+    <p class="su">Поставляем буровую технику и оборудование под ключ — от подбора до ввода в эксплуатацию</p>
+  </div>
+  <div class="g2">
+    <div class="co"><div class="ci" style="text-align:left">
+      <span class="ic">🏭</span>
+      <h4>Официальное представительство</h4>
+      <p>ООО «НПО «ГЕОКРИОЛОГ» — официальный представитель TYSIM Machinery в России. Головной офис в Москве, склад и сервисный центр в Санкт-Петербурге.</p>
+    </div></div>
+    <div class="co"><div class="ci" style="text-align:left">
+      <span class="ic">🔧</span>
+      <h4>Техническая экспертиза</h4>
+      <p>Команда с 10+ летним опытом эксплуатации буровой техники Casagrande (Италия). Глубокое понимание гидравлики, электроники и специфики российских объектов.</p>
+    </div></div>
+    <div class="co cw"><div class="ci" style="text-align:left">
+      <span class="ic">📦</span>
+      <h4>Полный цикл поставки</h4>
+      <p>Подбор оборудования · Таможенное оформление · Сертификация ЕАС и ПСМ · Адаптация под −40°C · Доставка до объекта · Шеф-монтаж · Обучение · Гарантийное и постгарантийное обслуживание</p>
+    </div></div>
+  </div>
+</div>
+</section>
+
 <!-- === WHY TYSIM === -->
 <section class="s-m" id="price">
 <div class="wrap">
@@ -307,7 +336,7 @@
       <div style="font-size:28px;font-weight:800;margin-bottom:4px">TYSIM KR300M</div>
       <div style="font-size:22px;font-weight:700;margin-bottom:12px">60 млн ₽</div>
       <div class="fp">
-        <s>❄️ Webasto</s><s>🛡️ Антикор IP65</s><s>📋 ЕАС + ПСМ</s><s>🔧 Сервис в РФ</s><s>📦 Склад в СПб</s><s>✅ В наличии</s>
+        ❄️ Webasto · 🛡️ Антикор IP65 · 📋 ЕАС + ПСМ · 🔧 Сервис в РФ · 📦 Склад в СПб · ✅ В наличии
       </div>
       <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-top:14px;max-width:680px">TYSIM — единственный китайский производитель буровых установок, использующий оригинальные двигатели Caterpillar. Каждая машина проходит полный цикл адаптации под российские условия: Webasto, усиленные АКБ, обогрев гидравлики, антикор, сертификация ЕАС с получением ПСМ. Машина в наличии в Санкт-Петербурге.</p>
     </div></div>
@@ -430,9 +459,9 @@
     <p class="su">10+ обсадных столов RCO1500 на реальных объектах по всей России</p>
   </div>
   <div class="ct">
-    <s>ПРИСС — SANY 405R</s><s>СВАЙБУРГ — SANY 285R</s>
-    <s>ГеоСпецСтрой — XCMG 360E</s><s>УБР 52 — SANY 285R</s>
-    <s>ЛИГА ГРУПП — SANY 360R</s>
+    <span>ПРИСС — SANY 405R</span><span>СВАЙБУРГ — SANY 285R</span>
+    <span>ГеоСпецСтрой — XCMG 360E</span><span>УБР 52 — SANY 285R</span>
+    <span>ЛИГА ГРУПП — SANY 360R</span>
   </div>
 </div>
 </section>
@@ -466,6 +495,7 @@
     <div class="ft-l">
       <a data-goto="home">Главная</a>
       <a data-goto="catalog">Каталог</a>
+      <a data-goto="about">О нас</a>
       <a data-goto="equip">Оснастка</a>
       <a data-goto="adapt">Адаптация</a>
       <a data-goto="cta">Контакты</a>
@@ -556,7 +586,7 @@ if (typeof gsap !== 'undefined') {
 
 // Active nav highlight on scroll
 if (typeof ScrollTrigger !== 'undefined') {
-  const sections = ['home','equip','adapt','catalog','price','cta'];
+  const sections = ['home','equip','adapt','about','catalog','price','cta'];
   sections.forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
