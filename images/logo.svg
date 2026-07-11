@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" fill="none">
+  <!-- Geometric mark: stylized drill bit / hexagon -->
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer hexagon -->
+  <path d="M30 10 L50 10 L60 25 L50 40 L30 40 L20 25 Z" stroke="url(#g1)" stroke-width="2.5" fill="none"/>
+  <!-- Inner diamond (drill bit stylized) -->
+  <path d="M40 16 L48 25 L40 34 L32 25 Z" fill="url(#g1)" opacity="0.7"/>
+  <!-- Vertical line through -->
+  <line x1="40" y1="10" x2="40" y2="16" stroke="url(#g1)" stroke-width="2"/>
+  <line x1="40" y1="34" x2="40" y2="40" stroke="url(#g1)" stroke-width="2"/>
+  <!-- Company name -->
+  <text x="76" y="32" font-family="'Plus Jakarta Sans','Geist',system-ui,sans-serif" font-size="17" font-weight="800" fill="#0A0A0A" letter-spacing="-0.02em">НПО</text>
+  <text x="118" y="32" font-family="'Plus Jakarta Sans','Geist',system-ui,sans-serif" font-size="17" font-weight="800" fill="url(#g1)" letter-spacing="-0.02em">ГЕОКРИОЛОГ</text>
+  <text x="76" y="52" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="8" fill="#6B6B70" letter-spacing="0.12em" text-transform="uppercase">БУРОВАЯ ТЕХНИКА · ОФИЦИАЛЬНЫЙ ДИСТРИБЬЮТОР TYSIM</text>
+  <!-- Separator line under text -->
+  <line x1="76" y1="58" x2="270" y2="58" stroke="#0A0A0A" stroke-width="0.5" opacity="0.12"/>
+</svg>
