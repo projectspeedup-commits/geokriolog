@@ -858,8 +858,22 @@ function initForm() {
     if (!consent) { alert('Нужно согласие на обработку персональных данных'); return; }
     const body = `Заявка на аудит объекта\n\nИмя: ${name}\nТелефон: ${phone}\nТип объекта: ${typeLabels[type]||type||'не указан'}\nРегион: ${region||'не указан'}\n\nС сайта geokriolog.ru\nСогласие на обработку ПДн: да`;
     form.querySelector('[name="_captcha"]').value = 'false';
+    if (typeof ym === 'function') ym(110604818, 'reachGoal', 'form_lead');
     form.submit();
     document.getElementById('lfMsg').classList.add('show');
+   });
+}
+
+function trackCalls() {
+  document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+    el.addEventListener('click', () => {
+      if (typeof ym === 'function') ym(110604818, 'reachGoal', 'call_click');
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(el => {
+    el.addEventListener('click', () => {
+      if (typeof ym === 'function') ym(110604818, 'reachGoal', 'email_click');
+    });
   });
 }
 
@@ -895,6 +909,7 @@ function boot() {
   initCounters();
   initNav();
   initForm();
+  trackCalls();
   initGsap();
 }
 
