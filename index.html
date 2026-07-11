@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="images/kr300m-1-1.jpg" fetchpriority="high">
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
   <style>
     :root {
       --canvas:#F7F6F3; --canvas-2:#EDEDE8; --ink:#0A0A0A; --ink-2:#1A1A1E;
@@ -163,14 +163,12 @@
 
     /* === CATALOG MOBILE === */
     .cc-img-r{float:right;width:200px;height:180px;object-fit:cover;border-radius:14px;margin-left:20px}
-    @media(max-width:768px){
-      .cc-img-r{float:none;width:100%;height:180px;margin:0 0 14px}
-      .cci[style*="text-align:left"]{display:flex;flex-direction:column}
-      .cci[style*="text-align:left"] .model{order:-1}
-    }
     .cc-img-r2{float:right;width:220px;height:160px;object-fit:cover;border-radius:14px;margin-left:16px}
     @media(max-width:768px){
-      .cc-img-r2{float:none;width:100%;height:180px;margin:0 0 14px}
+      .cc-img-r,.cc-img-r2{float:none;width:100%;height:180px;margin:0 0 14px}
+      .cc-flex{flex-direction:column}
+      .cci[style*="text-align:left"]{display:flex;flex-direction:column}
+      .cci[style*="text-align:left"] .model{order:-1}
     }
 
     /* === MOBILE PADDING FIXES === */
@@ -402,7 +400,7 @@
   <div class="sh" style="margin-bottom:24px;margin-top:56px"><h2 style="font-size:clamp(24px,3vw,40px)">Роторные буровые установки TYSIM</h2></div>
   <div class="cg">
     <div class="cc ccw"><div class="cci" style="text-align:left">
-      <div style="display:flex;gap:20px;align-items:flex-start">
+      <div style="display:flex;gap:20px;align-items:flex-start" class="cc-flex">
         <div style="flex:1">
           <div class="model" style="text-align:left">TYSIM KR300M</div>
           <div class="spec m8">300 кН·м · 54 м · 2 500 мм · <b>90 тонн</b><br>CAT C9.3B · 259 кВт · CAT 345GC<br>Год 2024 · 0 м/ч<br>Электрогидравлика · AI-ассистент · Мониторинг · Русское меню</div>
