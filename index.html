@@ -166,6 +166,7 @@ section{position:relative;z-index:1}
 .cl{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:14px;color:var(--muted)}
 .cl div{padding:4px 0}
 @media(max-width:480px){.cl{grid-template-columns:1fr}}
+@media(max-width:480px){.stats{grid-template-columns:1fr !important;max-width:280px !important}}
 /* === DARK BAND === */
     .db{background:var(--ink);color:#fff;border-radius:28px;padding:72px 40px;margin-top:48px}
     .db h3{font-size:28px;font-weight:800;letter-spacing:-0.02em;margin-bottom:8px}
@@ -247,6 +248,8 @@ section{position:relative;z-index:1}
 .h3-title{font-size:20px;font-weight:700}
 .link-ink{font-weight:600;color:var(--ink)}
 .btn-pill-sm{display:inline-block;padding:4px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;font-weight:600;text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin:0 auto 48px;max-width:720px;border-radius:1.25rem;overflow:hidden;box-shadow:0 0 0 1px var(--hairline)}
+.stats-item{background:rgba(255,255,255,0.6);padding:24px 16px;text-align:center}
 
 .rv{opacity:0;transform:translateY(24px);filter:blur(6px);transition:opacity .8s var(--ease),transform .8s var(--ease),filter .8s var(--ease)}
 .rv-in{opacity:1;transform:translateY(0);filter:blur(0)}
@@ -290,6 +293,7 @@ section{position:relative;z-index:1}
 .h-i{border-radius:1.25rem}
 .cryo-imgs{grid-template-columns:1fr 1fr}
 .privacy{padding:32px 16px 16px}
+.stats{grid-template-columns:repeat(2,1fr) !important;max-width:400px !important}
 }
 </style>
 </head>
@@ -342,6 +346,24 @@ section{position:relative;z-index:1}
     <span class="e">Кто мы</span>
     <h2>25 лет опыта в буровой технике</h2>
     <p class="su">НПО «ГЕОКРИОЛОГ» — инжиниринговая компания полного цикла для строительства в криолитозонах. Работаем с мировыми брендами бурового инструмента: Casagrande (Италия), Robit (Финляндия), TYSIM Machinery (КНР). На данный момент наш стратегический партнёр — TYSIM, официальный партнёр Caterpillar.</p>
+  </div>
+  <div class="stats rv">
+    <div class="stats-item">
+      <div class="stat-num" style="font-size:clamp(28px,3.2vw,44px);font-weight:800;color:var(--ink);line-height:1">25</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">лет опыта</div>
+    </div>
+    <div class="stats-item">
+      <div class="stat-num" style="font-size:clamp(28px,3.2vw,44px);font-weight:800;color:var(--ink);line-height:1">15+</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">проектов в&nbsp;Арктике</div>
+    </div>
+    <div class="stats-item">
+      <div class="stat-num" style="font-size:clamp(28px,3.2vw,44px);font-weight:800;color:var(--ink);line-height:1">1 200+</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">скважин пробурено</div>
+    </div>
+    <div class="stats-item">
+      <div class="stat-num" style="font-size:clamp(28px,3.2vw,44px);font-weight:800;color:var(--ink);line-height:1">500</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">м² склад в&nbsp;СПб</div>
+    </div>
   </div>
   <div class="bento">
     <div class="co cw"><div class="ci" class="t-l">
@@ -824,7 +846,36 @@ function initForm() {
   });
 }
 
+function initCounters() {
+  const nums = document.querySelectorAll('.stat-num');
+  if (!nums.length) return;
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const raw = el.textContent.trim();
+      const prefix = raw.includes('+') ? '+' : '';
+      const suffix = raw.includes('+') ? '' : '';
+      const target = parseInt(raw.replace(/\s/g,'').replace(/\+/g,''));
+      if (isNaN(target)) { el.textContent = raw; return; }
+      const duration = 1500;
+      const start = performance.now();
+      function frame(now) {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const val = Math.round(eased * target);
+        el.textContent = prefix + val.toLocaleString('ru-RU') + suffix;
+        if (p < 1) requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+      obs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  nums.forEach(el => obs.observe(el));
+}
+
 function boot() {
+  initCounters();
   initNav();
   initForm();
   initGsap();
