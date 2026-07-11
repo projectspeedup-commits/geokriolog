@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>НПО ГЕОКРИОЛОГ — Буровая техника TYSIM в России</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <style>
+    :root {
+      --canvas:#F7F6F3; --canvas-2:#EDEDE8; --ink:#0A0A0A; --ink-2:#1A1A1E;
+      --muted:#6B6B70; --hairline:rgba(10,10,10,0.06); --hairline-strong:rgba(10,10,10,0.10);
+      --accent:#B8860B; --accent-glow:rgba(184,134,11,0.15);
+      --sans:'Plus Jakarta Sans','Geist',system-ui,sans-serif;
+      --mono:'JetBrains Mono',ui-monospace,monospace;
+      --ease:cubic-bezier(0.32,0.72,0,1); --ease-spring:cubic-bezier(0.16,1.16,0.3,1);
+      --sh-rad:2rem;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{overflow-x:hidden;scroll-behavior:smooth}
+    body{background:var(--canvas);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    .wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+
+    /* === AMBIENT MESH === */
+    .mesh{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0;opacity:0.5}
+    .mesh::before,.mesh::after{content:'';position:absolute;border-radius:50%;filter:blur(120px);will-change:transform}
+    .mesh::before{width:600px;height:600px;background:radial-gradient(circle at 30% 30%,var(--accent-glow),transparent 70%);top:-80px;left:-60px;animation:drift1 28s var(--ease) infinite alternate}
+    .mesh::after{width:450px;height:450px;background:radial-gradient(circle at 60% 60%,rgba(201,183,154,0.25),transparent 60%);bottom:-100px;right:-60px;animation:drift2 32s var(--ease) infinite alternate}
+    @keyframes drift1{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(80px,50px,0)}}
+    @keyframes drift2{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-60px,40px,0)}}
+
+    /* === NAV === */
+    .nav-wrap{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;justify-content:center;padding:20px 24px 0;pointer-events:none}
+    .nav{pointer-events:all;display:flex;align-items:center;gap:2px;padding:5px;border-radius:999px;background:rgba(255,255,255,0.72);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);box-shadow:0 0 0 1px var(--hairline-strong),0 4px 28px -10px rgba(0,0,0,0.05)}
+    .n-l{font-size:12px;font-weight:700;padding:6px 16px 6px 14px;white-space:nowrap;display:flex;align-items:center;gap:6px;letter-spacing:-0.01em}
+    .n-l i{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+    .n-t{font-size:11px;font-weight:500;color:var(--muted);padding:6px 13px;border-radius:999px;white-space:nowrap;cursor:pointer;transition:all .4s var(--ease);border:none;background:none;font-family:var(--sans)}
+    .n-t:hover{color:var(--ink);background:rgba(0,0,0,0.04)}
+    .n-t.active{color:var(--ink);background:rgba(0,0,0,0.06);font-weight:600}
+    .n-c{font-size:11px;font-weight:600;color:#fff;background:var(--ink);padding:6px 16px;border-radius:999px;margin-left:4px;white-space:nowrap;cursor:pointer;transition:all .4s var(--ease);border:none;font-family:var(--sans)}
+    .n-c:hover{transform:scale(0.96)}
+
+    /* === MOBILE NAV === */
+    .nav-hamb{display:none;background:none;border:none;cursor:pointer;padding:8px 12px;margin-left:auto;font-family:var(--sans);color:var(--ink)}
+    .nav-hamb span{display:block;width:18px;height:2px;background:var(--ink);margin:4px 0;border-radius:2px;transition:all .3s var(--ease)}
+    .nav-hamb.active span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
+    .nav-hamb.active span:nth-child(2){opacity:0}
+    .nav-hamb.active span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
+    @media(max-width:768px){
+      .nav-wrap{padding-top:12px}
+      .nav{flex-wrap:wrap;width:100%;max-width:400px;padding:5px 5px 5px 12px}
+      .n-t{display:none;width:100%;text-align:center;padding:10px 14px;border-radius:12px}
+      .n-t.active{display:block}
+      .n-c{width:100%;text-align:center;margin:4px 0 0;padding:10px}
+      .nav.m-open .n-t{display:block}
+      .nav.m-open .n-c{display:block}
+      .nav-hamb{display:block}
+    }
+
+    /* === HERO === */
+    .hero{min-height:100dvh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:160px 24px 80px;position:relative;z-index:1}
+    .h-t{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.16em;padding:5px 14px;border-radius:999px;background:rgba(0,0,0,0.03);margin-bottom:24px;display:inline-block;color:var(--muted)}
+    .hero h1{font-size:clamp(44px,8vw,100px);font-weight:800;letter-spacing:-0.038em;line-height:0.94;max-width:8em}
+    .h-s{font-size:clamp(16px,1.6vw,20px);color:var(--muted);max-width:48ch;margin:20px auto 0;line-height:1.5}
+    .h-b{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+    .b{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;transition:all .6s var(--ease);border:none;font-family:var(--sans);text-decoration:none}
+    .b-f{background:var(--ink);color:#fff;padding-right:8px}.b-f .a{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:999px;background:rgba(255,255,255,0.1);font-size:16px;transition:all .4s var(--ease-spring)}
+    .b-f:hover .a{transform:translate(2px,-1px) scale(1.08)}
+    .b-g{background:transparent;color:var(--ink);border:1px solid var(--hairline-strong)}
+    .b-g:hover{background:rgba(0,0,0,0.03)}
+    .h-i{margin-top:48px;width:100%;max-width:920px;border-radius:2.25rem;overflow:hidden;box-shadow:0 24px 80px -20px rgba(0,0,0,0.08);opacity:0;transform:translateY(30px)}
+
+    /* === SECTIONS === */
+    section{position:relative;z-index:1}
+    .s{padding:120px 0}
+    .s-m{padding:80px 0}
+    .sh{text-align:center;max-width:640px;margin:0 auto 56px}
+    .sh .e{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:0.2em;color:var(--accent);margin-bottom:12px;display:block}
+    .sh h2{font-size:clamp(32px,4vw,54px);font-weight:800;letter-spacing:-0.025em;line-height:1.03}
+    .sh .su{font-size:17px;color:var(--muted);margin-top:10px}
+
+    /* === BENTO === */
+    .bento{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;grid-auto-flow:dense}
+    .co{padding:5px;border-radius:var(--sh-rad);background:rgba(255,255,255,0.35);box-shadow:0 0 0 1px var(--hairline),0 4px 24px -10px rgba(0,0,0,0.02);transition:all .6s var(--ease)}
+    .co:hover{transform:translateY(-3px);box-shadow:0 0 0 1px var(--hairline-strong),0 14px 40px -12px rgba(0,0,0,0.06)}
+    .ci{padding:30px 24px;border-radius:calc(var(--sh-rad) - 0.4rem);background:rgba(255,255,255,0.62);height:100%}
+    .cw{grid-column:span 2}.ct{grid-row:span 2}
+    .ci .ic{font-size:32px;margin-bottom:10px;display:block}
+    .ci h4{font-size:18px;font-weight:700;margin-bottom:6px}
+    .ci p,.ci ul{font-size:14px;color:var(--muted);line-height:1.55}
+    @media(max-width:768px){.bento{grid-template-columns:1fr}.cw,.ct{grid-column:span 1;grid-row:auto}}
+
+    /* === STATS === */
+    .st{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}
+    .st-c{padding:24px 12px;text-align:center;border-radius:18px;background:rgba(255,255,255,0.4);box-shadow:0 0 0 1px var(--hairline)}
+    .st-c .n{font-size:38px;font-weight:800;letter-spacing:-0.025em;display:block}
+    .st-c .l{font-size:13px;color:var(--muted);margin-top:3px}
+    @media(max-width:768px){.st{grid-template-columns:1fr 1fr}}
+
+    /* === ARTICLE STYLES === */
+    .art{max-width:720px;margin:0 auto}
+    .art p{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:12px}
+
+    /* === GRID 2-COL === */
+    .g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:768px){.g2{grid-template-columns:1fr}}
+
+    /* === FEATURE PILLS === */
+    .fp{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .fp s{display:inline-flex;align-items:center;gap:4px;background:rgba(184,134,11,0.07);padding:4px 14px;border-radius:999px;font-size:12px;font-weight:600;color:var(--ink-2)}
+
+    /* === TAG CLOUD === */
+    .ct{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+    .ct s{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,0.4);box-shadow:0 0 0 1px var(--hairline);font-size:12px;color:var(--muted)}
+
+    /* === CHECKLIST === */
+    .cl{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:14px;color:var(--muted)}
+    .cl div{padding:4px 0}
+    @media(max-width:480px){.cl{grid-template-columns:1fr}}
+
+    /* === CTA BAND === */
+    .cb{background:var(--ink);color:#fff;border-radius:28px;padding:80px 40px;text-align:center}
+    .cb h2{font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-0.02em}
+    .cb .su{font-size:15px;color:rgba(255,255,255,0.5);margin-top:10px}
+    .cb .h-b{margin-top:32px}
+    .cb .b-f{background:#fff;color:var(--ink)}.cb .b-f .a{background:rgba(0,0,0,0.06)}.cb .b-g{color:#fff;border-color:rgba(255,255,255,0.15)}.cb .b-g:hover{background:rgba(255,255,255,0.06)}
+
+    /* === FOOTER === */
+    .ft{max-width:1200px;margin:0 auto;padding:48px 28px 32px}
+    .ft .dv{height:1px;background:var(--hairline);margin-bottom:32px}
+    .ft-i{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
+    .ft-c{font-size:13px;color:var(--muted);line-height:1.6}
+    .ft-c strong{color:var(--ink);font-weight:600}
+    .ft-l{display:flex;gap:16px;flex-wrap:wrap}
+    .ft-l a{font-size:12px;color:var(--muted);cursor:pointer;transition:color .3s}
+    .ft-l a:hover{color:var(--ink)}
+    @media(max-width:768px){.ft-i{flex-direction:column}}
+
+    /* === CATALOG GRID === */
+    .cg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;grid-auto-flow:dense}
+    @media(max-width:768px){.cg{grid-template-columns:1fr}}
+    .cc{padding:5px;border-radius:var(--sh-rad);background:rgba(255,255,255,0.35);box-shadow:0 0 0 1px var(--hairline);transition:all .5s var(--ease)}
+    .cc:hover{transform:translateY(-3px);box-shadow:0 0 0 1px var(--hairline-strong),0 12px 36px -10px rgba(0,0,0,0.07)}
+    .cci{padding:26px 20px;border-radius:calc(var(--sh-rad) - 0.4rem);background:rgba(255,255,255,0.62);text-align:center}
+    .cci .model{font-size:20px;font-weight:800;margin-bottom:4px}
+    .cci .spec{font-size:13px;color:var(--muted);line-height:1.5}
+    .cci .spec b{color:var(--ink)}
+    .cci .pt{margin-top:12px;font-size:18px;font-weight:700}
+    .cci .sb{display:inline-block;margin-top:6px;padding:3px 12px;border-radius:999px;font-size:11px;font-weight:600}
+    .sb-a{background:rgba(184,134,11,0.1);color:var(--accent)}
+    .sb-o{background:rgba(0,0,0,0.04);color:var(--muted)}
+    .ccw{grid-column:span 2}
+    @media(max-width:768px){.ccw{grid-column:span 1}}
+
+    /* === CATALOG MOBILE === */
+    .cc-img-r{float:right;width:200px;height:180px;object-fit:cover;border-radius:14px;margin-left:20px}
+    @media(max-width:768px){
+      .cc-img-r{float:none;width:100%;height:180px;margin:0 0 14px}
+      .cci[style*="text-align:left"]{display:flex;flex-direction:column}
+      .cci[style*="text-align:left"] .model{order:-1}
+    }
+    .cc-img-r2{float:right;width:220px;height:160px;object-fit:cover;border-radius:14px;margin-left:16px}
+    @media(max-width:768px){
+      .cc-img-r2{float:none;width:100%;height:180px;margin:0 0 14px}
+    }
+
+    /* === MOBILE PADDING FIXES === */
+    @media(max-width:768px){
+      .hero{padding:140px 16px 60px}
+      .hero h1{font-size:clamp(32px,10vw,44px)}
+      .h-s{font-size:15px}
+      .s-m{padding:60px 0}
+      .s{padding:80px 0}
+      .sh{margin-bottom:36px}
+      .sh h2{font-size:clamp(24px,7vw,32px)}
+      .sh .su{font-size:14px}
+      .ci{padding:20px 16px}
+      .qi{padding:24px 20px}
+      .qi blockquote{font-size:16px}
+      .cb{padding:48px 20px;border-radius:20px}
+      .cb .h-b{flex-direction:column;align-items:stretch}
+      .cb .b{justify-content:center}
+      .wrap{padding:0 16px}
+      .h-i{border-radius:1.25rem}
+      .st-c{padding:16px 8px}
+      .st-c .n{font-size:28px}
+      .st-c .l{font-size:11px}
+    }
+
+    /* === SHOWCASE === */
+    .show{margin-top:40px;border-radius:2rem;overflow:hidden;box-shadow:0 16px 60px -16px rgba(0,0,0,0.06)}
+
+    /* === QUOTE === */
+    .qo{max-width:680px;margin:48px auto 0;padding:5px;border-radius:var(--sh-rad);background:rgba(255,255,255,0.35);box-shadow:0 0 0 1px var(--hairline)}
+    .qi{padding:36px 32px;border-radius:calc(var(--sh-rad) - 0.4rem);background:rgba(255,255,255,0.6);text-align:center}
+    .qi blockquote{font-size:18px;font-weight:500;line-height:1.6;font-style:italic;max-width:540px;margin:0 auto;color:var(--ink-2)}
+    .qi blockquote::before{content:'\201C';font-size:48px;display:block;color:var(--accent);font-style:normal;line-height:0.4;margin-bottom:12px;opacity:0.5}
+
+    /* === DARK BAND === */
+    .db{background:var(--ink);color:#fff;border-radius:28px;padding:72px 40px;margin-top:48px}
+    .db h3{font-size:28px;font-weight:800;letter-spacing:-0.02em;margin-bottom:8px}
+    .db p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6}
+
+    /* === SCROLL REVEAL === */
+    .rv{opacity:0;transform:translateY(24px);filter:blur(6px);transition:opacity .8s var(--ease),transform .8s var(--ease),filter .8s var(--ease)}
+    .rv-in{opacity:1;transform:translateY(0);filter:blur(0)}
+  </style>
+</head>
+<body>
+
+<div class="mesh"></div>
+
+<!-- === NAV === -->
+<div class="nav-wrap">
+  <nav class="nav">
+    <span class="n-l"><i></i> ГЕОКРИОЛОГ</span>
+    <button class="n-t active" data-goto="home">Главная</button>
+    <button class="n-t" data-goto="equip">Оснастка</button>
+    <button class="n-t" data-goto="adapt">Адаптация</button>
+    <button class="n-t" data-goto="catalog">Каталог</button>
+    <button class="n-t" data-goto="price">Цены</button>
+    <button class="n-c" data-goto="cta">Связаться</button>
+    <button class="nav-hamb" aria-label="Меню"><span></span><span></span><span></span></button>
+  </nav>
+</div>
+
+<!-- === HERO === -->
+<section id="home">
+<div class="hero">
+  <span class="h-t">Официальный представитель TYSIM в России</span>
+  <h1>Буровая техника,<br>готовая к российским зимам</h1>
+  <p class="h-s">Адаптация под &#8722;40&#8201;&#176;C, полная сертификация ЕАС, склад в Санкт-Петербурге. Не коробка из Китая — машина, готовая к работе с первого дня.</p>
+  <div class="h-b">
+    <a class="b b-f" href="#catalog">Смотреть каталог <span class="a">→</span></a>
+    <a class="b b-g" href="#cta">Получить КП</a>
+  </div>
+  <div class="h-i rv"><img src="images/kr300m-1-1.jpg" alt="TYSIM KR300M" style="width:100%;display:block"></div>
+</div>
+</section>
+
+<!-- === STATS === -->
+<section class="s-m" id="stats">
+<div class="wrap">
+  <div class="st">
+    <div class="st-c"><span class="n" data-to="300">0</span><span class="l">кН·м крутящий момент</span></div>
+    <div class="st-c"><span class="n" data-to="2500">0</span><span class="l">мм макс. диаметр бурения</span></div>
+    <div class="st-c"><span class="n" data-to="54">0</span><span class="l">м макс. глубина бурения</span></div>
+    <div class="st-c"><span class="n" data-to="90">0</span><span class="l">тонн масса установки</span></div>
+  </div>
+</div>
+</section>
+
+<!-- === WHAT YOU GET === -->
+<section class="s-m" id="equip">
+<div class="wrap">
+  <div class="sh rv">
+    <span class="e">Комплексное предложение</span>
+    <h2>Что вы получаете</h2>
+    <p class="su">Не просто станок — готовый к работе комплекс с сертификацией и поддержкой</p>
+  </div>
+  <div class="bento">
+    <div class="co cw"><div class="ci"><span class="ic">⚙️</span><h4>TYSIM KR300M — флагман</h4><p>300 кН·м · 54 м глубина · 2 500 мм диаметр · 90 тонн · CAT C9.3B · CAT 345GC · 0 м/ч</p><p style="font-size:13px;color:var(--muted);margin-top:6px">Электрогидравлика. Интеллектуальный вентилятор. Магнитные фильтры. +52°C.</p></div></div>
+    <div class="co"><div class="ci"><span class="ic">🛢️</span><h4>Обсадной стол RCO1500</h4><p>Собственная разработка. Ø до 1 500 мм · 1 500 кН·м · 1 000 кН · 350 бар. 10+ установок в РФ. Гарантия 1 год.</p></div></div>
+    <div class="co"><div class="ci"><span class="ic">📋</span><h4>Сертификация — готова</h4><p>ТР ТС 010/2011 и 020/2011. ПСМ получен. Декларация. Пожарная безопасность. На объект сразу.</p></div></div>
+    <div class="co"><div class="ci"><span class="ic">🔧</span><h4>Сервис и запчасти</h4><p>Склад в СПб. Выезд инженера за 48 ч. Обучение операторов. Гарантия 1 год / 2 000 ч.</p></div></div>
+  </div>
+</div>
+</section>
+
+<!-- === ADAPTATION === -->
+<section class="s-m" id="adapt">
+<div class="wrap">
+  <div class="sh rv">
+    <span class="e">Северное исполнение</span>
+    <h2>Адаптация под Россию —<br>наш стандарт</h2>
+    <p class="su">Не «коробочное решение» — машина, готовая к работе при −40°C с первого дня</p>
+  </div>
+  <div class="g2">
+    <div class="co"><div class="ci"><span class="ic">❄️</span><h4>Webasto</h4><p>Заводской монтаж. Запуск при −40°C.</p></div></div>
+    <div class="co"><div class="ci"><span class="ic">🔋</span><h4>АКБ 220 Ач</h4><p>Два аккумулятора. Пуск в любой мороз.</p></div></div>
+    <div class="co"><div class="ci"><span class="ic">🌊</span><h4>Обогрев гидравлики</h4><p>Работа с первой минуты без прогрева.</p></div></div>
+    <div class="co"><div class="ci"><span class="ic">🛡️</span><h4>Антикор + IP65</h4><p>Усиленная обработка. Полная герметизация.</p></div></div>
+    <div class="co"><div class="ci"><span class="ic">📋</span><h4>ЕАС + ПСМ</h4><p>Сертификация. Можно сразу на объект.</p></div></div>
+    <div class="co"><div class="ci"><span class="ic">🤝</span><h4>Техэкспертиза</h4><p>Опыт Casagrande (Италия). Точный подбор.</p></div></div>
+  </div>
+  <div class="qo rv">
+    <div class="qi"><blockquote>Поставим машину, готовую к работе в российских условиях — с первого дня. Адаптация, сертификация, сервис — всё включено в цену. Так работают профессионалы.</blockquote></div>
+  </div>
+</div>
+</section>
+
+<!-- === WHY TYSIM === -->
+<section class="s-m" id="price">
+<div class="wrap">
+  <div class="sh rv">
+    <span class="e">Почему TYSIM</span>
+    <h2>Премиум без компромиссов</h2>
+    <p class="su">Единственный китайский производитель с оригинальными двигателями Caterpillar и полным циклом адаптации</p>
+  </div>
+  <div class="g2">
+    <div class="co cw"><div class="ci" style="text-align:left">
+      <div style="font-size:28px;font-weight:800;margin-bottom:4px">TYSIM KR300M</div>
+      <div style="font-size:22px;font-weight:700;margin-bottom:12px">60 млн ₽</div>
+      <div class="fp">
+        <s>❄️ Webasto</s><s>🛡️ Антикор IP65</s><s>📋 ЕАС + ПСМ</s><s>🔧 Сервис в РФ</s><s>📦 Склад в СПб</s><s>✅ В наличии</s>
+      </div>
+      <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-top:14px;max-width:680px">TYSIM — единственный китайский производитель буровых установок, использующий оригинальные двигатели Caterpillar. Каждая машина проходит полный цикл адаптации под российские условия: Webasto, усиленные АКБ, обогрев гидравлики, антикор, сертификация ЕАС с получением ПСМ. Машина в наличии в Санкт-Петербурге.</p>
+    </div></div>
+    <div class="co"><div class="ci" style="text-align:center">
+      <div style="font-size:28px;font-weight:800">Оригинал</div>
+      <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.5">Caterpillar C9.3B<br>Не китайский лицензионный —<br>оригинальный двигатель CAT</p>
+    </div></div>
+    <div class="co"><div class="ci" style="text-align:center">
+      <div style="font-size:28px;font-weight:800">Адаптация</div>
+      <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.5">Webasto · АКБ 220 Ач<br>Обогрев гидравлики<br>Антикор IP65</p>
+    </div></div>
+    <div class="co"><div class="ci" style="text-align:center">
+      <div style="font-size:28px;font-weight:800">Сертификация</div>
+      <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.5">ТР ТС 010/2011 и 020/2011<br>ПСМ получен · На объект сразу</p>
+    </div></div>
+    <div class="co"><div class="ci" style="text-align:center">
+      <div style="font-size:28px;font-weight:800">Сервис</div>
+      <p style="font-size:14px;color:var(--muted);margin-top:6px;line-height:1.5">Склад в СПб · Выезд 48 ч<br>Обучение операторов<br>Гарантия 1 год / 2 000 ч</p>
+    </div></div>
+  </div>
+  <div class="qo rv">
+    <div class="qi" style="text-align:left">
+      <p style="font-size:14px;font-weight:600;margin-bottom:10px">В стоимость поставки TYSIM KR300M включено:</p>
+      <div class="cl">
+        <div>✅ Базовая машина EXW Уси (КНР)</div>
+        <div>✅ Таможенное оформление и НДС</div>
+        <div>✅ Предпусковой подогреватель Webasto</div>
+        <div>✅ Антикоррозионная защита IP65</div>
+        <div>✅ Сертификация ЕАС + ПСМ</div>
+        <div>✅ Склад запчастей в Санкт-Петербурге</div>
+        <div>✅ Обучение операторов (3 дня)</div>
+        <div>✅ Гарантия 1 год / 2 000 моточасов</div>
+        <div>✅ Техническая документация</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- === CATALOG: RCO1500 + TOOLS === -->
+<section class="s-m" id="catalog">
+<div class="wrap">
+  <div class="sh rv">
+    <span class="e">Продукция</span>
+    <h2>Каталог оборудования</h2>
+    <p class="su">Роторные буровые · Обсадные столы · Буровой инструмент</p>
+  </div>
+
+  <div class="sh" style="margin-bottom:24px;margin-top:56px"><h2 style="font-size:clamp(24px,3vw,40px)">Роторные буровые установки TYSIM</h2></div>
+  <div class="cg">
+    <div class="cc ccw"><div class="cci" style="text-align:left">
+      <div style="display:flex;gap:20px;align-items:flex-start">
+        <div style="flex:1">
+          <div class="model" style="text-align:left">TYSIM KR300M</div>
+          <div class="spec m8">300 кН·м · 54 м · 2 500 мм · <b>90 тонн</b><br>CAT C9.3B · 259 кВт · CAT 345GC<br>Год 2024 · 0 м/ч<br>Электрогидравлика</div>
+          <div style="margin-top:8px"><span class="sb sb-a">В наличии · СПб</span></div>
+          <div class="pt">60 000 000 ₽</div>
+        </div>
+        <div style="flex-shrink:0"><img src="images/kr300m-3-1.jpg" alt="KR300M" class="cc-img-r"></div>
+      </div>
+    </div></div>
+    <div class="cc"><div class="cci">
+      <div class="model">TYSIM KR220M</div>
+      <div class="spec">220 кН·м · 64/51 м · <b>65 тонн</b><br>CAT C7.1 · 195 кВт</div>
+      <div style="margin-top:8px"><span class="sb sb-o">Под заказ</span></div>
+      <div class="pt">по запросу</div>
+    </div></div>
+    <div class="cc"><div class="cci">
+      <div class="model">TYSIM KR150C</div>
+      <div class="spec">150 кН·м · 41 м · <b>40 тонн</b><br>CAT C4.4 · 129 кВт</div>
+      <div style="margin-top:8px"><span class="sb sb-o">Под заказ</span></div>
+      <div class="pt">по запросу</div>
+    </div></div>
+    <div class="cc"><div class="cci">
+      <div class="model">TYSIM KR50-10</div>
+      <div class="spec">42 кН·м · 10 м · <b>13 тонн</b><br>Малотоннажная</div>
+      <div style="margin-top:8px"><span class="sb sb-o">Под заказ</span></div>
+      <div class="pt">по запросу</div>
+    </div></div>
+  </div>
+
+  <div class="sh" style="margin-bottom:24px;margin-top:56px"><h2 style="font-size:clamp(24px,3vw,40px)">Обсадное оборудование</h2></div>
+  <div class="cg">
+    <div class="cc ccw"><div class="cci" style="text-align:left">
+      <img src="images/rco1500_p0_2.jpg" alt="RCO1500" class="cc-img-r2">
+      <div class="model" style="text-align:left">Обсадной стол RCO1500</div>
+      <div class="spec" style="margin-top:4px">Макс. Ø обсадной трубы <b>1 500 мм</b> · Крутящий момент <b>1 500 кН·м</b><br>Рабочее давление <b>350 бар</b> · Масса <b>7 200 кг</b><br>Совместим: TYSIM · XCMG · SANY · Liebherr · Casagrande · Soilmec<br>Поставлено <b>10+ единиц</b> в РФ · Гарантия 1 год</div>
+      <div style="margin-top:8px"><span class="sb sb-a">В наличии · СПб</span></div>
+      <div class="pt">15 000 000 ₽</div>
+    </div></div>
+    <div class="cc"><div class="cci">
+      <div class="model">Переходная вставка</div>
+      <div class="spec">Д1500/1000 (790 000 ₽)<br>или<br>Д1500/800 (860 000 ₽)</div>
+    </div></div>
+    <div class="cc"><div class="cci">
+      <div class="model">Подключение к БУ</div>
+      <div class="spec">Механическое и гидравлическое подключение к установкам других производителей</div>
+      <div class="pt">до 2 000 000 ₽</div>
+    </div></div>
+  </div>
+
+  <div class="sh" style="margin-bottom:24px;margin-top:56px"><h2 style="font-size:clamp(24px,3vw,40px)">Буровой инструмент</h2></div>
+  <div class="cg">
+    <div class="cc"><div class="cci"><img src="images/tmpz-shneki.jpg" alt="Шнеки" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Шнеки грунтовые</div><div class="spec">Двухзаходные.<br>Совместимость: Casagrande, BAUER, Liebherr, Soilmec, SANY, Delmag, MAIT, Zoomlion, XCMG, TRIVELSONDA.</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/tmpz-kovshebur.jpg" alt="Ковшебур" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Ковшебуры телескопические</div><div class="spec">Различные диаметры и глубины.</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/tmpz-obsadnie.jpg" alt="Трубы" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Обсадные инвентарные трубы</div><div class="spec">Ножевые секции в комплекте.</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/tremie-fes.jpg" alt="Бетонолит" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Бетонолитные трубы</div><div class="spec">Для подачи бетона в скважину.</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/tmpz-dreiteller.jpg" alt="Дрейтеллер" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Дрейтеллеры</div><div class="spec">Очистка обсадных труб.</div></div></div>
+    <div class="cc"><div class="cci"><img src="images/bucket-fes.jpg" alt="Навеска" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px"><div class="model">Навеска на экскаватор</div><div class="spec">KR50 Attachment · 10–24 м<br>Носитель 8–30 т · CFA</div></div></div>
+  </div>
+</div>
+</section>
+
+<!-- === CLIENTS === -->
+<section class="s-m">
+<div class="wrap">
+  <div class="sh rv">
+    <span class="e">Реализованные проекты</span>
+    <h2>Кому уже поставили</h2>
+    <p class="su">10+ обсадных столов RCO1500 на реальных объектах по всей России</p>
+  </div>
+  <div class="ct">
+    <s>ПРИСС — SANY 405R</s><s>СВАЙБУРГ — SANY 285R</s>
+    <s>ГеоСпецСтрой — XCMG 360E</s><s>УБР 52 — SANY 285R</s>
+    <s>ЛИГА ГРУПП — SANY 360R</s>
+  </div>
+</div>
+</section>
+
+<!-- === CTA === -->
+<section class="s-m" id="cta">
+<div class="wrap">
+  <div class="cb rv">
+    <div class="sh" style="margin-bottom:0">
+      <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:8px">Сделайте первый шаг</div>
+      <h2>Получите коммерческое предложение за 1 час</h2>
+    </div>
+    <p style="font-size:15px;color:rgba(255,255,255,0.5);margin:16px auto 0;max-width:520px">Машина в Санкт-Петербурге. Приезжайте смотреть лично — заводим, показываем, тестируем.</p>
+    <div class="h-b">
+      <a class="b b-f" href="tel:+79112468918">Позвонить <span class="a">→</span></a>
+      <a class="b b-g" href="mailto:atbspb@gmail.com">Написать на почту</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- === FOOTER === -->
+<footer class="ft">
+  <div class="dv"></div>
+  <div class="ft-i">
+    <div class="ft-c">
+      <strong>ООО «НПО «ГЕОКРИОЛОГ»</strong><br>
+      Санкт-Петербург, Шушары, Пулковское, ул. Образцовая, 5<br>
+      <a href="tel:+79112468918" style="font-weight:600;color:var(--ink)">+7 (911) 246-89-18</a> · <a href="mailto:atbspb@gmail.com" style="font-weight:600;color:var(--ink)">atbspb@gmail.com</a>
+    </div>
+    <div class="ft-l">
+      <a data-goto="home">Главная</a>
+      <a data-goto="catalog">Каталог</a>
+      <a data-goto="equip">Оснастка</a>
+      <a data-goto="adapt">Адаптация</a>
+      <a data-goto="cta">Контакты</a>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px;font-size:12px;color:var(--muted)">© 2026 ООО «НПО «ГЕОКРИОЛОГ» · TYSIM в России</div>
+</footer>
+
+<script>
+(()=>{'use strict';
+
+// === NAV SCROLL + HAMBURGER ===
+document.querySelectorAll('[data-goto]').forEach(el => {
+  el.addEventListener('click', () => {
+    const id = el.dataset.goto;
+    const target = document.getElementById(id);
+    if (target) target.scrollIntoView({behavior:'smooth'});
+    document.querySelectorAll('.n-t').forEach(t => t.classList.remove('active'));
+    if (el.classList.contains('n-t')) el.classList.add('active');
+    // Close mobile menu on nav click
+    document.querySelector('.nav').classList.remove('m-open');
+    document.querySelector('.nav-hamb').classList.remove('active');
+  });
+});
+
+// Hamburger toggle
+document.querySelector('.nav-hamb')?.addEventListener('click', function() {
+  document.querySelector('.nav').classList.toggle('m-open');
+  this.classList.toggle('active');
+});
+
+// === SCROLL REVEAL (IntersectionObserver) ===
+if ('IntersectionObserver' in window) {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('rv-in');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+}
+
+// === GSAP ANIMATIONS ===
+if (typeof gsap !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero entrance
+  gsap.from('.hero h1, .h-t, .h-s, .h-b', { y: 40, opacity: 0, duration: 1, stagger: 0.12, ease: 'power3.out', delay: 0.2 });
+  gsap.to('.h-i', { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out', delay: 0.8 });
+
+  // Stats counter
+  gsap.utils.toArray('.st-c .n').forEach(el => {
+    ScrollTrigger.create({
+      trigger: el, start: 'top 85%',
+      onEnter: () => {
+        const val = parseInt(el.dataset.to);
+        gsap.fromTo(el, { textContent: 0 }, {
+          textContent: val, duration: val > 999 ? 1.8 : 1.2, ease: 'power3.out',
+          snap: { textContent: 1 },
+          onUpdate: () => { el.textContent = Math.round(parseFloat(el.textContent)).toLocaleString('ru-RU'); }
+        });
+      }, once: true
+    });
+  });
+
+  // Bento stagger
+  gsap.utils.toArray('.co').forEach((el, i) => {
+    ScrollTrigger.create({
+      trigger: el, start: 'top 90%',
+      onEnter: () => gsap.to(el, { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.7, delay: i * 0.05, ease: 'power3.out' }),
+      once: true
+    });
+  });
+  gsap.utils.toArray('.co').forEach(el => gsap.set(el, { opacity: 0, y: 20, filter: 'blur(4px)' }));
+
+  // Catalog cards stagger
+  gsap.utils.toArray('.cc').forEach((el, i) => {
+    ScrollTrigger.create({
+      trigger: el, start: 'top 90%',
+      onEnter: () => gsap.to(el, { opacity: 1, y: 0, duration: 0.6, delay: i * 0.04, ease: 'power3.out' }),
+      once: true
+    });
+  });
+  gsap.utils.toArray('.cc').forEach(el => gsap.set(el, { opacity: 0, y: 16 }));
+}
+
+// Active nav highlight on scroll
+if (typeof ScrollTrigger !== 'undefined') {
+  const sections = ['home','equip','adapt','catalog','price','cta'];
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    ScrollTrigger.create({
+      trigger: el, start: 'top 40%', end: 'bottom 60%',
+      onEnter: () => { document.querySelectorAll('.n-t').forEach(t => t.classList.remove('active')); const tab = document.querySelector(`.n-t[data-goto="${id}"]`); if (tab) tab.classList.add('active'); },
+      onEnterBack: () => { document.querySelectorAll('.n-t').forEach(t => t.classList.remove('active')); const tab = document.querySelector(`.n-t[data-goto="${id}"]`); if (tab) tab.classList.add('active'); }
+    });
+  });
+}
+
+})();
+</script>
+
+</body>
+</html>

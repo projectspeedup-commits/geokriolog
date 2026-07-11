@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"  >
+<head>
+	<title>Страница не найдена</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="yes" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="Буровое оборудование" />
+<meta name="description" content="Буровое оборудование от компании ТМПЗ Механика" />
+<link href="/bitrix/cache/css/s2/aspro_max/template_4660a9db6c039a7f9f7288439dbd5358/template_4660a9db6c039a7f9f7288439dbd5358_v1.css?17828363751054647"  data-template-style="true" rel="stylesheet" />
+<script>if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script>(window.BX||top.BX).message({"JS_CORE_LOADING":"Загрузка...","JS_CORE_NO_DATA":"- Нет данных -","JS_CORE_WINDOW_CLOSE":"Закрыть","JS_CORE_WINDOW_EXPAND":"Развернуть","JS_CORE_WINDOW_NARROW":"Свернуть в окно","JS_CORE_WINDOW_SAVE":"Сохранить","JS_CORE_WINDOW_CANCEL":"Отменить","JS_CORE_WINDOW_CONTINUE":"Продолжить","JS_CORE_H":"ч","JS_CORE_M":"м","JS_CORE_S":"с","JSADM_AI_HIDE_EXTRA":"Скрыть лишние","JSADM_AI_ALL_NOTIF":"Показать все","JSADM_AUTH_REQ":"Требуется авторизация!","JS_CORE_WINDOW_AUTH":"Войти","JS_CORE_IMAGE_FULL":"Полный размер"});</script>
+<script src="/bitrix/js/main/core/core.min.js?1759742469229643"></script>
+<script>BX.Runtime.registerExtension({"name":"main.core","namespace":"BX","loaded":true});</script>
+<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_ajax.js","\/bitrix\/js\/main\/core\/core_promise.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/loadext\/loadext.js","\/bitrix\/js\/main\/loadext\/extension.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/includes\/js\/includes.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/ui\/polyfill\/closest\/js\/closest.js","\/bitrix\/js\/main\/polyfill\/fill\/main.polyfill.fill.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/core\/core.js","\/bitrix\/js\/main\/polyfill\/intersectionobserver\/js\/intersectionobserver.js","\/bitrix\/js\/main\/lazyload\/dist\/lazyload.bundle.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/parambag\/dist\/parambag.bundle.js"]);
+</script>
+<script>BX.Runtime.registerExtension({"name":"pull.protobuf","namespace":"BX","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"rest.client","namespace":"window","loaded":true});</script>
+<script>(window.BX||top.BX).message({"pull_server_enabled":"Y","pull_config_timestamp":1759742438,"shared_worker_allowed":"Y","pull_guest_mode":"N","pull_guest_user_id":0,"pull_worker_mtime":1747295305});(window.BX||top.BX).message({"PULL_OLD_REVISION":"Для продолжения корректной работы с сайтом необходимо перезагрузить страницу."});</script>
+<script>BX.Runtime.registerExtension({"name":"pull.client","namespace":"BX","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"pull","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"fx","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"aspro_logo","namespace":"window","loaded":true});</script>
+<script>(window.BX||top.BX).message({"CT_BST_SEARCH_BUTTON2":"Найти","SEARCH_IN_SITE_FULL":"По всему сайту","SEARCH_IN_SITE":"Везде","SEARCH_IN_CATALOG_FULL":"По каталогу","SEARCH_IN_CATALOG":"Каталог"});</script>
+<script>BX.Runtime.registerExtension({"name":"aspro_searchtitle","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"aspro_line_block","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"aspro_mega_menu","namespace":"window","loaded":true});</script>
+<script type="extension/settings" data-extension="currency.currency-core">{"region":"ru"}</script>
+<script>BX.Runtime.registerExtension({"name":"currency.currency-core","namespace":"BX.Currency","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"currency","namespace":"window","loaded":true});</script>
+<script>(window.BX||top.BX).message({"LANGUAGE_ID":"ru","FORMAT_DATE":"MM\/DD\/YYYY","FORMAT_DATETIME":"MM\/DD\/YYYY H:MI:SS T","COOKIE_PREFIX":"BITRIX_SM","SERVER_TZ_OFFSET":"10800","UTF_MODE":"Y","SITE_ID":"s2","SITE_DIR":"\/","USER_ID":"","SERVER_TIME":1783712187,"USER_TZ_OFFSET":0,"USER_TZ_AUTO":"Y","bitrix_sessid":"5a8a381eee658c7f596090169e6e8ed1"});</script>
+
+<script  src="/bitrix/cache/js/s2/aspro_max/kernel_main/kernel_main_v1.js?1782888169158483"></script>
+<script src="/bitrix/js/pull/protobuf/protobuf.min.js?168798600076433"></script>
+<script src="/bitrix/js/pull/protobuf/model.min.js?168798600014190"></script>
+<script src="/bitrix/js/rest/client/rest.client.min.js?16879860009240"></script>
+<script src="/bitrix/js/pull/client/pull.client.min.js?174729530649849"></script>
+<script src="/bitrix/js/main/ajax.min.js?168798600022194"></script>
+<script src="/bitrix/js/currency/currency-core/dist/currency-core.bundle.min.js?17234964004569"></script>
+<script src="/bitrix/js/currency/core_currency.min.js?1723496400835"></script>
+<script src="/bitrix/js/yandex.metrika/script.js?16945524006603"></script>
+<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_fx.js","\/bitrix\/js\/main\/pageobject\/dist\/pageobject.bundle.js","\/bitrix\/js\/main\/core\/core_window.js","\/bitrix\/js\/main\/session.js","\/bitrix\/js\/main\/date\/main.date.js","\/bitrix\/js\/main\/core\/core_date.js","\/bitrix\/js\/main\/utils.js","\/bitrix\/templates\/aspro_max\/js\/lite.bootstrap.js","\/bitrix\/templates\/aspro_max\/js\/jquery.actual.min.js","\/bitrix\/templates\/aspro_max\/vendor\/js\/ripple.js","\/bitrix\/templates\/aspro_max\/js\/browser.js","\/bitrix\/templates\/aspro_max\/vendor\/js\/sticky-sidebar.js","\/bitrix\/templates\/aspro_max\/js\/jquery.alphanumeric.js","\/bitrix\/templates\/aspro_max\/js\/jquery.cookie.js","\/bitrix\/templates\/aspro_max\/js\/mobile.js","\/bitrix\/templates\/aspro_max\/js\/main.js","\/bitrix\/templates\/aspro_max\/js\/blocks\/blocks.js","\/bitrix\/templates\/aspro_max\/js\/logo.min.js","\/bitrix\/templates\/aspro_max\/js\/autoload\/dropdown-product.js","\/bitrix\/templates\/aspro_max\/js\/autoload\/item-action.js","\/bitrix\/templates\/aspro_max\/js\/autoload\/select_offer_load.js","\/bitrix\/templates\/aspro_max\/js\/jquery.validate.js","\/bitrix\/templates\/aspro_max\/js\/conditional\/validation.js","\/bitrix\/templates\/aspro_max\/js\/jquery.uniform.min.js","\/bitrix\/components\/bitrix\/search.title\/script.js","\/bitrix\/templates\/aspro_max\/components\/bitrix\/search.title\/mega_menu\/script.js","\/bitrix\/templates\/aspro_max\/js\/searchtitle.js","\/bitrix\/templates\/aspro_max\/components\/bitrix\/menu\/menu_in_burger\/script.js","\/bitrix\/templates\/aspro_max\/components\/bitrix\/menu\/top\/script.js","\/bitrix\/templates\/aspro_max\/js\/mega_menu.js","\/bitrix\/templates\/aspro_max\/components\/bitrix\/search.title\/fixed\/script.js","\/bitrix\/components\/forumedia\/cookie.agree\/templates\/.default\/script.js","\/bitrix\/templates\/aspro_max\/js\/custom.js"]);</script>
+<script>BX.setCSSList(["\/bitrix\/templates\/aspro_max\/css\/blocks\/dark-light-theme.css","\/bitrix\/templates\/aspro_max\/css\/colored.css","\/bitrix\/templates\/aspro_max\/css\/lite.bootstrap.css","\/bitrix\/templates\/aspro_max\/css\/styles.css","\/bitrix\/templates\/aspro_max\/css\/blocks\/blocks.css","\/bitrix\/templates\/aspro_max\/css\/blocks\/common.blocks\/counter-state\/counter-state.css","\/bitrix\/templates\/aspro_max\/css\/menu.css","\/bitrix\/templates\/aspro_max\/css\/catalog.css","\/bitrix\/templates\/aspro_max\/vendor\/css\/ripple.css","\/bitrix\/templates\/aspro_max\/css\/stores.css","\/bitrix\/templates\/aspro_max\/css\/yandex_map.css","\/bitrix\/templates\/aspro_max\/ajax\/ajax.css","\/bitrix\/templates\/aspro_max\/css\/searchtitle.css","\/bitrix\/templates\/aspro_max\/css\/blocks\/line-block.min.css","\/bitrix\/templates\/aspro_max\/components\/bitrix\/menu\/top\/style.css","\/bitrix\/templates\/aspro_max\/css\/mega_menu.css","\/bitrix\/templates\/aspro_max\/components\/bitrix\/breadcrumb\/main\/style.css","\/bitrix\/templates\/aspro_max\/css\/footer.css","\/bitrix\/components\/aspro\/marketing.popup.max\/templates\/.default\/style.css","\/bitrix\/components\/forumedia\/cookie.agree\/templates\/.default\/style.css","\/bitrix\/templates\/aspro_max\/styles.css","\/bitrix\/templates\/aspro_max\/template_styles.css","\/bitrix\/templates\/aspro_max\/css\/header.css","\/bitrix\/templates\/aspro_max\/css\/media.css","\/bitrix\/templates\/aspro_max\/css\/h1-medium.css","\/bitrix\/templates\/aspro_max\/css\/lower-buttons.css","\/bitrix\/templates\/aspro_max\/themes\/custom_s2\/theme.css","\/bitrix\/templates\/aspro_max\/css\/widths\/width-2.css","\/bitrix\/templates\/aspro_max\/css\/fonts\/font-10.css","\/bitrix\/templates\/aspro_max\/css\/custom.css","\/bitrix\/components\/aspro\/theme.max\/css\/user_font_s2.css"]);</script>
+<script>
+					(function () {
+						"use strict";
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s2");
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s2")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+        <script>
+            window.counters = [];
+        </script>
+<script>BX.message({'PORTAL_WIZARD_NAME':'Аспро: Максимум - интернет-магазин','PORTAL_WIZARD_DESC':'Аспро: Максимум - интернет магазин с поддержкой современных технологий: BigData, композитный сайт, фасетный поиск, адаптивная верстка','ASPRO_MAX_MOD_INST_OK':'Поздравляем, модуль «Аспро: Максимум - интернет-магазин» успешно установлен!<br />\nДля установки готового сайта, пожалуйста перейдите <a href=\'/bitrix/admin/wizard_list.php?lang=ru\'>в список мастеров<\/a> <br />и выберите пункт «Установить» в меню мастера aspro:max','ASPRO_MAX_MOD_UNINST_OK':'Удаление модуля успешно завершено','ASPRO_MAX_SCOM_INSTALL_NAME':'Аспро: Максимум - интернет-магазин','ASPRO_MAX_SCOM_INSTALL_DESCRIPTION':'Мастер создания интернет-магазина «Аспро: Максимум - интернет-магазин»','ASPRO_MAX_SCOM_INSTALL_TITLE':'Установка модуля \"Аспро: Максимум\"','ASPRO_MAX_SCOM_UNINSTALL_TITLE':'Удаление модуля \"Аспро: Максимум\"','ASPRO_MAX_SPER_PARTNER':'Аспро','ASPRO_MAX_PARTNER_URI':'http://www.aspro.ru','OPEN_WIZARDS_LIST':'Открыть список мастеров','ASPRO_MAX_INSTALL_SITE':'Установить готовый сайт','PHONE':'Телефон','FAST_VIEW':'Быстрый просмотр','TABLES_SIZE_TITLE':'Подбор размера','SOCIAL':'Социальные сети','DESCRIPTION':'Описание магазина','ITEMS':'Товары','LOGO':'Логотип','REGISTER_INCLUDE_AREA':'Текст о регистрации','AUTH_INCLUDE_AREA':'Текст об авторизации','FRONT_IMG':'Изображение компании','EMPTY_CART':'пуста','CATALOG_VIEW_MORE':'... Показать все','CATALOG_VIEW_LESS':'... Свернуть','JS_REQUIRED':'Заполните это поле','JS_FORMAT':'Неверный формат','JS_FILE_EXT':'Недопустимое расширение файла','JS_PASSWORD_COPY':'Пароли не совпадают','JS_PASSWORD_LENGTH':'Минимум 6 символов','JS_ERROR':'Неверно заполнено поле','JS_FILE_SIZE':'Максимальный размер 5мб','JS_FILE_BUTTON_NAME':'Выберите файл','JS_FILE_DEFAULT':'Прикрепите файл','JS_DATE':'Некорректная дата','JS_DATETIME':'Некорректная дата/время','JS_REQUIRED_LICENSES':'Согласитесь с условиями','JS_REQUIRED_OFFER':'Согласитесь с условиями','LICENSE_PROP':'Согласие на обработку персональных данных','LOGIN_LEN':'Введите минимум {0} символа','FANCY_CLOSE':'Закрыть','FANCY_NEXT':'Следующий','FANCY_PREV':'Предыдущий','TOP_AUTH_REGISTER':'Регистрация','CALLBACK':'Заказать звонок','ASK':'Задать вопрос','REVIEW':'Оставить отзыв','S_CALLBACK':'Заказать звонок','UNTIL_AKC':'До конца акции','TITLE_QUANTITY_BLOCK':'Остаток','TITLE_QUANTITY':'шт','TOTAL_SUMM_ITEM':'Общая стоимость ','SUBSCRIBE_SUCCESS':'Вы успешно подписались','RECAPTCHA_TEXT':'Подтвердите, что вы не робот','JS_RECAPTCHA_ERROR':'Пройдите проверку','COUNTDOWN_SEC':'сек','COUNTDOWN_MIN':'мин','COUNTDOWN_HOUR':'час','COUNTDOWN_DAY0':'дн','COUNTDOWN_DAY1':'дн','COUNTDOWN_DAY2':'дн','COUNTDOWN_WEAK0':'Недель','COUNTDOWN_WEAK1':'Неделя','COUNTDOWN_WEAK2':'Недели','COUNTDOWN_MONTH0':'Месяцев','COUNTDOWN_MONTH1':'Месяц','COUNTDOWN_MONTH2':'Месяца','COUNTDOWN_YEAR0':'Лет','COUNTDOWN_YEAR1':'Год','COUNTDOWN_YEAR2':'Года','COUNTDOWN_COMPACT_SEC':'с','COUNTDOWN_COMPACT_MIN':'м','COUNTDOWN_COMPACT_HOUR':'ч','COUNTDOWN_COMPACT_DAY':'д','COUNTDOWN_COMPACT_WEAK':'н','COUNTDOWN_COMPACT_MONTH':'м','COUNTDOWN_COMPACT_YEAR0':'л','COUNTDOWN_COMPACT_YEAR1':'г','CATALOG_PARTIAL_BASKET_PROPERTIES_ERROR':'Заполнены не все свойства у добавляемого товара','CATALOG_EMPTY_BASKET_PROPERTIES_ERROR':'Выберите свойства товара, добавляемые в корзину в параметрах компонента','CATALOG_ELEMENT_NOT_FOUND':'Элемент не найден','ERROR_ADD2BASKET':'Ошибка добавления товара в корзину','CATALOG_SUCCESSFUL_ADD_TO_BASKET':'Успешное добавление товара в корзину','ERROR_BASKET_TITLE':'Ошибка корзины','ERROR_BASKET_PROP_TITLE':'Выберите свойства, добавляемые в корзину','ERROR_BASKET_BUTTON':'Выбрать','BASKET_TOP':'Корзина в шапке','ERROR_ADD_DELAY_ITEM':'Ошибка отложенной корзины','VIEWED_TITLE':'Ранее вы смотрели','VIEWED_BEFORE':'Ранее вы смотрели','BEST_TITLE':'Лучшие предложения','CT_BST_SEARCH_BUTTON':'Поиск','CT_BST_SEARCH2_BUTTON':'Найти','BASKET_PRINT_BUTTON':'Распечатать','BASKET_CLEAR_ALL_BUTTON':'Очистить','BASKET_QUICK_ORDER_BUTTON':'Быстрый заказ','BASKET_CONTINUE_BUTTON':'Продолжить покупки','BASKET_ORDER_BUTTON':'Оформить заказ','SHARE_BUTTON':'Поделиться','BASKET_CHANGE_TITLE':'Ваш заказ','BASKET_CHANGE_LINK':'Изменить','MORE_INFO_SKU':'Купить','FROM':'от','BEFORE':'до','TITLE_BLOCK_VIEWED_NAME':'Ранее вы смотрели','T_BASKET':'Корзина','FILTER_EXPAND_VALUES':'Показать все','FILTER_HIDE_VALUES':'Свернуть','FULL_ORDER':'Полный заказ','CUSTOM_COLOR_CHOOSE':'Выбрать','CUSTOM_COLOR_CANCEL':'Отмена','S_MOBILE_MENU':'Меню','MAX_T_MENU_BACK':'Назад','MAX_T_MENU_CALLBACK':'Обратная связь','MAX_T_MENU_CONTACTS_TITLE':'Будьте на связи','SEARCH_TITLE':'Поиск','SEARCH_VALUES_EMPTY_TITLE':'Ничего не нашлось','SOCIAL_TITLE':'Оставайтесь на связи','HEADER_SCHEDULE':'Время работы','SEO_TEXT':'SEO описание','COMPANY_IMG':'Картинка компании','COMPANY_TEXT':'Описание компании','CONFIG_SAVE_SUCCESS':'Настройки сохранены','CONFIG_SAVE_FAIL':'Ошибка сохранения настроек','ITEM_ECONOMY':'Экономия','ITEM_ARTICLE':'Артикул: ','JS_FORMAT_ORDER':'имеет неверный формат','JS_BASKET_COUNT_TITLE':'В корзине товаров на SUMM','POPUP_VIDEO':'Видео','POPUP_GIFT_TEXT':'Нашли что-то особенное? Намекните другу о подарке!','ORDER_FIO_LABEL':'Ф.И.О.','ORDER_PHONE_LABEL':'Телефон','ORDER_REGISTER_BUTTON':'Регистрация','PRICES_TYPE':'Варианты цен','FILTER_HELPER_VALUES':' знач.','SHOW_MORE_SCU_MAIN':'Еще #COUNT#','SHOW_MORE_SCU_1':'предложение','SHOW_MORE_SCU_2':'предложения','SHOW_MORE_SCU_3':'предложений','PARENT_ITEM_NOT_FOUND':'Не найден основной товар для услуги в корзине. Обновите страницу и попробуйте снова.','INVALID_NUMBER':'Неверный номер','INVALID_COUNTRY_CODE':'Неверный код страны','TOO_SHORT':'Номер слишком короткий','TOO_LONG':'Номер слишком длинный','FORM_REQUIRED_FIELDS':'обязательные поля'})</script>
+<link href="/bitrix/templates/aspro_max/css/critical.min.css?172315080024" data-skip-moving="true" rel="stylesheet">
+<meta name="theme-color" content="#0b7275">
+<style>:root{--theme-base-color: #0b7275;--theme-base-opacity-color: #0b72751a;--theme-base-color-hue:182;--theme-base-color-saturation:83%;--theme-base-color-lightness:25%;}</style>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@403&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital, rel="preload" as="style" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@403&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital, rel="stylesheet" crossorigin>
+<style>html {--theme-page-width: 1500px;--theme-page-width-padding: 30px}</style>
+<script src="/bitrix/templates/aspro_max/js/observer.js" async defer></script>
+<script data-skip-moving="true">window.lazySizesConfig = window.lazySizesConfig || {};lazySizesConfig.loadMode = 1;lazySizesConfig.expand = 200;lazySizesConfig.expFactor = 1;lazySizesConfig.hFac = 0.1;window.lazySizesConfig.loadHidden = false;window.lazySizesConfig.lazyClass = "lazy";</script>
+<script src="/bitrix/templates/aspro_max/js/ls.unveilhooks.min.js" data-skip-moving="true" defer></script>
+<script src="/bitrix/templates/aspro_max/js/lazysizes.min.js" data-skip-moving="true" defer></script>
+<link href="/bitrix/templates/aspro_max/css/print.min.css?172315080021755" data-template-style="true" rel="stylesheet" media="print">
+                    <script src="/bitrix/templates/aspro_max/js/app.min.js?17434201802299"></script>
+                    <script data-skip-moving="true" src="/bitrix/js/main/jquery/jquery-3.6.0.min.js"></script>
+                    <script data-skip-moving="true" src="/bitrix/templates/aspro_max/js/speed.min.js?=1724274000"></script>
+<link rel="shortcut icon" href="/favicon.png" type="image/png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/upload/CMax/d1e/s0tv7xm1wgp2u2l7ij0v82dhmonzkplm.png" />
+<meta property="og:title" content="Страница не найдена" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://tmpz-m.ru/upload/CMax/dc9/pfavb1g4a3tqr5odb2ge8tp2vkmr2cql.png" />
+<link rel="image_src" href="https://tmpz-m.ru/upload/CMax/dc9/pfavb1g4a3tqr5odb2ge8tp2vkmr2cql.png"  />
+<meta property="og:url" content="https://tmpz-m.ru/upload/iblock/eb3/dqg3incwgpryscq0l8wj3h24v82fba80.webp" />
+<meta property="og:description" content="Буровое оборудование от компании ТМПЗ Механика" />
+<script src="/bitrix/templates/aspro_max/js/fetch/bottom_panel.min.js?1724274000557" defer=""></script>
+<script>window[window.dataLayerName] = window[window.dataLayerName] || [];</script>
+<!-- Top.Mail.Ru counter --><script> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "19911989", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) { if (d.getElementById(id)) return; var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id; ts.src = "https://top-fwz1.mail.ru/js/code.js"; var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);}; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code");</script><noscript><div><img data-lazyload class="lazy " src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://top-fwz1.mail.ru/counter?id=19911989;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript><!-- /Top.Mail.Ru counter -->
+
+<script  src="/bitrix/cache/js/s2/aspro_max/template_84f1008d4f1407411566e52b9787e1c6/template_84f1008d4f1407411566e52b9787e1c6_v1.js?1782836375314251"></script>
+		<style>html {--theme-items-gap:32px;}</style>	</head>
+<body class=" site_s2  fill_bg_n catalog-delayed-btn-N theme-light" id="main" data-site="/">
+		
+	<div id="panel"></div>
+	
+				<!--'start_frame_cache_basketitems-component-block'-->												<div id="ajax_basket"></div>
+					<!--'end_frame_cache_basketitems-component-block'-->								<div class="cd-modal-bg"></div>
+		<script data-skip-moving="true">var solutionName = 'arMaxOptions';</script>
+		<script src="/bitrix/templates/aspro_max/js/setTheme.php?site_id=s2&site_dir=/" data-skip-moving="true"></script>
+		<script>window.onload=function(){window.basketJSParams = window.basketJSParams || [];}
+		BX.message({'MIN_ORDER_PRICE_TEXT':'<b>Минимальная сумма заказа #PRICE#<\/b><br/>Пожалуйста, добавьте еще товаров в корзину','LICENSES_TEXT':'Я согласен на <a href=\"/include/licenses_detail.php\" target=\"_blank\">обработку персональных данных<\/a>','OFFER_TEXT':'Согласен с <a href=\"/include/offer_detail.php\" target=\"_blank\">публичной офертой<\/a>'});
+		arAsproOptions.PAGES.FRONT_PAGE = window[solutionName].PAGES.FRONT_PAGE = "";arAsproOptions.PAGES.BASKET_PAGE = window[solutionName].PAGES.BASKET_PAGE = "";arAsproOptions.PAGES.ORDER_PAGE = window[solutionName].PAGES.ORDER_PAGE = "";arAsproOptions.PAGES.PERSONAL_PAGE = window[solutionName].PAGES.PERSONAL_PAGE = "";arAsproOptions.PAGES.CATALOG_PAGE = window[solutionName].PAGES.CATALOG_PAGE = "";</script>
+		<div class="wrapper1  header_bgcolored long_header  high_one_row_header with_left_block  basket_fly fly2 basket_fill_WHITE side_LEFT block_side_NORMAL catalog_icons_Y banner_auto  mheader-v1 header-v14 header-font-lower_N regions_N title_position_LEFT footer-v6 front-vindex1 mfixed_Y mfixed_view_always title-v3 lazy_Y with_phones compact-catalog dark-hover-overlay normal-catalog-img landing-normal big-banners-mobile-slider bottom-icons-panel-N compact-breadcrumbs-N catalog-delayed-btn-N  ">
+
+<div class="mega_fixed_menu scrollblock">
+	<div class="maxwidth-theme">
+		<svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+		  <path data-name="Rounded Rectangle 568 copy 16" d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z" transform="translate(-1001 -946)"></path>
+		</svg>
+		<i class="svg svg-close mask arrow"></i>
+		<div class="row">
+			<div class="col-md-9">
+				<div class="left_menu_block">
+					<div class="logo_block flexbox flexbox--row align-items-normal">
+						<div class="logo">
+							<a href="/"><img src="/upload/CMax/dc9/pfavb1g4a3tqr5odb2ge8tp2vkmr2cql.png" alt="ТМПЗ Механика" title="ТМПЗ Механика" data-src="" /></a>						</div>
+						<div class="top-description addr">
+							Производство бурового инструмента и оборудования<br>						</div>
+					</div>
+					<div class="search_block">
+						<div class="search_wrap">
+							<div class="search-block">
+									<div class="search-wrapper">
+		<div id="title-search_mega_menu">
+			<form action="/catalog/" class="search search--hastype">
+				<div class="search-input-div">
+					<input class="search-input" id="title-search-input_mega_menu" type="text" name="q" value="" placeholder="Поиск" size="20" maxlength="50" autocomplete="off" />
+				</div>
+				<div class="search-button-div">
+					<button class="btn btn-search" type="submit" name="s" value="Найти"><i class="svg search2  inline " aria-hidden="true"><svg width="17" height="17" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#search"></use></svg></i></button>
+											<div class="dropdown-select searchtype">
+							<input type="hidden" name="type" value="catalog" />
+							<div class="dropdown-select__title darken font_xs">
+								<span>Каталог</span>
+								<i class="svg  svg-inline-search-down" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="5" height="3" viewBox="0 0 5 3"><path class="cls-1" d="M250,80h5l-2.5,3Z" transform="translate(-250 -80)"/></svg></i>							</div>
+							<div class="dropdown-select__list dropdown-menu-wrapper" role="menu">
+								<!--noindex-->
+								<div class="dropdown-menu-inner rounded3">
+									<div class="dropdown-select__list-item font_xs">
+										<span class="dropdown-select__list-link darken" data-type="all">
+											<span>По всему сайту</span>
+										</span>
+									</div>
+									<div class="dropdown-select__list-item font_xs">
+										<span class="dropdown-select__list-link dropdown-select__list-link--current" data-type="catalog">
+											<span>По каталогу</span>
+										</span>
+									</div>
+								</div>
+								<!--/noindex-->
+							</div>
+						</div>
+					<span class="close-block inline-search-hide"><span class="svg svg-close close-icons"></span></span>
+				</div>
+			</form>
+		</div>
+	</div>
+<script>
+	var jsControl = new JCTitleSearch3({
+		//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+		'AJAX_PAGE' : '/upload/iblock/eb3/dqg3incwgpryscq0l8wj3h24v82fba80.webp',
+		'CONTAINER_ID': 'title-search_mega_menu',
+		'INPUT_ID': 'title-search-input_mega_menu',
+		'INPUT_ID_TMP': 'title-search-input_mega_menu',
+		'MIN_QUERY_LEN': 2
+	});
+</script>							</div>
+						</div>
+					</div>
+										<!-- noindex -->
+
+	<div class="burger_menu_wrapper">
+		
+			<div class="top_link_wrapper">
+				<div class="menu-item dropdown catalog wide_menu   ">
+					<div class="wrap">
+						<a class="dropdown-toggle" href="/catalog/">
+							<div class="link-title color-theme-hover">
+																	<i class="svg inline  svg-inline-icon_catalog" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path  data-name="Rounded Rectangle 969 copy 7" class="cls-1" d="M644,76a1,1,0,1,1-1,1A1,1,0,0,1,644,76Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,648,76Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,652,76Zm-8,4a1,1,0,1,1-1,1A1,1,0,0,1,644,80Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,648,80Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,652,80Zm-8,4a1,1,0,1,1-1,1A1,1,0,0,1,644,84Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,648,84Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,652,84Z" transform="translate(-643 -76)"/></svg></i>																Каталог							</div>
+						</a>
+													<span class="tail"></span>
+							<div class="burger-dropdown-menu row">
+								<div class="menu-wrapper" >
+									
+																														<div class="col-md-4   has_img">
+																						<a href="/catalog/obsadnye_inventarnye_truby/" class="color-theme-hover" title="Обсадные инвентарные трубы">
+												<span class="name option-font-bold">Обсадные инвентарные трубы</span>
+											</a>
+																					</div>
+									
+																														<div class="col-md-4   has_img">
+																						<a href="/catalog/startovye_bashmaki_nozhevye_sektsii/" class="color-theme-hover" title="Стартовые башмаки (ножевые секции)">
+												<span class="name option-font-bold">Стартовые башмаки (ножевые секции)</span>
+											</a>
+																					</div>
+									
+																														<div class="col-md-4   has_img">
+																						<a href="/catalog/soedinitelnye_koltsa_obsadnykh_trub/" class="color-theme-hover" title="Соединительные кольца обсадных труб">
+												<span class="name option-font-bold">Соединительные кольца обсадных труб</span>
+											</a>
+																					</div>
+									
+																														<div class="col-md-4   has_img">
+																						<a href="/catalog/dreytellery/" class="color-theme-hover" title="Дрейтеллеры">
+												<span class="name option-font-bold">Дрейтеллеры</span>
+											</a>
+																					</div>
+									
+																														<div class="col-md-4   has_img">
+																						<a href="/catalog/shneki/" class="color-theme-hover" title="Шнеки">
+												<span class="name option-font-bold">Шнеки</span>
+											</a>
+																					</div>
+									
+																														<div class="col-md-4   has_img">
+																						<a href="/catalog/shneki_nepreryvnogo_deystviya_cfa/" class="color-theme-hover" title="Шнеки непрерывного действия (CFA)">
+												<span class="name option-font-bold">Шнеки непрерывного действия (CFA)</span>
+											</a>
+																					</div>
+									
+																														<div class="col-md-4   has_img">
+																						<a href="/catalog/kovshebury/" class="color-theme-hover" title="Ковшебуры">
+												<span class="name option-font-bold">Ковшебуры</span>
+											</a>
+																					</div>
+									
+																														<div class="col-md-4   has_img">
+																						<a href="/catalog/kolonkovye_bury/" class="color-theme-hover" title="Колонковые буры">
+												<span class="name option-font-bold">Колонковые буры</span>
+											</a>
+																					</div>
+									
+																														<div class="col-md-4   has_img">
+																						<a href="/catalog/betonolitnoe_oborudovanie/" class="color-theme-hover" title="Бетонолитное оборудование">
+												<span class="name option-font-bold">Бетонолитное оборудование</span>
+											</a>
+																					</div>
+									
+																														<div class="col-md-4   has_img">
+																						<a href="/catalog/raskhodnye_materialy/" class="color-theme-hover" title="Расходные материалы">
+												<span class="name option-font-bold">Расходные материалы</span>
+											</a>
+																					</div>
+																	</div>
+							</div>
+											</div>
+				</div>
+			</div>
+					
+		<div class="bottom_links_wrapper row">
+								<div class="menu-item col-md-4 unvisible    ">
+					<div class="wrap">
+						<a class="" href="/proizvodstvo/">
+							<div class="link-title color-theme-hover">
+																Производство							</div>
+						</a>
+											</div>
+				</div>
+								<div class="menu-item col-md-4 unvisible    ">
+					<div class="wrap">
+						<a class="" href="/company/news/">
+							<div class="link-title color-theme-hover">
+																Новости							</div>
+						</a>
+											</div>
+				</div>
+								<div class="menu-item col-md-4 unvisible    ">
+					<div class="wrap">
+						<a class="" href="/blog/">
+							<div class="link-title color-theme-hover">
+																Статьи							</div>
+						</a>
+											</div>
+				</div>
+								<div class="menu-item col-md-4 unvisible    ">
+					<div class="wrap">
+						<a class="" href="/gallery/">
+							<div class="link-title color-theme-hover">
+																Галерея							</div>
+						</a>
+											</div>
+				</div>
+								<div class="menu-item col-md-4 unvisible    ">
+					<div class="wrap">
+						<a class="" href="/company/staff">
+							<div class="link-title color-theme-hover">
+																Команда							</div>
+						</a>
+											</div>
+				</div>
+								<div class="menu-item col-md-4 unvisible    ">
+					<div class="wrap">
+						<a class="" href="/company/">
+							<div class="link-title color-theme-hover">
+																О компании							</div>
+						</a>
+											</div>
+				</div>
+								<div class="menu-item col-md-4 unvisible    ">
+					<div class="wrap">
+						<a class="" href="/contacts/">
+							<div class="link-title color-theme-hover">
+																Контакты							</div>
+						</a>
+											</div>
+				</div>
+					</div>
+
+	</div>
+					<!-- /noindex -->
+														</div>
+			</div>
+			<div class="col-md-3">
+				<div class="right_menu_block">
+					<div class="contact_wrap">
+						<div class="info">
+							<div class="phone blocks">
+								<div class="">
+									                                <!-- noindex -->
+            <div class="phone with_dropdown white sm">
+                                    <div class="wrap">
+                        <div>
+                                    <i class="svg svg-inline-phone  inline " aria-hidden="true"><svg width="5" height="13" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#phone_footer"></use></svg></i><a rel="nofollow" href="tel:84954766220">8 (495) 476-62-20</a>
+                                        </div>
+                    </div>
+                                            </div>
+            <!-- /noindex -->
+                								</div>
+								<div class="callback_wrap">
+									<span class="callback-block animate-load font_upper colored" data-event="jqm" data-param-form_id="CALLBACK" data-name="callback">Заказать звонок</span>
+								</div>
+							</div>
+							<div class="question_button_wrapper">
+								<span class="btn btn-lg btn-transparent-border-color btn-wide animate-load colored_theme_hover_bg-el" data-event="jqm" data-param-form_id="ASK" data-name="ask">
+									Задать вопрос								</span>
+							</div>
+							<div class="person_wrap">
+        <!--'start_frame_cache_header-auth-block1'-->            <!-- noindex --><div class="auth_wr_inner "><a rel="nofollow" title="Мой кабинет" class="personal-link dark-color animate-load" data-event="jqm" data-param-backurl="%2Fupload%2Fiblock%2Feb3%2Fdqg3incwgpryscq0l8wj3h24v82fba80.webp" data-param-type="auth" data-name="auth" href="/personal/"><i class="svg svg-inline-cabinet big inline " aria-hidden="true"><svg width="18" height="18" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#user"></use></svg></i><span class="wrap"><span class="name">Войти</span></span></a></div><!-- /noindex -->        <!--'end_frame_cache_header-auth-block1'-->
+            <!--'start_frame_cache_mobile-basket-with-compare-block1'-->        <!-- noindex -->
+                    <div class="menu middle">
+                <ul>
+                                            <li class="counters">
+                            <a rel="nofollow" class="dark-color basket-link basket ready " href="/basket/">
+                                <i class="svg  svg-inline-basket" aria-hidden="true" ><svg class="" width="19" height="16" viewBox="0 0 19 16"><path data-name="Ellipse 2 copy 9" class="cls-1" d="M956.047,952.005l-0.939,1.009-11.394-.008-0.952-1-0.953-6h-2.857a0.862,0.862,0,0,1-.952-1,1.025,1.025,0,0,1,1.164-1h2.327c0.3,0,.6.006,0.6,0.006a1.208,1.208,0,0,1,1.336.918L943.817,947h12.23L957,948v1Zm-11.916-3,0.349,2h10.007l0.593-2Zm1.863,5a3,3,0,1,1-3,3A3,3,0,0,1,945.994,954.005ZM946,958a1,1,0,1,0-1-1A1,1,0,0,0,946,958Zm7.011-4a3,3,0,1,1-3,3A3,3,0,0,1,953.011,954.005ZM953,958a1,1,0,1,0-1-1A1,1,0,0,0,953,958Z" transform="translate(-938 -944)"></path></svg></i>                                <span>Корзина<span class="count js-count empted">0</span></span>
+                            </a>
+                        </li>
+                                                        </ul>
+            </div>
+                        <!-- /noindex -->
+        <!--'end_frame_cache_mobile-basket-with-compare-block1'-->    							</div>
+						</div>
+					</div>
+					<div class="footer_wrap">
+						
+        
+                            <div class="email blocks color-theme-hover">
+                    <i class="svg inline  svg-inline-email" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9"><path  data-name="Rectangle 583 copy 16" class="cls-1" d="M367,142h-7a2,2,0,0,1-2-2v-5a2,2,0,0,1,2-2h7a2,2,0,0,1,2,2v5A2,2,0,0,1,367,142Zm0-2v-3.039L364,139h-1l-3-2.036V140h7Zm-6.634-5,3.145,2.079L366.634,135h-6.268Z" transform="translate(-358 -133)"/></svg></i>                    <a href="mailto:info@tmpz-m.ru">info@tmpz-m.ru</a>                </div>
+        
+        
+                            <div class="address blocks">
+                    <i class="svg inline  svg-inline-addr" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12"><path class="cls-1" d="M959.135,82.315l0.015,0.028L955.5,87l-3.679-4.717,0.008-.013a4.658,4.658,0,0,1-.83-2.655,4.5,4.5,0,1,1,9,0A4.658,4.658,0,0,1,959.135,82.315ZM955.5,77a2.5,2.5,0,0,0-2.5,2.5,2.467,2.467,0,0,0,.326,1.212l-0.014.022,2.181,3.336,2.034-3.117c0.033-.046.063-0.094,0.093-0.142l0.066-.1-0.007-.009a2.468,2.468,0,0,0,.32-1.2A2.5,2.5,0,0,0,955.5,77Z" transform="translate(-951 -75)"/></svg></i>                    г. Москва, ул. Садовая-Спасская, д.21/1, пом. 1, офис 201                </div>
+        
+    						<div class="social-block">
+							<div class="social-icons">
+		<!-- noindex -->
+	<ul>
+																        																			</ul>
+	<!-- /noindex -->
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="header_wrap visible-lg visible-md title-v3 ">
+	<header id="header">
+		<div class="top-block top-block-v1 header-v14 header-wrapper">
+	<div class="maxwidth-theme logo_and_menu-row logo_top_white">
+		<div class="wrapp_block logo-row logo_top_white">
+			<div class="items-wrapper header__top-inner">
+				<div class="header__top-item">
+											<div class="top-description no-title">
+							<!--'start_frame_cache_allregions-list-block1'--><!--'end_frame_cache_allregions-list-block1'-->						</div>
+									</div>
+				<div class="header__top-item">
+					<div class="phone-block">
+													<div class="inline-block">
+								                                <!-- noindex -->
+            <div class="phone with_dropdown no-icons">
+                                    <i class="svg svg-inline-phone  inline " aria-hidden="true"><svg width="5" height="13" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#phone_black"></use></svg></i><a rel="nofollow" href="tel:84954766220">8 (495) 476-62-20</a>
+                                            </div>
+            <!-- /noindex -->
+                							</div>
+																	</div>
+				</div>
+				<div class="visible-lg addr-block header__top-item">
+					<div>
+                            <div class="address tables inline-block no-icons">
+                    <i class="svg inline  svg-inline-addr" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12"><path class="cls-1" d="M959.135,82.315l0.015,0.028L955.5,87l-3.679-4.717,0.008-.013a4.658,4.658,0,0,1-.83-2.655,4.5,4.5,0,1,1,9,0A4.658,4.658,0,0,1,959.135,82.315ZM955.5,77a2.5,2.5,0,0,0-2.5,2.5,2.467,2.467,0,0,0,.326,1.212l-0.014.022,2.181,3.336,2.034-3.117c0.033-.046.063-0.094,0.093-0.142l0.066-.1-0.007-.009a2.468,2.468,0,0,0,.32-1.2A2.5,2.5,0,0,0,955.5,77Z" transform="translate(-951 -75)"/></svg></i>                    г. Москва, ул. Садовая-Спасская, д.21/1, пом. 1, офис 201                </div>
+        
+    </div>
+				</div>
+
+				<div class="right-icons showed wb  header__top-item logo_and_menu-row logo_top_white to-mr">
+					<div class="line-block line-block--40 line-block--40-1200 flexbox--justify-end  ">
+																		                        						<div class="line-block__item">
+							<div class="wrap_icon">
+								<button class="top-btn inline-search-show">
+									<i class="svg svg-inline-search inline " aria-hidden="true"><svg width="17" height="17" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#search"></use></svg></i>									<span class="title">Поиск</span>
+								</button>
+							</div>
+						</div>
+						<div class="line-block__item">
+							<div class="wrap_icon inner-table-block1 person">
+        <!--'start_frame_cache_header-auth-block2'-->            <!-- noindex --><div class="auth_wr_inner "><a rel="nofollow" title="Мой кабинет" class="personal-link dark-color animate-load" data-event="jqm" data-param-backurl="%2Fupload%2Fiblock%2Feb3%2Fdqg3incwgpryscq0l8wj3h24v82fba80.webp" data-param-type="auth" data-name="auth" href="/personal/"><i class="svg svg-inline-cabinet big inline " aria-hidden="true"><svg width="18" height="18" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#user"></use></svg></i><span class="wrap"><span class="name">Войти</span></span></a></div><!-- /noindex -->        <!--'end_frame_cache_header-auth-block2'-->
+    							</div>
+						</div>
+											</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="header-wrapper header-v14">
+	<div class="maxwidth-theme logo-row paddings1 logo_and_menu-row icons_bottom longs">
+		<div class="header__top-inner logo-row">
+			<div class="logo-block  floated header__top-item no-shrinked">
+				<div class="logo">
+					<a href="/"><img src="/upload/CMax/dc9/pfavb1g4a3tqr5odb2ge8tp2vkmr2cql.png" alt="ТМПЗ Механика" title="ТМПЗ Механика" data-src="" /></a>				</div>
+			</div>
+			<div class="header__top-item">
+				<div class="float_wrapper fix-block ">
+					<div class="hidden-sm hidden-xs ">
+						<div class="top-description addr">
+							Производство бурового инструмента и оборудования<br>						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__top-item minwidth0 flex1">
+				<div class="menu-row">
+					<div class="menu-only">
+						<nav class="mega-menu sliced">
+										<div class="table-menu">
+		<table>
+			<tr>
+					<td class="menu-item unvisible dropdown catalog wide_menu   ">
+						<div class="wrap">
+							<a class="dropdown-toggle" href="/catalog/">
+								<div>
+																			<i class="svg inline  svg-inline-icon_catalog" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path  data-name="Rounded Rectangle 969 copy 7" class="cls-1" d="M644,76a1,1,0,1,1-1,1A1,1,0,0,1,644,76Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,648,76Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,652,76Zm-8,4a1,1,0,1,1-1,1A1,1,0,0,1,644,80Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,648,80Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,652,80Zm-8,4a1,1,0,1,1-1,1A1,1,0,0,1,644,84Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,648,84Zm4,0a1,1,0,1,1-1,1A1,1,0,0,1,652,84Z" transform="translate(-643 -76)"/></svg></i>																		Каталог																			<i class="svg svg-inline-down" aria-hidden="true"><svg width="5" height="3" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/trianglearrow_sprite.svg?1723150800#trianglearrow_down"></use></svg></i>																	</div>
+							</a>
+																							<span class="tail"></span>
+								<div class="dropdown-menu   BANNER">
+																		<div class="customScrollbar scrollblock scrollblock--thick">
+										<ul class="menu-wrapper menu-type-1" >
+																																																																										<li class=" icon  has_img parent-items">
+																																					<div class="menu_img icon">
+						<a href="/catalog/obsadnye_inventarnye_truby/" class="noborder img_link colored_theme_svg">
+															<img class="lazy" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" data-src="/upload/uf/6b0/nqtyv6o6ysz6fd8vj5f3w0h4i5fpdpzn.svg" alt="Обсадные инвентарные трубы" title="Обсадные инвентарные трубы" />
+													</a>
+					</div>
+														<a href="/catalog/obsadnye_inventarnye_truby/" title="Обсадные инвентарные трубы">
+						<span class="name option-font-bold">Обсадные инвентарные трубы</span>							</a>
+																																			</li>
+																																																																																						<li class=" icon  has_img parent-items">
+																																					<div class="menu_img icon">
+						<a href="/catalog/startovye_bashmaki_nozhevye_sektsii/" class="noborder img_link colored_theme_svg">
+															<img class="lazy" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" data-src="/upload/uf/53d/xfq7saih40ap2ot7i4k26qq7wc0105m5.svg" alt="Стартовые башмаки (ножевые секции)" title="Стартовые башмаки (ножевые секции)" />
+													</a>
+					</div>
+														<a href="/catalog/startovye_bashmaki_nozhevye_sektsii/" title="Стартовые башмаки (ножевые секции)">
+						<span class="name option-font-bold">Стартовые башмаки (ножевые секции)</span>							</a>
+																																			</li>
+																																																																																						<li class=" icon  has_img parent-items">
+																																					<div class="menu_img icon">
+						<a href="/catalog/soedinitelnye_koltsa_obsadnykh_trub/" class="noborder img_link colored_theme_svg">
+															<img class="lazy" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" data-src="/upload/uf/a26/64frpvjanjh1ku954avqm3g3hdykq6qj.svg" alt="Соединительные кольца обсадных труб" title="Соединительные кольца обсадных труб" />
+													</a>
+					</div>
+														<a href="/catalog/soedinitelnye_koltsa_obsadnykh_trub/" title="Соединительные кольца обсадных труб">
+						<span class="name option-font-bold">Соединительные кольца обсадных труб</span>							</a>
+																																			</li>
+																																																																																						<li class=" icon  has_img parent-items">
+																																					<div class="menu_img icon">
+						<a href="/catalog/dreytellery/" class="noborder img_link colored_theme_svg">
+															<img class="lazy" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" data-src="/upload/uf/1d1/e9rncye3ibsux12ot2ncztozc6bre7rm.svg" alt="Дрейтеллеры" title="Дрейтеллеры" />
+													</a>
+					</div>
+														<a href="/catalog/dreytellery/" title="Дрейтеллеры">
+						<span class="name option-font-bold">Дрейтеллеры</span>							</a>
+																																			</li>
+																																																																																						<li class=" icon  has_img parent-items">
+																																					<div class="menu_img icon">
+						<a href="/catalog/shneki/" class="noborder img_link colored_theme_svg">
+															<img class="lazy" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" data-src="/upload/uf/918/8z52h3rdsdnfrd0p6tp08mhdxedtn5lt.svg" alt="Шнеки" title="Шнеки" />
+													</a>
+					</div>
+														<a href="/catalog/shneki/" title="Шнеки">
+						<span class="name option-font-bold">Шнеки</span>							</a>
+																																			</li>
+																																																																																						<li class=" icon  has_img parent-items">
+																																					<div class="menu_img icon">
+						<a href="/catalog/shneki_nepreryvnogo_deystviya_cfa/" class="noborder img_link colored_theme_svg">
+															<img class="lazy" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" data-src="/upload/uf/a0e/bxsron974zu8jhf3po3gg18kppq7ok0l.svg" alt="Шнеки непрерывного действия (CFA)" title="Шнеки непрерывного действия (CFA)" />
+													</a>
+					</div>
+														<a href="/catalog/shneki_nepreryvnogo_deystviya_cfa/" title="Шнеки непрерывного действия (CFA)">
+						<span class="name option-font-bold">Шнеки непрерывного действия (CFA)</span>							</a>
+																																			</li>
+																																																																																						<li class=" icon  has_img parent-items">
+																																					<div class="menu_img icon">
+						<a href="/catalog/kovshebury/" class="noborder img_link colored_theme_svg">
+															<img class="lazy" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" data-src="/upload/uf/0af/263mcgrihq559fzja8edthww1t5hbp5s.svg" alt="Ковшебуры" title="Ковшебуры" />
+													</a>
+					</div>
+														<a href="/catalog/kovshebury/" title="Ковшебуры">
+						<span class="name option-font-bold">Ковшебуры</span>							</a>
+																																			</li>
+																																																																																						<li class=" icon  has_img parent-items">
+																																					<div class="menu_img icon">
+						<a href="/catalog/kolonkovye_bury/" class="noborder img_link colored_theme_svg">
+															<img class="lazy" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" data-src="/upload/uf/164/xs1qju92gvl2xnuix45m0q70zu0rzo3o.svg" alt="Колонковые буры" title="Колонковые буры" />
+													</a>
+					</div>
+														<a href="/catalog/kolonkovye_bury/" title="Колонковые буры">
+						<span class="name option-font-bold">Колонковые буры</span>							</a>
+																																			</li>
+																																																																																						<li class=" icon  has_img parent-items">
+																																					<div class="menu_img icon">
+						<a href="/catalog/betonolitnoe_oborudovanie/" class="noborder img_link colored_theme_svg">
+															<img class="lazy" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" data-src="/upload/uf/693/z6e6ldhw1s9ha66pb3u1k0s0rhmcnvh5.svg" alt="Бетонолитное оборудование" title="Бетонолитное оборудование" />
+													</a>
+					</div>
+														<a href="/catalog/betonolitnoe_oborudovanie/" title="Бетонолитное оборудование">
+						<span class="name option-font-bold">Бетонолитное оборудование</span>							</a>
+																																			</li>
+																																																																																						<li class=" icon  has_img parent-items">
+																																					<div class="menu_img icon">
+						<a href="/catalog/raskhodnye_materialy/" class="noborder img_link colored_theme_svg">
+															<img class="lazy" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" data-src="/upload/uf/66b/anmhyd206v2l5rwlq1kbtrwsh9lw938z.svg" alt="Расходные материалы" title="Расходные материалы" />
+													</a>
+					</div>
+														<a href="/catalog/raskhodnye_materialy/" title="Расходные материалы">
+						<span class="name option-font-bold">Расходные материалы</span>							</a>
+																																			</li>
+																																	</ul>
+									</div>
+																	</div>
+													</div>
+					</td>
+					<td class="menu-item unvisible    ">
+						<div class="wrap">
+							<a class="" href="/proizvodstvo/">
+								<div>
+																		Производство																	</div>
+							</a>
+													</div>
+					</td>
+					<td class="menu-item unvisible    ">
+						<div class="wrap">
+							<a class="" href="/company/news/">
+								<div>
+																		Новости																	</div>
+							</a>
+													</div>
+					</td>
+					<td class="menu-item unvisible    ">
+						<div class="wrap">
+							<a class="" href="/blog/">
+								<div>
+																		Статьи																	</div>
+							</a>
+													</div>
+					</td>
+					<td class="menu-item unvisible    ">
+						<div class="wrap">
+							<a class="" href="/gallery/">
+								<div>
+																		Галерея																	</div>
+							</a>
+													</div>
+					</td>
+					<td class="menu-item unvisible    ">
+						<div class="wrap">
+							<a class="" href="/company/staff">
+								<div>
+																		Команда																	</div>
+							</a>
+													</div>
+					</td>
+					<td class="menu-item unvisible    ">
+						<div class="wrap">
+							<a class="" href="/company/">
+								<div>
+																		О компании																	</div>
+							</a>
+													</div>
+					</td>
+					<td class="menu-item unvisible    ">
+						<div class="wrap">
+							<a class="" href="/contacts/">
+								<div>
+																		Контакты																	</div>
+							</a>
+													</div>
+					</td>
+				<td class="menu-item dropdown js-dropdown nosave unvisible">
+					<div class="wrap">
+						<a class="dropdown-toggle more-items" href="#">
+							<span>+ &nbsp;ЕЩЕ</span>
+						</a>
+						<span class="tail"></span>
+						<ul class="dropdown-menu"></ul>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script data-skip-moving="true">
+		CheckTopMenuDotted();
+	</script>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lines-row"></div>
+	</div>
+</div>
+	</header>
+</div>
+
+<div id="mobileheader" class="visible-xs visible-sm">
+	<div class="mobileheader-v1">
+	<div class="burger pull-left">
+		<i class="svg inline  svg-inline-burger dark" aria-hidden="true" ><svg width="16" height="12" viewBox="0 0 16 12"><path data-name="Rounded Rectangle 81 copy 4" class="cls-1" d="M872,958h-8a1,1,0,0,1-1-1h0a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1h0A1,1,0,0,1,872,958Zm6-5H864a1,1,0,0,1,0-2h14A1,1,0,0,1,878,953Zm0-5H864a1,1,0,0,1,0-2h14A1,1,0,0,1,878,948Z" transform="translate(-863 -946)"></path></svg></i>		<i class="svg inline  svg-inline-close dark" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path data-name="Rounded Rectangle 114 copy 3" class="cccls-1" d="M334.411,138l6.3,6.3a1,1,0,0,1,0,1.414,0.992,0.992,0,0,1-1.408,0l-6.3-6.306-6.3,6.306a1,1,0,0,1-1.409-1.414l6.3-6.3-6.293-6.3a1,1,0,0,1,1.409-1.414l6.3,6.3,6.3-6.3A1,1,0,0,1,340.7,131.7Z" transform="translate(-325 -130)"/></svg></i>	</div>
+	<div class="logo-block pull-left">
+		<div class="logo">
+			<a href="/"><img src="/upload/CMax/dc9/pfavb1g4a3tqr5odb2ge8tp2vkmr2cql.png" alt="ТМПЗ Механика" title="ТМПЗ Механика" data-src="" /></a>		</div>
+	</div>
+	<div class="right-icons pull-right">
+		<div class="pull-right">
+			<div class="wrap_icon wrap_basket">
+				                                        <!--'start_frame_cache_header-basket-with-compare-block1'-->                
+                <!-- noindex -->
+                                                                            <a rel="nofollow" class="basket-link basket   big " href="/basket/" title="Корзина пуста">
+                            <span class="js-basket-block">
+                                <i class="svg basket big inline " aria-hidden="true"><svg width="19" height="16" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#basket"></use></svg></i>                                                                <span class="title dark_link">Корзина</span>
+                                <span class="count js-count">0</span>
+                                                            </span>
+                        </a>
+                        <span class="basket_hover_block loading_block loading_block_content"></span>
+                                                    <!-- /noindex -->
+            <!--'end_frame_cache_header-basket-with-compare-block1'-->                        			</div>
+		</div>
+		<div class="pull-right">
+			<div class="wrap_icon wrap_cabinet">
+        <!--'start_frame_cache_header-auth-block3'-->            <!-- noindex --><div class="auth_wr_inner "><a rel="nofollow" title="Мой кабинет" class="personal-link dark-color animate-load" data-event="jqm" data-param-backurl="%2Fupload%2Fiblock%2Feb3%2Fdqg3incwgpryscq0l8wj3h24v82fba80.webp" data-param-type="auth" data-name="auth" href="/personal/"><i class="svg svg-inline-cabinet big inline " aria-hidden="true"><svg width="18" height="18" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#user"></use></svg></i></a></div><!-- /noindex -->        <!--'end_frame_cache_header-auth-block3'-->
+    			</div>
+		</div>
+		<div class="pull-right">
+			<div class="wrap_icon">
+				<button class="top-btn inline-search-show twosmallfont">
+					<i class="svg inline  svg-inline-search" aria-hidden="true" ><svg class="" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true"><path class="cls-1" d="M16.709,16.719a1,1,0,0,1-1.412,0l-3.256-3.287A7.475,7.475,0,1,1,15,7.5a7.433,7.433,0,0,1-1.549,4.518l3.258,3.289A1,1,0,0,1,16.709,16.719ZM7.5,2A5.5,5.5,0,1,0,13,7.5,5.5,5.5,0,0,0,7.5,2Z"></path></svg></i>				</button>
+			</div>
+		</div>
+		<div class="pull-right">
+			<div class="wrap_icon wrap_phones">
+				                                <!-- noindex -->
+            <button class="top-btn inline-phone-show">
+                <i class="svg inline  svg-inline-phone" aria-hidden="true" ><svg class="" width="18.031" height="17.969" viewBox="0 0 18.031 17.969"><path class="cls-1" d="M673.56,155.153c-4.179-4.179-6.507-7.88-2.45-12.3l0,0a3,3,0,0,1,4.242,0l1.87,2.55a3.423,3.423,0,0,1,.258,3.821l-0.006-.007c-0.744.7-.722,0.693,0.044,1.459l0.777,0.873c0.744,0.788.759,0.788,1.458,0.044l-0.009-.01a3.153,3.153,0,0,1,3.777.264l2.619,1.889a3,3,0,0,1,0,4.243C681.722,162.038,677.739,159.331,673.56,155.153Zm11.17,1.414a1,1,0,0,0,0-1.414l-2.618-1.89a1.4,1.4,0,0,0-.926-0.241l0.009,0.009c-1.791,1.835-2.453,1.746-4.375-.132l-1.05-1.194c-1.835-1.878-1.518-2.087.272-3.922l0,0a1.342,1.342,0,0,0-.227-0.962l-1.87-2.549a1,1,0,0,0-1.414,0l-0.008-.009c-2.7,3.017-.924,6.1,2.453,9.477s6.748,5.54,9.765,2.837Z" transform="translate(-669 -142)"/></svg>
+</i>            </button>
+            <div id="mobilePhone" class="dropdown-mobile-phone ">
+                <div class="phone wrap">
+                    <div class="more_phone title"><span class="no-decript dark-color ">Телефоны <i class="svg inline  svg-inline-close dark dark-i" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path data-name="Rounded Rectangle 114 copy 3" class="cccls-1" d="M334.411,138l6.3,6.3a1,1,0,0,1,0,1.414,0.992,0.992,0,0,1-1.408,0l-6.3-6.306-6.3,6.306a1,1,0,0,1-1.409-1.414l6.3-6.3-6.293-6.3a1,1,0,0,1,1.409-1.414l6.3,6.3,6.3-6.3A1,1,0,0,1,340.7,131.7Z" transform="translate(-325 -130)"/></svg></i></span></div>
+                        <div class="more_phone flexbox flexbox--row flexbox--gap flexbox--gap-16">
+                            <a class="more_phone_a dark-color no-decript flexbox flexbox--row flexbox--gap flexbox--gap-8" rel="nofollow" href="tel:84954766220">
+                                <span class="phones__phone-icon no-icon">
+                                                                    </span>
+                                <span class="phones__phone-link-text flexbox dropdown--top-reverse flexbox--gap flexbox--gap-8">
+                                    <span class="phones__phone-title">8 (495) 476-62-20</span>
+                                                                    </span>
+                            </a>
+                                                    </div>
+                                                        </div>
+            </div>
+            <!-- /noindex -->
+                			</div>
+		</div>
+	</div>
+	<div class="header-progress-bar">
+                            <div class="header-progress-bar__inner"></div>
+                        </div></div>	<div id="mobilemenu" class="leftside">
+		<div class="mobilemenu-v1 scroller">
+	<div class="wrap">
+				<!-- noindex -->
+				<div class="menu top top-mobile-menu">
+		<ul class="top">
+															<li>
+					<a class="dark-color parent" href="/catalog/" title="Каталог">
+						<span>Каталог</span>
+													<span class="arrow">
+								<i class="svg triangle inline " aria-hidden="true"><svg width="3" height="5" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/trianglearrow_sprite.svg?1723150800#trianglearrow_right"></use></svg></i>							</span>
+											</a>
+											<ul class="dropdown">
+							<li class="menu_back"><a href="" class="dark-color" rel="nofollow"><i class="svg inline  svg-inline-back_arrow" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="15.969" height="12" viewBox="0 0 15.969 12"><defs><style>.cls-1{fill:#999;fill-rule:evenodd;}</style></defs><path  data-name="Rounded Rectangle 982 copy" class="cls-1" d="M34,32H22.414l3.3,3.3A1,1,0,1,1,24.3,36.713l-4.978-4.978c-0.01-.01-0.024-0.012-0.034-0.022s-0.015-.041-0.03-0.058a0.974,0.974,0,0,1-.213-0.407,0.909,0.909,0,0,1-.024-0.123,0.982,0.982,0,0,1,.267-0.838c0.011-.011.025-0.014,0.036-0.024L24.3,25.287A1,1,0,0,1,25.713,26.7l-3.3,3.3H34A1,1,0,0,1,34,32Z" transform="translate(-19.031 -25)"/></svg>
+</i>Назад</a></li>
+							<li class="menu_title"><a href="/catalog/">Каталог</a></li>
+																															<li>
+									<a class="dark-color top-mobile-menu__link" href="/catalog/obsadnye_inventarnye_truby/" title="Обсадные инвентарные трубы">
+																																												<span class="image top-mobile-menu__image colored_theme_svg">
+																											<img class="lazy" data-src="/upload/uf/6b0/nqtyv6o6ysz6fd8vj5f3w0h4i5fpdpzn.svg" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" alt="Обсадные инвентарные трубы" />
+																									</span>
+																															<span class="top-mobile-menu__title">Обсадные инвентарные трубы</span>
+																			</a>
+																	</li>
+																															<li>
+									<a class="dark-color top-mobile-menu__link" href="/catalog/startovye_bashmaki_nozhevye_sektsii/" title="Стартовые башмаки (ножевые секции)">
+																																												<span class="image top-mobile-menu__image colored_theme_svg">
+																											<img class="lazy" data-src="/upload/uf/53d/xfq7saih40ap2ot7i4k26qq7wc0105m5.svg" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" alt="Стартовые башмаки (ножевые секции)" />
+																									</span>
+																															<span class="top-mobile-menu__title">Стартовые башмаки (ножевые секции)</span>
+																			</a>
+																	</li>
+																															<li>
+									<a class="dark-color top-mobile-menu__link" href="/catalog/soedinitelnye_koltsa_obsadnykh_trub/" title="Соединительные кольца обсадных труб">
+																																												<span class="image top-mobile-menu__image colored_theme_svg">
+																											<img class="lazy" data-src="/upload/uf/a26/64frpvjanjh1ku954avqm3g3hdykq6qj.svg" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" alt="Соединительные кольца обсадных труб" />
+																									</span>
+																															<span class="top-mobile-menu__title">Соединительные кольца обсадных труб</span>
+																			</a>
+																	</li>
+																															<li>
+									<a class="dark-color top-mobile-menu__link" href="/catalog/dreytellery/" title="Дрейтеллеры">
+																																												<span class="image top-mobile-menu__image colored_theme_svg">
+																											<img class="lazy" data-src="/upload/uf/1d1/e9rncye3ibsux12ot2ncztozc6bre7rm.svg" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" alt="Дрейтеллеры" />
+																									</span>
+																															<span class="top-mobile-menu__title">Дрейтеллеры</span>
+																			</a>
+																	</li>
+																															<li>
+									<a class="dark-color top-mobile-menu__link" href="/catalog/shneki/" title="Шнеки">
+																																												<span class="image top-mobile-menu__image colored_theme_svg">
+																											<img class="lazy" data-src="/upload/uf/918/8z52h3rdsdnfrd0p6tp08mhdxedtn5lt.svg" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" alt="Шнеки" />
+																									</span>
+																															<span class="top-mobile-menu__title">Шнеки</span>
+																			</a>
+																	</li>
+																															<li>
+									<a class="dark-color top-mobile-menu__link" href="/catalog/shneki_nepreryvnogo_deystviya_cfa/" title="Шнеки непрерывного действия (CFA)">
+																																												<span class="image top-mobile-menu__image colored_theme_svg">
+																											<img class="lazy" data-src="/upload/uf/a0e/bxsron974zu8jhf3po3gg18kppq7ok0l.svg" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" alt="Шнеки непрерывного действия (CFA)" />
+																									</span>
+																															<span class="top-mobile-menu__title">Шнеки непрерывного действия (CFA)</span>
+																			</a>
+																	</li>
+																															<li>
+									<a class="dark-color top-mobile-menu__link" href="/catalog/kovshebury/" title="Ковшебуры">
+																																												<span class="image top-mobile-menu__image colored_theme_svg">
+																											<img class="lazy" data-src="/upload/uf/0af/263mcgrihq559fzja8edthww1t5hbp5s.svg" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" alt="Ковшебуры" />
+																									</span>
+																															<span class="top-mobile-menu__title">Ковшебуры</span>
+																			</a>
+																	</li>
+																															<li>
+									<a class="dark-color top-mobile-menu__link" href="/catalog/kolonkovye_bury/" title="Колонковые буры">
+																																												<span class="image top-mobile-menu__image colored_theme_svg">
+																											<img class="lazy" data-src="/upload/uf/164/xs1qju92gvl2xnuix45m0q70zu0rzo3o.svg" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" alt="Колонковые буры" />
+																									</span>
+																															<span class="top-mobile-menu__title">Колонковые буры</span>
+																			</a>
+																	</li>
+																															<li>
+									<a class="dark-color top-mobile-menu__link" href="/catalog/betonolitnoe_oborudovanie/" title="Бетонолитное оборудование">
+																																												<span class="image top-mobile-menu__image colored_theme_svg">
+																											<img class="lazy" data-src="/upload/uf/693/z6e6ldhw1s9ha66pb3u1k0s0rhmcnvh5.svg" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" alt="Бетонолитное оборудование" />
+																									</span>
+																															<span class="top-mobile-menu__title">Бетонолитное оборудование</span>
+																			</a>
+																	</li>
+																															<li>
+									<a class="dark-color top-mobile-menu__link" href="/catalog/raskhodnye_materialy/" title="Расходные материалы">
+																																												<span class="image top-mobile-menu__image colored_theme_svg">
+																											<img class="lazy" data-src="/upload/uf/66b/anmhyd206v2l5rwlq1kbtrwsh9lw938z.svg" src="/bitrix/templates/aspro_max/images/loaders/double_ring.svg" alt="Расходные материалы" />
+																									</span>
+																															<span class="top-mobile-menu__title">Расходные материалы</span>
+																			</a>
+																	</li>
+													</ul>
+									</li>
+															<li>
+					<a class="dark-color" href="/proizvodstvo/" title="Производство">
+						<span>Производство</span>
+											</a>
+									</li>
+															<li>
+					<a class="dark-color" href="/company/news/" title="Новости">
+						<span>Новости</span>
+											</a>
+									</li>
+															<li>
+					<a class="dark-color" href="/blog/" title="Статьи">
+						<span>Статьи</span>
+											</a>
+									</li>
+															<li>
+					<a class="dark-color" href="/gallery/" title="Галерея">
+						<span>Галерея</span>
+											</a>
+									</li>
+															<li>
+					<a class="dark-color" href="/company/staff" title="Команда">
+						<span>Команда</span>
+											</a>
+									</li>
+															<li>
+					<a class="dark-color" href="/company/" title="О компании">
+						<span>О компании</span>
+											</a>
+									</li>
+															<li>
+					<a class="dark-color" href="/contacts/" title="Контакты">
+						<span>Контакты</span>
+											</a>
+									</li>
+					</ul>
+	</div>
+		<!-- /noindex -->
+		        <!--'start_frame_cache_mobile-auth-block1'-->        <!-- noindex -->
+<div class="menu middle">
+	<ul>
+		<li  >
+						<a rel="nofollow" class="dark-color" href="/personal/">
+				<i class="svg inline  svg-inline-cabinet" aria-hidden="true" ><svg class="" width="18" height="18" viewBox="0 0 18 18"><path data-name="Ellipse 206 copy 4" class="cls-1" d="M909,961a9,9,0,1,1,9-9A9,9,0,0,1,909,961Zm2.571-2.5a6.825,6.825,0,0,0-5.126,0A6.825,6.825,0,0,0,911.571,958.5ZM909,945a6.973,6.973,0,0,0-4.556,12.275,8.787,8.787,0,0,1,9.114,0A6.973,6.973,0,0,0,909,945Zm0,10a4,4,0,1,1,4-4A4,4,0,0,1,909,955Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,909,949Z" transform="translate(-900 -943)"></path></svg></i>				<span>Личный кабинет</span>
+							</a>
+					</li>
+	</ul>
+</div>
+<!-- /noindex -->        <!--'end_frame_cache_mobile-auth-block1'-->            <!--'start_frame_cache_mobile-basket-with-compare-block2'-->        <!-- noindex -->
+                    <div class="menu middle">
+                <ul>
+                                            <li class="counters">
+                            <a rel="nofollow" class="dark-color basket-link basket ready " href="/basket/">
+                                <i class="svg  svg-inline-basket" aria-hidden="true" ><svg class="" width="19" height="16" viewBox="0 0 19 16"><path data-name="Ellipse 2 copy 9" class="cls-1" d="M956.047,952.005l-0.939,1.009-11.394-.008-0.952-1-0.953-6h-2.857a0.862,0.862,0,0,1-.952-1,1.025,1.025,0,0,1,1.164-1h2.327c0.3,0,.6.006,0.6,0.006a1.208,1.208,0,0,1,1.336.918L943.817,947h12.23L957,948v1Zm-11.916-3,0.349,2h10.007l0.593-2Zm1.863,5a3,3,0,1,1-3,3A3,3,0,0,1,945.994,954.005ZM946,958a1,1,0,1,0-1-1A1,1,0,0,0,946,958Zm7.011-4a3,3,0,1,1-3,3A3,3,0,0,1,953.011,954.005ZM953,958a1,1,0,1,0-1-1A1,1,0,0,0,953,958Z" transform="translate(-938 -944)"></path></svg></i>                                <span>Корзина<span class="count js-count empted">0</span></span>
+                            </a>
+                        </li>
+                                                        </ul>
+            </div>
+                        <!-- /noindex -->
+        <!--'end_frame_cache_mobile-basket-with-compare-block2'-->                                    <!-- noindex -->
+            <div class="menu middle mobile-menu-contacts">
+                <ul>
+                    <li>
+                        <a rel="nofollow" href="tel:84954766220" class="dark-color no-decript">
+                            <i class="svg svg-phone"></i>
+                            <i class="svg svg-inline-phone  inline " aria-hidden="true"><svg width="5" height="13" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#phone_black"></use></svg></i>                            <span>8 (495) 476-62-20</span>
+                                                    </a>
+                                            </li>
+                </ul>
+            </div>
+            <!-- /noindex -->
+                            <div class="contacts">
+            <div class="title">Контактная информация</div>
+                                        <div class="address">
+                    <i class="svg inline  svg-inline-address" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12"><path class="cls-1" d="M959.135,82.315l0.015,0.028L955.5,87l-3.679-4.717,0.008-.013a4.658,4.658,0,0,1-.83-2.655,4.5,4.5,0,1,1,9,0A4.658,4.658,0,0,1,959.135,82.315ZM955.5,77a2.5,2.5,0,0,0-2.5,2.5,2.467,2.467,0,0,0,.326,1.212l-0.014.022,2.181,3.336,2.034-3.117c0.033-.046.063-0.094,0.093-0.142l0.066-.1-0.007-.009a2.468,2.468,0,0,0,.32-1.2A2.5,2.5,0,0,0,955.5,77Z" transform="translate(-951 -75)"/></svg></i>                    г. Москва, ул. Садовая-Спасская, д.21/1, пом. 1, офис 201                </div>
+                                        <div class="email">
+                    <i class="svg inline  svg-inline-email" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9"><path  data-name="Rectangle 583 copy 16" class="cls-1" d="M367,142h-7a2,2,0,0,1-2-2v-5a2,2,0,0,1,2-2h7a2,2,0,0,1,2,2v5A2,2,0,0,1,367,142Zm0-2v-3.039L364,139h-1l-3-2.036V140h7Zm-6.634-5,3.145,2.079L366.634,135h-6.268Z" transform="translate(-358 -133)"/></svg></i>                    <a href="mailto:info@tmpz-m.ru">info@tmpz-m.ru</a>                </div>
+                                </div>
+        		<div class="social-icons">
+		<!-- noindex -->
+	<ul>
+																        																			</ul>
+	<!-- /noindex -->
+</div>
+        	</div>
+</div>
+	</div>
+</div>
+<div id="mobilefilter" class="scrollbar-filter"></div>
+
+		<div class="wraps hover_shine" id="content">
+				<!--title_content-->
+		<div class="top-block-wrapper">
+	<section class="page-top maxwidth-theme ">
+		<div class="topic">
+			<div class="topic__inner">
+								<div class="topic__heading">
+					<h1 id="pagetitle">Страница не найдена</h1>				</div>
+			</div>
+		</div>
+				<div id="navigation">
+			<div class="breadcrumbs swipeignore" itemscope="" itemtype="http://schema.org/BreadcrumbList"><div class="breadcrumbs__item cat_last" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="/" title="Главная" itemprop="item"><span itemprop="name" class="breadcrumbs__item-name font_xs">Главная</span><meta itemprop="position" content="1"></a></div></div>		</div>
+	</section>
+</div>		<!--end-title_content-->
+
+							<div class="wrapper_inner  ">
+				<div class="container_inner flexbox flexbox--row-reverse flexbox--gap flexbox--gap-32 flexbox--align-start flexbox--justify-space-between ">
+									<div class="right_block  wide_ ">
+									<div class="middle  ">
+																			<div class="container">
+																												<style>.right_block.wide_, .right_block.wide_N{float:none !important;width:100% !important;}.top-block-wrapper{display: none;}</style>
+<div class="maxwidth-theme">
+	<div class="page_error_block">
+		<div class="page_not_found" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<div class="image">
+				<svg xmlns="http://www.w3.org/2000/svg" width="272" height="86" viewBox="0 0 272 86">
+				  <path id="Ellipse_296_copy_6" data-name="Ellipse 296 copy 6" class="cls-1" d="M1087.5,395H1081v8.5a8.5,8.5,0,0,1-17,0V395h-38.5a8.477,8.477,0,0,1-7.14-3.9,0.673,0.673,0,0,1-.07-0.11c-0.11-.187-0.23-0.375-0.33-0.571-0.04-.084-0.08-0.17-0.12-0.255-0.07-.154-0.15-0.307-0.21-0.465-0.05-.125-0.1-0.252-0.14-0.378s-0.09-.249-0.13-0.377c-0.05-.166-0.09-0.335-0.13-0.5-0.02-.094-0.05-0.186-0.07-0.282q-0.06-.319-0.09-0.645l-0.03-.17c-0.02-.256-0.03-0.514-0.04-0.771V386.49c0-.212.02-0.424,0.03-0.636a8.473,8.473,0,0,1,2-4.857l36.29-51.353a8.679,8.679,0,0,1,11.96-2.157,8.385,8.385,0,0,1,2.19,11.781L1042.1,378H1064v-8.5a8.5,8.5,0,0,1,17,0V378h6.5A8.5,8.5,0,0,1,1087.5,395ZM960,412a43,43,0,1,1,43-43A43,43,0,0,1,960,412Zm0-69a26,26,0,1,0,26,26A26,26,0,0,0,960,343Zm-65.5,52H888v8.5a8.5,8.5,0,0,1-17,0V395H832.5a8.489,8.489,0,0,1-7.142-3.9c-0.023-.036-0.044-0.074-0.067-0.11-0.116-.187-0.227-0.375-0.329-0.571-0.044-.084-0.082-0.17-0.123-0.255-0.074-.154-0.147-0.307-0.212-0.465-0.05-.125-0.093-0.252-0.138-0.378s-0.09-.249-0.129-0.377c-0.05-.166-0.089-0.335-0.129-0.5-0.022-.094-0.048-0.186-0.067-0.282-0.042-.213-0.072-0.429-0.1-0.645-0.007-.057-0.018-0.113-0.023-0.17-0.026-.256-0.038-0.514-0.039-0.771,0-.024,0-0.047,0-0.071v-0.01c0-.212.016-0.424,0.033-0.636a8.454,8.454,0,0,1,2-4.857l36.293-51.353a8.681,8.681,0,0,1,11.961-2.157,8.389,8.389,0,0,1,2.191,11.781L849.1,378H871v-8.5a8.5,8.5,0,0,1,17,0V378h6.5A8.5,8.5,0,0,1,894.5,395Z" transform="translate(-824 -326)"/>
+				</svg>
+			</div>
+			<div class="description">
+				<div class="subtitle404">Страница не найдена</div>
+				<div class="descr_text404">Неправильно набран адрес или такой страницы не существует</div>
+				<a class="btn btn-transparent-border-color btn-mainpage" onclick="history.back()">вернуться назад</a>
+				<a class="btn btn-default btn-mainpage" href="/"><span>На главную</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+																																			</div> 																				</div> 																</div> 																</div> 									</div> 							</div> 					</div>
+		<footer id="footer">
+			
+<div class="footer-v5">
+	<div class="footer-inner shorten light">
+		<div class="footer_top">
+			<div class="maxwidth-theme">
+				<div class="row">
+					<div class="wrapper col-md-5">
+						<div class="first_bottom_menu">
+									<div class="bottom-menu second">
+		<div class="items">
+														<div class="item">
+					<div class="title">
+													<a href="/catalog/">Каталог</a>
+											</div>
+				</div>
+																					<div class="item">
+					<div class="title">
+													<a href="/proizvodstvo/">Производство</a>
+											</div>
+				</div>
+																					<div class="item">
+					<div class="title">
+													<a href="/company/news/">Новости</a>
+											</div>
+				</div>
+																					<div class="item">
+					<div class="title">
+													<a href="/blog/">Статьи</a>
+											</div>
+				</div>
+																					<div class="item">
+					<div class="title">
+													<a href="/company/">О компании</a>
+											</div>
+				</div>
+																					<div class="item">
+					<div class="title">
+													<a href="/contacts/">Контакты</a>
+											</div>
+				</div>
+															</div>
+	</div>
+						</div>
+						<div class="social-block">
+							<div class="social-icons">
+		<!-- noindex -->
+	<ul>
+																        																			</ul>
+	<!-- /noindex -->
+</div>
+						</div>
+					</div>
+					<div class="col-md-3 contact-block">
+						<div class="info">
+							<div class="row">
+								<div class="col-md-12 col-sm-12">
+									<div class="phone blocks">
+										<div class="inline-block">
+											                                <!-- noindex -->
+            <div class="phone with_dropdown white sm">
+                                    <div class="wrap">
+                        <div>
+                                    <i class="svg svg-inline-phone  inline " aria-hidden="true"><svg width="5" height="13" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#phone_footer"></use></svg></i><a rel="nofollow" href="tel:84954766220">8 (495) 476-62-20</a>
+                                        </div>
+                    </div>
+                                            </div>
+            <!-- /noindex -->
+                										</div>
+																			</div>
+								</div>
+								<div class="col-md-12 col-sm-12">
+        
+                            <div class="email blocks">
+                    <i class="svg inline  svg-inline-email" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9"><path  data-name="Rectangle 583 copy 16" class="cls-1" d="M367,142h-7a2,2,0,0,1-2-2v-5a2,2,0,0,1,2-2h7a2,2,0,0,1,2,2v5A2,2,0,0,1,367,142Zm0-2v-3.039L364,139h-1l-3-2.036V140h7Zm-6.634-5,3.145,2.079L366.634,135h-6.268Z" transform="translate(-358 -133)"/></svg></i>                    <a href="mailto:info@tmpz-m.ru">info@tmpz-m.ru</a>                </div>
+        
+    								</div>
+								<div class="col-md-12 col-sm-12">
+        
+                            <div class="address blocks">
+                    <i class="svg inline  svg-inline-addr" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12"><path class="cls-1" d="M959.135,82.315l0.015,0.028L955.5,87l-3.679-4.717,0.008-.013a4.658,4.658,0,0,1-.83-2.655,4.5,4.5,0,1,1,9,0A4.658,4.658,0,0,1,959.135,82.315ZM955.5,77a2.5,2.5,0,0,0-2.5,2.5,2.467,2.467,0,0,0,.326,1.212l-0.014.022,2.181,3.336,2.034-3.117c0.033-.046.063-0.094,0.093-0.142l0.066-.1-0.007-.009a2.468,2.468,0,0,0,.32-1.2A2.5,2.5,0,0,0,955.5,77Z" transform="translate(-951 -75)"/></svg></i>                    г. Москва, ул. Садовая-Спасская, д.21/1, пом. 1, офис 201                </div>
+        
+    								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<div class="info">
+														<div>
+								<div class="confidentiality">
+									<i class="svg inline  svg-inline-privacy_policy" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><path  data-name="Rounded Rectangle 801 copy 5" class="cls-1" d="M449,140v6a3,3,0,0,1-3,3h-8a3,3,0,0,1-3-3v-2h0v-2h3v-6a3,3,0,0,1,3-3h9a3,3,0,0,1,3,3v4h-4Zm-12,4v2a1,1,0,0,0,1,1h5.184a2.96,2.96,0,0,1-.184-1v-2h-6Zm10,0v-9h-6a1,1,0,0,0-1,1v6h5v4a1,1,0,0,0,2,0v-2Zm4-8a1,1,0,0,0-1-1h0a1,1,0,0,0-1,1v2h2v-2Z" transform="translate(-435 -133)"/></svg></i>									<a href="/include/licenses_detail.php">Политика конфиденциальности</a>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="maxwidth-theme">
+				<div class="footer-bottom__items-wrapper">
+					<div class="footer-bottom__item copy font_xs">
+						2026 &copy; ТМПЗ Механика					</div>
+					<div id="bx-composite-banner"></div>
+					<div class="footer-bottom__item pays">
+						<i title="При поддержке Фонда развития промышленности РФ"> <img data-lazyload class="lazy " width="150" alt="141020logo.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/upload/medialibrary/4b6/1eyblqmmngpm0ru6la58z1qalj2ce48l.jpg" height="74" title="141020logo.jpg"> </i>
+<i title="Сделано в России"> <img data-lazyload class="lazy " width="125" alt="made-in-russia-sign-ru копия.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/upload/medialibrary/d69/rufnfeyt8imbyt2o8wq5hrdamdbs4kui.jpg" height="38" title="made-in-russia-sign-ru копия.jpg"></i> 
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- marketnig popups -->
+<!--'start_frame_cache_8gJilP'-->	<!--'end_frame_cache_8gJilP'--><!-- /marketnig popups -->		</footer>
+		<div class="bx_areas">
+	<!-- Yandex.Metrika counter -->
+<script >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+   ym(98389910, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img data-lazyload class="lazy " src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://mc.yandex.ru/watch/98389910" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b999195/crm/site_button/loader_34_yq1btl.js');
+</script></div>
+	<div class="inline-search-block fixed with-close big">
+		<div class="search-wrapper search-maxwidth-wrapper">
+			<div id="title-search">
+				<form action="/catalog/" class="search search--hastype">
+					<div class="search-input-div">
+						<input class="search-input" id="title-search-input" type="text" name="q" value="" placeholder="Поиск" size="20" maxlength="50" autocomplete="off" />
+					</div>
+					<div class="search-button-div">
+						<button class="btn btn-search btn-default btn-lg " type="submit" name="s" value="Найти">Найти</button>
+													<div class="dropdown-select searchtype searchtype--drop2left">
+								<input type="hidden" name="type" value="catalog" />
+								<div class="dropdown-select__title darken">
+									<span>Каталог</span>
+									<i class="svg  svg-inline-search-down" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="5" height="3" viewBox="0 0 5 3"><path class="cls-1" d="M250,80h5l-2.5,3Z" transform="translate(-250 -80)"/></svg></i>								</div>
+								<div class="dropdown-select__list dropdown-menu-wrapper" role="menu">
+									<!--noindex-->
+									<div class="dropdown-menu-inner rounded3">
+										<div class="dropdown-select__list-item font_xs">
+											<span class="dropdown-select__list-link darken" data-type="all">
+												<span>По всему сайту</span>
+											</span>
+										</div>
+										<div class="dropdown-select__list-item font_xs">
+											<span class="dropdown-select__list-link dropdown-select__list-link--current" data-type="catalog">
+												<span>По каталогу</span>
+											</span>
+										</div>
+									</div>
+									<!--/noindex-->
+								</div>
+							</div>
+						<span class="close-block inline-search-hide"><i class="svg inline  svg-inline-search svg-close close-icons colored_theme_hover" aria-hidden="true" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path data-name="Rounded Rectangle 114 copy 3" class="cccls-1" d="M334.411,138l6.3,6.3a1,1,0,0,1,0,1.414,0.992,0.992,0,0,1-1.408,0l-6.3-6.306-6.3,6.306a1,1,0,0,1-1.409-1.414l6.3-6.3-6.293-6.3a1,1,0,0,1,1.409-1.414l6.3,6.3,6.3-6.3A1,1,0,0,1,340.7,131.7Z" transform="translate(-325 -130)"></path></svg></i></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<script>
+	var jsControl = new JCTitleSearch2({
+		//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+		'AJAX_PAGE' : '/upload/iblock/eb3/dqg3incwgpryscq0l8wj3h24v82fba80.webp',
+		'CONTAINER_ID': 'title-search',
+		'INPUT_ID': 'title-search-input',
+		'INPUT_ID_TMP': 'title-search-input',
+		'MIN_QUERY_LEN': 2
+	});
+</script><!--'start_frame_cache_basketitems-block'-->
+                                <script>
+                                    function jsPriceFormat(_number){
+                        BX.Currency.setCurrencyFormat('RUB', {'CURRENCY':'RUB','LID':'ru','FORMAT_STRING':'# &#8381;','FULL_NAME':'Российский рубль','DEC_POINT':'.','THOUSANDS_SEP':'&nbsp;','DECIMALS':'2','THOUSANDS_VARIANT':'B','HIDE_ZERO':'Y','CREATED_BY':'','DATE_CREATE':'2023-06-29 12:04:18','MODIFIED_BY':'1','TIMESTAMP_X':'2024-08-09 15:24:32','TEMPLATE':{'SINGLE':'# &#8381;','PARTS':['#',' &#8381;'],'VALUE_INDEX':'0'}});
+                        return BX.Currency.currencyFormat(_number, 'RUB', true);
+                    }
+                            </script>
+                <script>
+            var arAsproCounters = arBasketAspro = {'BASKET':[],'SUBSCRIBE':[],'NOT_AVAILABLE':[],'SERVICES':[],'COMPARE':{'ITEMS':[],'COUNT':'0'},'FAVORITE':{'ITEMS':[],'COUNT':'0'}};
+            $(document).ready(function(){
+                setBasketStatusBtn();
+            });
+        </script>
+        <!--'end_frame_cache_basketitems-block'-->                            <div class="basket_wrapp  fly2 basket_fill_WHITE">
+                <div class="header-cart fly" id="basket_line">
+                    <div class="basket_fly">
+	<div class="wrap_cont">
+		<div class="opener">
+						<div title="Корзина пуста" data-type="AnDelCanBuy" class="colored_theme_hover_text basket_count small clicked empty">
+				<a href="/basket/"></a>
+				<div class="wraps_icon_block basket">
+					<i class="svg down  inline " aria-hidden="true"><svg width="20" height="16" ><use xlink:href="/bitrix/templates/aspro_max/images/svg/header_icons_srite.svg?1761909817#basket"></use></svg></i>					<div class="count empty_items">
+						<span class="colored_theme_bg">
+							<span class="items">
+								<span class="js-count">0</span>
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			                                                                                            
+                                    		</div>
+		<div class="basket_sort">
+			<span class="basket_title">Корзина</span>
+		</div>
+	</div>
+</div>
+<!--'start_frame_cache_header-cart'-->				<script>
+			arBasketAsproCounters = {'READY':{'COUNT':'0','TITLE':'','HREF':{'TITLE':'Страница корзины','TYPE':'text','DEFAULT':'#SITE_DIR#basket/','THEME':'N','VALUE':'/basket/','TYPE_BLOCK':'URL_PAGES'}},'DELAY':{'COUNT':'0','TITLE':'','HREF':{'TITLE':'Страница корзины','TYPE':'text','DEFAULT':'#SITE_DIR#basket/','THEME':'N','VALUE':'/basket/','TYPE_BLOCK':'URL_PAGES'}},'COMPARE':{'COUNT':'0','TITLE':'Сравнение товаров','HREF':'/catalog/compare.php'},'FAVORITE':{'COUNT':'0','TITLE':'Избранные товары','HREF':'/personal/favorite/'},'DEFAULT':true};
+			SetActualBasketFlyCounters();
+		</script>
+	<!--'end_frame_cache_header-cart'-->                </div>
+            </div>
+                
+                    <div id="body_iframe_wrapper"></div>
+<div id="popup_iframe_wrapper"></div>
+<div class="cookie-jqmOverlay" style="height: 100%; width: 100%; position: fixed; left: 0px; top: 0px; z-index: 2999; opacity: 0.5;"></div>
+<div class="cookie-warning alert alert-primary">
+	<div class="cookie-warning__agree-text">
+		<p>Сайт использует файлы cookie для аналитики и корректной работы каталога. Продолжая использование ресурса, вы соглашаетесь с <a href='/include/licenses_detail.php' target='_blank'>политикой обработки персональных данных</a>.</p>
+	</div>
+	<button class="cookie-warning__agree-btn btn btn-default has-ripple" type="button">Принимаю</button>
+</div>	</body>
+</html>
