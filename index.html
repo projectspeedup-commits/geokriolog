@@ -104,11 +104,36 @@ section{position:relative;z-index:1}
 .cl{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:14px;color:var(--muted)}
 .cl div{padding:4px 0}
 @media(max-width:480px){.cl{grid-template-columns:1fr}}
+/* === DARK BAND === */
+    .db{background:var(--ink);color:#fff;border-radius:28px;padding:72px 40px;margin-top:48px}
+    .db h3{font-size:28px;font-weight:800;letter-spacing:-0.02em;margin-bottom:8px}
+    .db p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6}
 
+    /* === STATS HERO === */
+    .stats-bar{display:grid;grid-template-columns:repeat(6,1fr);gap:0;max-width:920px;margin:32px auto 0;border-radius:1rem;overflow:hidden;background:rgba(255,255,255,0.5);box-shadow:0 0 0 1px var(--hairline)}
+    .stats-bar .sb-i{text-align:center;padding:16px 8px;border-right:1px solid var(--hairline)}
+    .stats-bar .sb-i:last-child{border-right:none}
+    .stats-bar .sb-n{font-size:24px;font-weight:800;letter-spacing:-0.02em;display:block}
+    .stats-bar .sb-l{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-top:2px;display:block}
+    @media(max-width:768px){.stats-bar{grid-template-columns:repeat(3,1fr)}.stats-bar .sb-i:nth-child(3){border-right:none}}
+
+    /* === DARK SECTION === */
+    .s-dark{background:var(--ink);color:#fff;border-radius:0;padding:100px 0}
+    .s-dark .sh h2{color:#fff}
+    .s-dark .sh .su,.s-dark .sh .e{color:rgba(255,255,255,0.5)}
+    .s-dark .co{background:rgba(255,255,255,0.06);box-shadow:0 0 0 1px rgba(255,255,255,0.08)}
+    .s-dark .ci{background:rgba(255,255,255,0.04)}
+    .s-dark .ci p,.s-dark .ci ul{color:rgba(255,255,255,0.55)}
+    .s-dark .ci h4{color:#fff}
+    .s-dark .fp span{background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.8)}
+    .s-dark .qo{background:rgba(255,255,255,0.06);box-shadow:0 0 0 1px rgba(255,255,255,0.08)}
+    .s-dark .qi{background:rgba(255,255,255,0.04)}
+    .s-dark .qi blockquote{color:rgba(255,255,255,0.7)}
+    @media(max-width:768px){.s-dark{padding:60px 0}}
 .cb{background:var(--ink);color:#fff;border-radius:28px;padding:80px 40px;text-align:center}
-.cb h2{font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-0.02em}
-.cb .su{font-size:15px;color:rgba(255,255,255,0.5);margin-top:10px}
-.cb .h-b{margin-top:32px}
+    .cb h2{font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-0.02em}
+    .cb .su{font-size:15px;color:rgba(255,255,255,0.5);margin-top:10px}
+    .cb .h-b{margin-top:32px}
 .cb .b-f{background:#fff;color:var(--ink)}.cb .b-f .a{background:rgba(0,0,0,0.06)}.cb .b-g{color:#fff;border-color:rgba(255,255,255,0.15)}.cb .b-g:hover{background:rgba(255,255,255,0.06)}
 
 .ft{max-width:1200px;margin:0 auto;padding:48px 28px 32px}
@@ -221,6 +246,14 @@ section{position:relative;z-index:1}
     <a class="b b-g" href="#catalog">Смотреть оборудование</a>
   </div>
   <div class="h-i rv"><img src="images/kr300m-1-1.jpg" alt="TYSIM KR300M" width="920" height="690" style="width:100%;display:block" fetchpriority="high"></div>
+  <div class="stats-bar rv">
+    <div class="sb-i"><span class="sb-n">12</span><span class="sb-l">станков поставлено</span></div>
+    <div class="sb-i"><span class="sb-n">110 000</span><span class="sb-l">метров пробурено</span></div>
+    <div class="sb-i"><span class="sb-n">11</span><span class="sb-l">регионов работы</span></div>
+    <div class="sb-i"><span class="sb-n">25</span><span class="sb-l">лет на рынке</span></div>
+    <div class="sb-i"><span class="sb-n">500 м²</span><span class="sb-l">склад в СПб</span></div>
+    <div class="sb-i"><span class="sb-n">1 год</span><span class="sb-l">гарантия на всё</span></div>
+  </div>
 </div>
 </section>
 
@@ -230,7 +263,7 @@ section{position:relative;z-index:1}
   <div class="sh rv">
     <span class="e">Кто мы</span>
     <h2>25 лет опыта в буровой технике</h2>
-    <p class="su">Поставляем оборудование ведущих мировых производителей, адаптируем под российский климат, сопровождаем на объекте</p>
+    <p class="su">Поставлено 12 станков TYSIM. Пробурено 110 000 метров. 11 регионов РФ — от Мурманска до Норильска.</p>
   </div>
   <div class="bento">
     <div class="co cw"><div class="ci" style="text-align:left">
@@ -256,7 +289,7 @@ section{position:relative;z-index:1}
 </section>
 
 <!-- === SERVICES === -->
-<section class="s-m" id="services">
+<section class="s-m s-dark" id="services">
 <div class="wrap">
   <div class="sh rv">
     <span class="e">Чем мы занимаемся</span>
@@ -347,7 +380,7 @@ section{position:relative;z-index:1}
 </section>
 
 <!-- === PROJECTS === -->
-<section class="s-m" id="projects-geo">
+<section class="s-m s-dark" id="projects-geo">
 <div class="wrap">
   <div class="sh rv">
     <span class="e">Опыт в Арктике</span>
