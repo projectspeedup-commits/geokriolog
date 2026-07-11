@@ -679,7 +679,10 @@ section{position:relative;z-index:1}
       <h2>Закажите аудит вашего объекта</h2>
     </div>
     <p style="font-size:15px;color:rgba(255,255,255,0.5);margin:12px auto 0;max-width:520px">Опишите проект — мы оценим геологию, подберём технологию и технику. Отправим решение с цифрами и сроками в течение 24 часов.</p>
-    <form class="lf" id="leadForm" action="mailto:info@geokriolog.ru" method="post" enctype="text/plain" novalidate>
+    <form class="lf" id="leadForm" action="https://formsubmit.co/info@geokriolog.ru" method="POST" novalidate>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_next" value="https://geokriolog.ru/#success">
       <div class="fg">
         <label for="lf_name">Ваше имя</label>
         <input type="text" id="lf_name" name="name" placeholder="Александр" required autocomplete="name">
@@ -841,7 +844,8 @@ function initForm() {
     if (!name || !phone) { alert('Заполните имя и телефон'); return; }
     if (!consent) { alert('Нужно согласие на обработку персональных данных'); return; }
     const body = `Заявка на аудит объекта\n\nИмя: ${name}\nТелефон: ${phone}\nТип объекта: ${typeLabels[type]||type||'не указан'}\nРегион: ${region||'не указан'}\n\nС сайта geokriolog.ru\nСогласие на обработку ПДн: да`;
-    window.location.href = `mailto:info@geokriolog.ru?subject=${encodeURIComponent('Аудит объекта (' + name + ')')}&body=${encodeURIComponent(body)}`;
+    form.querySelector('[name="_captcha"]').value = 'false';
+    form.submit();
     document.getElementById('lfMsg').classList.add('show');
   });
 }
