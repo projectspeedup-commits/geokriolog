@@ -118,17 +118,18 @@ section{position:relative;z-index:1}
     @media(max-width:768px){.stats-bar{grid-template-columns:repeat(3,1fr)}.stats-bar .sb-i:nth-child(3){border-right:none}}
 
     /* === DARK SECTION === */
-    .s-dark{background:var(--ink);color:#fff;border-radius:0;padding:100px 0}
+    .s-dark{background:var(--ink);color:#fff;padding:100px 0}
     .s-dark .sh h2{color:#fff}
     .s-dark .sh .su,.s-dark .sh .e{color:rgba(255,255,255,0.5)}
-    .s-dark .co{background:rgba(255,255,255,0.06);box-shadow:0 0 0 1px rgba(255,255,255,0.08)}
+    .s-dark .co{background:rgba(255,255,255,0.07);box-shadow:0 0 0 1px rgba(255,255,255,0.1)}
     .s-dark .ci{background:rgba(255,255,255,0.04)}
-    .s-dark .ci p,.s-dark .ci ul{color:rgba(255,255,255,0.55)}
+    .s-dark .ci p{color:rgba(255,255,255,0.6);font-size:14px}
     .s-dark .ci h4{color:#fff}
-    .s-dark .fp span{background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.8)}
+    .s-dark .fp span{background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.85)}
     .s-dark .qo{background:rgba(255,255,255,0.06);box-shadow:0 0 0 1px rgba(255,255,255,0.08)}
     .s-dark .qi{background:rgba(255,255,255,0.04)}
     .s-dark .qi blockquote{color:rgba(255,255,255,0.7)}
+    .s-dark .ic{filter:none}
     @media(max-width:768px){.s-dark{padding:60px 0}}
 .cb{background:var(--ink);color:#fff;border-radius:28px;padding:80px 40px;text-align:center}
     .cb h2{font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-0.02em}
@@ -296,8 +297,8 @@ section{position:relative;z-index:1}
     <h2>Три направления — одно решение</h2>
     <p class="su">Закрываем все этапы: от геологического аудита до поставки техники и поддержки на объекте</p>
   </div>
-  <div class="bento">
-    <div class="co cw"><div class="ci" style="text-align:left">
+  <div class="bento" style="grid-template-columns:1fr 1fr 1fr">
+    <div class="co"><div class="ci" style="text-align:left">
       <span class="ic">🎓</span>
       <h4>Экспертиза и проектирование</h4>
       <p>Геокриологический аудит. Оценка грунтов и подбор технологии (термостабилизация, буроинъекция). Проектирование свайных полей. Геотехнический мониторинг. Команда МГУ и СПбГАСУ.</p>
