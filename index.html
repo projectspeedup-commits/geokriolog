@@ -37,8 +37,8 @@
     /* === NAV === */
     .nav-wrap{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;justify-content:center;padding:20px 24px 0;pointer-events:none}
     .nav{pointer-events:all;display:flex;align-items:center;gap:2px;padding:5px;border-radius:999px;background:rgba(255,255,255,0.72);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);box-shadow:0 0 0 1px var(--hairline-strong),0 4px 28px -10px rgba(0,0,0,0.05)}
-    .n-l{display:flex;align-items:center;text-decoration:none;margin-right:2px}
-    .n-l img{height:28px;display:block}
+    .n-l{display:flex;align-items:center;text-decoration:none;margin-right:4px;flex-shrink:0}
+    .n-l img{height:30px;width:auto;display:block}
     .n-t{font-size:11px;font-weight:500;color:var(--muted);padding:6px 13px;border-radius:999px;white-space:nowrap;cursor:pointer;transition:all .4s var(--ease);border:none;background:none;font-family:var(--sans)}
     .n-t:hover{color:var(--ink);background:rgba(0,0,0,0.04)}
     .n-t.active{color:var(--ink);background:rgba(0,0,0,0.06);font-weight:600}
@@ -55,7 +55,7 @@
       .nav-wrap{padding:0;background:rgba(247,246,243,0.88);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);box-shadow:0 1px 0 var(--hairline-strong)}
       .nav{flex-wrap:wrap;width:100%;max-width:100%;padding:4px 12px;border-radius:0;background:none;backdrop-filter:none;box-shadow:none;gap:0}
       .n-l{padding:0;margin-right:auto;flex-shrink:0}
-      .n-l img{height:26px}
+      .n-l img{height:28px;width:auto}
       .n-t{display:none;width:100%;text-align:center;padding:10px 14px;border-radius:12px}
       .n-t.active{display:block}
       .n-c{width:100%;text-align:center;margin:4px 0 0;padding:10px;border-radius:12px}
@@ -220,7 +220,7 @@
 <!-- === NAV === -->
 <div class="nav-wrap">
   <nav class="nav">
-    <a class="n-l" href="#home"><img src="images/logo.svg" alt="НПО ГЕОКРИОЛОГ" style="height:30px;display:block"></a>
+    <a class="n-l" href="#home"><img src="images/logo.svg" alt="НПО ГЕОКРИОЛОГ" style="height:32px;width:auto;display:block"></a>
     <button class="n-t active" data-goto="home">Главная</button>
     <button class="n-t" data-goto="equip">Оснастка</button>
     <button class="n-t" data-goto="adapt">Адаптация</button>
