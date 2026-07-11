@@ -213,6 +213,19 @@
     /* === SCROLL REVEAL === */
     .rv{opacity:0;transform:translateY(24px);filter:blur(6px);transition:opacity .8s var(--ease),transform .8s var(--ease),filter .8s var(--ease)}
     .rv-in{opacity:1;transform:translateY(0);filter:blur(0)}
+
+    /* === LEAD FORM === */
+    .lf{max-width:520px;margin:24px auto 0;text-align:left}
+    .lf .fg{margin-bottom:12px}
+    .lf label{display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:rgba(255,255,255,0.4);margin-bottom:4px}
+    .lf input,.lf select{width:100%;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.06);color:#fff;font-size:14px;font-family:var(--sans);outline:none;transition:all .3s var(--ease)}
+    .lf input:focus,.lf select:focus{border-color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.1)}
+    .lf input::placeholder{color:rgba(255,255,255,0.3)}
+    .lf select option{background:var(--ink);color:#fff}
+    .lf .sbmt{width:100%;padding:14px;border-radius:999px;background:#fff;color:var(--ink);font-size:15px;font-weight:700;border:none;cursor:pointer;font-family:var(--sans);transition:all .4s var(--ease);margin-top:4px}
+    .lf .sbmt:hover{transform:scale(0.98)}
+    .lf .smsg{display:none;text-align:center;padding:16px;color:rgba(255,255,255,0.7);font-size:14px}
+    .lf .smsg.show{display:block}
   </style>
 </head>
 <body>
@@ -225,7 +238,7 @@
     <a class="n-l" href="#home"><img src="images/logo.svg" alt="НПО ГЕОКРИОЛОГ" width="160" height="30" style="display:block"></a>
     <button class="n-t active" data-goto="home">Главная</button>
     <button class="n-t" data-goto="about">О нас</button>
-    <button class="n-t" data-goto="equip">Оснастка</button>
+    <button class="n-t" data-goto="services">Услуги</button>
     <button class="n-t" data-goto="cryo">Решения</button>
     <button class="n-t" data-goto="catalog">Каталог</button>
     <button class="n-t" data-goto="projects-geo">Проекты</button>
@@ -238,12 +251,12 @@
 <!-- === HERO === -->
 <section id="home">
 <div class="hero">
-  <span class="h-t">Официальный представитель TYSIM в России</span>
-  <h1>Буровая техника,<br>готовая к Российским зимам</h1>
-  <p class="h-s">Работа в экстремальных климатических условиях, полная сертификация ЕАС, склад в Санкт-Петербурге. Не коробка из Китая — машина, готовая к работе с первого дня.</p>
+  <span class="h-t">НПО «ГЕОКРИОЛОГ» · Инжиниринг, поставка, сервис</span>
+  <h1>Строительство в&nbsp;криолитозонах —<br>не&nbsp;ставьте экспериментов</h1>
+  <p class="h-s">15 лет, 25 проектов в Арктике. Единственная компания в РФ с полным циклом: от геокриологической экспертизы (МГУ) до поставки адаптированной техники TYSIM под ключ.</p>
   <div class="h-b">
-    <a class="b b-f" href="#catalog">Смотреть каталог <span class="a">→</span></a>
-    <a class="b b-g" href="#cta">Получить КП</a>
+    <a class="b b-f" href="#cta">Бесплатный аудит объекта <span class="a">→</span></a>
+    <a class="b b-g" href="#catalog">Смотреть оборудование</a>
   </div>
   <div class="h-i rv"><img src="images/kr300m-1-1.jpg" alt="TYSIM KR300M" width="920" height="690" style="width:100%;display:block" fetchpriority="high"></div>
 </div>
@@ -261,19 +274,33 @@
 </div>
 </section>
 
-<!-- === WHAT YOU GET === -->
-<section class="s-m" id="equip">
+<!-- === SERVICES === -->
+<section class="s-m" id="services">
 <div class="wrap">
   <div class="sh rv">
-    <span class="e">Комплексное предложение</span>
-    <h2>Что вы получаете</h2>
-    <p class="su">Не просто станок — готовый к работе комплекс с сертификацией и поддержкой</p>
+    <span class="e">Чем мы занимаемся</span>
+    <h2>Услуги</h2>
+    <p class="su">Три направления, закрывающие все этапы работ на мерзлых грунтах — от идеи до эксплуатации</p>
   </div>
   <div class="bento">
-    <div class="co cw"><div class="ci"><span class="ic">⚙️</span><h4>TYSIM KR300M — флагман</h4><p>32 т крутящий под нагрузкой · 54 м глубина · 2 500 мм диаметр · 90 тонн · CAT C9.3B · CAT 345GC · 0 м/ч</p><p style="font-size:13px;color:var(--muted);margin-top:6px">Электрогидравлика. Лебёдки pull down 32 т. AI-ассистент. Русское меню. Дистанционный мониторинг.</p></div></div>
-    <div class="co"><div class="ci"><span class="ic">🛢️</span><h4>Обсадной стол RCO1500</h4><p>Собственная разработка. Ø до 1 500 мм · 1 500 кН·м · 1 000 кН · 350 бар. 10+ установок в РФ. Гарантия 1 год.</p></div></div>
-    <div class="co"><div class="ci"><span class="ic">📋</span><h4>Сертификация — готова</h4><p>ТР ТС 010/2011 и 020/2011. ПСМ получен. Декларация. Пожарная безопасность. На объект сразу.</p></div></div>
-    <div class="co"><div class="ci"><span class="ic">🔧</span><h4>Сервис и запчасти</h4><p>Склад в СПб. Выезд инженера за 48 ч. Обучение операторов. Гарантия 1 год / 2 000 ч.</p></div></div>
+    <div class="co"><div class="ci" style="text-align:left">
+      <span class="ic">🎓</span>
+      <h4>Экспертиза и проектирование</h4>
+      <p style="font-size:13px;color:var(--muted);line-height:1.5">Геокриологический аудит объектов · Оценка состояния грунтов · Подбор технологии стабилизации (БСС, термостаб) · Проектирование свайных полей и оснований · Геотехнический мониторинг</p>
+      <div class="fp" style="margin-top:6px"><span>Команда МГУ</span><span>СПбГАСУ</span><span>от 15 000 ₽</span></div>
+    </div></div>
+    <div class="co cw"><div class="ci" style="text-align:left">
+      <span class="ic">⚙️</span>
+      <h4>Поставка техники и оборудования</h4>
+      <p style="font-size:13px;color:var(--muted);line-height:1.5">Буровые установки <b>TYSIM</b> (КНР, двигатели Caterpillar) · Обсадные столы RCO1500 · Буровой инструмент (шнеки, ковшебуры, трубы) · Адаптация под РФ (Webasto, АКБ, антикор) · Сертификация ЕАС, ПСМ «под ключ» · Доставка до объекта</p>
+      <div class="fp" style="margin-top:6px"><span>В наличии СПб</span><span>Гарантия 1 год</span><span>Сервис 48 ч</span></div>
+    </div></div>
+    <div class="co"><div class="ci" style="text-align:left">
+      <span class="ic">🛠️</span>
+      <h4>Сервис и расходники</h4>
+      <p style="font-size:13px;color:var(--muted);line-height:1.5">Склад запчастей (СПб) · Выезд инженера за 48 ч · Плановое ТО · Обучение операторов (3 дня) · Буровой инструмент и расходники под заказ из КНР/Европы</p>
+      <div class="fp" style="margin-top:6px"><span>Поддержка парка</span><span>Гарантия 2 000 ч</span></div>
+    </div></div>
   </div>
 </div>
 </section>
@@ -398,7 +425,7 @@
   <div class="g2">
     <div class="co cw"><div class="ci" style="text-align:left">
       <div style="font-size:28px;font-weight:800;margin-bottom:4px">TYSIM KR300M</div>
-      <div style="font-size:22px;font-weight:700;margin-bottom:12px">60 млн ₽</div>
+      <div style="font-size:22px;font-weight:700;margin-bottom:12px"><a href="#cta" style="display:inline-block;padding:8px 20px;border-radius:999px;background:var(--ink);color:#fff;font-size:14px;font-weight:600;text-decoration:none">Узнать стоимость →</a></div>
       <div class="fp">
         ❄️ Webasto · 🛡️ Антикор IP65 · 📋 ЕАС + ПСМ · 🔧 Сервис в РФ · 📦 Склад в СПб · ✅ В наличии
       </div>
@@ -463,7 +490,7 @@
           <div class="model" style="text-align:left">TYSIM KR300M</div>
           <div class="spec m8">32 т крутящий под нагрузкой · 54 м · 2 500 мм · <b>90 тонн</b><br>Лебёдки pull down 32 т · CAT C9.3B · 259 кВт · CAT 345GC<br>Год 2024 · 0 м/ч<br>Электрогидравлика · AI-ассистент · Мониторинг · Русское меню</div>
           <div style="margin-top:8px"><span class="sb sb-a">В наличии · СПб</span></div>
-          <div class="pt">60 000 000 ₽</div>
+          <div class="pt"><a href="#cta" style="display:inline-block;padding:4px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;font-weight:600;text-decoration:none">Узнать стоимость →</a></div>
         </div>
         <div style="flex-shrink:0"><img src="images/kr300m-3-1.jpg" alt="KR300M" class="cc-img-r" loading="lazy" decoding="async" width="200" height="180"></div>
       </div>
@@ -495,7 +522,7 @@
       <div class="model" style="text-align:left">Обсадной стол RCO1500</div>
       <div class="spec" style="margin-top:4px">Макс. Ø обсадной трубы <b>1 500 мм</b> · Крутящий момент <b>1 500 кН·м</b><br>Рабочее давление <b>350 бар</b> · Масса <b>7 200 кг</b><br>Совместим: TYSIM · XCMG · SANY · Liebherr · Casagrande · Soilmec<br>Поставлено <b>10+ единиц</b> в РФ · Гарантия 1 год</div>
       <div style="margin-top:8px"><span class="sb sb-a">В наличии · СПб</span></div>
-      <div class="pt">15 000 000 ₽</div>
+      <div class="pt"><a href="#cta" style="display:inline-block;padding:4px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;font-weight:600;text-decoration:none">Узнать стоимость →</a></div>
     </div></div>
     <div class="cc"><div class="cci">
       <div class="model">Переходная вставка</div>
@@ -583,15 +610,43 @@
 <!-- === CTA === -->
 <section class="s-m" id="cta">
 <div class="wrap">
-  <div class="cb rv">
+  <div class="cb rv" style="padding-bottom:60px">
     <div class="sh" style="margin-bottom:0">
-      <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:8px">Сделайте первый шаг</div>
-      <h2>Получите коммерческое предложение за 1 час</h2>
+      <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:8px">Бесплатно · 24 часа</div>
+      <h2>Закажите аудит вашего объекта</h2>
     </div>
-    <p style="font-size:15px;color:rgba(255,255,255,0.5);margin:16px auto 0;max-width:520px">Машина в Санкт-Петербурге. Приезжайте смотреть лично — заводим, показываем, тестируем.</p>
-    <div class="h-b">
-      <a class="b b-f" href="tel:+79119245467">Позвонить <span class="a">→</span></a>
-      <a class="b b-g" href="mailto:info@geokriolog.ru">Написать на почту</a>
+    <p style="font-size:15px;color:rgba(255,255,255,0.5);margin:12px auto 0;max-width:520px">Опишите проект — мы оценим геологию, подберём технологию и технику. Отправим решение с цифрами и сроками в течение 24 часов.</p>
+    <div class="lf" id="leadForm">
+      <div class="fg">
+        <label for="lf_name">Ваше имя</label>
+        <input type="text" id="lf_name" placeholder="Александр" required>
+      </div>
+      <div class="fg">
+        <label for="lf_phone">Телефон</label>
+        <input type="tel" id="lf_phone" placeholder="+7 (___) ___-__-__" required>
+      </div>
+      <div class="fg">
+        <label for="lf_type">Тип объекта</label>
+        <select id="lf_type">
+          <option value="">— выберите —</option>
+          <option value="road">Автомобильная/железная дорога</option>
+          <option value="building">Здание или сооружение</option>
+          <option value="bridge">Мост/эстакада</option>
+          <option value="pole">Опоры ЛЭП</option>
+          <option value="dam">Гидротехническое сооружение</option>
+          <option value="other">Другое</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label for="lf_region">Регион строительства</label>
+        <input type="text" id="lf_region" placeholder="Мурманская область, ЯНАО, и т.д.">
+      </div>
+      <button class="sbmt" id="lfSubmit">Отправить заявку</button>
+      <div class="smsg" id="lfMsg">✓ Спасибо! Мы свяжемся с вами в течение 24 часов.</div>
+    </div>
+    <div class="h-b" style="margin-top:20px">
+      <a class="b b-f" href="tel:+791****5467">Позвонить <span class="a">→</span></a>
+      <a class="b b-g" href="mailto:info@geokriolog.ru">info@geokriolog.ru</a>
     </div>
   </div>
 </div>
@@ -609,10 +664,11 @@
     <div class="ft-l">
       <a data-goto="home">Главная</a>
       <a data-goto="about">О нас</a>
+      <a data-goto="services">Услуги</a>
       <a data-goto="cryo">Решения</a>
       <a data-goto="catalog">Каталог</a>
       <a data-goto="projects-geo">Проекты</a>
-      <a data-goto="equip">Оснастка</a>
+      <a data-goto="services">Услуги</a>
       <a data-goto="cta">Контакты</a>
     </div>
   </div>
@@ -701,7 +757,7 @@ if (typeof gsap !== 'undefined') {
 
 // Active nav highlight on scroll
 if (typeof ScrollTrigger !== 'undefined') {
-  const sections = ['home','about','equip','cryo','catalog','projects-geo','price','cta'];
+  const sections = ['home','about','services','cryo','catalog','projects-geo','price','cta'];
   sections.forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
@@ -714,6 +770,20 @@ if (typeof ScrollTrigger !== 'undefined') {
 }
 
 })();
+
+// === LEAD FORM HANDLER ===
+document.getElementById('lfSubmit')?.addEventListener('click', function() {
+  const name = document.getElementById('lf_name').value.trim();
+  const phone = document.getElementById('lf_phone').value.trim();
+  const type = document.getElementById('lf_type').value;
+  const region = document.getElementById('lf_region').value.trim();
+  const typeLabels = {'road':'Дорога','building':'Здание','bridge':'Мост','pole':'ЛЭП','dam':'ГТС','other':'Другое'};
+  if (!name || !phone) { alert('Заполните имя и телефон'); return; }
+  const body = `Заявка на аудит объекта\n\nИмя: ${name}\nТелефон: ${phone}\nТип объекта: ${typeLabels[type]||type||'не указан'}\nРегион: ${region||'не указан'}\n\nОтправлено с сайта geokriolog.ru`;
+  window.location.href = `mailto:info@geokriolog.ru?subject=Аудит%20объекта%20(%D0%BE%D1%82%20${encodeURIComponent(name)})&body=${encodeURIComponent(body)}`;
+  document.getElementById('lfMsg').classList.add('show');
+  document.getElementById('lfSubmit').style.display = 'none';
+});
 </script>
 
 </body>
