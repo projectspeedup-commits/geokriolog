@@ -1,18 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 44" fill="none">
-  <defs>
-    <linearGradient id="gld" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#B8860B"/>
-      <stop offset="100%" stop-color="#8B6914"/>
-    </linearGradient>
-  </defs>
   <!-- Hexagon mark -->
   <g transform="translate(4,4)">
-    <rect x="2" y="2" width="36" height="36" rx="8" fill="url(#gld)" opacity="0.08"/>
-    <text x="20" y="26" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#B8860B" text-anchor="middle">Г</text>
-    <path d="M20 8 L28 14 L28 26 L20 32 L12 26 L12 14 Z" stroke="#B8860B" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <rect x="2" y="2" width="36" height="36" rx="8" fill="#0A0A0A" opacity="0.06"/>
+    <text x="20" y="26" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#0A0A0A" text-anchor="middle">Г</text>
+    <path d="M20 8 L28 14 L28 26 L20 32 L12 26 L12 14 Z" stroke="#0A0A0A" stroke-width="1.5" fill="none" opacity="0.25"/>
   </g>
   <!-- НПО -->
   <text x="52" y="20" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#0A0A0A" letter-spacing="-0.02em">НПО</text>
   <!-- ГЕОКРИОЛОГ -->
-  <text x="52" y="38" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="18" font-weight="800" fill="url(#gld)" letter-spacing="-0.01em">ГЕОКРИОЛОГ</text>
+  <text x="52" y="38" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="18" font-weight="800" fill="#0A0A0A" letter-spacing="-0.01em">ГЕОКРИОЛОГ</text>
 </svg>
