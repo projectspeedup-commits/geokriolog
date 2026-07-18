@@ -1,941 +1,1242 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <title>НПО ГЕОКРИОЛОГ — Комплексные решения для строительства на вечной мерзлоте</title>
-  <meta name="description" content="НПО ГЕОКРИОЛОГ: экспертиза, поставка буровой техники TYSIM и сервис для строительства на вечной мерзлоте. 25 лет опыта, 15+ проектов в Арктике. СПб." />
-  <meta name="keywords" content="геокриолог, вечная мерзлота, TYSIM, буровая техника, термостабилизация, БСС, обсадной стол RCO1500" />
-  <meta name="theme-color" content="#F7F6F3" />
-  <link rel="canonical" href="https://geokriolog.ru/" />
-  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ru_RU" />
-  <meta property="og:url" content="https://geokriolog.ru/" />
-  <meta property="og:title" content="НПО ГЕОКРИОЛОГ — строительство на вечной мерзлоте" />
-  <meta property="og:description" content="Экспертиза, техника TYSIM и сервис для объектов в криолитозоне. Аудит объекта за 24 часа." />
-  <meta property="og:image" content="https://geokriolog.ru/images/kr300m-1-1.webp" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="НПО ГЕОКРИОЛОГ — строительство на вечной мерзлоте" />
-  <meta name="twitter:description" content="Экспертиза, техника TYSIM и сервис для объектов в криолитозоне." />
-  <meta name="twitter:image" content="https://geokriolog.ru/images/kr300m-1-1.webp" />
-  <meta name="yandex-verification" content="37734dc6c480c761" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "НПО ГЕОКРИОЛОГ",
-    "alternateName": "Geokriolog",
-    "url": "https://geokriolog.ru/",
-    "logo": "https://geokriolog.ru/images/logo.svg",
-    "image": "https://geokriolog.ru/images/kr300m-1-1.webp",
-    "description": "Инжиниринговая компания полного цикла для строительства в криолитозонах: геокриологический аудит, поставка буровой техники TYSIM, буровой инструмент, сервис.",
-    "telephone": "+7-911-924-54-67",
-    "email": "info@geokriolog.ru",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Санкт-Петербург",
-      "addressCountry": "RU"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Россия"
-    },
-    "sameAs": []
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "НПО ГЕОКРИОЛОГ",
-    "image": "https://geokriolog.ru/images/kr300m-1-1.webp",
-    "url": "https://geokriolog.ru/",
-    "telephone": "+7-911-924-54-67",
-    "priceRange": "по запросу",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Санкт-Петербург",
-      "addressCountry": "RU"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Главная","item":"https://geokriolog.ru/"},
-      {"@type":"ListItem","position":2,"name":"О нас","item":"https://geokriolog.ru/#about"},
-      {"@type":"ListItem","position":3,"name":"Услуги","item":"https://geokriolog.ru/#services"},
-      {"@type":"ListItem","position":4,"name":"Решения","item":"https://geokriolog.ru/#cryo"},
-      {"@type":"ListItem","position":5,"name":"Техника","item":"https://geokriolog.ru/#tech-key"},
-      {"@type":"ListItem","position":6,"name":"Проекты","item":"https://geokriolog.ru/#projects-geo"},
-      {"@type":"ListItem","position":7,"name":"Каталог","item":"https://geokriolog.ru/#catalog"}
-    ]
-  }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="images/kr300m-1-1.webp" fetchpriority="high">
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110604818', 'ym');
-
-    ym(110604818, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/110604818" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>НПО ГЕОКРИОЛОГ - мерзлота, буровая техника и демонтаж оголовков БНС</title>
+<meta name="description" content="Геокриология, буровые TYSIM, RCO1500, быстрый демонтаж оголовков БНС и сервис. 25 лет. Склад в СПб."/>
+<link rel="canonical" href="https://geokriolog.ru/"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
-:root{--canvas:#F7F6F3;--canvas-2:#EDEDE8;--ink:#0A0A0A;--ink-2:#1A1A1E;--muted:#6B6B70;--hairline:rgba(10,10,10,0.06);--hairline-strong:rgba(10,10,10,0.10);--accent:#B8860B;--accent-glow:rgba(184,134,11,0.15);--sans:'Plus Jakarta Sans','Geist',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;--ease:cubic-bezier(0.32,0.72,0,1);--ease-spring:cubic-bezier(0.16,1.16,0.3,1);--sh-rad:2rem}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{overflow-x:hidden;scroll-behavior:smooth}
-body{background:var(--canvas);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
-.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
-.mesh{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0;opacity:0.5}
-.mesh::before,.mesh::after{content:'';position:absolute;border-radius:50%;filter:blur(120px);will-change:transform}
-.mesh::before{width:600px;height:600px;background:radial-gradient(circle at 30% 30%,var(--accent-glow),transparent 70%);top:-80px;left:-60px;animation:drift1 28s var(--ease) infinite alternate}
-.mesh::after{width:450px;height:450px;background:radial-gradient(circle at 60% 60%,rgba(201,183,154,0.25),transparent 60%);bottom:-100px;right:-60px;animation:drift2 32s var(--ease) infinite alternate}
-@keyframes drift1{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(80px,50px,0)}}
-@keyframes drift2{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-60px,40px,0)}}
-
-.nav-wrap{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;justify-content:center;padding:20px 24px 0;pointer-events:none}
-.nav{pointer-events:all;display:flex;align-items:center;gap:2px;padding:5px;border-radius:999px;background:rgba(255,255,255,0.72);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);box-shadow:0 0 0 1px var(--hairline-strong),0 4px 28px -10px rgba(0,0,0,0.05)}
-.n-l{display:flex;align-items:center;text-decoration:none;margin-right:4px;flex-shrink:0}
-.n-l img{height:30px;width:auto;display:block}
-.n-t{font-size:11px;font-weight:500;color:var(--muted);padding:6px 13px;border-radius:999px;white-space:nowrap;cursor:pointer;transition:all .4s var(--ease);border:none;background:none;font-family:var(--sans)}
-.n-t:hover{color:var(--ink);background:rgba(0,0,0,0.04)}
-.n-t.active{color:var(--ink);background:rgba(0,0,0,0.06);font-weight:600}
-.n-c{font-size:11px;font-weight:600;color:#fff;background:var(--ink);padding:6px 16px;border-radius:999px;margin-left:4px;white-space:nowrap;cursor:pointer;transition:all .4s var(--ease);border:none;font-family:var(--sans)}
-.n-c:hover{transform:scale(0.96)}
-.nav-hamb{display:none;background:none;border:none;cursor:pointer;padding:8px 12px;margin-left:auto;font-family:var(--sans);color:var(--ink)}
-.nav-hamb span{display:block;width:18px;height:2px;background:var(--ink);margin:4px 0;border-radius:2px;transition:all .3s var(--ease)}
-.nav-hamb.active span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
-.nav-hamb.active span:nth-child(2){opacity:0}
-.nav-hamb.active span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
-@media(max-width:768px){
-.nav-wrap{padding:0;background:rgba(247,246,243,0.88);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);box-shadow:0 1px 0 var(--hairline-strong)}
-.nav{flex-wrap:wrap;width:100%;max-width:100%;padding:4px 12px;border-radius:0;background:none;backdrop-filter:none;box-shadow:none;gap:0}
-.n-l{padding:0;margin-right:auto;flex-shrink:0}
-.n-l img{height:28px;width:auto}
-.n-t{display:none;width:100%;text-align:center;padding:10px 14px;border-radius:12px}
-.n-t.active{display:block}
-.n-c{width:100%;text-align:center;margin:4px 0 0;padding:10px;border-radius:12px}
-.nav.m-open .n-t{display:block}
-.nav.m-open .n-c{display:block}
-.nav-hamb{display:block}}
-
-.hero{min-height:100dvh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:160px 24px 80px;position:relative;z-index:1}
-.h-t{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.16em;padding:5px 14px;border-radius:999px;background:rgba(0,0,0,0.03);margin-bottom:24px;display:inline-block;color:var(--muted)}
-.hero h1{font-size:clamp(44px,8vw,100px);font-weight:800;letter-spacing:-0.038em;line-height:0.94;max-width:8em}
-.h-s{font-size:clamp(16px,1.6vw,20px);color:var(--muted);max-width:48ch;margin:20px auto 0;line-height:1.5}
-.h-b{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px}
-.b{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;transition:all .6s var(--ease);border:none;font-family:var(--sans);text-decoration:none}
-.b-f{background:var(--ink);color:#fff;padding-right:8px}.b-f .a{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:999px;background:rgba(255,255,255,0.1);font-size:16px;transition:all .4s var(--ease-spring)}
-.b-f:hover .a{transform:translate(2px,-1px) scale(1.08)}
-.b-g{background:transparent;color:var(--ink);border:1px solid var(--hairline-strong)}
-.b-g:hover{background:rgba(0,0,0,0.03)}
-.h-i{margin-top:48px;width:100%;max-width:920px;border-radius:2.25rem;overflow:hidden;box-shadow:0 24px 80px -20px rgba(0,0,0,0.08);opacity:0;transform:translateY(30px)}
-
-section{position:relative;z-index:1}
-.s{padding:120px 0}
-.s-m{padding:80px 0}
-.sh{text-align:center;max-width:640px;margin:0 auto 56px}
-.sh .e{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:0.2em;color:var(--accent);margin-bottom:12px;display:block}
-.sh h2{font-size:clamp(32px,4vw,54px);font-weight:800;letter-spacing:-0.025em;line-height:1.03}
-.sh .su{font-size:17px;color:var(--muted);margin-top:10px}
-
-.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;grid-auto-flow:dense}
-.co{padding:5px;border-radius:var(--sh-rad);background:rgba(255,255,255,0.35);box-shadow:0 0 0 1px var(--hairline),0 4px 24px -10px rgba(0,0,0,0.02);transition:all .6s var(--ease)}
-.co:hover{transform:translateY(-3px);box-shadow:0 0 0 1px var(--hairline-strong),0 14px 40px -12px rgba(0,0,0,0.06)}
-.ci{padding:30px 24px;border-radius:calc(var(--sh-rad) - 0.4rem);background:rgba(255,255,255,0.62);height:100%}
-.cw{grid-column:span 2}
-.ci .ic{font-size:32px;margin-bottom:10px;display:block}
-.ci h4{font-size:18px;font-weight:700;margin-bottom:6px}
-.ci p,.ci ul{font-size:14px;color:var(--muted);line-height:1.55}
-@media(max-width:768px){.bento{grid-template-columns:1fr}.cw{grid-column:span 1}}
-
-.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:768px){.g2{grid-template-columns:1fr}}
-
-.fp{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.fp span{display:inline-flex;align-items:center;gap:4px;background:rgba(184,134,11,0.07);padding:4px 14px;border-radius:999px;font-size:12px;font-weight:600;color:var(--ink-2)}
-
-.cl{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:14px;color:var(--muted)}
-.cl div{padding:4px 0}
-@media(max-width:480px){.cl{grid-template-columns:1fr}}
-@media(max-width:480px){.stats{grid-template-columns:1fr !important;max-width:280px !important}}
-/* === DARK BAND === */
-    .db{background:var(--ink);color:#fff;border-radius:28px;padding:72px 40px;margin-top:48px}
-    .db h3{font-size:28px;font-weight:800;letter-spacing:-0.02em;margin-bottom:8px}
-    .db p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6}
-
-    /* === STATS HERO === */
-    .stats-bar{display:grid;grid-template-columns:repeat(6,1fr);gap:0;max-width:920px;margin:32px auto 0;border-radius:1rem;overflow:hidden;background:rgba(255,255,255,0.5);box-shadow:0 0 0 1px var(--hairline)}
-    .stats-bar .sb-i{text-align:center;padding:16px 8px;border-right:1px solid var(--hairline)}
-    .stats-bar .sb-i:last-child{border-right:none}
-    .stats-bar .sb-n{font-size:24px;font-weight:800;letter-spacing:-0.02em;display:block}
-    .stats-bar .sb-l{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-top:2px;display:block}
-    @media(max-width:768px){.stats-bar{grid-template-columns:repeat(3,1fr)}.stats-bar .sb-i:nth-child(3){border-right:none}}
-
-    /* === DARK SECTION === */
-    .s-dark{background:var(--ink);color:#fff;padding:100px 0}
-    .s-dark .sh h2{color:#fff}
-    .s-dark .sh .su,.s-dark .sh .e{color:rgba(255,255,255,0.5)}
-    .s-dark .co{background:rgba(255,255,255,0.07);box-shadow:0 0 0 1px rgba(255,255,255,0.1)}
-    .s-dark .ci{background:rgba(255,255,255,0.04)}
-    .s-dark .ci p{color:rgba(255,255,255,0.6);font-size:14px}
-    .s-dark .ci h4{color:#fff}
-    .s-dark .fp span{background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.85)}
-    .s-dark .qo{background:rgba(255,255,255,0.06);box-shadow:0 0 0 1px rgba(255,255,255,0.08)}
-    .s-dark .qi{background:rgba(255,255,255,0.04)}
-    .s-dark .qi blockquote{color:rgba(255,255,255,0.7)}
-    .s-dark .ic{filter:none}
-    @media(max-width:768px){.s-dark{padding:60px 0}}
-.cb{background:var(--ink);color:#fff;border-radius:28px;padding:80px 40px;text-align:center}
-    .cb h2{font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-0.02em}
-    .cb .su{font-size:15px;color:rgba(255,255,255,0.5);margin-top:10px}
-    .cb .h-b{margin-top:32px}
-.cb .b-f{background:#fff;color:var(--ink)}.cb .b-f .a{background:rgba(0,0,0,0.06)}.cb .b-g{color:#fff;border-color:rgba(255,255,255,0.15)}.cb .b-g:hover{background:rgba(255,255,255,0.06)}
-
-.ft{max-width:1200px;margin:0 auto;padding:48px 28px 32px}
-.ft .dv{height:1px;background:var(--hairline);margin-bottom:32px}
-.ft-i{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
-.ft-c{font-size:13px;color:var(--muted);line-height:1.6}
-.ft-c strong{color:var(--ink);font-weight:600}
-.ft-l{display:flex;gap:16px;flex-wrap:wrap}
-.ft-l a{font-size:12px;color:var(--muted);cursor:pointer;transition:color .3s}
-.ft-l a:hover{color:var(--ink)}
-@media(max-width:768px){.ft-i{flex-direction:column}}
-
-.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;grid-auto-flow:dense}
-@media(max-width:768px){.cg{grid-template-columns:1fr}}
-.cc{padding:5px;border-radius:var(--sh-rad);background:rgba(255,255,255,0.35);box-shadow:0 0 0 1px var(--hairline);transition:all .5s var(--ease)}
-.cc:hover{transform:translateY(-3px);box-shadow:0 0 0 1px var(--hairline-strong),0 12px 36px -10px rgba(0,0,0,0.07)}
-.cci{padding:26px 20px;border-radius:calc(var(--sh-rad) - 0.4rem);background:rgba(255,255,255,0.62);text-align:center}
-.cci .model{font-size:20px;font-weight:800;margin-bottom:4px}
-.cci .spec{font-size:13px;color:var(--muted);line-height:1.5}
-.cci .spec b{color:var(--ink)}
-.cci .pt{margin-top:12px;font-size:18px;font-weight:700}
-.cci .sb{display:inline-block;margin-top:6px;padding:3px 12px;border-radius:999px;font-size:11px;font-weight:600}
-.sb-a{background:rgba(184,134,11,0.1);color:var(--accent)}
-.sb-o{background:rgba(0,0,0,0.04);color:var(--muted)}
-.ccw{grid-column:span 2}
-@media(max-width:768px){.ccw{grid-column:span 1}}
-.cc-img-r{float:right;width:200px;height:180px;object-fit:cover;border-radius:14px;margin-left:20px}
-.cc-img-r2{float:right;width:220px;height:160px;object-fit:cover;border-radius:14px;margin-left:16px}
-@media(max-width:768px){.cc-img-r,.cc-img-r2{float:none;width:100%;height:180px;margin:0 0 14px}.cc-flex{flex-direction:column}.cci[style*="text-align:left"]{display:flex;flex-direction:column}.cci[style*="text-align:left"] .model{order:-1}}
-
-.show{margin-top:40px;border-radius:2rem;overflow:hidden;box-shadow:0 16px 60px -16px rgba(0,0,0,0.06)}
-
-.qo{max-width:680px;margin:48px auto 0;padding:5px;border-radius:var(--sh-rad);background:rgba(255,255,255,0.35);box-shadow:0 0 0 1px var(--hairline)}
-.qi{padding:36px 32px;border-radius:calc(var(--sh-rad) - 0.4rem);background:rgba(255,255,255,0.6);text-align:center}
-.qi blockquote{font-size:18px;font-weight:500;line-height:1.6;font-style:italic;max-width:540px;margin:0 auto;color:var(--ink-2)}
-.qi blockquote::before{content:'\201C';font-size:48px;display:block;color:var(--accent);font-style:normal;line-height:0.4;margin-bottom:12px;opacity:0.5}
-.t-l{text-align:left}
-.t-c{text-align:center}
-.txt-sm-muted{font-size:13px;color:var(--muted);line-height:1.5}
-.txt-xs-muted{font-size:12px;color:rgba(255,255,255,0.5);line-height:1.5;margin-top:6px}
-.mt-8{margin-top:8px}
-.tool-img{width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:12px}
-.cryo-img-wrap{border-radius:1.25rem;overflow:hidden;background:rgba(255,255,255,0.4);box-shadow:0 0 0 1px var(--hairline);padding:8px}
-.cryo-img{width:100%;display:block;border-radius:calc(1.25rem - 8px)}
-.sub-h2{margin-bottom:24px;margin-top:56px}
-.h2-fluid{font-size:clamp(24px,3vw,40px)}
-.h3-block{margin-bottom:12px;margin-top:32px}
-.h3-title{font-size:20px;font-weight:700}
-.link-ink{font-weight:600;color:var(--ink)}
-.btn-pill-sm{display:inline-block;padding:4px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;font-weight:600;text-decoration:none}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin:0 auto 48px;max-width:720px;border-radius:1.25rem;overflow:hidden;box-shadow:0 0 0 1px var(--hairline)}
-.stats-item{background:rgba(255,255,255,0.6);padding:24px 16px;text-align:center}
-
-.rv{opacity:0;transform:translateY(24px);filter:blur(6px);transition:opacity .8s var(--ease),transform .8s var(--ease),filter .8s var(--ease)}
-.rv-in{opacity:1;transform:translateY(0);filter:blur(0)}
-
-.lf{max-width:520px;margin:24px auto 0;text-align:left}
-.lf .fg{margin-bottom:12px}
-.lf label{display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:rgba(255,255,255,0.4);margin-bottom:4px}
-.lf input,.lf select{width:100%;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.06);color:#fff;font-size:14px;font-family:var(--sans);outline:none;transition:all .3s var(--ease)}
-.lf input:focus,.lf select:focus{border-color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.1)}
-.lf input::placeholder{color:rgba(255,255,255,0.3)}
-.lf select option{background:var(--ink);color:#fff}
-.lf .sbmt{width:100%;padding:14px;border-radius:999px;background:#fff;color:var(--ink);font-size:15px;font-weight:700;border:none;cursor:pointer;font-family:var(--sans);transition:all .4s var(--ease);margin-top:4px}
-.lf .sbmt:hover{transform:scale(0.98)}
-.lf .smsg{display:none;text-align:center;padding:16px;color:rgba(255,255,255,0.7);font-size:14px}
-.lf .smsg.show{display:block}
-.lf .consent{display:flex;align-items:flex-start;gap:10px;margin:14px 0 8px;font-size:12px;color:rgba(255,255,255,0.55);line-height:1.45}
-.lf .consent input{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:#fff}
-.lf .consent a{color:rgba(255,255,255,0.85);text-decoration:underline;text-underline-offset:2px}
-.cryo-imgs{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px}
-.privacy{max-width:720px;margin:0 auto;padding:48px 28px 24px;font-size:13px;color:var(--muted);line-height:1.65}
-.privacy h2{font-size:18px;color:var(--ink);margin-bottom:12px}
-.privacy p{margin-bottom:10px}
-
-/* MOBILE */
-@media(max-width:768px){
-.hero{padding:140px 16px 60px}
-.hero h1{font-size:clamp(32px,10vw,44px)}
-.h-s{font-size:15px}
-.s-m{padding:60px 0}
-.s{padding:80px 0}
-.sh{margin-bottom:36px}
-.sh h2{font-size:clamp(24px,7vw,32px)}
-.sh .su{font-size:14px}
-.ci{padding:20px 16px}
-.qi{padding:24px 20px}
-.qi blockquote{font-size:16px}
-.cb{padding:48px 20px;border-radius:20px}
-.cb .h-b{flex-direction:column;align-items:stretch}
-.cb .b{justify-content:center}
-.wrap{padding:0 16px}
-.h-i{border-radius:1.25rem}
-.cryo-imgs{grid-template-columns:1fr 1fr}
-.privacy{padding:32px 16px 16px}
-.stats{grid-template-columns:repeat(2,1fr) !important;max-width:400px !important}
+:root{
+  --bg:#0A0C10;
+  --bg2:#11151C;
+  --bg3:#171C26;
+  --line:rgba(255,255,255,.08);
+  --line2:rgba(255,255,255,.14);
+  --text:#EEF1F6;
+  --muted:#9AA3B2;
+  --ice:#5EC8C0;
+  --ice2:#8FE0D9;
+  --warm:#D6A56B;
+  --ok:#6BCB8E;
+  --r:14px;
+  --max:1180px;
+  --nav:68px;
+  --ease:cubic-bezier(.16,1,.3,1);
 }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Manrope,system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{width:min(100% - 40px, var(--max)); margin-inline:auto}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+
+/* NAV */
+.nav{
+  position:fixed; inset:0 0 auto 0; z-index:50; height:var(--nav);
+  display:flex; align-items:center;
+  background:rgba(10,12,16,.72);
+  backdrop-filter:blur(16px) saturate(140%);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s var(--ease), background .3s;
+}
+.nav.scrolled{border-color:var(--line); background:rgba(10,12,16,.88)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;width:min(100% - 40px, var(--max));margin-inline:auto}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.02em}
+.brand img{width:34px;height:34px;border-radius:8px;background:#fff;padding:4px}
+.brand span{font-size:14px}
+.nav-links{display:flex;gap:22px;align-items:center}
+.nav-links a{font-size:13.5px;color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{display:flex;gap:10px;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  height:42px;padding:0 18px;border-radius:999px;border:1px solid transparent;
+  font-size:13.5px;font-weight:600;cursor:pointer;transition:transform .15s var(--ease), background .2s, border-color .2s, color .2s;
+}
+.btn:active{transform:scale(.98)}
+.btn-ice{background:var(--ice);color:#06201E}
+.btn-ice:hover{background:var(--ice2)}
+.btn-ghost{border-color:var(--line2);color:var(--text);background:transparent}
+.btn-ghost:hover{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.04)}
+.btn-warm{background:var(--warm);color:#1A1208}
+.menu-btn{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--line2);background:transparent;color:var(--text)}
+
+/* HERO */
+.hero{
+  min-height:100dvh; padding-top:calc(var(--nav) + 28px); padding-bottom:48px;
+  display:grid; align-items:center;
+  background:
+    radial-gradient(900px 500px at 85% 15%, rgba(94,200,192,.14), transparent 55%),
+    radial-gradient(700px 400px at 10% 80%, rgba(214,165,107,.08), transparent 50%),
+    var(--bg);
+}
+.hero-grid{
+  display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center;
+}
+.hero h1{
+  font-size:clamp(2.1rem, 4.2vw, 3.55rem);
+  line-height:1.05; letter-spacing:-.035em; font-weight:800;
+  max-width:14ch;
+}
+.hero h1 em{font-style:normal;color:var(--ice2)}
+.hero-lead{
+  margin-top:18px; max-width:42ch; color:var(--muted); font-size:16.5px; line-height:1.6;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:18px 28px;margin-top:36px;padding-top:24px;
+  border-top:1px solid var(--line);
+}
+.hero-meta div{min-width:90px}
+.hero-meta b{display:block;font-size:22px;letter-spacing:-.03em;font-weight:700}
+.hero-meta span{font-size:12px;color:var(--muted)}
+.hero-visual{position:relative}
+.hero-frame{
+  position:relative; border-radius:22px; overflow:hidden;
+  border:1px solid var(--line2);
+  background:var(--bg2);
+  box-shadow:0 40px 100px rgba(0,0,0,.45);
+}
+.hero-frame img{width:100%; height:100%; object-fit:cover; object-position:center}
+.hero-badge{
+  position:absolute; left:16px; bottom:16px;
+  padding:10px 14px; border-radius:12px;
+  background:rgba(10,12,16,.78); backdrop-filter:blur(12px);
+  border:1px solid var(--line2); font-size:12px; line-height:1.35;
+}
+.hero-badge strong{display:block;color:var(--ice2);font-size:13px;margin-bottom:2px}
+.float-chip{
+  position:absolute; right:-8px; top:18%;
+  padding:12px 14px; border-radius:14px;
+  background:var(--bg3); border:1px solid var(--line2);
+  box-shadow:0 16px 40px rgba(0,0,0,.35);
+  font-size:12px; max-width:160px;
+}
+.float-chip b{display:block;font-size:18px;color:var(--ice2);letter-spacing:-.03em}
+
+/* SECTIONS */
+section{padding:88px 0}
+.sec-h{
+  font-size:clamp(1.7rem, 3vw, 2.4rem);
+  letter-spacing:-.03em; line-height:1.12; font-weight:800; max-width:18ch;
+}
+.sec-p{margin-top:12px;color:var(--muted);max-width:52ch;font-size:15.5px}
+.sec-head{margin-bottom:40px}
+
+/* STRIP */
+.strip{
+  border-block:1px solid var(--line);
+  background:linear-gradient(180deg, rgba(255,255,255,.02), transparent);
+  padding:28px 0;
+}
+.strip-row{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.strip-row article{padding:8px 4px}
+.strip-row b{display:block;font-size:24px;letter-spacing:-.03em}
+.strip-row span{font-size:12.5px;color:var(--muted)}
+
+/* ABOUT split */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.about-card{
+  border:1px solid var(--line); border-radius:20px; overflow:hidden; background:var(--bg2);
+}
+.about-card > img{width:100%;aspect-ratio:16/11;object-fit:cover;object-position:center}
+.about-card .body{padding:22px}
+.about-card h3{font-size:18px;letter-spacing:-.02em;margin-bottom:8px}
+.about-card p{color:var(--muted);font-size:14.5px}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pill{
+  font-size:12px;color:var(--muted);border:1px solid var(--line2);
+  border-radius:999px;padding:6px 12px;background:rgba(255,255,255,.02)
+}
+
+/* SERVICES bento */
+.bento{
+  display:grid; grid-template-columns:1.3fr 1fr 1fr; grid-template-rows:auto auto; gap:14px;
+}
+.tile{
+  border:1px solid var(--line); border-radius:20px; background:var(--bg2);
+  padding:24px; position:relative; overflow:hidden; min-height:200px;
+  transition:border-color .25s, transform .25s var(--ease);
+}
+.tile:hover{border-color:rgba(94,200,192,.35); transform:translateY(-2px)}
+.tile.big{grid-row:span 2; min-height:430px; display:flex; flex-direction:column}
+.tile.big img{margin-top:auto;border-radius:14px;width:100%;max-width:100%;aspect-ratio:16/10;max-height:220px;object-fit:cover;object-position:center;border:1px solid var(--line)}
+.tile .k{font-size:12px;color:var(--ice);font-weight:600;margin-bottom:10px}
+.tile h3{font-size:20px;letter-spacing:-.02em;margin-bottom:10px}
+.tile p{color:var(--muted);font-size:14px;max-width:36ch}
+.tile .tag{
+  display:inline-flex;margin-top:14px;font-size:12px;padding:6px 10px;border-radius:8px;
+  background:rgba(94,200,192,.1);color:var(--ice2);border:1px solid rgba(94,200,192,.2)
+}
+
+/* CRYO */
+.cryo-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+.cryo-list{display:grid;gap:12px}
+.cryo-item{
+  display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start;
+  padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--bg2)
+}
+.cryo-ico{
+  width:48px;height:48px;border-radius:12px;display:grid;place-items:center;
+  background:rgba(94,200,192,.1);color:var(--ice2);font-weight:700;font-size:14px
+}
+.cryo-item h3{font-size:16px;margin-bottom:4px;letter-spacing:-.02em}
+.cryo-item p{font-size:13.5px;color:var(--muted)}
+.cryo-gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cryo-gallery figure{
+  border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--bg2);margin:0
+}
+.cryo-gallery img{width:100%;max-width:100%;object-fit:cover;object-position:center}
+.cryo-gallery figcaption{padding:10px 12px;font-size:11.5px;color:var(--muted)}
+.cryo-gallery figure:first-child{grid-column:span 2}
+.cryo-gallery figure:first-child img{aspect-ratio:16/9;object-fit:cover}
+
+/* TECH */
+.tech{
+  background:
+    linear-gradient(180deg, transparent, rgba(94,200,192,.04) 40%, transparent),
+    var(--bg);
+}
+.tech-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center}
+.tech-panel{border-radius:22px;overflow:hidden;border:1px solid var(--line2);background:var(--bg2)}
+.tech-panel img{width:100%;height:100%;object-fit:cover;object-position:center}
+.feat{display:grid;gap:14px;margin-top:22px}
+.feat article{
+  display:grid;grid-template-columns:auto 1fr;gap:14px;padding:16px 0;
+  border-bottom:1px solid var(--line)
+}
+.feat article:last-child{border:0}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--ice);margin-top:6px;box-shadow:0 0 0 6px rgba(94,200,192,.12)}
+.feat h3{font-size:16px;margin-bottom:4px}
+.feat p{font-size:14px;color:var(--muted)}
+
+/* PROJECTS horizontal */
+.projects-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}
+.projects-scroller{
+  display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,32%);
+  gap:14px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;
+  scrollbar-width:thin;scrollbar-color:var(--line2) transparent;
+}
+.proj{
+  scroll-snap-align:start;border:1px solid var(--line);border-radius:18px;
+  background:var(--bg2);padding:20px;min-height:220px;display:flex;flex-direction:column
+}
+.proj .loc{font-size:12px;color:var(--ice);font-weight:600;margin-bottom:8px}
+.proj h3{font-size:18px;letter-spacing:-.02em;margin-bottom:10px}
+.proj p{font-size:13.5px;color:var(--muted);flex:1}
+.proj .stat{margin-top:16px;font-size:12.5px;color:var(--text);padding-top:12px;border-top:1px solid var(--line)}
+
+/* CATALOG */
+.cat-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 20px}
+.cat-tabs button{
+  border:1px solid var(--line2);background:transparent;color:var(--muted);
+  border-radius:999px;padding:8px 14px;font-size:13px;cursor:pointer
+}
+.cat-tabs button.on{background:rgba(94,200,192,.12);color:var(--ice2);border-color:rgba(94,200,192,.35)}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{
+  border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--bg2);
+  transition:border-color .2s, transform .2s var(--ease)
+}
+.card:hover{border-color:rgba(94,200,192,.3);transform:translateY(-2px)}
+.card > img{width:100%;aspect-ratio:16/11;object-fit:cover;object-position:center;background:#0e1218}
+.card .c{padding:16px 16px 18px}
+.card h3{font-size:16px;margin-bottom:6px;letter-spacing:-.02em}
+.card p{font-size:13px;color:var(--muted);min-height:2.6em}
+.card .row{display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:10px}
+.card .price{font-size:12px;color:var(--ice2);font-weight:600}
+.tools{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:14px}
+.tool{
+  border:1px solid var(--line);border-radius:14px;background:var(--bg2);padding:12px;text-align:center
+}
+.tool img{width:100%;max-width:100%;height:72px;max-height:72px;object-fit:contain;object-position:center;margin:0 auto 8px}
+.tool span{font-size:11.5px;color:var(--muted)}
+
+/* CTA */
+.cta{
+  padding:40px 0 100px;
+}
+.cta-box{
+  border-radius:28px; border:1px solid var(--line2);
+  background:
+    radial-gradient(600px 280px at 90% 0%, rgba(94,200,192,.16), transparent 55%),
+    linear-gradient(160deg, #141A24, #0E1218 60%);
+  padding:clamp(28px,4vw,48px);
+  display:grid;grid-template-columns:1fr 1.05fr;gap:36px;align-items:start
+}
+.cta-box h2{font-size:clamp(1.6rem,2.6vw,2.2rem);letter-spacing:-.03em;line-height:1.15;max-width:16ch}
+.cta-box .sub{margin-top:12px;color:var(--muted);max-width:38ch;font-size:15px}
+.cta-contacts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.form{display:grid;gap:12px}
+.field label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}
+.field input,.field select,.field textarea{
+  width:100%;height:46px;border-radius:12px;border:1px solid var(--line2);
+  background:rgba(0,0,0,.25);padding:0 14px;outline:none;transition:border-color .2s
+}
+.field textarea{height:96px;padding:12px 14px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(94,200,192,.55)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--muted)}
+.check input{margin-top:3px;accent-color:var(--ice)}
+
+.form-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);font-size:13px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot a:hover{color:var(--text)}
+.legal{margin-top:18px;max-width:70ch;font-size:12px;line-height:1.5;opacity:.85}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease), transform .7s var(--ease)}
+.reveal.on{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .hero-grid,.about-grid,.cryo-grid,.tech-grid,.cta-box{grid-template-columns:1fr}
+  .bento{grid-template-columns:1fr 1fr}
+  .tile.big{grid-row:auto;min-height:auto}
+  .strip-row{grid-template-columns:repeat(3,1fr)}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .tools{grid-template-columns:repeat(3,1fr)}
+  .float-chip{display:none}
+  .nav-links{display:none}
+  .menu-btn{display:grid;place-items:center}
+  .nav-links.open{
+    display:flex;flex-direction:column;position:absolute;top:var(--nav);left:0;right:0;
+    background:rgba(10,12,16,.96);padding:16px 20px 22px;border-bottom:1px solid var(--line);gap:14px
+  }
+}
+@media (max-width:640px){
+  .wrap{width:min(100% - 28px, var(--max))}
+  .strip-row{grid-template-columns:1fr 1fr}
+  .bento,.cat-grid,.form-row,.tools,.cryo-gallery{grid-template-columns:1fr}
+  .cryo-gallery figure:first-child{grid-column:auto}
+  .hero h1{max-width:none}
+  .projects-scroller{grid-auto-columns:85%}
+  section{padding:64px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .tile:hover,.card:hover{transform:none}
+}
+
+/* === MEDIA CONTAINMENT (no image bleed) === */
+img, video, svg{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+.hero-visual, .hero-frame, .about-card, .tile, .card, .tech-panel,
+.cryo-gallery figure, .tool, .media-box{
+  max-width:100%;
+  min-width:0;
+  overflow:hidden;
+}
+.hero-frame, .about-card, .tech-panel, .card, .cryo-gallery figure, .tile.big{
+  isolation:isolate;
+}
+.hero-frame img, .about-card > img, .tech-panel img, .card > img,
+.cryo-gallery img, .tile.big img{
+  width:100%;
+  max-width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+/* fixed aspect boxes so layout never jumps / overflows */
+.hero-frame{ aspect-ratio:4/3; }
+.hero-frame img{ aspect-ratio:auto; height:100%; position:absolute; inset:0; }
+.hero-frame{ position:relative; }
+.about-card > img{ aspect-ratio:16/11; height:auto; position:static; }
+.tech-panel{ position:relative; aspect-ratio:4/3; }
+.tech-panel img{ position:absolute; inset:0; height:100%; aspect-ratio:auto; }
+.card{ display:flex; flex-direction:column; min-width:0; }
+.card > img{ aspect-ratio:16/11; height:auto; position:static; flex:0 0 auto; }
+.tile.big img{ aspect-ratio:16/10; height:auto; position:static; max-height:220px; object-fit:cover; }
+.cryo-gallery figure{ min-width:0; }
+.cryo-gallery img{ width:100%; height:auto; }
+.cryo-gallery figure:first-child img{ aspect-ratio:16/9; object-fit:cover; }
+.cryo-gallery figure:not(:first-child) img{ aspect-ratio:1; object-fit:cover; }
+.tool{ overflow:hidden; min-width:0; }
+.tool img{
+  width:100%; max-width:100%; max-height:72px; height:72px;
+  object-fit:contain; object-position:center; margin:0 auto 8px;
+}
+.brand img{ object-fit:contain; flex-shrink:0; }
+.float-chip{ max-width:min(160px, 42vw); z-index:2; }
+.hero-badge{ max-width:calc(100% - 32px); z-index:2; }
+.hero-grid, .about-grid, .cryo-grid, .tech-grid, .cta-box, .bento, .cat-grid{
+  min-width:0;
+}
+.bento > *, .cat-grid > *, .tools > *{ min-width:0; }
+.wrap{ max-width:100%; overflow-x:clip; }
+.projects-scroller{ max-width:100%; }
+.proj{ max-width:100%; overflow:hidden; }
+
+/* === ANIMATIONS === */
+@keyframes rise{
+  from{ opacity:0; transform:translateY(22px); }
+  to{ opacity:1; transform:none; }
+}
+@keyframes fade{
+  from{ opacity:0; }
+  to{ opacity:1; }
+}
+@keyframes soft-float{
+  0%,100%{ transform:translateY(0); }
+  50%{ transform:translateY(-6px); }
+}
+@keyframes pulse-ring{
+  0%{ box-shadow:0 0 0 0 rgba(94,200,192,.35); }
+  70%{ box-shadow:0 0 0 12px rgba(94,200,192,0); }
+  100%{ box-shadow:0 0 0 0 rgba(94,200,192,0); }
+}
+@keyframes sheen{
+  0%{ background-position:120% 0; }
+  100%{ background-position:-20% 0; }
+}
+@keyframes line-in{
+  from{ transform:scaleX(0); opacity:.2; }
+  to{ transform:scaleX(1); opacity:1; }
+}
+
+.hero-copy > *{
+  opacity:0;
+  animation:rise .85s var(--ease) forwards;
+}
+.hero-copy > *:nth-child(1){ animation-delay:.05s }
+.hero-copy > *:nth-child(2){ animation-delay:.14s }
+.hero-copy > *:nth-child(3){ animation-delay:.22s }
+.hero-copy > *:nth-child(4){ animation-delay:.32s }
+.hero-visual{
+  opacity:0;
+  animation:rise 1s var(--ease) .18s forwards;
+}
+.hero-frame img{
+  transition: transform 1.1s var(--ease);
+  will-change: transform;
+}
+.hero-frame:hover img{ transform:scale(1.04); }
+.float-chip{
+  animation: soft-float 5.5s ease-in-out infinite;
+  animation-delay:1.2s;
+}
+.hero-badge{ animation:fade .8s var(--ease) .55s both; }
+.btn-ice{
+  position:relative;
+  overflow:hidden;
+  background-image:linear-gradient(110deg, var(--ice) 0%, var(--ice) 40%, var(--ice2) 50%, var(--ice) 60%, var(--ice) 100%);
+  background-size:200% 100%;
+}
+.btn-ice:hover{ animation:sheen 1.1s var(--ease); }
+.btn-ice.pulse{ animation:pulse-ring 2.4s ease-out infinite; }
+
+.nav-links a{ position:relative; }
+.nav-links a::after{
+  content:""; position:absolute; left:0; right:0; bottom:-4px; height:1px;
+  background:var(--ice); transform:scaleX(0); transform-origin:left;
+  transition:transform .25s var(--ease);
+}
+.nav-links a:hover::after{ transform:scaleX(1); }
+
+.reveal{
+  opacity:0;
+  transform:translateY(22px);
+  transition:opacity .75s var(--ease), transform .75s var(--ease);
+  transition-delay: var(--d, 0ms);
+}
+.reveal.on{ opacity:1; transform:none; }
+.reveal-stagger > .reveal:nth-child(1){ --d:0ms }
+.reveal-stagger > .reveal:nth-child(2){ --d:70ms }
+.reveal-stagger > .reveal:nth-child(3){ --d:140ms }
+.reveal-stagger > .reveal:nth-child(4){ --d:210ms }
+.reveal-stagger > .reveal:nth-child(5){ --d:280ms }
+.reveal-stagger > .reveal:nth-child(6){ --d:350ms }
+
+.card img, .about-card > img, .tech-panel img, .cryo-gallery img{
+  transition: transform .8s var(--ease);
+}
+.card:hover > img, .about-card:hover > img, .tech-panel:hover img, .cryo-gallery figure:hover img{
+  transform:scale(1.05);
+}
+.tile, .card, .proj, .cryo-item{
+  transition: border-color .25s, transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.tile:hover, .card:hover, .proj:hover{
+  box-shadow:0 18px 50px rgba(0,0,0,.28);
+}
+.sec-h{
+  position:relative;
+}
+.strip-row article b{
+  transition: color .25s, transform .25s var(--ease);
+}
+.strip-row article:hover b{ color:var(--ice2); transform:translateY(-2px); }
+
+/* mobile overflow hard lock */
+html, body{ max-width:100%; overflow-x:hidden; }
+section, .hero, .strip, footer{ overflow-x:clip; }
+@media (max-width:980px){
+  .hero-visual{ width:100%; max-width:100%; }
+  .hero-frame{ width:100%; max-width:100%; }
+  .float-chip{ right:8px; top:12px; }
+  .bento{ grid-template-columns:1fr; }
+  .tile.big{ grid-column:auto; }
+  .tile.big img{ max-height:200px; }
+  .nav-cta .btn-ghost{ display:none; } /* free space on tablet */
+  .hero h1{ max-width:none; font-size:clamp(1.85rem, 7vw, 2.6rem); }
+}
+@media (max-width:640px){
+  .nav-inner{ gap:10px; width:min(100% - 20px, var(--max)); }
+  .brand span{ font-size:12.5px; max-width:42vw; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .nav-cta .btn-ice{ height:38px; padding:0 12px; font-size:12.5px; }
+  .hero{ padding-top:calc(var(--nav) + 18px); }
+  .hero-meta{ gap:14px 18px; }
+  .hero-meta b{ font-size:18px; }
+  .cta-box{ padding:22px 16px; border-radius:20px; }
+  .projects-scroller{ grid-auto-columns: minmax(260px, 86%); }
+  .strip-row{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .tools{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .cat-grid, .form-row, .about-grid, .cryo-grid, .tech-grid{ grid-template-columns:minmax(0,1fr); }
+  .cryo-gallery{ grid-template-columns:minmax(0,1fr); }
+  .float-chip{ display:none; }
+  img{ max-width:100% !important; }
+}
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation:none !important;
+    transition:none !important;
+    scroll-behavior:auto !important;
+  }
+  .reveal, .hero-copy > *, .hero-visual{ opacity:1 !important; transform:none !important; }
+  .hero-frame:hover img, .card:hover > img, .about-card:hover > img,
+  .tech-panel:hover img, .cryo-gallery figure:hover img{ transform:none !important; }
+}
+
+
+/* HARD FIX: cryo gallery media never bleeds */
+.cryo-gallery{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:10px;
+  width:100%;
+  max-width:100%;
+  align-items:stretch;
+}
+.cryo-gallery figure{
+  display:flex;
+  flex-direction:column;
+  margin:0;
+  min-width:0;
+  max-width:100%;
+  width:100%;
+  border-radius:16px;
+  overflow:hidden; /* clip everything including hover scale */
+  border:1px solid var(--line);
+  background:var(--bg2);
+  contain: layout paint; /* isolate overflow */
+}
+.cryo-gallery figure:first-child{
+  grid-column: 1 / -1;
+}
+.cryo-gallery .media-box{
+  position:relative;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+  flex:0 0 auto;
+  background:#0c1016;
+  border-radius:0;
+  line-height:0; /* kill inline gap under img */
+}
+.cryo-gallery figure:first-child .media-box{
+  aspect-ratio: 16 / 9;
+}
+.cryo-gallery figure:not(:first-child) .media-box{
+  aspect-ratio: 4 / 3; /* charts fit better than 1:1 crop */
+}
+.cryo-gallery .media-box img,
+.cryo-gallery img{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  max-height:none !important;
+  margin:0 !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important; /* full graph visible, no crop bleed */
+  object-position:center !important;
+  transform:none !important; /* no hover scale bleed */
+  transition:none !important;
+}
+/* if img not wrapped yet, still force box via figure */
+.cryo-gallery figure > img{
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:220px !important;
+  object-fit:contain !important;
+}
+.cryo-gallery figcaption{
+  flex:0 0 auto;
+  padding:10px 12px;
+  font-size:11.5px;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+  background:var(--bg2);
+}
+.cryo-gallery figure:hover img,
+.cryo-gallery figure:hover .media-box img{
+  transform:none !important;
+}
+@media (max-width:640px){
+  .cryo-gallery{ grid-template-columns:minmax(0,1fr); }
+  .cryo-gallery figure:first-child{ grid-column:auto; }
+  .cryo-gallery figure:first-child .media-box{ aspect-ratio:16/10; }
+  .cryo-gallery figure:not(:first-child) .media-box{ aspect-ratio:16/11; }
+}
+
+/* form states */
+.form-msg{
+  display:none; padding:12px 14px; border-radius:12px; font-size:13.5px; line-height:1.45;
+  background:rgba(107,203,142,.12); border:1px solid rgba(107,203,142,.35); color:var(--ok);
+}
+.form-msg.show{display:block}
+.form-err{
+  display:none; padding:12px 14px; border-radius:12px; font-size:13.5px; line-height:1.45;
+  background:rgba(220,80,80,.1); border:1px solid rgba(220,80,80,.35); color:#f0a0a0;
+}
+.form-err.show{display:block}
+.form-note{font-size:12px;color:var(--muted);margin:0}
+.field input:invalid:not(:placeholder-shown),
+.field select:invalid:focus{ border-color:rgba(220,80,80,.55); }
+.field input:focus:valid{ border-color:rgba(94,200,192,.55); }
+.btn[disabled]{ opacity:.55; cursor:not-allowed; transform:none !important; }
+.check span{ line-height:1.4; }
 </style>
+
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r)return;}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110604818" style="position:absolute;left:-9999px" alt=""/></div></noscript>
+
 </head>
 <body>
-
-<div class="mesh"></div>
-
-<!-- === NAV === -->
-<div class="nav-wrap">
-  <nav class="nav">
-    <a class="n-l" href="#home"><img src="images/logo.svg" alt="НПО ГЕОКРИОЛОГ" width="160" height="30"></a>
-    <button class="n-t active" data-goto="home">Главная</button>
-    <button class="n-t" data-goto="about">О нас</button>
-    <button class="n-t" data-goto="services">Услуги</button>
-    <button class="n-t" data-goto="cryo">Решения</button>
-    <button class="n-t" data-goto="tech-key">Техника</button>
-    <button class="n-t" data-goto="projects-geo">Проекты</button>
-    <button class="n-t" data-goto="catalog">Каталог</button>
-    <button class="n-c" data-goto="cta">Контакты</button>
-    <button class="nav-hamb" aria-label="Меню"><span></span><span></span><span></span></button>
-  </nav>
-</div>
-
-<!-- === HERO === -->
-<section id="home">
-<div class="hero">
-  <span class="h-t">НПО «ГЕОКРИОЛОГ» · Инжиниринг, поставка, сервис</span>
-  <h1>Строительство на&nbsp;вечной мерзлоте —<br>не&nbsp;ставьте экспериментов</h1>
-  <p class="h-s">25 лет опыта, 15+ проектов в Арктике. Полный цикл: от научной экспертизы до поставки техники и сервиса на объекте — одна команда отвечает за результат.</p>
-  <div class="h-b">
-    <a class="b b-f" href="#cta">Бесплатный аудит <span class="a">→</span></a>
-    <a class="b b-g" href="#catalog">Смотреть оборудование</a>
-  </div>
-  <div class="h-i rv"><img src="images/kr300m-1-1.webp" alt="TYSIM KR300M" width="920" height="690" style="width:100%;display:block" fetchpriority="high"></div>
-  <div class="stats-bar rv">
-    <div class="sb-i"><span class="sb-n">12</span><span class="sb-l">станков поставлено</span></div>
-    <div class="sb-i"><span class="sb-n">110 000</span><span class="sb-l">метров пробурено</span></div>
-    <div class="sb-i"><span class="sb-n">11</span><span class="sb-l">регионов работы</span></div>
-    <div class="sb-i"><span class="sb-n">25</span><span class="sb-l">лет на рынке</span></div>
-    <div class="sb-i"><span class="sb-n">500 м²</span><span class="sb-l">склад в СПб</span></div>
-    <div class="sb-i"><span class="sb-n">1 год</span><span class="sb-l">гарантия на всё</span></div>
-  </div>
-</div>
-</section>
-
-<!-- === ABOUT: WHO WE ARE === -->
-<section class="s-m" id="about">
-<div class="wrap">
-  <div class="sh rv">
-    <span class="e">Кто мы</span>
-    <h2>25 лет опыта в буровой технике</h2>
-    <p class="su">НПО «ГЕОКРИОЛОГ» — инжиниринговая компания полного цикла для строительства в криолитозонах. Работаем с мировыми брендами бурового инструмента: Casagrande (Италия), Robit (Финляндия), TYSIM Machinery (КНР). На данный момент наш стратегический партнёр — TYSIM, официальный партнёр Caterpillar.</p>
-  </div>
-  <div class="stats rv">
-    <div class="stats-item">
-      <div class="stat-num" style="font-size:clamp(28px,3.2vw,44px);font-weight:800;color:var(--ink);line-height:1">25</div>
-      <div style="font-size:11px;color:var(--muted);margin-top:4px">лет опыта</div>
-    </div>
-    <div class="stats-item">
-      <div class="stat-num" style="font-size:clamp(28px,3.2vw,44px);font-weight:800;color:var(--ink);line-height:1">15+</div>
-      <div style="font-size:11px;color:var(--muted);margin-top:4px">проектов в&nbsp;Арктике</div>
-    </div>
-    <div class="stats-item">
-      <div class="stat-num" style="font-size:clamp(28px,3.2vw,44px);font-weight:800;color:var(--ink);line-height:1">1 200+</div>
-      <div style="font-size:11px;color:var(--muted);margin-top:4px">скважин пробурено</div>
-    </div>
-    <div class="stats-item">
-      <div class="stat-num" style="font-size:clamp(28px,3.2vw,44px);font-weight:800;color:var(--ink);line-height:1">500</div>
-      <div style="font-size:11px;color:var(--muted);margin-top:4px">м² склад в&nbsp;СПб</div>
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home">
+      <img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог"/>
+      <span>НПО ГЕОКРИОЛОГ</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Услуги</a>
+      <a href="#cryo">Мерзлота</a>
+      <a href="/demontazh-ogolovkov-bns/">Оголовки БНС</a>
+      <a href="/tysim-kr300m/">TYSIM</a>
+      <a href="/obshadnoj-stol-rco1500/">RCO1500</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#projects">Проекты</a>
+      <a href="#cta">Контакты</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
+      <a class="btn btn-ice" href="#cta">Аудит 24ч</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Меню">☰</button>
     </div>
   </div>
-  <div class="bento">
-    <div class="co cw"><div class="ci" class="t-l">
-      <span class="ic">🌍</span>
-      <h4>Поставка в любой регион</h4>
-      <p>Поставляем буровой инструмент и технику — от Крайнего Севера до Дальнего Востока. Склад 500 м² в Санкт-Петербурге.</p>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">👷</span>
-      <h4>Инженерная команда</h4>
-      <p>В штате — инженеры с опытом эксплуатации техники Casagrande, TYSIM, SANY, XCMG. Участвуем в разработке решений под проект. Сопровождаем от подбора до ввода в эксплуатацию.</p>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🎓</span>
-      <h4>Научная база</h4>
-      <p>Ананьев В.В. — академик кафедры Геокриологии МГУ, академик Международной Академии Холода. Пушкарев А.Е. — профессор кафедры Наземные транспортно-технологические машины СПбГАСУ. Полевые испытания — полигон МГУ (Звенигород). 15 проектов в Арктике.</p>
-    </div></div>
-  </div>
-  <div class="qo rv">
-    <div class="qi"><blockquote>Поставим машину, готовую к работе в Российских условиях с первого дня. Адаптация, сертификация, сервис — всё включено. Так работают профессионалы.</blockquote></div>
-  </div>
-</div>
-</section>
+</header>
 
-<!-- === SERVICES === -->
-<section class="s-m s-dark" id="services">
-<div class="wrap">
-  <div class="sh rv">
-    <span class="e">Чем мы занимаемся</span>
-    <h2>Три направления — одно решение</h2>
-    <p class="su">Закрываем все этапы: от геологического аудита до поставки техники и поддержки на объекте</p>
-  </div>
-  <div class="bento">
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🎓</span>
-      <h4>Экспертиза и проектирование</h4>
-      <p>Геокриологический аудит. Оценка грунтов и подбор технологии (термостабилизация, буроинъекция). Проектирование свайных полей. Геотехнический мониторинг. Команда МГУ и СПбГАСУ.</p>
-      <div class="fp"><span>Команда МГУ</span><span>от 15 000 ₽</span></div>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">⚙️</span>
-      <h4>Поставка техники</h4>
-      <p>Буровые установки TYSIM (КНР, двигатели Caterpillar). Обсадные столы RCO1500. Буровой инструмент. Адаптация под РФ, сертификация, доставка до объекта.</p>
-      <div class="fp"><span>В наличии СПб</span><span>Гарантия 1 год</span></div>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🛠️</span>
-      <h4>Сервис и поддержка</h4>
-      <p>Склад запчастей в СПб. Выезд инженера за 48 ч. Плановое ТО. Обучение операторов (3 дня). Расходники под заказ из КНР и Европы.</p>
-      <div class="fp"><span>Сервис 48 ч</span><span>2 000 моточасов</span></div>
-    </div></div>
-  </div>
-</div>
-</section>
-
-<!-- === SOLUTIONS: CRYO === -->
-<section class="s-m" id="cryo">
-<div class="wrap">
-  <div class="sh rv">
-    <span class="e">Технологии для мерзлоты</span>
-    <h2>Как мы работаем с вечной мерзлотой</h2>
-    <p class="su">Более 50% территории РФ — многолетняя и сезонная мерзлота. Строить на ней без специальных технологий — терять объекты</p>
-  </div>
-  <div class="bento">
-    <div class="co cw"><div class="ci" class="t-l">
-      <span class="ic">❄️</span>
-      <h4>Термостабилизация — замораживать грунт, а не греть</h4>
-      <p style="margin-bottom:8px">Обычный цемент при гидратации нагревается до +60°C и растапливает лёд в грунте. Через 2-3 сезона — просадка фундамента, деформация насыпи.</p>
-      <p>Мы используем <strong>сезонные охлаждающие устройства (СОУ)</strong> — пассивные термостабилизаторы, которые отводят тепло из грунта в воздух без электричества.</p>
-      <div class="g2" style="margin:12px 0;gap:6px">
-        <div style="font-size:12px;color:var(--muted);line-height:1.6"><strong style="color:var(--ink)">Типы хладагента:</strong> аммиак (R717), диоксид углерода (R744), фреон (R410a), пропилен (R1270)</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.6"><strong style="color:var(--ink)">Конструкция:</strong> конденсатор до 2 м · испаритель от 8 м · труба 38×3 / 45×3 / 57×3.5 мм (Ст.20, 09Г2С) · плавниковое оребрение · теплоизоляция</div>
-      </div>
-      <div class="g2" style="margin:8px 0;gap:6px">
-        <div style="font-size:12px;color:var(--muted);line-height:1.6"><strong style="color:var(--ink)">Теплопередача:</strong> от 100 до 350 Вт при –15°C · коэффициент оребрения 5–8 · отношение Fк/Fи = 1–2</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.6"><strong style="color:var(--ink)">База:</strong> полигон МГУ (Звенигород) · испытания в Заполярном и Нарьян-Маре · совместное производство РФ/Чехия/Германия</div>
-      </div>
-      <div class="fp" style="margin-top:6px"><span>Без электричества</span><span>Автономная работа</span></div>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🧪</span>
-      <h4>БСС — заливать без нагрева</h4>
-      <p>Быстросхватывающиеся смеси твердеют за 2–3 часа с минимальным тепловыделением. В отличие от цемента, который выделяет тепло 48+ часов при гидратации.</p>
-      <p style="margin-top:8px;font-size:12px;color:var(--muted);line-height:1.5"><strong style="color:var(--ink)">Режимы:</strong> очистной агент В/Ц=0.7–1.0 · инъекционный В/Ц=0.4–0.5 с добавками, предотвращающими фильтрацию в грунт. <strong style="color:var(--ink)">Результат:</strong> минимальное влияние на стабильность мёрзлых грунтов.</p>
-      <div class="fp" style="margin-top:6px"><span>Схватывание 2-3 ч</span><span>В/Ц=0.4-0.5</span></div>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🛠️</span>
-      <h4>Бурить без промывки</h4>
-      <p>Горизонтально-направленное бурение (ГНБ) в мёрзлых породах — воздухом, без воды. Устройство дренажей и водоотведения.</p>
-      <p style="margin-top:8px;font-size:12px;color:var(--muted);line-height:1.5">Защита от переувлажнения на границе таяния при сезонном промерзании. Установка фильтров и дренажных труб.</p>
-    </div></div>
-  </div>
-  <div class="show rv" style="margin-top:40px">
-    <div class="cryo-imgs">
-      <div class="t-c">
-        <div class="cryo-img-wrap"><img src="images/cryo-thermo.webp?v=2" alt="Термостабилизатор" class="cryo-img" loading="lazy"></div>
-        <p style="font-size:11px;color:var(--muted);margin-top:6px">Эскиз термостабилизатора с плавниковым оребрением</p>
-      </div>
-      <div class="t-c">
-        <div class="cryo-img-wrap"><img src="images/cryo-bss-graph.webp?v=2" alt="БСС vs цемент" class="cryo-img" loading="lazy"></div>
-        <p style="font-size:11px;color:var(--muted);margin-top:6px">График: БСС (синий) — 2–3 ч, цемент (красный) — 48+ ч</p>
-      </div>
-      <div class="t-c">
-        <div class="cryo-img-wrap"><img src="images/cryo-monitoring.webp?v=2" alt="Тепловизионный контроль" class="cryo-img" loading="lazy"></div>
-        <p style="font-size:11px;color:var(--muted);margin-top:6px">Тепловизионный контроль СОУ · Звенигородский полигон</p>
-      </div>
-      <div class="t-c">
-        <div class="cryo-img-wrap"><img src="images/cryo-injection.webp?v=2" alt="Буроинъекция" class="cryo-img" loading="lazy"></div>
-        <p style="font-size:11px;color:var(--muted);margin-top:6px">Буроинъекционная система ATLANT / GEOIZOL / TITAN</p>
-      </div>
-    </div>
-  </div>
-  <div class="qo rv">
-    <div class="qi">
-      <h4 style="font-size:16px;font-weight:700;margin-bottom:10px">Апробация тепловизионного метода контроля СОУ</h4>
-      <blockquote>В 2024 году проведены геофизические исследования на полигоне Звенигородской базы МГУ. Тепловизионный метод контроля работоспособности сезонных охлаждающих устройств (СОУ) подтверждён экспериментально. На переднем плане — синяя обсадная труба термостабилизатора. Термограмма: холодная зона (синий) — работа испарителя, тёплая зона (красный/жёлтый) — окружающий грунт. Метод позволяет без вскрытия грунта определить, работает ли термостабилизатор.</blockquote>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- === TECH-KEY === -->
-<section class="s-m" id="tech-key">
-<div class="wrap">
-  <div class="sh rv">
-    <span class="e">Техника под ключ</span>
-    <h2>TYSIM — адаптирован под российские условия</h2>
-    <p class="su">Зимний пакет, русское меню, AI-ассистент. Поставка с проектной документацией и закрывающими актами.</p>
-  </div>
-  <div class="bento">
-    <div class="co cw"><div class="ci" class="t-l">
-      <span class="ic">❄️</span>
-      <h4>Зимний пакет</h4>
-      <p>Каждая машина перед отгрузкой проходит полный цикл адаптации: предпусковой подогрев двигателя Webasto, усиленные аккумуляторы 220 А·ч, обогрев гидравлики, антикоррозийная защита IP65. Техника заводится и работает при –50 °C на Крайнем Севере.</p>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🇷🇺</span>
-      <h4>Русское меню и мониторинг</h4>
-      <p>Программный комплекс полностью русифицирован — интерфейс, диагностика, журнал ошибок. Следите за параметрами машины в реальном времени: температура, нагрузка на инструмент, давление в гидросистеме. AI-ассистент подсказывает, когда менять оснастку и где возможна поломка.</p>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">📋</span>
-      <h4>Документация и закрытие</h4>
-      <p>При поставке передаём паспорт буровой, результаты пусконаладки, акты выполненных работ с подписями и печатями, фотофиксацию каждого этапа. Загружаете проектную документацию — AI проверяет на нестыковки и подсвечивает рискованные зоны.</p>
-    </div></div>
-  </div>
-  <div class="show rv" style="margin-top:40px">
-    <div style="border-radius:1.25rem;overflow:hidden;background:rgba(255,255,255,0.4);box-shadow:0 0 0 1px var(--hairline);padding:8px;max-width:760px;margin:0 auto"><img src="images/tech-key.webp" alt="TYSIM с AI-ассистентом и документацией" class="cryo-img" loading="lazy"></div>
-    <p style="font-size:11px;color:var(--muted);text-align:center;margin-top:6px">Эскиз: TYSIM с AI-мониторингом, русским меню и пакетом документов</p>
-  </div>
-</div>
-</section>
-
-<!-- === PROJECTS === -->
-<section class="s-m s-dark" id="projects-geo">
-<div class="wrap">
-  <div class="sh rv">
-    <span class="e">Опыт в Арктике</span>
-    <h2>Где мы уже работали</h2>
-    <p class="su">15+ проектов в условиях многолетнемерзлых пород — от Мурманска до Кировска</p>
-  </div>
-  <div class="show rv" style="margin-top:-12px;margin-bottom:40px;border-radius:2rem">
-    <img src="images/geo-project-1.webp?v=2" alt="Буровые работы на объекте" style="width:100%;display:block;border-radius:2rem" loading="lazy">
-  </div>
-  <div class="bento">
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🏢</span><h4>Мурманск · Дом ФСБ</h4>
-      <p class="txt-sm-muted"><b>200 свай</b> ø520 мм, l=8 м</p>
-      <p class="txt-xs-muted"><b>Задача:</b> усиление фундамента в условиях высокольдистых грунтов. <b>Решение:</b> бурение лидерных скважин с бетонированием. <b>Результат:</b> нулевая просадка в течение 5 лет эксплуатации.</p>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🎭</span><h4>Мурманск · Драмтеатр</h4>
-      <p class="txt-sm-muted"><b>50 свай</b> ø426 мм, l=11 м</p>
-      <p class="txt-xs-muted"><b>Задача:</b> реконструкция фундамента действующего здания театра. <b>Решение:</b> буроинъекционные сваи БСС через существующий фундамент. <b>Результат:</b> полная остановка неравномерных деформаций.</p>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🔧</span><h4>Апатиты · Трубопровод</h4>
-      <p class="txt-sm-muted"><b>120 свай</b> ø400 мм, l=8 м</p>
-      <p class="txt-xs-muted"><b>Задача:</b> опоры техтрубопровода на свайном основании. <b>Решение:</b> термостабилизация грунтов основания с установкой СОУ. <b>Результат:</b> сохранение несущей способности при сезонных оттайках.</p>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">⛰️</span><h4>Кировск · Расумчорский рудник</h4>
-      <p class="txt-sm-muted"><b>54 сваи</b> ø426 мм, l=12 м · высота 1 700 м</p>
-      <p class="txt-xs-muted"><b>Задача:</b> опоры ленточного конвейера в горной местности. <b>Решение:</b> бурение станком Bauer BG28 с установкой трубчатой опалубки. <b>Результат:</b> запуск конвейера в срок.</p>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🏭</span><h4>Кандалакша · РусАл</h4>
-      <p class="txt-sm-muted"><b>456 свай</b> ø219 мм, l=7,5 м</p>
-      <p class="txt-xs-muted"><b>Задача:</b> устройство шпунтового ограждения склада глинозёма. <b>Решение:</b> погружение труб бетонной смесью по всей длине. <b>Результат:</b> стена в грунте длиной 78 м, глубина 7,5 м.</p>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">⚡</span><h4>Мурманск · ТЭЦ</h4>
-      <p class="txt-sm-muted"><b>240 свай</b> ø273 мм, l=12 м</p>
-      <p class="txt-xs-muted"><b>Задача:</b> реконструкция фундаментов градирни. <b>Решение:</b> сваи-стойки с опорой на скальный грунт. <b>Результат:</b> восстановление циркуляционного водоснабжения ТЭЦ.</p>
-    </div></div>
-    <div class="co"><div class="ci" class="t-l">
-      <span class="ic">🤝</span><h4>Robit · Финляндия</h4>
-      <p class="txt-sm-muted">Технология Casing System Pile (утверждена НИИОСП, 2015)</p>
-      <p class="txt-xs-muted"><b>Задача:</b> бурение в скальных и полускальных грунтах с обсадкой. <b>Решение:</b> DTH-молот (пневмоудар) + обсадная труба. <b>Итог:</b> до 30% выше производительность против традиционных методов.</p>
-    </div></div>
-    <div class="co cw"><div class="ci" class="t-l">
-      <span class="ic">📊</span><h4>Обсадные столы RCO1500</h4>
-      <div class="fp" style="margin-top:4px">
-        <span>ПРИСС — SANY 405R</span><span>СВАЙБУРГ — SANY 285R</span><span>ГеоСпецСтрой — XCMG 360E</span>
-        <span>УБР 52 — SANY 285R</span><span>ЛИГА ГРУПП — SANY 360R</span>
-      </div>
-      <p style="margin-top:8px;font-size:13px;color:var(--muted)"><b>10+ единиц</b> поставлено и работает на объектах по всей России</p>
-    </div></div>
-  </div>
-  <div class="db rv" style="margin-top:32px;text-align:center">
-    <p style="color:rgba(255,255,255,0.5);font-size:13px">Итого по проектам: <strong style="color:#fff">1 120 свай</strong> на 7 объектах · <strong style="color:#fff">10+</strong> обсадных столов RCO1500 · <strong style="color:#fff">5 лет</strong> без единой просадки</p>
-    <div class="h-b" style="margin-top:20px;justify-content:center">
-      <a class="b b-f" href="#cta">Ваш объект — наша задача <span class="a">→</span></a>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- === CATALOG === -->
-<section class="s-m" id="catalog">
-<div class="wrap">
-  <div class="sh rv">
-    <span class="e">Оборудование</span>
-    <h2>Каталог</h2>
-    <p class="su">Роторные буровые · Обсадные столы · Инструмент</p>
-  </div>
-
-  <div class="sh" class="sub-h2"><h2 class="h2-fluid">Роторные буровые установки TYSIM</h2></div>
-  <div class="cg">
-    <div class="cc ccw"><div class="cci" class="t-l">
-      <div style="display:flex;gap:20px;align-items:flex-start" class="cc-flex">
-        <div style="flex:1">
-          <div class="model" class="t-l">TYSIM KR300M</div>
-          <div class="spec">320 кН·м (32 т·м) крутящий под нагрузкой · 54 м · Ø 2 500 мм · <b>90 т</b><br>Pull-down 32 т · CAT C9.3B · 259 кВт · CAT 345GC<br>Электрогидравлика · AI-ассистент · Мониторинг · Русское меню</div>
-          <div class="mt-8"><span class="sb sb-a">В наличии · СПб</span></div>
-          <div class="pt"><a href="#cta" class="btn-pill-sm">Узнать стоимость →</a></div>
+<main id="home">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Сваи и мерзлота <em>без лишнего риска</em></h1>
+        <p class="hero-lead">Геокриологический аудит, бурение и обсадка (TYSIM + RCO1500), быстрый демонтаж оголовков БНС на мостах и площадках, сервис со склада в СПб. Один контур: от грунта до готового свайного основания.</p>
+        <div class="hero-actions">
+          <a class="btn btn-ice pulse" href="#cta">Заказать аудит объекта</a>
+          <a class="btn btn-ghost" href="#catalog">Смотреть технику</a>
         </div>
-        <div style="flex-shrink:0"><img src="images/kr300m-3-1.webp" alt="KR300M" class="cc-img-r" loading="lazy" decoding="async" width="200" height="180"></div>
+        <div class="hero-meta">
+          <div><b>25</b><span>лет на рынке</span></div>
+          <div><b>15+</b><span>проектов в Арктике</span></div>
+          <div><b>3-4×</b><span>быстрее оголовки БНС</span></div>
+          <div><b>65-72%</b><span>экономия на демонтаже</span></div>
+        </div>
       </div>
-    </div></div>
-    <div class="cc"><div class="cci">
-      <div class="model">TYSIM KR220M</div>
-      <div class="spec">220 кН·м · 64/51 м · <b>65 тонн</b><br>CAT C7.1 · 195 кВт</div>
-      <div class="mt-8"><span class="sb sb-o">Под заказ</span></div>
-      <div class="pt">по запросу</div>
-    </div></div>
-    <div class="cc"><div class="cci">
-      <div class="model">TYSIM KR150C</div>
-      <div class="spec">150 кН·м · 41 м · <b>40 тонн</b><br>CAT C4.4 · 129 кВт</div>
-      <div class="mt-8"><span class="sb sb-o">Под заказ</span></div>
-      <div class="pt">по запросу</div>
-    </div></div>
-    <div class="cc"><div class="cci">
-      <div class="model">TYSIM KR50-10</div>
-      <div class="spec">42 кН·м · 10 м · <b>13 тонн</b></div>
-      <div class="mt-8"><span class="sb sb-o">Под заказ</span></div>
-      <div class="pt">по запросу</div>
-    </div></div>
-  </div>
-
-  <div class="sh" class="sub-h2"><h2 class="h2-fluid">Обсадное оборудование</h2></div>
-  <div class="cg">
-    <div class="cc ccw"><div class="cci" class="t-l">
-      <img src="images/rco1500_p0_2.webp" alt="RCO1500" class="cc-img-r2" loading="lazy" decoding="async" width="220" height="160">
-      <div class="model" class="t-l">Обсадной стол RCO1500</div>
-      <div class="spec">Макс. Ø <b>1 500 мм</b> · Крутящий момент <b>1 500 кН·м</b><br>Рабочее давление <b>350 бар</b> · Масса <b>7 200 кг</b><br>Совместим: TYSIM · XCMG · SANY · Liebherr · Casagrande · Soilmec</div>
-      <div class="mt-8"><span class="sb sb-a">В наличии · СПб</span></div>
-      <div class="pt"><a href="#cta" class="btn-pill-sm">Узнать стоимость →</a></div>
-    </div></div>
-    <div class="cc"><div class="cci">
-      <div class="model">Переходная вставка</div>
-      <div class="spec">Д1500/1000<br>или<br>Д1500/800</div>
-    </div></div>
-    <div class="cc"><div class="cci">
-      <div class="model">Подключение к БУ</div>
-      <div class="spec">Механическое и гидравлическое подключение к установкам других производителей</div>
-      <div class="pt">по запросу</div>
-    </div></div>
-  </div>
-
-  <div class="sh" class="sub-h2"><h2 class="h2-fluid">Буровой инструмент</h2></div>
-  <p style="text-align:center;font-size:14px;color:var(--muted);margin:-16px auto 32px;max-width:640px">Отгрузка со склада в СПб. Диаметры: 620, 750, 880, 1000, 1180, 1200 мм. Длины: 1, 2, 3, 4 м.</p>
-  
-  <!-- Обсадные трубы -->
-  <div class="sh" class="h3-block"><h3 class="h3-title">Обсадные трубы с двойной стенкой</h3></div>
-  <div style="text-align:center;padding:40px 20px;border-radius:1.25rem;background:rgba(247,246,243,0.5);box-shadow:0 0 0 1px var(--hairline)">
-    <p style="font-size:14px;color:var(--muted);margin-bottom:4px;line-height:1.6;max-width:420px;margin-left:auto;margin-right:auto">Вся номенклатура со склада в СПб. Стартовые башмаки (скальные/грунтовые) — в комплекте.</p>
-    <p style="font-size:14px;color:var(--muted);margin-bottom:16px;line-height:1.6">Уточните наличие под ваш диаметр — ответим в течение часа.</p>
-    <a href="#cta" style="display:inline-flex;align-items:center;gap:8px;padding:10px 32px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:600;text-decoration:none">Запросить наличие <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:999px;background:rgba(255,255,255,0.12);font-size:14px">→</span></a>
-  </div>
-
-  <!-- Остальной инструмент -->
-  <div class="sh" class="h3-block"><h3 class="h3-title">Шнеки, ковшебуры, CFA и прочее</h3></div>
-  <div class="cg">
-    <div class="cc"><div class="cci"><img src="images/tool-shnek.webp?v=1" alt="Шнеки" width="280" height="140" loading="lazy" decoding="async" class="tool-img"><div class="model">Шнеки</div><div class="spec">Одно- и двухзаходные<br>ø520–1080 мм · 20 типоразмеров</div></div></div>
-    <div class="cc"><div class="cci"><img src="images/tool-kovshebur.webp?v=1" alt="Ковшебур" width="280" height="140" loading="lazy" decoding="async" class="tool-img"><div class="model">Ковшебуры</div><div class="spec">Одно- и двухзаходные<br>ø520–1080 мм · 20 типоразмеров</div></div></div>
-    <div class="cc"><div class="cci"><img src="images/tool-cfa.webp?v=1" alt="CFA" width="280" height="140" loading="lazy" decoding="async" class="tool-img"><div class="model">CFA шнеки</div><div class="spec">Непрерывный полый шнек<br>ø350–600 мм × 3/6 м</div></div></div>
-    <div class="cc"><div class="cci"><img src="images/tool-dreiteller.webp?v=7" alt="Дрейтеллер" width="280" height="200" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:contain;border-radius:12px;margin-bottom:12px;background:rgba(247,246,243,0.5)"><div class="model">Дрейтеллеры</div><div class="spec">6 типоразмеров<br>ø620–1200 мм</div></div></div>
-    <div class="cc"><div class="cci"><img src="images/tool-tremie.webp?v=1" alt="Бетонолит" width="280" height="140" loading="lazy" decoding="async" class="tool-img"><div class="model">Бетонолитные трубы</div><div class="spec">ø194, 219, 250 мм × 2 м</div></div></div>
-    <div class="cc"><div class="cci"><img src="images/tool-kelly.webp?v=2" alt="Келли" width="280" height="140" loading="lazy" decoding="async" class="tool-img"><div class="model">Келли-штанги</div><div class="spec">Фрикционные и замковые<br>до 4 секций × 36 м</div></div></div>
-  </div>
-  <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:16px">Совместимость: Bauer, Liebherr, Delmag, Soilmec, Casagrande, MAIT, Sany, XCMG и TYSIM</p>
-</div>
-</section>
-
-<!-- === CTA === -->
-<section class="s-m" id="cta">
-<div class="wrap">
-  <div class="cb rv" style="padding-bottom:60px">
-    <div class="sh" style="margin-bottom:0">
-      <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:8px">Бесплатно · 24 часа</div>
-      <h2>Закажите аудит вашего объекта</h2>
+      <div class="hero-visual">
+        <div class="hero-frame">
+          <img src="https://geokriolog.ru/images/kr300m-1-1.webp" alt="TYSIM KR300M" width="960" height="720"/>
+          <div class="hero-badge">
+            <strong>TYSIM KR300M</strong>
+            320 кН·м · Ø 2500 · зимний пакет −50°C
+          </div>
+        </div>
+        <div class="float-chip">
+          <b>RCO1500</b>
+          Обсадной стол в наличии, СПб
+        </div>
+      </div>
     </div>
-    <p style="font-size:15px;color:rgba(255,255,255,0.5);margin:12px auto 0;max-width:520px">Опишите проект — мы оценим геологию, подберём технологию и технику. Отправим решение с цифрами и сроками в течение 24 часов.</p>
-    <form class="lf" id="leadForm" action="https://formsubmit.co/info@geokriolog.ru" method="POST" novalidate>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="box">
-      <input type="hidden" name="_next" value="https://geokriolog.ru/#success">
-      <div class="fg">
-        <label for="lf_name">Ваше имя</label>
-        <input type="text" id="lf_name" name="name" placeholder="Александр" required autocomplete="name">
-      </div>
-      <div class="fg">
-        <label for="lf_phone">Телефон</label>
-        <input type="tel" id="lf_phone" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
-      </div>
-      <div class="fg">
-        <label for="lf_type">Тип объекта</label>
-        <select id="lf_type" name="type">
-          <option value="">— выберите —</option>
-          <option value="road">Автомобильная или железная дорога</option>
-          <option value="building">Здание или сооружение</option>
-          <option value="bridge">Мост или эстакада</option>
-          <option value="pole">Опоры ЛЭП</option>
-          <option value="dam">Гидротехническое сооружение</option>
-          <option value="other">Другое</option>
-        </select>
-      </div>
-      <div class="fg">
-        <label for="lf_region">Регион строительства</label>
-        <input type="text" id="lf_region" name="region" placeholder="Мурманская область, ЯНАО, и т.д.">
-      </div>
-      <label class="consent" for="lf_consent">
-        <input type="checkbox" id="lf_consent" name="consent" required>
-        <span>Согласен на обработку персональных данных в соответствии с <a href="#privacy">политикой</a> (152-ФЗ)</span>
-      </label>
-      <button type="submit" class="sbmt" id="lfSubmit">Отправить заявку</button>
-      <div class="smsg" id="lfMsg" role="status">✓ Форма отправлена. Мы свяжемся с вами в течение часа.</div>
-    </form>
-    <div class="h-b" style="margin-top:20px">
-      <a class="b b-f" href="tel:+79119245467">Позвонить <span class="a">→</span></a>
-      <a class="b b-g" href="mailto:info@geokriolog.ru">info@geokriolog.ru</a>
+  </section>
+
+  <div class="strip">
+    <div class="wrap strip-row reveal">
+      <article><b>12</b><span>станков поставлено</span></article>
+      <article><b>110k</b><span>метров пробурено</span></article>
+      <article><b>11</b><span>регионов работы</span></article>
+      <article><b>48 ч</b><span>выезд инженера</span></article>
+      <article><b>1 год</b><span>гарантия на технику</span></article>
+      <article><b>Ø 0.6-2 м</b><span>оголовки БНС</span></article>
     </div>
   </div>
-</div>
-</section>
 
-<!-- === FOOTER === -->
-<footer class="ft">
-  <div class="dv"></div>
-  <div class="ft-i">
-    <div class="ft-c">
-      <strong>ООО «НПО ГЕОКРИОЛОГ»</strong><br>
-      Санкт-Петербург, Шушары, Пулковское, ул. Образцовая, д. 5<br>
-      ИНН 7817123404 · ОГРН 1227800134100<br>
-      <a href="tel:+79119245467" class="link-ink">+7 (911) 924-54-67</a> · <a href="mailto:info@geokriolog.ru" class="link-ink">info@geokriolog.ru</a>
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 class="sec-h">Инжиниринг полного цикла</h2>
+        <p class="sec-p">НПО «ГЕОКРИОЛОГ» - инжиниринг для криолитозоны и свайных работ: научная база МГУ и СПбГАСУ, поставка техники, демонтаж оголовков БНС и полевой сервис.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <img src="https://geokriolog.ru/images/geo-project-1.webp" alt="Работы на объекте"/>
+          <div class="body">
+            <h3>Полевая практика, не слайды</h3>
+            <p>Мурманск, Апатиты, Кандалакша, Кировск - фундаменты, шпунт, опоры, ТЭЦ. Отдельно - технология оголовков БНС для мостов и путепроводов (в т.ч. капремонт). Считаем конструкцию и держим сроки.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <p style="color:var(--muted);font-size:15.5px;max-width:46ch;margin-bottom:18px">Работаем с линейками Casagrande, Robit, TYSIM Machinery. Стратегический фокус: техника TYSIM (двигатели Caterpillar) для бурения и собственная технология быстрого демонтажа оголовков БНС - там, где свайное поле уже есть или только залито.</p>
+          <div class="pill-row">
+            <span class="pill">Термостабилизация СОУ</span>
+            <span class="pill">БСС без перегрева</span>
+            <span class="pill">ГНБ воздухом</span>
+            <span class="pill">Обсадные RCO1500</span>
+            <span class="pill">Инструмент со склада</span>
+            <span class="pill">Демонтаж оголовков БНС</span>
+          </div>
+          <div style="margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div style="padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--bg2)">
+              <b style="display:block;font-size:20px;letter-spacing:-.03em">Ананьев В.В.</b>
+              <span style="font-size:12.5px;color:var(--muted)">геокриология МГУ · МАХ</span>
+            </div>
+            <div style="padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--bg2)">
+              <b style="display:block;font-size:20px;letter-spacing:-.03em">Пушкарев А.Е.</b>
+              <span style="font-size:12.5px;color:var(--muted)">СПбГАСУ · полевые испытания</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="ft-l">
-      <a data-goto="home">Главная</a>
-      <a data-goto="about">О нас</a>
-      <a data-goto="services">Услуги</a>
-      <a data-goto="cryo">Решения</a>
-      <a data-goto="tech-key">Техника</a>
-      <a data-goto="projects-geo">Проекты</a>
-      <a data-goto="catalog">Каталог</a>
-      <a data-goto="cta">Контакты</a>
-      <a href="#privacy">Персональные данные</a>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 class="sec-h">Четыре направления. Один контур</h2>
+        <p class="sec-p">Мерзлота и свайное основание, поставка техники, сервис и демонтаж оголовков БНС - без разрыва между бурением и сдачей ростверка.</p>
+      </div>
+      <div class="bento reveal-stagger">
+        <article class="tile big reveal">
+          <div class="k">01 · Экспертиза</div>
+          <h3>Геокриологический аудит</h3>
+          <p>Оценка грунтов (в т.ч. мерзлота), термостабилизация, буроинъекция, свайные поля, мониторинг. Решение с цифрами и сроками за 24 часа.</p>
+          <span class="tag">от 15 000 ₽ · команда МГУ</span>
+          <img src="https://geokriolog.ru/images/cryo-monitoring.webp" alt="Тепловизионный контроль СОУ"/>
+        </article>
+        <article class="tile reveal">
+          <div class="k">02 · Техника</div>
+          <h3>Поставка TYSIM и RCO</h3>
+          <p>Роторные буровые, обсадные столы, инструмент. Зимний пакет, русское меню, документы под сдачу.</p>
+          <span class="tag">в наличии · СПб</span>
+        </article>
+        <article class="tile reveal">
+          <div class="k">03 · Сервис</div>
+          <h3>Поддержка 48 часов</h3>
+          <p>Склад запчастей, выезд инженера, ТО, обучение операторов 3 дня, расходка под заказ из КНР и Европы.</p>
+          <span class="tag">2 000 моточасов</span>
+        </article>
+        <article class="tile reveal">
+          <div class="k">04 · Оголовки БНС</div>
+          <h3>Быстрый демонтаж</h3>
+          <p>Новое строительство и капремонт: снять оголовок БНС быстрее в 3-4 раза, с экономией 65-72% к рынку. Город и Север.</p>
+          <span class="tag">под ключ · пилот на объекте</span>
+          <div style="margin-top:14px"><a href="/demontazh-ogolovkov-bns/" style="color:var(--ice2);font-size:13px;font-weight:600">Подробнее об оголовках →</a></div>
+        </article>
+        <article class="tile reveal">
+          <div class="k">Связка</div>
+          <h3>Одна точка ответственности</h3>
+          <p>Бурение (TYSIM) → обсадка (RCO) → бетонирование сваи → демонтаж оголовка в проектную отметку → ростверк / сдача. Параллельно: RFQ → КП → сервис.</p>
+          <span class="tag">мосты · дороги · промплощадки · Север</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="cryo">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 class="sec-h">Как работаем с вечной мерзлотой</h2>
+        <p class="sec-p">Более половины территории РФ - многолетняя и сезонная мерзлота. Без специальных технологий фундамент и насыпь живут 2-3 сезона.</p>
+      </div>
+      <div class="cryo-grid">
+        <div class="cryo-list reveal">
+          <article class="cryo-item">
+            <div class="cryo-ico">СОУ</div>
+            <div>
+              <h3>Термостабилизация</h3>
+              <p>Пассивные сезонные охлаждающие устройства отводят тепло без электричества. Хладагенты R717 / R744 / R410a. Полигон МГУ, Заполярный, Нарьян-Мар.</p>
+            </div>
+          </article>
+          <article class="cryo-item">
+            <div class="cryo-ico">БСС</div>
+            <div>
+              <h3>Смеси без перегрева</h3>
+              <p>Схватывание 2-3 часа при минимальном тепловыделении. Цемент при гидратации даёт +60°C и тает лёд в грунте - мы этого не делаем.</p>
+            </div>
+          </article>
+          <article class="cryo-item">
+            <div class="cryo-ico">ГНБ</div>
+            <div>
+              <h3>Бурение воздухом</h3>
+              <p>Горизонтально-направленное бурение в мёрзлых породах без промывки водой. Дренаж и защита границы сезонного оттаивания.</p>
+            </div>
+          </article>
+        </div>
+        <div class="cryo-gallery reveal">
+          <figure><div class="media-box"><img src="https://geokriolog.ru/images/cryo-thermo.webp" alt="Термостабилизатор"/></div><figcaption>Эскиз термостабилизатора с плавниковым оребрением</figcaption>
+          </figure>
+          <figure><div class="media-box"><img src="https://geokriolog.ru/images/cryo-bss-graph.webp" alt="БСС vs цемент"/></div><figcaption>БСС 2-3 ч vs цемент 48+ ч</figcaption>
+          </figure>
+          <figure><div class="media-box"><img src="https://geokriolog.ru/images/cryo-injection.webp" alt="Буроинъекция"/></div><figcaption>Буроинъекционные системы</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech" id="tech">
+    <div class="wrap tech-grid">
+      <div class="tech-panel reveal">
+        <img src="https://geokriolog.ru/images/tech-key.webp" alt="TYSIM с мониторингом"/>
+      </div>
+      <div class="reveal">
+        <h2 class="sec-h">TYSIM под российские условия</h2>
+        <p class="sec-p">Зимний пакет, русскоязычный интерфейс, AI-подсказки по оснастке и пакет документов для сдачи объекта.</p>
+        <div class="feat">
+          <article>
+            <span class="dot"></span>
+            <div>
+              <h3>Зимний пакет −50°C</h3>
+              <p>Webasto, АКБ 220 А·ч, обогрев гидравлики, антикор IP65. Техника заводится на Севере с первого дня.</p>
+            </div>
+          </article>
+          <article>
+            <span class="dot"></span>
+            <div>
+              <h3>Русское меню и телеметрия</h3>
+              <p>Диагностика, журнал ошибок, нагрузка на инструмент, давление в гидросистеме - в реальном времени.</p>
+            </div>
+          </article>
+          <article>
+            <span class="dot"></span>
+            <div>
+              <h3>Закрытие без сюрпризов</h3>
+              <p>Паспорт, ПНР, акты, фотофиксация. Документы готовы к загрузке в проектный контур заказчика.</p>
+            </div>
+          </article>
+        </div>
+        <div style="margin-top:22px">
+          <a class="btn btn-ice" href="#cta">Запросить наличие KR300M</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="projects-head reveal">
+        <div>
+          <h2 class="sec-h">Где уже работали</h2>
+          <p class="sec-p">Геокриология и фундаменты: 15+ проектов в многолетнемёрзлых породах, 5 лет без просадок на ключевых объектах. Кейс по оголовкам БНС (мост Ижора) - в блоке ниже.</p>
+        </div>
+      </div>
+      <div class="projects-scroller reveal">
+        <article class="proj"><div class="loc">Мурманск</div><h3>Дом ФСБ</h3><p>Усиление фундамента в высокольдистых грунтах. Лидерные скважины с бетонированием.</p><div class="stat">200 свай · ø520 · l=8 м</div></article>
+        <article class="proj"><div class="loc">Мурманск</div><h3>Драмтеатр</h3><p>Реконструкция фундамента действующего здания. Буроинъекционные сваи БСС.</p><div class="stat">50 свай · ø426 · l=11 м</div></article>
+        <article class="proj"><div class="loc">Апатиты</div><h3>Трубопровод</h3><p>Опоры на свайном основании + термостабилизация СОУ при сезонных оттайках.</p><div class="stat">120 свай · ø400 · l=8 м</div></article>
+        <article class="proj"><div class="loc">Кировск</div><h3>Расумчорский рудник</h3><p>Опоры ленточного конвейера на высоте 1700 м. Bauer BG28 + трубчатая опалубка.</p><div class="stat">54 сваи · ø426 · l=12 м</div></article>
+        <article class="proj"><div class="loc">Кандалакша</div><h3>РусАл</h3><p>Шпунтовое ограждение склада глинозёма. Стена в грунте 78 м.</p><div class="stat">456 свай · ø219 · l=7,5 м</div></article>
+        <article class="proj"><div class="loc">Мурманск</div><h3>ТЭЦ</h3><p>Реконструкция фундаментов градирни. Сваи-стойки с опорой на скалу.</p><div class="stat">240 свай · ø273 · l=12 м</div></article>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="pile-heads">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 class="sec-h">Технология быстрого демонтажа оголовков БНС</h2>
+        <p class="sec-p">После бетонирования БНС (новое строительство) или на капремонте моста узкое место - снять оголовок до проектной отметки: не повредить арматуру, не сорвать срок и смету. Этот этап мы закрываем в одном контуре с бурением и поставкой техники.</p>
+      </div>
+
+      <div class="about-grid" style="margin-bottom:28px">
+        <div class="reveal">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px">
+            <div style="padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--bg2)">
+              <b style="display:block;font-size:28px;letter-spacing:-.04em;color:var(--ice2)">3-4×</b>
+              <span style="font-size:13px;color:var(--muted)">быстрее классики</span>
+            </div>
+            <div style="padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--bg2)">
+              <b style="display:block;font-size:28px;letter-spacing:-.04em;color:var(--ice2)">65-72%</b>
+              <span style="font-size:13px;color:var(--muted)">экономия vs традиция</span>
+            </div>
+            <div style="padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--bg2)">
+              <b style="display:block;font-size:28px;letter-spacing:-.04em;color:var(--ice2)">Ø 0.6-2 м</b>
+              <span style="font-size:13px;color:var(--muted)">диапазон свай</span>
+            </div>
+            <div style="padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--bg2)">
+              <b style="display:block;font-size:28px;letter-spacing:-.04em;color:var(--ice2)">709k ₽</b>
+              <span style="font-size:13px;color:var(--muted)">экономия на 100 огол.</span>
+            </div>
+          </div>
+          <p style="color:var(--muted);font-size:15px;max-width:48ch">Традиционно: отбойные молотки, алмазная резка, гидроклин - долго, шумно, много техники и людей. Наш способ разрушает бетон оголовка, сохраняя арматурный каркас и тело сваи ниже отметки. Меньше людей и тяжёлой техники на площадке.</p>
+        </div>
+        <div class="reveal">
+          <div class="about-card">
+            <img src="https://geokriolog.ru/images/geo-project-1.webp" alt="Свайные работы на объекте"/>
+            <div class="body">
+              <h3>Где это в цепочке Геокриолог</h3>
+              <p style="margin-bottom:12px">1. Аудит грунтов и схема свайного основания<br/>2. Бурение и обсадка (TYSIM + RCO1500), если нужна техника<br/>3. <strong style="color:var(--text)">Демонтаж оголовков БНС</strong> до отметки под ростверк / ремонт<br/>4. Сервис и расходка на всём цикле</p>
+              <p>Можно зайти только на шаг 3 (уже стоят сваи). Апробация: капремонт моста через р. Ижора. На Севере эффект сильнее: короткий сезон и рыночные 1 800-3 500 ₽/оголовок.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat-grid reveal" style="margin-bottom:22px">
+        <article class="card" style="padding:0">
+          <div class="c">
+            <h3>Для кого</h3>
+            <p>Мостовики и дорожники, ДРСУ Севера, подрядчики Севморпути и СШХ, промстрой на БНС. Не только «мерзлота» - любой объект, где режут оголовки.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="c">
+            <h3>Модели работы</h3>
+            <p>Под ключ совместными бригадами · техпартнёрство с обучением · совместный выпуск комплектов · франшиза в регион.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="c">
+            <h3>Ориентир рынка 2025-26</h3>
+            <p>Рыночные ставки (не наш прайс): Москва/МО 1 200-1 500 ₽ · Архангельск 1 500-2 000 ₽ · ЯНАО/НАО 1 800-3 500 ₽/оголовок с НДС. Наша экономика - минус 65-72% к такому базису.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="projects-scroller reveal" style="margin-bottom:8px">
+        <article class="proj"><div class="loc">Эффект</div><h3>Путепровод · 48 шт</h3><p>Типовой объём на искусственном сооружении.</p><div class="stat">экономия ~340 000 ₽</div></article>
+        <article class="proj"><div class="loc">Эффект</div><h3>Мост · 112 шт</h3><p>Сравнение с традиционным демонтажем на том же объёме.</p><div class="stat">экономия ~794 000 ₽</div></article>
+        <article class="proj"><div class="loc">Эффект</div><h3>Развязка · 186 шт</h3><p>Меньше техники и людей в стеснённых условиях города.</p><div class="stat">экономия ~1,3 млн ₽</div></article>
+        <article class="proj"><div class="loc">Эффект</div><h3>Крупный объект · 320 шт</h3><p>Там, где сезон и логистика бьют по смете сильнее всего.</p><div class="stat">экономия ~2,3 млн ₽</div></article>
+      </div>
+
+      <div class="reveal" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:center">
+        <a class="btn btn-ice" href="#cta">Запросить КП по оголовкам</a>
+        <a class="btn btn-ghost" href="mailto:info@geokriolog.ru?subject=Оголовки%20БНС%20-%20пилот">Письмо на info@</a>
+        <span style="font-size:13px;color:var(--muted)">Пилот: выезд на объект → демо → договор</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 class="sec-h">Каталог</h2>
+        <p class="sec-p">Поставка: роторные буровые, обсадные столы, инструмент. Демонтаж оголовков - услуга/технология, не позиция склада (блок выше). Наличие техники - ответ в течение часа.</p>
+      </div>
+      <div class="cat-grid reveal">
+        <article class="card">
+          <img src="https://geokriolog.ru/images/kr300m-1-1.webp" alt="KR300M"/>
+          <div class="c">
+            <h3>TYSIM KR300M</h3>
+            <p>320 кН·м · 54 м · Ø 2500 · 90 т · CAT C9.3B 259 кВт</p>
+            <div class="row"><span class="price">флагман · под ключ</span><a class="btn btn-ghost" style="height:36px;padding:0 14px" href="#cta">КП</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://geokriolog.ru/images/kr300m-3-1.webp" alt="TYSIM серия"/>
+          <div class="c">
+            <h3>Серия TYSIM</h3>
+            <p>От компактных KR50 до тяжёлых машин под ваш парк и геологию.</p>
+            <div class="row"><span class="price">под заказ</span><a class="btn btn-ghost" style="height:36px;padding:0 14px" href="#cta">Подбор</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://geokriolog.ru/images/rco1500_p0_2.webp" alt="RCO1500"/>
+          <div class="c">
+            <h3>Обсадной стол RCO1500</h3>
+            <p>Ø 1500 · 1500 кН·м · 350 бар · 7200 кг. TYSIM, XCMG, SANY, Liebherr…</p>
+            <div class="row"><span class="price">в наличии · СПб</span><a class="btn btn-ghost" style="height:36px;padding:0 14px" href="#cta">Цена</a></div>
+          </div>
+        </article>
+      </div>
+
+      <h3 style="margin:36px 0 14px;font-size:18px;letter-spacing:-.02em" class="reveal">Буровой инструмент со склада</h3>
+      <div class="tools reveal">
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-shnek.webp" alt="Шнеки"/><span>Шнеки</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-kovshebur.webp" alt="Ковшебуры"/><span>Ковшебуры</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-cfa.webp" alt="CFA"/><span>CFA</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-dreiteller.webp" alt="Дрейтеллеры"/><span>Дрейтеллеры</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-tremie.webp" alt="Бетонолит"/><span>Бетонолит</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-kelly.webp" alt="Келли"/><span>Келли-штанги</span></div>
+      </div>
+      <p style="margin-top:14px;font-size:13px;color:var(--muted)" class="reveal">Диаметры 520-1200 мм. Совместимость: Bauer, Liebherr, Soilmec, Casagrande, SANY, XCMG, TYSIM.</p>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <div class="wrap">
+      <div class="cta-box reveal" id="success">
+        <div>
+          <h2>Заявка за 24 часа</h2>
+          <p class="sub">Аудит грунтов, TYSIM/RCO, демонтаж оголовков БНС или сервис. Кратко опишите объект - вернём схему работ и ориентир по срокам.</p>
+          <div class="cta-contacts">
+            <a class="btn btn-ghost" href="tel:+79119245467">Позвонить</a>
+            <a class="btn btn-ghost" href="mailto:info@geokriolog.ru">info@geokriolog.ru</a>
+            <a class="btn btn-warm" href="https://wa.me/79119245467" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <p style="margin-top:20px;font-size:12.5px;color:var(--muted)">ООО «НПО ГЕОКРИОЛОГ» · ИНН 7817123404 · ОГРН 1227800134100 · Санкт-Петербург</p>
+        </div>
+        <form class="form" id="leadForm" action="https://formsubmit.co/info@geokriolog.ru" method="POST" novalidate>
+          <input type="hidden" name="_captcha" value="false"/>
+          <input type="hidden" name="_template" value="table"/>
+          <input type="hidden" name="_next" value="https://geokriolog.ru/#success"/>
+          <input type="hidden" name="_subject" value="Заявка с geokriolog.ru"/>
+          <input type="text" name="_honey" value="" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+          <div class="form-row">
+            <div class="field"><label for="name">Имя</label><input id="name" name="name" required autocomplete="name" placeholder="Александр"/></div>
+            <div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+()\-\s]{10,20}" minlength="10" placeholder="+7 (___) ___-__-__"/></div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="type">Тип объекта</label>
+              <select id="type" name="type" required>
+                <option value="" disabled selected>- выберите -</option>
+                <option value="Авто / ж/д">Авто / ж/д</option>
+                <option value="Здание / сооружение">Здание / сооружение</option>
+                <option value="Мост / эстакада">Мост / эстакада</option>
+                <option value="Демонтаж оголовков БНС">Демонтаж оголовков БНС</option>
+                <option value="Опоры ЛЭП">Опоры ЛЭП</option>
+                <option value="ГТС">ГТС</option>
+                <option value="Другое">Другое</option>
+              </select>
+            </div>
+            <div class="field"><label for="region">Регион</label><input id="region" name="region" placeholder="Мурманская обл., ЯНАО…"/></div>
+          </div>
+          <div class="field"><label for="msg">Задача</label><textarea id="msg" name="message" placeholder="Парк / оголовки БНС / регион / сроки"></textarea></div>
+          <label class="check" for="consent"><input type="checkbox" id="consent" name="consent" value="yes" required/> <span>Согласен на обработку персональных данных (152-ФЗ). Заявка уйдёт на info@geokriolog.ru</span></label>
+          <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+          <div class="form-err" id="formErr" role="alert" hidden></div>
+          <p class="form-note" id="formNote">Нажимая «Отправить», вы оставляете заявку в НПО ГЕОКРИОЛОГ. Ответ - на почту/телефон из формы.</p>
+          <div class="form-actions">
+            <button class="btn btn-ice" type="submit" id="lfSubmit">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div style="display:flex;flex-wrap:wrap;gap:10px 14px;margin-bottom:10px;font-size:12.5px">
+      <a href="/demontazh-ogolovkov-bns/" style="color:var(--ice2)">Оголовки БНС</a>
+      <a href="/tysim-kr300m/" style="color:var(--ice2)">TYSIM KR300M</a>
+      <a href="/obshadnoj-stol-rco1500/" style="color:var(--ice2)">RCO1500</a>
+      <a href="/audit-kriolitozony/" style="color:var(--ice2)">Аудит криолитозоны</a>
+    </div>
+    <div>© 2026 НПО ГЕОКРИОЛОГ · geokriolog.ru · SEO pack 18.07.2026</div>
+      <div style="display:flex;gap:16px">
+        <a href="#privacy">152-ФЗ</a>
+        <a href="mailto:info@geokriolog.ru">info@geokriolog.ru</a>
+        <a href="tel:+79119245467">+7 911 924-54-67</a>
+      </div>
+    </div>
+    <div class="legal" id="privacy">
+      Оператор: ООО «НПО ГЕОКРИОЛОГ» (ИНН 7817123404). При отправке формы обрабатываются имя, телефон и сведения об объекте для обратной связи и КП. Основание - согласие субъекта (ст. 6, 9 152-ФЗ). Срок хранения до 1 года либо до отзыва на info@geokriolog.ru. Данные не передаются третьим лицам в маркетинговых целях.
     </div>
   </div>
-  <div style="text-align:center;margin-top:32px;font-size:12px;color:var(--muted)">© 2026 ООО «НПО ГЕОКРИОЛОГ» · TYSIM в России</div>
 </footer>
 
-<section class="privacy" id="privacy">
-  <h2>Обработка персональных данных</h2>
-  <p>Оператор: ООО «НПО ГЕОКРИОЛОГ» (ИНН 7817123404, ОГРН 1227800134100). Контакт: <a href="mailto:info@geokriolog.ru" style="color:var(--ink)">info@geokriolog.ru</a>, +7 (911) 924-54-67.</p>
-  <p>При отправке заявки с сайта обрабатываются имя, телефон и сведения об объекте исключительно для обратной связи и подготовки коммерческого предложения. Основание — согласие субъекта (ст. 6, 9 152-ФЗ).</p>
-  <p>Данные не передаются третьим лицам в маркетинговых целях. Срок хранения — до 1 года с момента заявки либо до отзыва согласия. Для отзыва согласия напишите на info@geokriolog.ru.</p>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
 <script>
-(()=>{'use strict';
+(function(){
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled', scrollY>8);
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
 
-function initNav() {
-  document.querySelectorAll('[data-goto]').forEach(el => {
-    el.addEventListener('click', () => {
-      const id = el.dataset.goto;
-      const target = document.getElementById(id);
-      if (target) target.scrollIntoView({behavior:'smooth'});
-      document.querySelectorAll('.n-t').forEach(t => t.classList.remove('active'));
-      if (el.classList.contains('n-t')) el.classList.add('active');
-      document.querySelector('.nav')?.classList.remove('m-open');
-      document.querySelector('.nav-hamb')?.classList.remove('active');
-    });
-  });
+  const btn=document.getElementById('menuBtn');
+  const links=document.getElementById('navLinks');
+  btn?.addEventListener('click',()=>links.classList.toggle('open'));
+  links?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
 
-  document.querySelector('.nav-hamb')?.addEventListener('click', function() {
-    document.querySelector('.nav')?.classList.toggle('m-open');
-    this.classList.toggle('active');
-  });
-
-  if ('IntersectionObserver' in window) {
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('rv-in');
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
-  }
-}
-
-function initGsap() {
-  if (typeof gsap === 'undefined') {
-    document.querySelectorAll('.h-i').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
-    return;
-  }
-  if (typeof ScrollTrigger !== 'undefined') gsap.registerPlugin(ScrollTrigger);
-  gsap.from('.hero h1, .h-t, .h-s, .h-b', { y: 40, opacity: 0, duration: 1, stagger: 0.12, ease: 'power3.out', delay: 0.2 });
-  gsap.to('.h-i', { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out', delay: 0.8 });
-
-  gsap.utils.toArray('.co').forEach((el, i) => {
-    ScrollTrigger.create({
-      trigger: el, start: 'top 90%',
-      onEnter: () => gsap.to(el, { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.7, delay: i * 0.05, ease: 'power3.out' }),
-      once: true
-    });
-  });
-  gsap.utils.toArray('.co').forEach(el => gsap.set(el, { opacity: 0, y: 20, filter: 'blur(4px)' }));
-
-  gsap.utils.toArray('.cc').forEach((el, i) => {
-    ScrollTrigger.create({
-      trigger: el, start: 'top 90%',
-      onEnter: () => gsap.to(el, { opacity: 1, y: 0, duration: 0.6, delay: i * 0.04, ease: 'power3.out' }),
-      once: true
-    });
-  });
-  gsap.utils.toArray('.cc').forEach(el => gsap.set(el, { opacity: 0, y: 16 }));
-
-  if (typeof ScrollTrigger !== 'undefined') {
-    ['home','about','services','cryo','catalog','projects-geo','cta'].forEach(id => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      ScrollTrigger.create({
-        trigger: el, start: 'top 40%', end: 'bottom 60%',
-        onEnter: () => { document.querySelectorAll('.n-t').forEach(t => t.classList.remove('active')); const tab = document.querySelector(`.n-t[data-goto="${id}"]`); if (tab) tab.classList.add('active'); },
-        onEnterBack: () => { document.querySelectorAll('.n-t').forEach(t => t.classList.remove('active')); const tab = document.querySelector(`.n-t[data-goto="${id}"]`); if (tab) tab.classList.add('active'); }
-      });
-    });
-  }
-}
-
-function initForm() {
-  const form = document.getElementById('leadForm');
-  if (!form) return;
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = document.getElementById('lf_name').value.trim();
-    const phone = document.getElementById('lf_phone').value.trim();
-    const type = document.getElementById('lf_type').value;
-    const region = document.getElementById('lf_region').value.trim();
-    const consent = document.getElementById('lf_consent').checked;
-    const typeLabels = {'road':'Дорога','building':'Здание','bridge':'Мост','pole':'ЛЭП','dam':'ГТС','other':'Другое'};
-    if (!name || !phone) { alert('Заполните имя и телефон'); return; }
-    if (!consent) { alert('Нужно согласие на обработку персональных данных'); return; }
-    const body = `Заявка на аудит объекта\n\nИмя: ${name}\nТелефон: ${phone}\nТип объекта: ${typeLabels[type]||type||'не указан'}\nРегион: ${region||'не указан'}\n\nС сайта geokriolog.ru\nСогласие на обработку ПДн: да`;
-    form.querySelector('[name="_captcha"]').value = 'false';
-    if (typeof ym === 'function') ym(110604818, 'reachGoal', 'form_lead');
-    form.submit();
-    document.getElementById('lfMsg').classList.add('show');
-   });
-}
-
-function trackCalls() {
-  document.querySelectorAll('a[href^="tel:"]').forEach(el => {
-    el.addEventListener('click', () => {
-      if (typeof ym === 'function') ym(110604818, 'reachGoal', 'call_click');
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(el => {
-    el.addEventListener('click', () => {
-      if (typeof ym === 'function') ym(110604818, 'reachGoal', 'email_click');
-    });
-  });
-}
-
-function initCounters() {
-  const nums = document.querySelectorAll('.stat-num');
-  if (!nums.length) return;
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      const el = e.target;
-      const raw = el.textContent.trim();
-      const prefix = raw.includes('+') ? '+' : '';
-      const suffix = raw.includes('+') ? '' : '';
-      const target = parseInt(raw.replace(/\s/g,'').replace(/\+/g,''));
-      if (isNaN(target)) { el.textContent = raw; return; }
-      const duration = 1500;
-      const start = performance.now();
-      function frame(now) {
-        const p = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - p, 3);
-        const val = Math.round(eased * target);
-        el.textContent = prefix + val.toLocaleString('ru-RU') + suffix;
-        if (p < 1) requestAnimationFrame(frame);
+  // reveal + stagger children
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      e.target.classList.add('on');
+      // cascade children with .reveal inside stagger parents
+      if(e.target.classList.contains('reveal-stagger')){
+        [...e.target.children].forEach((ch,i)=>{
+          if(!ch.classList.contains('reveal')) ch.classList.add('reveal');
+          ch.style.setProperty('--d', (i*70)+'ms');
+          requestAnimationFrame(()=>ch.classList.add('on'));
+        });
       }
-      requestAnimationFrame(frame);
-      obs.unobserve(el);
+      io.unobserve(e.target);
     });
-  }, { threshold: 0.5 });
-  nums.forEach(el => obs.observe(el));
-}
+  },{threshold:0.12, rootMargin:'0px 0px -6% 0px'});
 
-function boot() {
-  initCounters();
-  initNav();
-  initForm();
-  trackCalls();
-  initGsap();
-}
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el=>io.observe(el));
+  if(reduce){
+    document.querySelectorAll('.reveal, .reveal-stagger, .reveal-stagger > *').forEach(el=>el.classList.add('on'));
+  }
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => {
-    // deferred GSAP may still be loading; retry briefly
-    if (typeof gsap !== 'undefined') boot();
-    else {
-      initNav();
-      initForm();
-      let n = 0;
-      const t = setInterval(() => {
-        n++;
-        if (typeof gsap !== 'undefined' || n > 40) {
-          clearInterval(t);
-          initGsap();
-        }
-      }, 50);
+  // stop CTA pulse after first interaction
+  document.querySelectorAll('.btn.pulse').forEach(b=>{
+    const stop=()=>b.classList.remove('pulse');
+    b.addEventListener('pointerenter', stop, {once:true});
+    b.addEventListener('click', stop, {once:true});
+  });
+
+  // soft parallax on hero image (transform only, contained)
+  const heroImg = document.querySelector('.hero-frame img');
+  if(heroImg && !reduce){
+    const hero = document.querySelector('.hero');
+    addEventListener('scroll', ()=>{
+      const r = hero?.getBoundingClientRect();
+      if(!r || r.bottom < 0 || r.top > innerHeight) return;
+      const p = Math.min(1, Math.max(0, 1 - r.top / innerHeight));
+      heroImg.style.transform = 'scale('+(1.02+p*0.04)+') translateY('+(p*8)+'px)';
+    }, {passive:true});
+  }
+
+  // lock images: if natural size missing / broken, hide overflow parent still holds
+  document.querySelectorAll('img').forEach(img=>{
+    img.addEventListener('error', ()=>{
+      img.style.opacity = '0.25';
+      img.alt = (img.alt||'') + ' (нет файла)';
+    });
+  });
+
+  // ===== Lead form: validate + FormSubmit AJAX =====
+  const form = document.getElementById('leadForm');
+  const msg = document.getElementById('formMsg');
+  const err = document.getElementById('formErr');
+  const submitBtn = document.getElementById('lfSubmit');
+
+  function showOk(text){
+    if(err){ err.classList.remove('show'); err.hidden = true; err.textContent=''; }
+    if(msg){ msg.textContent = text; msg.classList.add('show'); }
+  }
+  function showErr(text){
+    if(msg){ msg.classList.remove('show'); msg.textContent=''; }
+    if(err){ err.hidden=false; err.textContent=text; err.classList.add('show'); }
+  }
+  function track(goal){
+    try{
+      if(typeof ym === 'function') ym(110604818, 'reachGoal', goal);
+    }catch(_){}
+  }
+
+  // tel / email / wa goals
+  document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>track('call_click')));
+  document.querySelectorAll('a[href^="mailto:"]').forEach(a=>a.addEventListener('click',()=>track('email_click')));
+  document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.addEventListener('click',()=>track('wa_click')));
+
+  form?.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    if(err){ err.classList.remove('show'); err.hidden=true; }
+    if(msg){ msg.classList.remove('show'); }
+
+    // honeypot
+    const honey = form.querySelector('[name="_honey"]');
+    if(honey && honey.value){ return; }
+
+    if(!form.checkValidity()){
+      form.reportValidity();
+      showErr('Проверьте обязательные поля: имя, телефон, тип объекта и согласие 152-ФЗ.');
+      return;
+    }
+
+    const phone = (form.phone.value || '').replace(/\D/g,'');
+    if(phone.length < 10){
+      showErr('Укажите телефон полностью, например +7 911 924-54-67');
+      form.phone.focus();
+      return;
+    }
+
+    // reply-to empty is ok; put email if ever added
+    const fd = new FormData(form);
+    fd.set('source', location.href);
+    fd.set('phone_digits', phone);
+
+    const prev = submitBtn ? submitBtn.textContent : '';
+    if(submitBtn){ submitBtn.disabled = true; submitBtn.textContent = 'Отправляем…'; }
+
+    try{
+      const res = await fetch('https://formsubmit.co/ajax/info@geokriolog.ru', {
+        method: 'POST',
+        body: fd,
+        headers: { 'Accept': 'application/json' }
+      });
+      let data = null;
+      try { data = await res.json(); } catch(_){}
+      if(!res.ok){
+        throw new Error((data && (data.message || data.error)) || ('Ошибка сети: ' + res.status));
+      }
+      showOk('Заявка отправлена на info@geokriolog.ru. Ответим в течение рабочего часа.');
+      track('form_lead');
+      form.reset();
+      // keep type placeholder selected
+      const type = form.querySelector('#type');
+      if(type) type.selectedIndex = 0;
+      // scroll to confirmation
+      msg?.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'nearest'});
+    }catch(ex){
+      console.error(ex);
+      showErr('Не удалось отправить автоматически. Напишите на info@geokriolog.ru или нажмите WhatsApp - форма не потеряла ваши данные в полях ниже, если остались.');
+      // do not reset on error
+    }finally{
+      if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = prev || 'Отправить заявку'; }
     }
   });
-} else {
-  boot();
-}
 })();
 </script>
-
 </body>
 </html>
