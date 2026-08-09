@@ -40,14 +40,14 @@
 <!-- /local-fonts -->
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Инженерный блог НПО ГЕОКРИОЛОГ — технологии для мерзлоты и свайных работ</title>
+<title>Инженерный блог НПО ГЕОКРИОЛОГ — мерзлота и свайные работы</title>
 <meta name="description" content="Разбор технологий: безударный демонтаж оголовков буронабивных свай, термосифоны и термостабилизация грунтов, геотехника в криолитозоне."/>
 <link rel="canonical" href="https://geokriolog.ru/blog/"/>
 <meta name="robots" content="index,follow"/>
 <meta property="og:type" content="website"/>
 <meta property="og:locale" content="ru_RU"/>
 <meta property="og:url" content="https://geokriolog.ru/blog/"/>
-<meta property="og:title" content="Инженерный блог НПО ГЕОКРИОЛОГ — технологии для мерзлоты и свайных работ"/>
+<meta property="og:title" content="Инженерный блог НПО ГЕОКРИОЛОГ — мерзлота и свайные работы"/>
 <meta property="og:description" content="Разбор технологий: безударный демонтаж оголовков буронабивных свай, термосифоны и термостабилизация грунтов, геотехника в криолитозоне."/>
 <meta property="og:image" content="https://geokriolog.ru/images/bns-otkopka.webp"/>
 <meta name="theme-color" content="#0A0C10"/>
@@ -115,10 +115,47 @@
       <h2>Нужна консультация по объекту?</h2>
       <p>Опишите задачу — ответим в течение рабочего дня.</p>
       <div class="row">
-        <a class="btn btn-ice" href="/demontazh-ogolovkov-bns/#leadForm">Оставить заявку</a>
         <a class="btn btn-ghost" href="mailto:info@geokriolog.ru">Написать на info@</a>
         <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
+        <a class="btn btn-warm" href="https://wa.me/79119245467" target="_blank" rel="noopener">WhatsApp</a>
       </div>
+      <form class="lf" id="leadForm" action="https://formsubmit.co/info@geokriolog.ru" method="POST" novalidate style="margin-top:16px">
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="hidden" name="_next" value="https://geokriolog.ru/#success"/>
+        <input type="hidden" name="_subject" value="Заявка: Блог"/>
+        <input type="hidden" name="page" value="Блог"/>
+        <input type="text" name="_honey" value="" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <div class="lf-row">
+          <div><label for="lf-name">Имя</label><input id="lf-name" name="name" required autocomplete="name" placeholder="Александр"/></div>
+          <div><label for="lf-phone">Телефон</label><input id="lf-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+()\-\s]{10,20}" minlength="10" placeholder="+7 (___) ___-__-__"/></div>
+        </div>
+        <div><label for="lf-msg">Задача</label><textarea id="lf-msg" name="message" placeholder="Объект, объём, сроки"></textarea></div>
+        <label class="lf-check" for="lf-consent"><input type="checkbox" id="lf-consent" name="consent" value="yes" required/>
+          <span>Согласен на обработку персональных данных (152-ФЗ). Заявка уйдёт на info@geokriolog.ru</span></label>
+        <div class="lf-msg lf-ok" id="lfOk" role="status" aria-live="polite">Заявка отправлена. Свяжемся в течение рабочего дня.</div>
+        <div class="lf-msg lf-err" id="lfErr" role="alert"></div>
+        <div><button class="btn btn-ice" type="submit" id="lfBtn">Отправить заявку</button></div>
+      </form>
+      <script>
+      (function(){
+        var f=document.getElementById('leadForm');if(!f)return;
+        var ok=document.getElementById('lfOk'),er=document.getElementById('lfErr'),bt=document.getElementById('lfBtn');
+        function goal(g){try{if(typeof ym==='function')ym(110604818,'reachGoal',g);}catch(e){}}
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){goal('call_click');});});
+        document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.addEventListener('click',function(){goal('email_click');});});
+        document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){a.addEventListener('click',function(){goal('wa_click');});});
+        f.addEventListener('submit',function(e){
+          e.preventDefault();er.classList.remove('show');
+          if(f.querySelector('[name="_honey"]').value)return;
+          if(!f.checkValidity()){f.reportValidity();er.textContent='Проверьте имя, телефон и согласие.';er.classList.add('show');return;}
+          bt.disabled=true;bt.textContent='Отправляем…';
+          fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+            .then(function(r){if(!r.ok)throw 0;goal('form_lead');ok.classList.add('show');f.reset();bt.textContent='Отправлено';})
+            .catch(function(){er.textContent='Не удалось отправить. Позвоните: +7 911 924-54-67';er.classList.add('show');bt.disabled=false;bt.textContent='Отправить заявку';});
+        });
+      })();
+      </script>
     </div>
   </div>
 </main>
