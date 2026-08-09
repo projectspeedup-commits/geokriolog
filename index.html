@@ -163,7 +163,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* HERO */
 .hero{
-  min-height:100dvh; padding-top:calc(var(--nav) + 28px); padding-bottom:48px;
+  min-height:auto; padding-top:calc(var(--nav) + 42px); padding-bottom:52px;
   display:grid; align-items:center;
   background:
     radial-gradient(900px 500px at 85% 15%, rgba(94,200,192,.14), transparent 55%),
@@ -215,13 +215,13 @@ button,input,select,textarea{font:inherit;color:inherit}
 .float-chip b{display:block;font-size:18px;color:var(--ice2);letter-spacing:-.03em}
 
 /* SECTIONS */
-section{padding:88px 0}
+section{padding:62px 0}
 .sec-h{
   font-size:clamp(1.7rem, 3vw, 2.4rem);
   letter-spacing:-.03em; line-height:1.12; font-weight:800; max-width:18ch;
 }
 .sec-p{margin-top:12px;color:var(--muted);max-width:52ch;font-size:15.5px}
-.sec-head{margin-bottom:40px}
+.sec-head{margin-bottom:28px}
 
 /* STRIP */
 .strip{
@@ -413,7 +413,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);f
   .cryo-gallery figure:first-child{grid-column:auto}
   .hero h1{max-width:none}
   .projects-scroller{grid-auto-columns:85%}
-  section{padding:64px 0}
+  section{padding:46px 0}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -592,7 +592,7 @@ section, .hero, .strip, footer{ overflow-x:clip; }
   .nav-inner{ gap:10px; width:min(100% - 20px, var(--max)); }
   .brand span{ font-size:12.5px; max-width:42vw; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .nav-cta .btn-ice{ height:38px; padding:0 12px; font-size:12.5px; }
-  .hero{ padding-top:calc(var(--nav) + 18px); }
+  .hero{ padding-top:calc(var(--nav) + 8px); padding-bottom:6px; }
   .hero-meta{ gap:14px 18px; }
   .hero-meta b{ font-size:18px; }
   .cta-box{ padding:22px 16px; border-radius:20px; }
@@ -717,6 +717,21 @@ section, .hero, .strip, footer{ overflow-x:clip; }
 .field input:focus:valid{ border-color:rgba(94,200,192,.55); }
 .btn[disabled]{ opacity:.55; cursor:not-allowed; transform:none !important; }
 .check span{ line-height:1.4; }
+
+.case-strip{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:26px;
+  align-items:center;padding:20px;border:1px solid rgba(94,200,192,.26);border-radius:20px;
+  background:linear-gradient(135deg,rgba(94,200,192,.08),rgba(94,200,192,.02))}
+.case-media{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.case-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10;
+  transition:transform .7s var(--ease)}
+.case-media:hover img{transform:scale(1.04)}
+.case-body .loc{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ice2);margin-bottom:9px}
+.case-body h2{font-size:clamp(21px,2.5vw,29px);letter-spacing:-.02em;line-height:1.2;margin-bottom:10px}
+.case-body p{font-size:14.5px;color:var(--muted);line-height:1.55;max-width:60ch}
+.case-nums{display:flex;flex-wrap:wrap;gap:26px;margin:16px 0 18px}
+.case-nums b{display:block;font-size:26px;letter-spacing:-.03em;color:var(--ice2)}
+.case-nums span{font-size:12.5px;color:var(--muted)}
+@media (max-width:860px){.case-strip{grid-template-columns:1fr;padding:16px}}
 </style>
 
 <script>
@@ -825,6 +840,28 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
       <article><b>Ø 0.6-2 м</b><span>оголовки БНС</span></article>
     </div>
   </div>
+
+
+  <section id="case" style="padding:26px 0 40px">
+    <div class="wrap">
+      <div class="case-strip reveal">
+        <a class="case-media" href="/proekty/" aria-label="Кейс: мост через Ижору">
+          <img src="/images/bns-ogolovki.webp" alt="Снятые оголовки буронабивных свай на мосту через Ижору" width="960" height="540" loading="lazy" decoding="async"/>
+        </a>
+        <div class="case-body">
+          <div class="loc">Кейс · капремонт моста через р. Ижора</div>
+          <h2>Сняли оголовки за 6 дней вместо 3 недель по графику</h2>
+          <p>Стеснённая площадка в шпунтовом ограждении, работа у воды, контроль технадзора. Арматурный каркас сохранён полностью, замечаний нет. Генподрядчик вышел на ростверк без сдвига графика.</p>
+          <div class="case-nums">
+            <div><b>6 дней</b><span>вместо 21</span></div>
+            <div><b>100%</b><span>арматура цела</span></div>
+            <div><b>0</b><span>замечаний</span></div>
+          </div>
+          <a class="btn btn-ice" href="/proekty/">Смотреть кейс и фото с объекта →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="about">
     <div class="wrap">
@@ -993,7 +1030,7 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
       <div class="projects-head reveal">
         <div>
           <h2 class="sec-h">Где уже работали</h2>
-          <p class="sec-p">Геокриология и фундаменты: 15+ проектов в многолетнемёрзлых породах, 5 лет без просадок на ключевых объектах. Кейс по оголовкам БНС (мост Ижора) - в блоке ниже.</p>
+          <p class="sec-p">Геокриология и фундаменты: 15+ проектов в многолетнемёрзлых породах, 5 лет без просадок на ключевых объектах. Кейс по оголовкам БНС - <a href="/proekty/" style="color:var(--ice2)">мост через Ижору</a>.</p>
         </div>
       </div>
       <div class="projects-scroller reveal">
@@ -1077,10 +1114,21 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
         <article class="proj"><div class="loc">Логистика</div><h3>Меньше техники</h3><p>Не нужны компрессоры, алмазная резка и вывоз боя. Достаточно штатного экскаватора и крана.</p><div class="stat">минимальная бригада</div></article>
       </div>
 
+      
+      <div class="sec-head reveal" style="margin-top:26px">
+        <h3 class="sec-h" style="font-size:clamp(19px,2.2vw,24px)">Как это выглядит на объекте</h3>
+      </div>
+      <div class="projects-scroller reveal" style="margin-top:12px">
+        <article class="proj"><div class="loc">Подготовка</div><img src="/images/bns-kartridzhi.webp" alt="Картриджи с расширяющимся составом крепят к арматурному каркасу" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px;font-size:13px;color:var(--muted)">Картриджи по кольцу каркаса на проектной отметке</p></article>
+        <article class="proj"><div class="loc">Откопка</div><img src="/images/bns-otkopka.webp" alt="Откопка оголовка после набора прочности бетона" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px;font-size:13px;color:var(--muted)">Трещина проявилась по заданной отметке</p></article>
+        <article class="proj"><div class="loc">Подъём</div><img src="/images/bns-stropovka.webp" alt="Подъём оголовка краном вертикально вверх" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px;font-size:13px;color:var(--muted)">Оголовок снимают вертикально вверх</p></article>
+        <article class="proj"><div class="loc">Результат</div><img src="/images/bns-svai-gotovo.webp" alt="Сваи с сохранёнными арматурными выпусками" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px;font-size:13px;color:var(--muted)">Выпуски целы, свая готова под ростверк</p></article>
+      </div>
+
       <div class="reveal" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:center">
         <a class="btn btn-ice" href="#cta">Запросить КП по оголовкам</a>
         <a class="btn btn-ghost" href="mailto:info@geokriolog.ru?subject=Оголовки%20БНС%20-%20пилот">Письмо на info@</a>
-        <span style="font-size:13px;color:var(--muted)">Пилот: выезд на объект → демо → договор</span>
+        <span style="font-size:13px;color:var(--muted)">Пилот: 5–10 оголовков на вашем объекте — смотрите результат, потом решаете</span>
       </div>
     </div>
   </section>
