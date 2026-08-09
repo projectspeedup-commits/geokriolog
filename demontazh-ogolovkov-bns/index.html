@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <!-- lcp-preload -->
-<link rel="preload" as="image" href="https://geokriolog.ru/images/geo-project-1.webp" fetchpriority="high">
+<link rel="preload" as="image" href="/images/bns-video-poster.webp" fetchpriority="high">
 <!-- /lcp-preload -->
 <!-- local-fonts -->
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-400-cyrillic.woff2" crossorigin>
@@ -179,6 +179,14 @@
 #tsPit{transform-origin:50% 0}
 .ts .pulse{animation:tsPulse 2.2s ease-in-out infinite}
 @keyframes tsPulse{0%,100%{opacity:.55}50%{opacity:1}}
+.ts-video{margin:0 20px 16px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#000}
+.ts-video video{display:block;width:100%;height:auto}
+.ts-video-cap{display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:9px 14px;font-size:12.5px;color:var(--muted);background:var(--bg3)}
+.ts-video-cap button{background:none;border:0;color:var(--muted);cursor:pointer;font:inherit}
+.ts-video-cap button:hover{color:var(--text)}
+.ts-watch{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:600;color:var(--ts-ice2);cursor:pointer}
+.ts-watch:hover{text-decoration:underline}
 @media (prefers-reduced-motion:reduce){
   .ts *,.ts .pulse{transition:none!important;animation:none!important}
 }
@@ -295,26 +303,35 @@
       <button class="ts-step" type="button" data-i="1">
         <span class="n">2</span>
         <span><b>Установка картриджей</b>
-        <p>Водопроницаемые картриджи с расширяющимся составом крепятся на каркас точно по проектной отметке демонтажа.</p></span>
+        <p>Водопроницаемые картриджи с расширяющимся составом крепятся на каркас точно по проектной отметке демонтажа.</p>
+        <span class="ts-watch" data-video="bns-etap-kartridzhi" data-cap="Этап 2 · установка картриджей на объекте" role="button" tabindex="0">▶ смотреть на объекте</span></span>
       </button>
       <button class="ts-step" type="button" data-i="2">
         <span class="n">3</span>
         <span><b>Бетонирование сваи</b>
-        <p>Каркас опускается в скважину, свая бетонируется штатно. Никаких изменений в технологии бетонирования.</p></span>
+        <p>Каркас опускается в скважину, свая бетонируется штатно. Никаких изменений в технологии бетонирования.</p>
+        <span class="ts-watch" data-video="bns-etap-karkas" data-cap="Этап 3 · спуск каркаса и бетонирование" role="button" tabindex="0">▶ смотреть на объекте</span></span>
       </button>
       <button class="ts-step" type="button" data-i="3">
         <span class="n">4</span>
         <span><b>Откопка и магистральная трещина</b>
-        <p>Состав расширяется в щелочной среде цемента, образуя кристаллогидраты. После набора прочности на поверхности сваи проявляется направленная трещина.</p></span>
+        <p>Состав расширяется в щелочной среде цемента, образуя кристаллогидраты. После набора прочности на поверхности сваи проявляется направленная трещина.</p>
+        <span class="ts-watch" data-video="bns-etap-otkopka" data-cap="Этап 4 · откопка оголовков" role="button" tabindex="0">▶ смотреть на объекте</span></span>
       </button>
       <button class="ts-step" type="button" data-i="4">
         <span class="n">5</span>
         <span><b>Подъём оголовка</b>
-        <p>Трещина раскрывается штатной техникой, оголовок снимается вертикально вверх. Арматура и тело сваи ниже отметки не тронуты.</p></span>
+        <p>Трещина раскрывается штатной техникой, оголовок снимается вертикально вверх. Арматура и тело сваи ниже отметки не тронуты.</p>
+        <span class="ts-watch" data-video="bns-etap-podem" data-cap="Этап 5 · подъём и вывоз оголовков" role="button" tabindex="0">▶ смотреть на объекте</span></span>
       </button>
     </div>
   </div>
 
+  <div class="ts-video" id="tsVideo" hidden>
+    <video id="tsPlayer" controls preload="none" playsinline width="960" height="540"></video>
+    <div class="ts-video-cap"><span id="tsVideoCap"></span>
+      <button type="button" id="tsVideoClose" aria-label="Закрыть видео">Закрыть ×</button></div>
+  </div>
   <div class="ts-bar"><i id="tsBar"></i></div>
   <div class="ts-ctrl">
     <button type="button" id="tsPrev" aria-label="Предыдущий этап">←</button>
@@ -380,6 +397,23 @@
   document.getElementById('tsNext').addEventListener('click',function(){ pause(); goto(i+1); });
   playBtn.addEventListener('click',function(){ playing?pause():play(); });
 
+  var vp=document.getElementById('tsVideo'),pl=document.getElementById('tsPlayer'),
+      cap=document.getElementById('tsVideoCap');
+  function goal(g){try{if(typeof ym==='function')ym(110604818,'reachGoal',g);}catch(e){}}
+  function openVid(f,c){
+    pause();
+    pl.src='/video/'+f+'.mp4'; cap.textContent=c; vp.hidden=false;
+    vp.scrollIntoView({behavior:'smooth',block:'nearest'});
+    pl.play().catch(function(){}); goal('video_step');
+  }
+  root.querySelectorAll('.ts-watch').forEach(function(w){
+    function act(){ openVid(w.dataset.video, w.dataset.cap); }
+    w.addEventListener('click',act);
+    w.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();act();} });
+  });
+  document.getElementById('tsVideoClose').addEventListener('click',function(){
+    pl.pause(); pl.removeAttribute('src'); pl.load(); vp.hidden=true;
+  });
   render();
   if(reduce){ playBtn.style.display='none'; bar.parentNode.style.display='none'; }
   else if('IntersectionObserver' in window){
@@ -438,7 +472,33 @@
 <details><summary>Как начать?</summary><p>Заявка или звонок → пилот/выезд на объект → КП → договор.</p></details>
 </div>
 </div>
-      <div class="card"><div class="media"><img src="https://geokriolog.ru/images/geo-project-1.webp" alt="Свайные работы на объекте" width="960" height="660" fetchpriority="high" decoding="async"/></div></div>
+      <div class="card">
+        <div class="media" id="bnsObzor" style="position:relative;cursor:pointer" role="button" tabindex="0" aria-label="Смотреть видео с объекта">
+          <img src="/images/bns-video-poster.webp" alt="Демонтаж оголовков БНС на мосту через Ижору — видео с объекта" width="960" height="540" fetchpriority="high" decoding="async"/>
+          <span style="position:absolute;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.25)">
+            <span style="width:64px;height:64px;border-radius:50%;background:rgba(94,200,192,.92);display:grid;place-items:center">
+              <svg width="22" height="26" viewBox="0 0 22 26" fill="#06231f"><path d="M0 0 L22 13 L0 26 Z"/></svg>
+            </span>
+          </span>
+        </div>
+        <div class="body" style="padding:12px 16px">
+          <p style="font-size:13px;color:var(--muted)">Съёмка с объекта: капремонт моста через р. Ижора. 50 секунд, без звука.</p>
+        </div>
+      </div>
+<script>
+(function(){
+  var b=document.getElementById('bnsObzor'); if(!b) return;
+  function play(){
+    var v=document.createElement('video');
+    v.src='/video/bns-obzor.mp4'; v.controls=true; v.autoplay=true; v.playsInline=true;
+    v.style.cssText='display:block;width:100%;height:auto';
+    b.replaceChildren(v); b.style.cursor='default';
+    try{if(typeof ym==='function')ym(110604818,'reachGoal','video_obzor');}catch(e){}
+  }
+  b.addEventListener('click',play);
+  b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();play();}});
+})();
+</script>
     </div>
   </div></div>
   <div class="wrap">
