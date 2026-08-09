@@ -93,3 +93,22 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);f
 .pilot b{display:block;font-size:15.5px;margin-bottom:4px}
 .pilot p{font-size:13.5px;color:var(--muted);line-height:1.5}
 @media (max-width:560px){.pilot{grid-template-columns:1fr}}
+
+/* лента карточек с горизонтальной прокруткой (страница проектов) */
+.projects-scroller{display:grid;grid-auto-flow:column;grid-auto-columns:min(78vw,340px);
+  gap:14px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch}
+.projects-scroller .proj{scroll-snap-align:start;border:1px solid var(--line);
+  border-radius:16px;background:var(--bg2);padding:14px;min-width:0}
+.projects-scroller .proj .loc{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ice2);margin-bottom:9px}
+.projects-scroller .proj img{width:100%;display:block}
+.projects-scroller .proj p{font-size:13px;color:var(--muted);line-height:1.45}
+.projects-scroller::-webkit-scrollbar{height:8px}
+.projects-scroller::-webkit-scrollbar-thumb{background:var(--line2);border-radius:4px}
+
+/* сетка карточек-объектов */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.cat-grid .card .c{padding:18px}
+.cat-grid .card h3{margin:6px 0 8px;font-size:17px}
+.cat-grid .card p{font-size:13.5px;color:var(--muted);line-height:1.5}
