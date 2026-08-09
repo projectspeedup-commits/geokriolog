@@ -7,8 +7,8 @@
 - [x] sitemap.xml (5 URL)
 - [x] CNAME geokriolog.ru
 - [x] Перелинковка посадочных
-- [ ] Деплой GitHub Pages
-- [ ] Яндекс.Вебмастер: переобход + sitemap
+- [x] Деплой GitHub Pages
+- [x] Яндекс.Вебмастер: sitemap в очереди + переобход 5 URL (18.07.2026 15:26)
 - [ ] Google Search Console: sitemap
 - [ ] Яндекс.Бизнес карточка
 
@@ -39,3 +39,12 @@
 - Не обещать «официальный дистрибьютор CAT» без legal_ok
 - Не возвращать #якоря в sitemap
 - Не индексировать черновики preview-*.html (не деплоить их)
+
+
+## Webmaster done 18.07.2026
+- Host: https://geokriolog.ru
+- Meta yandex-verification: 37734dc6c480c761 (restored after deploy)
+- HTML file: /yandex_37734dc6c480c761.html
+- Sitemap: https://geokriolog.ru/sitemap.xml added to queue
+- Reindex 5 URLs in queue; daily left 145/150
+- Pending: Google Search Console, Yandex Business

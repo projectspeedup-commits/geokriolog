@@ -1,0 +1,6 @@
+.DS_Store
+dist/
+v2/
+preview-*.html
+hermes-*.html
+Hermes_*.pdf
