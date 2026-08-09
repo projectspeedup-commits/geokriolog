@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<!-- lcp-preload -->
+<link rel="preload" as="image" href="https://geokriolog.ru/images/kr300m-1-1.webp" fetchpriority="high">
+<!-- /lcp-preload -->
+<!-- local-fonts -->
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-400-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-700-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-800-cyrillic.woff2" crossorigin>
+<style>/* Локальные шрифты. Сгенерировано fetch_fonts.py — не править вручную. */
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<!-- /local-fonts -->
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="yandex-verification" content="37734dc6c480c761" />
@@ -57,9 +94,8 @@
   }
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+
 <style>
 :root{
   --bg:#0A0C10;
@@ -689,16 +725,43 @@ m[i].l=1*new Date();
 for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r)return;}
 k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
 (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true});
+ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/110604818" style="position:absolute;left:-9999px" alt=""/></div></noscript>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://geokriolog.ru/#localbusiness",
+  "name": "ООО «НПО ГЕОКРИОЛОГ»",
+  "image": "https://geokriolog.ru/images/kr300m-1-1.webp",
+  "url": "https://geokriolog.ru/",
+  "telephone": "+7-911-924-54-67",
+  "email": "info@geokriolog.ru",
+  "priceRange": "по запросу",
+  "description": "Инжиниринг для криолитозоны и свайных работ: геокриологический аудит, безударный демонтаж оголовков буронабивных свай, поставка буровой техники и обсадного оборудования.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Санкт-Петербург",
+    "addressRegion": "Санкт-Петербург",
+    "addressCountry": "RU"
+  },
+  "areaServed": {"@type": "Country", "name": "Россия"},
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }
+}
+</script>
 </head>
 <body>
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a class="brand" href="#home">
-      <img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог"/>
+      <img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог" decoding="async"/>
       <span>НПО ГЕОКРИОЛОГ</span>
     </a>
     <nav class="nav-links" id="navLinks">
@@ -730,15 +793,15 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
           <a class="btn btn-ghost" href="#catalog">Смотреть технику</a>
         </div>
         <div class="hero-meta">
-          <div><b>25</b><span>лет на рынке</span></div>
+          <div><b>25</b><span>лет практики команды</span></div>
           <div><b>15+</b><span>проектов в Арктике</span></div>
           <div><b>3-4×</b><span>быстрее оголовки БНС</span></div>
-          <div><b>65-72%</b><span>экономия на демонтаже</span></div>
+          <div><b>Ø 2 м</b><span>предел по сваям</span></div>
         </div>
       </div>
       <div class="hero-visual">
         <div class="hero-frame">
-          <img src="https://geokriolog.ru/images/kr300m-1-1.webp" alt="TYSIM KR300M" width="960" height="720"/>
+          <img src="https://geokriolog.ru/images/kr300m-1-1.webp" alt="TYSIM KR300M" width="960" height="720" fetchpriority="high" decoding="async"/>
           <div class="hero-badge">
             <strong>TYSIM KR300M</strong>
             320 кН·м · Ø 2500 · зимний пакет −50°C
@@ -771,7 +834,7 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
       </div>
       <div class="about-grid">
         <div class="about-card reveal">
-          <img src="https://geokriolog.ru/images/geo-project-1.webp" alt="Работы на объекте"/>
+          <img src="https://geokriolog.ru/images/geo-project-1.webp" alt="Работы на объекте" loading="lazy" decoding="async"/>
           <div class="body">
             <h3>Полевая практика, не слайды</h3>
             <p>Мурманск, Апатиты, Кандалакша, Кировск - фундаменты, шпунт, опоры, ТЭЦ. Отдельно - технология оголовков БНС для мостов и путепроводов (в т.ч. капремонт). Считаем конструкцию и держим сроки.</p>
@@ -814,7 +877,7 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
           <h3>Геокриологический аудит</h3>
           <p>Оценка грунтов (в т.ч. мерзлота), термостабилизация, буроинъекция, свайные поля, мониторинг. Решение с цифрами и сроками за 24 часа.</p>
           <span class="tag">от 15 000 ₽ · команда МГУ</span>
-          <img src="https://geokriolog.ru/images/cryo-monitoring.webp" alt="Тепловизионный контроль СОУ"/>
+          <img src="https://geokriolog.ru/images/cryo-monitoring.webp" alt="Тепловизионный контроль СОУ" loading="lazy" decoding="async"/>
         </article>
         <article class="tile reveal">
           <div class="k">02 · Техника</div>
@@ -831,7 +894,7 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
         <article class="tile reveal">
           <div class="k">04 · Оголовки БНС</div>
           <h3>Быстрый демонтаж</h3>
-          <p>Новое строительство и капремонт: снять оголовок БНС быстрее в 3-4 раза, с экономией 65-72% к рынку. Город и Север.</p>
+          <p>Новое строительство и капремонт: снять оголовок БНС в 3-4 раза быстрее, без ударов по свае и без повреждения арматуры. Город и Север.</p>
           <span class="tag">под ключ · пилот на объекте</span>
           <div style="margin-top:14px"><a href="/demontazh-ogolovkov-bns/" style="color:var(--ice2);font-size:13px;font-weight:600">Подробнее об оголовках →</a></div>
         </article>
@@ -876,11 +939,11 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
           </article>
         </div>
         <div class="cryo-gallery reveal">
-          <figure><div class="media-box"><img src="https://geokriolog.ru/images/cryo-thermo.webp" alt="Термостабилизатор"/></div><figcaption>Эскиз термостабилизатора с плавниковым оребрением</figcaption>
+          <figure><div class="media-box"><img src="https://geokriolog.ru/images/cryo-thermo.webp" alt="Термостабилизатор" loading="lazy" decoding="async"/></div><figcaption>Эскиз термостабилизатора с плавниковым оребрением</figcaption>
           </figure>
-          <figure><div class="media-box"><img src="https://geokriolog.ru/images/cryo-bss-graph.webp" alt="БСС vs цемент"/></div><figcaption>БСС 2-3 ч vs цемент 48+ ч</figcaption>
+          <figure><div class="media-box"><img src="https://geokriolog.ru/images/cryo-bss-graph.webp" alt="БСС vs цемент" loading="lazy" decoding="async"/></div><figcaption>БСС 2-3 ч vs цемент 48+ ч</figcaption>
           </figure>
-          <figure><div class="media-box"><img src="https://geokriolog.ru/images/cryo-injection.webp" alt="Буроинъекция"/></div><figcaption>Буроинъекционные системы</figcaption>
+          <figure><div class="media-box"><img src="https://geokriolog.ru/images/cryo-injection.webp" alt="Буроинъекция" loading="lazy" decoding="async"/></div><figcaption>Буроинъекционные системы</figcaption>
           </figure>
         </div>
       </div>
@@ -890,7 +953,7 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
   <section class="tech" id="tech">
     <div class="wrap tech-grid">
       <div class="tech-panel reveal">
-        <img src="https://geokriolog.ru/images/tech-key.webp" alt="TYSIM с мониторингом"/>
+        <img src="https://geokriolog.ru/images/tech-key.webp" alt="TYSIM с мониторингом" loading="lazy" decoding="async"/>
       </div>
       <div class="reveal">
         <h2 class="sec-h">TYSIM под российские условия</h2>
@@ -960,27 +1023,27 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
               <span style="font-size:13px;color:var(--muted)">быстрее классики</span>
             </div>
             <div style="padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--bg2)">
-              <b style="display:block;font-size:28px;letter-spacing:-.04em;color:var(--ice2)">65-72%</b>
-              <span style="font-size:13px;color:var(--muted)">экономия vs традиция</span>
+              <b style="display:block;font-size:28px;letter-spacing:-.04em;color:var(--ice2)">100%</b>
+              <span style="font-size:13px;color:var(--muted)">сохранность арматуры</span>
             </div>
             <div style="padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--bg2)">
               <b style="display:block;font-size:28px;letter-spacing:-.04em;color:var(--ice2)">Ø 0.6-2 м</b>
               <span style="font-size:13px;color:var(--muted)">диапазон свай</span>
             </div>
             <div style="padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--bg2)">
-              <b style="display:block;font-size:28px;letter-spacing:-.04em;color:var(--ice2)">709k ₽</b>
-              <span style="font-size:13px;color:var(--muted)">экономия на 100 огол.</span>
+              <b style="display:block;font-size:28px;letter-spacing:-.04em;color:var(--ice2)">0</b>
+              <span style="font-size:13px;color:var(--muted)">ударных нагрузок на сваю</span>
             </div>
           </div>
           <p style="color:var(--muted);font-size:15px;max-width:48ch">Традиционно: отбойные молотки, алмазная резка, гидроклин - долго, шумно, много техники и людей. Наш способ разрушает бетон оголовка, сохраняя арматурный каркас и тело сваи ниже отметки. Меньше людей и тяжёлой техники на площадке.</p>
         </div>
         <div class="reveal">
           <div class="about-card">
-            <img src="https://geokriolog.ru/images/geo-project-1.webp" alt="Свайные работы на объекте"/>
+            <img src="https://geokriolog.ru/images/geo-project-1.webp" alt="Свайные работы на объекте" loading="lazy" decoding="async"/>
             <div class="body">
               <h3>Где это в цепочке Геокриолог</h3>
               <p style="margin-bottom:12px">1. Аудит грунтов и схема свайного основания<br/>2. Бурение и обсадка (TYSIM + RCO1500), если нужна техника<br/>3. <strong style="color:var(--text)">Демонтаж оголовков БНС</strong> до отметки под ростверк / ремонт<br/>4. Сервис и расходка на всём цикле</p>
-              <p>Можно зайти только на шаг 3 (уже стоят сваи). Апробация: капремонт моста через р. Ижора. На Севере эффект сильнее: короткий сезон и рыночные 1 800-3 500 ₽/оголовок.</p>
+              <p>Можно зайти только на шаг 3 (уже стоят сваи). Апробация: капремонт моста через р. Ижора. На Севере эффект сильнее: короткий сезон и дорогая логистика делают каждую сэкономленную смену критичной.</p>
             </div>
           </div>
         </div>
@@ -1001,17 +1064,17 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
         </article>
         <article class="card">
           <div class="c">
-            <h3>Ориентир рынка 2025-26</h3>
-            <p>Рыночные ставки (не наш прайс): Москва/МО 1 200-1 500 ₽ · Архангельск 1 500-2 000 ₽ · ЯНАО/НАО 1 800-3 500 ₽/оголовок с НДС. Наша экономика - минус 65-72% к такому базису.</p>
+            <h3>Когда классика не проходит</h3>
+            <p>Жилая застройка и город, действующие мосты и путепроводы, объекты РЖД, стеснённые котлованы. Там, где шум, пыль и вибрация от отбойных молотков упираются в согласования и режим работ.</p>
           </div>
         </article>
       </div>
 
       <div class="projects-scroller reveal" style="margin-bottom:8px">
-        <article class="proj"><div class="loc">Эффект</div><h3>Путепровод · 48 шт</h3><p>Типовой объём на искусственном сооружении.</p><div class="stat">экономия ~340 000 ₽</div></article>
-        <article class="proj"><div class="loc">Эффект</div><h3>Мост · 112 шт</h3><p>Сравнение с традиционным демонтажем на том же объёме.</p><div class="stat">экономия ~794 000 ₽</div></article>
-        <article class="proj"><div class="loc">Эффект</div><h3>Развязка · 186 шт</h3><p>Меньше техники и людей в стеснённых условиях города.</p><div class="stat">экономия ~1,3 млн ₽</div></article>
-        <article class="proj"><div class="loc">Эффект</div><h3>Крупный объект · 320 шт</h3><p>Там, где сезон и логистика бьют по смете сильнее всего.</p><div class="stat">экономия ~2,3 млн ₽</div></article>
+        <article class="proj"><div class="loc">Сроки</div><h3>100 оголовков</h3><p>Классика - бригада 3-4 человека, 4-6 оголовков в смену. Наш способ снимает узкое место графика.</p><div class="stat">4-6 смен вместо 15-20</div></article>
+        <article class="proj"><div class="loc">Арматура</div><h3>Каркас цел</h3><p>Трещина формируется по проектной отметке. Тело сваи ниже отметки и арматурные выпуски не повреждаются.</p><div class="stat">без усилений и переделок</div></article>
+        <article class="proj"><div class="loc">Площадка</div><h3>Тихо и чисто</h3><p>Нет отбойных молотков - нет шума, пыли и вибрации. Работаем рядом с жильём и действующими сооружениями.</p><div class="stat">безударный процесс</div></article>
+        <article class="proj"><div class="loc">Логистика</div><h3>Меньше техники</h3><p>Не нужны компрессоры, алмазная резка и вывоз боя. Достаточно штатного экскаватора и крана.</p><div class="stat">минимальная бригада</div></article>
       </div>
 
       <div class="reveal" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:center">
@@ -1030,7 +1093,7 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
       </div>
       <div class="cat-grid reveal">
         <article class="card">
-          <img src="https://geokriolog.ru/images/kr300m-1-1.webp" alt="KR300M"/>
+          <img src="https://geokriolog.ru/images/kr300m-1-1.webp" alt="KR300M" loading="lazy" decoding="async"/>
           <div class="c">
             <h3>TYSIM KR300M</h3>
             <p>320 кН·м · 54 м · Ø 2500 · 90 т · CAT C9.3B 259 кВт</p>
@@ -1038,7 +1101,7 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
           </div>
         </article>
         <article class="card">
-          <img src="https://geokriolog.ru/images/kr300m-3-1.webp" alt="TYSIM серия"/>
+          <img src="https://geokriolog.ru/images/kr300m-3-1.webp" alt="TYSIM серия" loading="lazy" decoding="async"/>
           <div class="c">
             <h3>Серия TYSIM</h3>
             <p>От компактных KR50 до тяжёлых машин под ваш парк и геологию.</p>
@@ -1046,7 +1109,7 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
           </div>
         </article>
         <article class="card">
-          <img src="https://geokriolog.ru/images/rco1500_p0_2.webp" alt="RCO1500"/>
+          <img src="https://geokriolog.ru/images/rco1500_p0_2.webp" alt="RCO1500" loading="lazy" decoding="async"/>
           <div class="c">
             <h3>Обсадной стол RCO1500</h3>
             <p>Ø 1500 · 1500 кН·м · 350 бар · 7200 кг. TYSIM, XCMG, SANY, Liebherr…</p>
@@ -1057,12 +1120,12 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true}
 
       <h3 style="margin:36px 0 14px;font-size:18px;letter-spacing:-.02em" class="reveal">Буровой инструмент со склада</h3>
       <div class="tools reveal">
-        <div class="tool"><img src="https://geokriolog.ru/images/tool-shnek.webp" alt="Шнеки"/><span>Шнеки</span></div>
-        <div class="tool"><img src="https://geokriolog.ru/images/tool-kovshebur.webp" alt="Ковшебуры"/><span>Ковшебуры</span></div>
-        <div class="tool"><img src="https://geokriolog.ru/images/tool-cfa.webp" alt="CFA"/><span>CFA</span></div>
-        <div class="tool"><img src="https://geokriolog.ru/images/tool-dreiteller.webp" alt="Дрейтеллеры"/><span>Дрейтеллеры</span></div>
-        <div class="tool"><img src="https://geokriolog.ru/images/tool-tremie.webp" alt="Бетонолит"/><span>Бетонолит</span></div>
-        <div class="tool"><img src="https://geokriolog.ru/images/tool-kelly.webp" alt="Келли"/><span>Келли-штанги</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-shnek.webp" alt="Шнеки" loading="lazy" decoding="async"/><span>Шнеки</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-kovshebur.webp" alt="Ковшебуры" loading="lazy" decoding="async"/><span>Ковшебуры</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-cfa.webp" alt="CFA" loading="lazy" decoding="async"/><span>CFA</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-dreiteller.webp" alt="Дрейтеллеры" loading="lazy" decoding="async"/><span>Дрейтеллеры</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-tremie.webp" alt="Бетонолит" loading="lazy" decoding="async"/><span>Бетонолит</span></div>
+        <div class="tool"><img src="https://geokriolog.ru/images/tool-kelly.webp" alt="Келли" loading="lazy" decoding="async"/><span>Келли-штанги</span></div>
       </div>
       <p style="margin-top:14px;font-size:13px;color:var(--muted)" class="reveal">Диаметры 520-1200 мм. Совместимость: Bauer, Liebherr, Soilmec, Casagrande, SANY, XCMG, TYSIM.</p>
     </div>
