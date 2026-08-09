@@ -83,3 +83,13 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);f
   .tw table{min-width:460px}
   .tw th,.tw td{padding:9px 11px;font-size:13px}
 }
+
+/* оффер пилота */
+.pilot{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;margin-top:20px;
+  padding:16px 18px;border:1px solid rgba(94,200,192,.32);border-radius:16px;
+  background:linear-gradient(180deg,rgba(94,200,192,.09),rgba(94,200,192,.03));max-width:720px}
+.pilot-badge{padding:5px 12px;border-radius:999px;background:var(--ice);color:#06231f;
+  font-size:12px;font-weight:700;white-space:nowrap}
+.pilot b{display:block;font-size:15.5px;margin-bottom:4px}
+.pilot p{font-size:13.5px;color:var(--muted);line-height:1.5}
+@media (max-width:560px){.pilot{grid-template-columns:1fr}}

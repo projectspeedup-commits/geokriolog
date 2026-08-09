@@ -101,6 +101,13 @@
       <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
       <a class="btn btn-warm" href="https://wa.me/79119245467" target="_blank" rel="noopener">WhatsApp</a>
     </div>
+    <div class="pilot">
+      <div class="pilot-badge">Пилот</div>
+      <div>
+        <b>Покажем на вашем объекте: 5–10 оголовков</b>
+        <p>Выезжаем, снимаем оголовки по своей технологии, вы смотрите результат — сохранность арматуры и фактическое время работ. Дальше решаете сами.</p>
+      </div>
+    </div>
     <div class="grid-2">
       <div>
 <div class="kpis">
@@ -120,6 +127,269 @@
 <li>Нет ударных нагрузок, шума и вибрации - применимо в городе и на вахте</li>
 <li>Эффективность в условиях Севера (короткий сезон, дорогая логистика)</li>
 </ul>
+<!-- tech-scheme -->
+<style>
+.ts{--ts-ice:#5EC8C0;--ts-ice2:#8FE0D9;--ts-warm:#D6A56B;
+  margin:28px 0;border:1px solid var(--line);border-radius:18px;background:var(--bg2);overflow:hidden}
+.ts-head{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;
+  padding:18px 20px 0}
+.ts-head h3{font-size:19px;letter-spacing:-.02em}
+.ts-head span{font-size:13px;color:var(--muted)}
+.ts-body{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:20px;padding:18px 20px 20px}
+@media (max-width:760px){.ts-body{grid-template-columns:1fr}}
+
+.ts-stage{position:relative;border:1px solid var(--line);border-radius:14px;background:#0C1016;
+  overflow:hidden;aspect-ratio:4/5}
+.ts-stage svg{width:100%;height:100%;display:block}
+
+.ts-steps{display:flex;flex-direction:column;gap:8px;min-width:0}
+.ts-step{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;
+  padding:11px 13px;border:1px solid transparent;border-radius:12px;cursor:pointer;
+  background:transparent;text-align:left;color:inherit;font:inherit;width:100%;
+  transition:background .25s var(--ease),border-color .25s var(--ease)}
+.ts-step:hover{background:rgba(255,255,255,.03)}
+.ts-step .n{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:var(--muted);background:var(--bg3);
+  border:1px solid var(--line);transition:.25s var(--ease)}
+.ts-step b{display:block;font-size:14.5px;font-weight:600;margin-bottom:2px}
+.ts-step p{font-size:13px;color:var(--muted);line-height:1.45}
+.ts-step[aria-current="true"]{background:rgba(94,200,192,.07);border-color:rgba(94,200,192,.28)}
+.ts-step[aria-current="true"] .n{background:var(--ts-ice);color:#06231f;border-color:transparent}
+.ts-step[aria-current="true"] b{color:var(--ts-ice2)}
+
+.ts-bar{height:2px;background:var(--line);border-radius:2px;overflow:hidden;margin:0 20px 16px}
+.ts-bar i{display:block;height:100%;width:0;background:var(--ts-ice);border-radius:2px}
+.ts-ctrl{display:flex;gap:8px;align-items:center;padding:0 20px 18px}
+.ts-ctrl button{height:32px;min-width:32px;padding:0 12px;border-radius:999px;cursor:pointer;
+  background:var(--bg3);border:1px solid var(--line);color:var(--muted);font:inherit;font-size:12.5px;
+  transition:.2s var(--ease)}
+.ts-ctrl button:hover{color:var(--text);border-color:var(--line2)}
+.ts-ctrl .sp{flex:1}
+.ts-ctrl .cur{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* элементы сцены */
+.ts g,.ts rect,.ts path,.ts circle,.ts line,.ts text{transition:opacity .5s var(--ease),transform .7s var(--ease)}
+.ts .fade{opacity:0}
+.ts .on{opacity:1}
+#tsConcrete{transform-origin:50% 100%}
+#tsHead{transform:translateY(0)}
+#tsHead.lift{transform:translateY(-74px)}
+#tsCrack{stroke-dasharray:150;stroke-dashoffset:150;transition:stroke-dashoffset 1s var(--ease)}
+#tsCrack.drawn{stroke-dashoffset:0}
+#tsPit{transform-origin:50% 0}
+.ts .pulse{animation:tsPulse 2.2s ease-in-out infinite}
+@keyframes tsPulse{0%,100%{opacity:.55}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .ts *,.ts .pulse{transition:none!important;animation:none!important}
+}
+</style>
+
+<div class="ts" id="techScheme">
+  <div class="ts-head">
+    <h3>Как работает безударный демонтаж</h3>
+    <span>5 этапов · закладка до бетонирования</span>
+  </div>
+
+  <div class="ts-body">
+    <div class="ts-stage">
+      <svg viewBox="0 -40 320 440" role="img" aria-label="Схема безударного демонтажа оголовка буронабивной сваи">
+        <defs>
+          <linearGradient id="tsSoil" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#1b2029"/><stop offset="1" stop-color="#12161d"/>
+          </linearGradient>
+          <linearGradient id="tsBeton" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#3a424f"/><stop offset="1" stop-color="#2a313c"/>
+          </linearGradient>
+          <pattern id="tsHatch" width="7" height="7" patternTransform="rotate(35)" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="0" y2="7" stroke="rgba(255,255,255,.05)" stroke-width="1.4"/>
+          </pattern>
+        </defs>
+
+        <!-- грунт -->
+        <rect x="0" y="112" width="320" height="288" fill="url(#tsSoil)"/>
+        <rect x="0" y="112" width="320" height="288" fill="url(#tsHatch)"/>
+        <line x1="0" y1="112" x2="320" y2="112" stroke="rgba(255,255,255,.16)" stroke-width="1.5"/>
+
+        <!-- котлован (этап 4-5) -->
+        <g id="tsPit" class="fade">
+          <path d="M92 112 L104 178 L216 178 L228 112 Z" fill="#0C1016"/>
+          <path d="M92 112 L104 178 M228 112 L216 178" stroke="rgba(255,255,255,.18)" stroke-width="1.5" fill="none"/>
+        </g>
+
+        <!-- скважина / тело сваи -->
+        <rect id="tsShaft" x="126" y="112" width="68" height="272" rx="3" fill="#0E1219" stroke="rgba(255,255,255,.13)" stroke-width="1.4"/>
+
+        <!-- бетон (этап 3+) -->
+        <rect id="tsConcrete" class="fade" x="127" y="66" width="66" height="318" rx="3" fill="url(#tsBeton)"/>
+
+        <!-- арматурный каркас -->
+        <g id="tsCage">
+          <line x1="140" y1="52" x2="140" y2="372" stroke="#7d8798" stroke-width="3" stroke-linecap="round"/>
+          <line x1="160" y1="46" x2="160" y2="372" stroke="#7d8798" stroke-width="3" stroke-linecap="round"/>
+          <line x1="180" y1="52" x2="180" y2="372" stroke="#7d8798" stroke-width="3" stroke-linecap="round"/>
+          <g stroke="#6b7484" stroke-width="2" fill="none">
+            <ellipse cx="160" cy="150" rx="22" ry="5"/>
+            <ellipse cx="160" cy="215" rx="22" ry="5"/>
+            <ellipse cx="160" cy="280" rx="22" ry="5"/>
+            <ellipse cx="160" cy="345" rx="22" ry="5"/>
+          </g>
+        </g>
+
+        <!-- изоляция выпусков (этап 1) -->
+        <g id="tsIso" class="fade">
+          <rect x="134" y="50" width="12" height="58" rx="6" fill="var(--ts-warm)" opacity=".85"/>
+          <rect x="154" y="44" width="12" height="64" rx="6" fill="var(--ts-warm)" opacity=".85"/>
+          <rect x="174" y="50" width="12" height="58" rx="6" fill="var(--ts-warm)" opacity=".85"/>
+        </g>
+
+        <!-- картриджи на проектной отметке (этап 2) -->
+        <g id="tsCart" class="fade">
+          <rect x="130" y="172" width="60" height="13" rx="6.5" fill="var(--ts-ice)"/>
+          <circle cx="141" cy="178.5" r="2.4" fill="#06231f"/>
+          <circle cx="160" cy="178.5" r="2.4" fill="#06231f"/>
+          <circle cx="179" cy="178.5" r="2.4" fill="#06231f"/>
+        </g>
+
+        <!-- проектная отметка -->
+        <g id="tsMark" class="fade">
+          <line x1="60" y1="178.5" x2="126" y2="178.5" stroke="var(--ts-ice2)" stroke-width="1.2" stroke-dasharray="4 4"/>
+          <text x="60" y="171" fill="var(--ts-ice2)" font-size="11" font-family="Manrope,sans-serif">проектная отметка</text>
+        </g>
+
+        <!-- магистральная трещина (этап 4) -->
+        <path id="tsCrack" d="M127 178.5 L143 175 L152 182 L168 176 L178 183 L193 178.5"
+              stroke="var(--ts-ice2)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+        <!-- оголовок, который поднимают (этап 5) -->
+        <g id="tsHead">
+          <rect id="tsHeadBlock" class="fade" x="127" y="66" width="66" height="110" rx="3" fill="#39414d" stroke="rgba(143,224,217,.5)" stroke-width="1.4"/>
+          <g id="tsHook" class="fade">
+            <line x1="160" y1="-34" x2="160" y2="46" stroke="#9AA3B2" stroke-width="2.4"/>
+            <path d="M148 46 L160 30 L172 46 Z" fill="#9AA3B2"/>
+            <path d="M138 -22 L182 -22" stroke="#9AA3B2" stroke-width="3.4" stroke-linecap="round"/>
+            <text x="190" y="-16" fill="#9AA3B2" font-size="11" font-family="Manrope,sans-serif">кран</text>
+          </g>
+        </g>
+
+        <!-- плоскость отрыва -->
+        <g id="tsGap" class="fade">
+          <rect x="127" y="170" width="66" height="9" fill="rgba(143,224,217,.16)"/>
+          <line x1="127" y1="178.5" x2="193" y2="178.5" stroke="var(--ts-ice2)" stroke-width="2"/>
+          <text x="200" y="196" fill="var(--ts-ice2)" font-size="11" font-family="Manrope,sans-serif">арматура цела</text>
+        </g>
+
+        <!-- подписи-состояния -->
+        <g id="tsNoise" class="fade">
+          <text x="214" y="150" fill="var(--ts-warm)" font-size="11" font-family="Manrope,sans-serif">без ударов</text>
+          <text x="214" y="166" fill="var(--ts-warm)" font-size="11" font-family="Manrope,sans-serif">без вибрации</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="ts-steps" id="tsSteps">
+      <button class="ts-step" type="button" data-i="0" aria-current="true">
+        <span class="n">1</span>
+        <span><b>Изоляция арматурных выпусков</b>
+        <p>Выпуски, которые останутся в ростверке, закрываются защитой — бетон к ним не пристанет.</p></span>
+      </button>
+      <button class="ts-step" type="button" data-i="1">
+        <span class="n">2</span>
+        <span><b>Установка картриджей</b>
+        <p>Водопроницаемые картриджи с расширяющимся составом крепятся на каркас точно по проектной отметке демонтажа.</p></span>
+      </button>
+      <button class="ts-step" type="button" data-i="2">
+        <span class="n">3</span>
+        <span><b>Бетонирование сваи</b>
+        <p>Каркас опускается в скважину, свая бетонируется штатно. Никаких изменений в технологии бетонирования.</p></span>
+      </button>
+      <button class="ts-step" type="button" data-i="3">
+        <span class="n">4</span>
+        <span><b>Откопка и магистральная трещина</b>
+        <p>Состав расширяется в щелочной среде цемента, образуя кристаллогидраты. После набора прочности на поверхности сваи проявляется направленная трещина.</p></span>
+      </button>
+      <button class="ts-step" type="button" data-i="4">
+        <span class="n">5</span>
+        <span><b>Подъём оголовка</b>
+        <p>Трещина раскрывается штатной техникой, оголовок снимается вертикально вверх. Арматура и тело сваи ниже отметки не тронуты.</p></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="ts-bar"><i id="tsBar"></i></div>
+  <div class="ts-ctrl">
+    <button type="button" id="tsPrev" aria-label="Предыдущий этап">←</button>
+    <button type="button" id="tsPlay" aria-label="Пауза">Пауза</button>
+    <button type="button" id="tsNext" aria-label="Следующий этап">→</button>
+    <span class="sp"></span>
+    <span class="cur"><span id="tsCur">1</span> / 5</span>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.getElementById('techScheme'); if(!root) return;
+  var steps=[].slice.call(root.querySelectorAll('.ts-step'));
+  var bar=document.getElementById('tsBar'), curEl=document.getElementById('tsCur');
+  var playBtn=document.getElementById('tsPlay');
+  var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var DUR=4200, i=0, playing=false, t0=0, raf=null, timer=null;
+
+  var el={
+    iso:document.getElementById('tsIso'), cart:document.getElementById('tsCart'),
+    mark:document.getElementById('tsMark'), concrete:document.getElementById('tsConcrete'),
+    crack:document.getElementById('tsCrack'), pit:document.getElementById('tsPit'),
+    head:document.getElementById('tsHead'), headBlock:document.getElementById('tsHeadBlock'),
+    hook:document.getElementById('tsHook'), cage:document.getElementById('tsCage'),
+    gap:document.getElementById('tsGap'),
+    noise:document.getElementById('tsNoise')
+  };
+  function show(n,on){ if(!n) return; n.classList.toggle('on',!!on); n.classList.toggle('fade',!on); }
+
+  function render(){
+    steps.forEach(function(s,k){ s.setAttribute('aria-current', k===i?'true':'false'); });
+    curEl.textContent=i+1;
+    show(el.iso, i>=0);
+    show(el.cart, i>=1);
+    show(el.mark, i>=1);
+    show(el.concrete, i>=2);
+    show(el.pit, i>=3);
+    show(el.noise, i>=3);
+    el.crack.classList.toggle('drawn', i>=3);
+    show(el.headBlock, i>=4);
+    show(el.hook, i>=4);
+    show(el.gap, i>=4);
+    el.head.classList.toggle('lift', i>=4);
+    el.cage.style.opacity = (i===2||i===3) ? '.35' : '1';
+    el.cart.classList.toggle('pulse', i===1);
+  }
+
+  function tick(ts){
+    if(!playing) return;
+    if(!t0) t0=ts;
+    var p=Math.min((ts-t0)/DUR,1);
+    bar.style.width=(p*100)+'%';
+    if(p>=1){ t0=0; i=(i+1)%steps.length; render(); }
+    raf=requestAnimationFrame(tick);
+  }
+  function play(){ if(reduce) return; playing=true; playBtn.textContent='Пауза'; t0=0; cancelAnimationFrame(raf); raf=requestAnimationFrame(tick); }
+  function pause(){ playing=false; playBtn.textContent='Играть'; cancelAnimationFrame(raf); }
+  function goto(n){ i=(n+steps.length)%steps.length; t0=0; bar.style.width='0%'; render(); }
+
+  steps.forEach(function(s){ s.addEventListener('click',function(){ pause(); goto(+s.dataset.i); }); });
+  document.getElementById('tsPrev').addEventListener('click',function(){ pause(); goto(i-1); });
+  document.getElementById('tsNext').addEventListener('click',function(){ pause(); goto(i+1); });
+  playBtn.addEventListener('click',function(){ playing?pause():play(); });
+
+  render();
+  if(reduce){ playBtn.style.display='none'; bar.parentNode.style.display='none'; }
+  else if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      es.forEach(function(e){ e.isIntersecting ? play() : pause(); });
+    },{threshold:.35}).observe(root);
+  } else { play(); }
+})();
+</script>
+<!-- /tech-scheme -->
 <h2>Классический демонтаж и безударная технология</h2>
 <div class="tw"><table>
 <thead><tr><th>Параметр</th><th>Классика: молотки, резка, гидроклин</th><th>Безударная технология</th></tr></thead>
