@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- lcp-preload -->
+<link rel="preload" as="image" href="/images/bns-svai-gotovo.webp" fetchpriority="high">
+<!-- /lcp-preload -->
+<!-- local-fonts -->
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-400-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-700-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-800-cyrillic.woff2" crossorigin>
+<style>/* Локальные шрифты. Сгенерировано fetch_fonts.py — не править вручную. */
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<!-- /local-fonts -->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>О компании — ООО «НПО ГЕОКРИОЛОГ», Санкт-Петербург</title>
+<meta name="description" content="НПО ГЕОКРИОЛОГ: инжиниринг для криолитозоны и свайных работ. Безударный демонтаж оголовков БНС, геокриологический аудит, буровая техника. Научная база МГУ и СПбГАСУ, 43 публикации."/>
+<link rel="canonical" href="https://geokriolog.ru/o-kompanii/"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:url" content="https://geokriolog.ru/o-kompanii/"/>
+<meta property="og:title" content="О компании — ООО «НПО ГЕОКРИОЛОГ», Санкт-Петербург"/>
+<meta property="og:description" content="НПО ГЕОКРИОЛОГ: инжиниринг для криолитозоны и свайных работ. Безударный демонтаж оголовков БНС, геокриологический аудит, буровая техника. Научная база МГУ и СПбГАСУ, 43 публикации."/>
+<meta property="og:image" content="https://geokriolog.ru/images/bns-svai-gotovo.webp"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="icon" href="https://geokriolog.ru/images/logo.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="https://geokriolog.ru/images/logo.svg"/>
+
+
+<link rel="stylesheet" href="/assets/site.css"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://geokriolog.ru/"},{"@type":"ListItem","position":2,"name":"О компании","item":"https://geokriolog.ru/o-kompanii/"}]}
+</script>
+</head>
+<body>
+
+<header class="nav"><div class="nav-inner">
+  <a class="brand" href="/"><img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог" width="32" height="32" decoding="async"/><span>НПО ГЕОКРИОЛОГ</span></a>
+  <nav class="nav-links">
+    <a href="/">Главная</a>
+    <a href="/demontazh-ogolovkov-bns/" class="">Оголовки БНС</a>
+    <a href="/tysim-kr300m/" class="">TYSIM KR300M</a>
+    <a href="/obshadnoj-stol-rco1500/" class="">RCO1500</a>
+    <a href="/audit-kriolitozony/" class="">Аудит</a>
+    <a href="/proekty/" class="">Проекты</a>
+    <a href="/blog/" class="">Блог</a>
+    <a href="/o-kompanii/" class="active">О компании</a>
+  </nav>
+  <a class="btn btn-ice" href="/#cta">Заявка</a>
+</div></header>
+<main>
+  <div class="hero"><div class="wrap">
+    <div class="crumb"><a href="/">Главная</a> / О компании</div>
+    <h1>ООО «НПО ГЕОКРИОЛОГ»</h1>
+    <p class="lead">Научно-производственное объединение: инжиниринг для криолитозоны и свайных работ. Собственная разработка — безударный демонтаж оголовков буронабивных свай. Научная база — МГУ и СПбГАСУ.</p>
+    <div class="hero-actions">
+      <a class="btn btn-ice" href="/demontazh-ogolovkov-bns/#leadForm">Оставить заявку</a>
+      <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
+      <a class="btn btn-warm" href="https://wa.me/79119245467" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div class="kpis" style="margin-top:22px">
+      <div class="kpi"><b>25 лет</b><span>практики команды</span></div>
+      <div class="kpi"><b>15+</b><span>проектов в Арктике</span></div>
+      <div class="kpi"><b>4</b><span>учёных в научной базе</span></div>
+      <div class="kpi"><b>Ø 2 м</b><span>предел по сваям</span></div>
+    </div>
+  </div></div>
+
+  <div class="wrap">
+    <section>
+      <h2>Чем занимаемся</h2>
+      <div class="cat-grid" style="margin-top:16px">
+        <article class="card"><div class="c"><h3>Безударный демонтаж оголовков БНС</h3><p>Собственная технология: расширяющийся состав закладывается до бетонирования, оголовок снимается без ударных нагрузок. Сваи Ø 0,6–2,0 м.</p><p style="margin-top:10px"><a href="/demontazh-ogolovkov-bns/" style="color:var(--ice2);font-weight:600">Технология →</a></p></div></article>
+        <article class="card"><div class="c"><h3>Геокриологический аудит</h3><p>Оценка грунтов в криолитозоне, подбор технологии, термостабилизация, мониторинг. Решение с цифрами и сроками.</p><p style="margin-top:10px"><a href="/audit-kriolitozony/" style="color:var(--ice2);font-weight:600">Аудит →</a></p></div></article>
+        <article class="card"><div class="c"><h3>Буровая техника и оснастка</h3><p>Роторные установки TYSIM, обсадные столы RCO, буровой инструмент. Зимний пакет, документы под сдачу, сервис из Санкт-Петербурга.</p><p style="margin-top:10px"><a href="/tysim-kr300m/" style="color:var(--ice2);font-weight:600">Техника →</a></p></div></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Научная база</h2>
+      <p style="color:var(--muted);max-width:72ch">Технология и методики опираются на работы специалистов МГУ и СПбГАСУ. В библиотеке компании собраны 43 публикации четырёх учёных — от механики мерзлых грунтов до подземного строительства в слабых грунтах.</p>
+      <div class="cat-grid" style="margin-top:18px">
+        <article class="card"><div class="c">
+          <div class="crumb">МГУ · МИИТ</div><h3>Царапов Михаил Николаевич</h3>
+          <p class="mono" style="font-size:12.5px;color:var(--ice2);margin-bottom:8px">к.г.-м.н. · 11 работ</p>
+          <p>Механика мерзлых и оттаивающих грунтов: ползучесть, модуль деформации, консолидация при оттаивании, свойства грунтов Центральной Якутии. Автор пособия по физико-механическим свойствам промерзающих грунтов (2018).</p>
+        </div></article>
+        <article class="card"><div class="c">
+          <div class="crumb">МГУ · кафедра геокриологии</div><h3>Ананьев Василий Васильевич</h3>
+          <p class="mono" style="font-size:12.5px;color:var(--ice2);margin-bottom:8px">5 работ</p>
+          <p>Термостабилизация грунтов, двухфазные термосифоны, низкотемпературные хладагенты, криопэги. Моделирование теплофизических процессов в мерзлых грунтах, полевые методы геокриологических исследований.</p>
+        </div></article>
+        <article class="card"><div class="c">
+          <div class="crumb">СПбГАСУ</div><h3>Пушкарёв Александр Евгеньевич</h3>
+          <p class="mono" style="font-size:12.5px;color:var(--ice2);margin-bottom:8px">д.т.н., профессор · 17 работ</p>
+          <p>Строительные машины и гидроструйная цементация: расчёт параметров ГСЦ, тепловые режимы оборудования, гидроабразивный инструмент, диагностика горной и нефтепромысловой техники.</p>
+        </div></article>
+        <article class="card"><div class="c">
+          <div class="crumb">СПбГАСУ · кафедра геотехники</div><h3>Осокин Анатолий Иванович</h3>
+          <p class="mono" style="font-size:12.5px;color:var(--ice2);margin-bottom:8px">д.т.н. (2025), профессор · 10 работ</p>
+          <p>Подземное строительство в слабых грунтах, инъекционное укрепление, «стена в грунте», контроль технологических процессов. Диссертация 2025 года — концептуальные основы подземного строительства в слабых грунтах.</p>
+        </div></article>
+      </div>
+      <p style="color:var(--muted);margin-top:16px;font-size:14px">Публикации доступны по запросу — напишите на <a href="mailto:info@geokriolog.ru" style="color:var(--ice2)">info@geokriolog.ru</a>.</p>
+    </section>
+
+    <section>
+      <h2>Как работаем</h2>
+      <div class="cat-grid" style="margin-top:16px">
+        <article class="card"><div class="c"><div class="crumb">Формат 1</div><h3>Пилот на объекте</h3><p>Демонстрация на 5–10 реальных оголовках. Вы смотрите процесс и результат, оцениваете эффект для своего объекта, потом принимаете решение.</p></div></article>
+        <article class="card"><div class="c"><div class="crumb">Формат 2</div><h3>Шеф-монтаж и обучение</h3><p>Выезд специалиста, обучение бригады заказчика технологии на месте, контроль качества на каждом этапе, исполнительная документация.</p></div></article>
+        <article class="card"><div class="c"><div class="crumb">Формат 3</div><h3>Работы под ключ</h3><p>Совместные бригады, техническое партнёрство с передачей технологии, сопровождение на серии объектов.</p></div></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Реквизиты</h2>
+      <div class="tw"><table><tbody>
+        <tr><th>Полное наименование</th><td>Общество с ограниченной ответственностью «Научно-производственное объединение ГЕОКРИОЛОГ»</td></tr>
+        <tr><th>ИНН</th><td>7817123404</td></tr>
+        <tr><th>ОГРН</th><td>1227800134100</td></tr>
+        <tr><th>Регион</th><td>Санкт-Петербург</td></tr>
+        <tr><th>Технический директор</th><td>Погорелов Олег Станиславович</td></tr>
+        <tr><th>Телефон</th><td><a href="tel:+79119245467" style="color:var(--ice2)">+7 911 924-54-67</a></td></tr>
+        <tr><th>Почта</th><td><a href="mailto:info@geokriolog.ru" style="color:var(--ice2)">info@geokriolog.ru</a></td></tr>
+        <tr><th>География работ</th><td>Россия, приоритет — Северо-Запад и Арктическая зона</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <div class="cta" id="cta">
+      <h2>Обсудим ваш объект</h2>
+      <p>Опишите задачу — вернём схему работ и ориентир по срокам.</p>
+      <div class="row">
+        <a class="btn btn-ice" href="/demontazh-ogolovkov-bns/#leadForm">Оставить заявку</a>
+        <a class="btn btn-ghost" href="mailto:info@geokriolog.ru">Написать на info@</a>
+        <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <div>© 2026 ООО «НПО ГЕОКРИОЛОГ» · ИНН 7817123404 · Санкт-Петербург</div>
+  <div><a href="mailto:info@geokriolog.ru">info@geokriolog.ru</a> · <a href="tel:+79119245467">+7 911 924-54-67</a></div>
+</div></footer>
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+</script>
+</body></html>

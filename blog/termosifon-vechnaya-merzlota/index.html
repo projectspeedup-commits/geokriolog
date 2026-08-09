@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- lcp-preload -->
+<link rel="preload" as="image" href="/images/blog-termosifon-shema.webp" fetchpriority="high">
+<!-- /lcp-preload -->
+<!-- local-fonts -->
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-400-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-700-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-800-cyrillic.woff2" crossorigin>
+<style>/* Локальные шрифты. Сгенерировано fetch_fonts.py — не править вручную. */
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<!-- /local-fonts -->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Термосифон на вечной мерзлоте: принцип работы и хладагенты</title>
+<meta name="description" content="Как работает сезонное охлаждающее устройство без электричества, какие хладагенты применяют (R717, R744, этан, пропан) и где термосифоны эффективны."/>
+<link rel="canonical" href="https://geokriolog.ru/blog/termosifon-vechnaya-merzlota/"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:url" content="https://geokriolog.ru/blog/termosifon-vechnaya-merzlota/"/>
+<meta property="og:title" content="Термосифон на вечной мерзлоте: принцип работы и хладагенты"/>
+<meta property="og:description" content="Как работает сезонное охлаждающее устройство без электричества, какие хладагенты применяют (R717, R744, этан, пропан) и где термосифоны эффективны."/>
+<meta property="og:image" content="https://geokriolog.ru/images/blog-termosifon-obekt.webp"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="icon" href="https://geokriolog.ru/images/logo.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="https://geokriolog.ru/images/logo.svg"/>
+
+
+<link rel="stylesheet" href="/assets/site.css"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Термосифон на вечной мерзлоте: принцип работы и хладагенты",
+  "description":"Как работает сезонное охлаждающее устройство без электричества, какие хладагенты применяют (R717, R744, этан, пропан) и где термосифоны эффективны.",
+  "image":"https://geokriolog.ru/images/blog-termosifon-obekt.webp",
+  "datePublished":"2026-08-09",
+  "dateModified":"2026-08-09",
+  "author":{"@type":"Organization","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/"},
+  "publisher":{"@type":"Organization","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/"},
+  "mainEntityOfPage":"https://geokriolog.ru/blog/termosifon-vechnaya-merzlota/"
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько служит термосифон?","acceptedAnswer":{"@type":"Answer","text":"Расчётный срок — 25–30 лет. Замкнутый контур, нет движущихся частей и расходников."}},{"@type":"Question","name":"При какой температуре работает?","acceptedAnswer":{"@type":"Answer","text":"Аммиак (R717) — примерно до −40 °C, этан и пропан — до −60 °C. В Арктике активный режим занимает 8–10 месяцев в году."}},{"@type":"Question","name":"Нужно ли обслуживание?","acceptedAnswer":{"@type":"Answer","text":"Регулярное ТО не требуется. Рекомендуется ежегодный осмотр и мониторинг температуры грунта."}},{"@type":"Question","name":"Чем отличается от компрессионной установки?","acceptedAnswer":{"@type":"Answer","text":"Термосифон пассивен: он не потребляет электричество и не требует управления. Для удалённых объектов на Севере это решающее преимущество."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://geokriolog.ru/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://geokriolog.ru/blog/"},{"@type":"ListItem","position":3,"name":"Термосифон на вечной мерзлоте: принцип работы и хладагенты","item":"https://geokriolog.ru/blog/termosifon-vechnaya-merzlota/"}]}
+</script>
+</head>
+<body>
+
+<header class="nav"><div class="nav-inner">
+  <a class="brand" href="/"><img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог" width="32" height="32" decoding="async"/><span>НПО ГЕОКРИОЛОГ</span></a>
+  <nav class="nav-links">
+    <a href="/">Главная</a>
+    <a href="/demontazh-ogolovkov-bns/" class="">Оголовки БНС</a>
+    <a href="/tysim-kr300m/" class="">TYSIM KR300M</a>
+    <a href="/obshadnoj-stol-rco1500/" class="">RCO1500</a>
+    <a href="/audit-kriolitozony/" class="">Аудит</a>
+    <a href="/proekty/" class="">Проекты</a>
+    <a href="/blog/" class="active">Блог</a>
+    <a href="/o-kompanii/" class="">О компании</a>
+  </nav>
+  <a class="btn btn-ice" href="/#cta">Заявка</a>
+</div></header>
+<main>
+  <div class="hero"><div class="wrap">
+    <div class="crumb"><a href="/">Главная</a> / <a href="/blog/">Блог</a> / Термосифон на вечной мерзлоте</div>
+    <h1>Термосифон на вечной мерзлоте: принцип работы и хладагенты</h1>
+    <p class="lead">Сезонное охлаждающее устройство отбирает тепло из грунта без электричества и без движущихся частей. Разбираем физику процесса, хладагенты и границы применимости.</p>
+  </div></div>
+
+  <div class="wrap">
+    <article class="post">
+      <h2>Почему фундаменты на Севере разрушаются</h2>
+      <p>Более половины территории России — многолетняя и сезонная мерзлота. Здание нагревает грунт, породы оттаивают и теряют несущую способность: стены трескаются, опоры наклоняются. Без специальных технологий фундамент и насыпь живут два-три сезона.</p>
+      <p>На Ямале проблему усугубляют криопэги — линзы солёного раствора в толще мерзлоты, которые не замерзают при отрицательных температурах. Утепление здесь не помогает: нужно активно отбирать тепло из грунта.</p>
+
+      <figure>
+        <img src="/images/blog-termosifon-shema.webp" alt="Схема двухфазного цикла термосифона на вечной мерзлоте" width="1024" height="1280" loading="lazy" decoding="async"/>
+        <figcaption>Двухфазный цикл термосифона: испарение внизу, конденсация вверху</figcaption>
+      </figure>
+
+      <h2>Как устроен термосифон</h2>
+      <p>Термосифон, он же сезонное охлаждающее устройство (СОУ), — закрытая вертикальная труба с хладагентом. Работает пассивно, без электричества и без насосов.</p>
+      <p><strong>Зимой</strong> надземная часть охлаждается морозным воздухом. Пар хладагента конденсируется на холодной стенке, стекает вниз, забирает тепло из грунта и снова испаряется. Цикл замыкается сам и работает, пока воздух холоднее грунта.</p>
+      <p><strong>Летом</strong> разница температур исчезает, цикл останавливается — устройство работает как термоизолятор и не греет грунт обратно.</p>
+
+      <h2>Хладагенты</h2>
+      <div class="tw"><table>
+        <thead><tr><th>Хладагент</th><th>Обозначение</th><th>Особенности</th></tr></thead>
+        <tbody>
+          <tr><td>Аммиак</td><td>R717</td><td>Работает примерно до −40 °C, самый распространённый вариант</td></tr>
+          <tr><td>Углекислый газ</td><td>R744</td><td>Безопасен, эффективен при экстремальных морозах</td></tr>
+          <tr><td>Смесь фреонов</td><td>R410a</td><td>Промышленные установки</td></tr>
+          <tr><td>Этан, пропан</td><td>—</td><td>До −60 °C, позволяют проморозить линзу за один сезон</td></tr>
+        </tbody>
+      </table></div>
+      <p>Моделирование двухфазных термосифонов и работа с низкотемпературными хладагентами — тема исследований В. В. Ананьева (кафедра геокриологии МГУ), чьи работы входят в научную базу компании.</p>
+
+      <figure>
+        <img src="/images/blog-termosifon-obekt.webp" alt="Термосифоны на объекте в Заполярье" width="1024" height="1280" loading="lazy" decoding="async"/>
+        <figcaption>Термосифоны на объекте в Заполярье</figcaption>
+      </figure>
+
+      <h2>Где применяют</h2>
+      <p>Защита газовой инфраструктуры на засоленных грунтах Ямала, стабилизация промышленных оснований в Заполярье, опоры трубопроводов и ЛЭП, где нельзя допустить просадок. Полигонные испытания термосифонов ведутся в том числе на площадках МГУ и в Нарьян-Маре.</p>
+      <p>Основные преимущества: нулевое энергопотребление, полная автономность, срок службы 25 лет и больше, отсутствие расходников.</p>
+
+      <h2>Что важно на этапе проектирования</h2>
+      <p>Термосифон — не универсальное решение, которое ставится «по площади». Нужны исходные данные: состав и льдистость грунтов, наличие криопэгов, тепловая нагрузка от сооружения, режим эксплуатации. От этого зависят количество устройств, глубина погружения, шаг расстановки и выбор хладагента.</p>
+      <p>Поэтому расчёт СОУ идёт после <a href="/audit-kriolitozony/" style="color:var(--ice2)">геокриологического аудита объекта</a>, а не до него.</p>
+
+      <h2>Частые вопросы</h2>
+      <div class="faq">
+        <details><summary>Сколько служит термосифон?</summary><p>Расчётный срок — 25–30 лет. Замкнутый контур, нет движущихся частей и расходников.</p></details>
+        <details><summary>При какой температуре работает?</summary><p>Аммиак (R717) — примерно до −40 °C, этан и пропан — до −60 °C. В Арктике активный режим занимает 8–10 месяцев в году.</p></details>
+        <details><summary>Нужно ли обслуживание?</summary><p>Регулярное ТО не требуется. Рекомендуется ежегодный осмотр и мониторинг температуры грунта.</p></details>
+        <details><summary>Чем отличается от компрессионной установки?</summary><p>Термосифон пассивен: он не потребляет электричество и не требует управления. Для удалённых объектов на Севере это решающее преимущество.</p></details>
+      </div>
+    </article>
+
+    <div class="cta" id="cta">
+      <h2>Нужен расчёт термостабилизации?</h2>
+      <p>Опишите объект — оценим исходные данные и предложим схему решения.</p>
+      <div class="row">
+        <a class="btn btn-ice" href="/audit-kriolitozony/">Геокриологический аудит</a>
+        <a class="btn btn-ghost" href="mailto:info@geokriolog.ru?subject=Расчёт термостабилизации">Написать на info@</a>
+        <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <div>© 2026 ООО «НПО ГЕОКРИОЛОГ» · ИНН 7817123404 · Санкт-Петербург</div>
+  <div><a href="mailto:info@geokriolog.ru">info@geokriolog.ru</a> · <a href="tel:+79119245467">+7 911 924-54-67</a></div>
+</div></footer>
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+</script>
+</body></html>
