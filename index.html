@@ -387,6 +387,13 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);f
 .foot a:hover{color:var(--text)}
 .legal{margin-top:18px;max-width:70ch;font-size:12px;line-height:1.5;opacity:.85}
 
+/* плавные переходы между страницами */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:vtOut .22s var(--ease) both}
+::view-transition-new(root){animation:vtIn .30s var(--ease) both}
+@keyframes vtOut{to{opacity:0;transform:translateY(-6px)}}
+@keyframes vtIn{from{opacity:0;transform:translateY(8px)}}
+
 /* reveal */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease), transform .7s var(--ease)}
 .reveal.on{opacity:1;transform:none}
@@ -418,6 +425,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);f
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none;transition:none}
+  @view-transition{navigation:none}
   .tile:hover,.card:hover{transform:none}
 }
 

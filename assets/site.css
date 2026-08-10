@@ -125,3 +125,30 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);f
 .post figcaption{margin-top:9px;font-size:13px;color:var(--muted);text-align:center}
 .post .faq{margin-top:14px}
 .post .tw{margin:18px 0}
+
+/* ─── появление при скролле ───────────────────────────────────────────
+   Ключевой принцип: без JS контент виден всегда. Прятать элементы имеет
+   право только скрипт, добавив .js-anim на <html>. */
+.js-anim .reveal{opacity:0;transform:translateY(16px);
+  transition:opacity .6s var(--ease) var(--d,0ms),transform .6s var(--ease) var(--d,0ms)}
+.js-anim .reveal.on{opacity:1;transform:none}
+
+/* плавные переходы между страницами (Chrome 126+, остальные игнорируют) */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:vtOut .22s var(--ease) both}
+::view-transition-new(root){animation:vtIn .30s var(--ease) both}
+@keyframes vtOut{to{opacity:0;transform:translateY(-6px)}}
+@keyframes vtIn{from{opacity:0;transform:translateY(8px)}}
+
+/* шапка: подсветка активного пункта плавнее */
+.nav-links a{transition:color .2s var(--ease)}
+
+/* карточки: отклик на наведение */
+.card,.proj{transition:transform .35s var(--ease),border-color .35s var(--ease)}
+.card:hover,.proj:hover{transform:translateY(-3px);border-color:var(--line2)}
+
+@media (prefers-reduced-motion:reduce){
+  .js-anim .reveal,.js-anim .reveal.on{opacity:1!important;transform:none!important;transition:none!important}
+  .card:hover,.proj:hover{transform:none}
+  @view-transition{navigation:none}
+}
