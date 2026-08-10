@@ -158,7 +158,9 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);f
    Ссылки-«стрелки», занимающие абзац целиком, остаются без подчёркивания. */
 main p a,
 main li a { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
-main p > a:only-child,
-main li > a:only-child { text-decoration: none; }
-main p > a:only-child:hover,
-main li > a:only-child:hover { text-decoration: underline; }
+/* :only-child не подходит — он не считает текстовые узлы, и ссылка внутри
+   фразы тоже оказывается «единственной». Отделяем ссылки-«стрелки» по начертанию. */
+main p a[style*="font-weight:600"],
+main li a[style*="font-weight:600"] { text-decoration: none; }
+main p a[style*="font-weight:600"]:hover,
+main li a[style*="font-weight:600"]:hover { text-decoration: underline; }
