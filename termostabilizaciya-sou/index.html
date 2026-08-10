@@ -189,7 +189,7 @@
           if(!f.checkValidity()){f.reportValidity();er.textContent='Проверьте имя, телефон и согласие.';er.classList.add('show');return;}
           bt.disabled=true;bt.textContent='Отправляем…';
           fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
-            .then(function(r){if(!r.ok)throw 0;goal('form_lead');ok.classList.add('show');f.reset();bt.textContent='Отправлено';})
+            .then(function(r){return r.json().catch(function(){return null}).then(function(d){/* FormSubmit отвечает 200 и на отказе: {"success":"false"} — без этой проверки посетитель видит «Отправлено», а заявки нет. */if(!r.ok||!d||String(d.success)!=='true')throw 0;goal('form_lead');ok.classList.add('show');f.reset();bt.textContent='Отправлено';});})
             .catch(function(){er.textContent='Не удалось отправить. Позвоните: +7 911 924-54-67';er.classList.add('show');bt.disabled=false;bt.textContent='Отправить заявку';});
         });
       })();

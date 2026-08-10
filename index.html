@@ -1386,8 +1386,11 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
       });
       let data = null;
       try { data = await res.json(); } catch(_){}
-      if(!res.ok){
-        throw new Error((data && (data.message || data.error)) || ('Ошибка сети: ' + res.status));
+      // FormSubmit отвечает 200 и на отказе: {"success":"false", "message":"..."}.
+      // Проверять только res.ok значит показывать «Заявка отправлена» там,
+      // где письмо никуда не ушло.
+      if(!res.ok || !data || String(data.success) !== 'true'){
+        throw new Error((data && (data.message || data.error)) || ('Ошибка отправки: ' + res.status));
       }
       showOk('Заявка отправлена на info@geokriolog.ru. Ответим в течение рабочего часа.');
       track('form_lead');
