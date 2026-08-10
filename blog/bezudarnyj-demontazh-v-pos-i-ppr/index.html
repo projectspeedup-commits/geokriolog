@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- lcp-preload -->
+<link rel="preload" as="image" href="/images/bns-karkas.webp" fetchpriority="high">
+<!-- /lcp-preload -->
+<!-- local-fonts -->
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-400-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-700-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-800-cyrillic.woff2" crossorigin>
+<style>/* Локальные шрифты. Сгенерировано fetch_fonts.py — не править вручную. */
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<!-- /local-fonts -->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Безударный демонтаж оголовков БНС в ПОС и ППР</title>
+<meta name="description" content="Что написать в проекте организации строительства и проекте производства работ, чтобы закладной демонтаж оголовков свай можно было применить. Разбор для ГИПа и ППР-отдела."/>
+<link rel="canonical" href="https://geokriolog.ru/blog/bezudarnyj-demontazh-v-pos-i-ppr/"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:url" content="https://geokriolog.ru/blog/bezudarnyj-demontazh-v-pos-i-ppr/"/>
+<meta property="og:title" content="Безударный демонтаж оголовков БНС в ПОС и ППР"/>
+<meta property="og:description" content="Что написать в проекте организации строительства и проекте производства работ, чтобы закладной демонтаж оголовков свай можно было применить. Разбор для ГИПа и ППР-отдела."/>
+<meta property="og:image" content="https://geokriolog.ru/images/bns-karkas.webp"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="icon" href="https://geokriolog.ru/images/logo.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="https://geokriolog.ru/images/logo.svg"/>
+
+
+<link rel="stylesheet" href="/assets/site.css"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Безударный демонтаж оголовков БНС в ПОС и ППР",
+  "description":"Что написать в проекте организации строительства и проекте производства работ, чтобы закладной демонтаж оголовков свай можно было применить. Разбор для ГИПа и ППР-отдела.",
+  "image":"https://geokriolog.ru/images/bns-karkas.webp",
+  "datePublished":"2026-08-10",
+  "dateModified":"2026-08-10",
+  "author":{"@type":"Organization","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/"},
+  "publisher":{"@type":"Organization","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/"},
+  "mainEntityOfPage":"https://geokriolog.ru/blog/bezudarnyj-demontazh-v-pos-i-ppr/"
+}
+</script>\n<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"На какой стадии принимается решение о применении технологии?","acceptedAnswer":{"@type":"Answer","text":"На стадии подготовки арматурных каркасов — то есть фактически при разработке ППР, а лучше раньше, в ПОС. Картриджи ставятся на каркас до бетонирования; после укладки бетона применить метод уже нельзя."}},{"@type":"Question","name":"Нужно ли менять проектные решения по свае?","acceptedAnswer":{"@type":"Answer","text":"Нет. Конструкция сваи, армирование, класс бетона и проектная отметка низа ростверка не меняются. Меняется только способ удаления оголовка — это раздел организации работ, а не конструктивный раздел."}},{"@type":"Question","name":"Какой документ регламентирует состав ППР?","acceptedAnswer":{"@type":"Answer","text":"СП 48.13330.2019 «Организация строительства» (актуализированная редакция СНиП 12-01-2004). Практические рекомендации по составу и оформлению ПОС и ППР даны в МДС 12-81.2007."}},{"@type":"Question","name":"Что делать, если типовой технологической карты на метод нет?","acceptedAnswer":{"@type":"Answer","text":"Разрабатывается технологическая карта на конкретный объект в составе ППР. Действующие типовые ТТК описывают механические способы срубки, поэтому карту под закладной метод готовят отдельно — мы передаём исходные данные для неё."}},{"@type":"Question","name":"Кто отвечает за результат, если метод не сработает?","acceptedAnswer":{"@type":"Answer","text":"Ответственность распределяется договором. Практический путь снять вопрос — пилот на 5–10 оголовках на площадке заказчика до включения метода в основной объём работ."}}]}
+</script>\n<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://geokriolog.ru/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://geokriolog.ru/blog/"},{"@type":"ListItem","position":3,"name":"Безударный демонтаж оголовков БНС в ПОС и ППР","item":"https://geokriolog.ru/blog/bezudarnyj-demontazh-v-pos-i-ppr/"}]}
+</script>
+</head>
+<body>
+
+<header class="nav"><div class="nav-inner">
+  <a class="brand" href="/"><img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог" width="32" height="32" decoding="async"/><span>НПО ГЕОКРИОЛОГ</span></a>
+  <nav class="nav-links">
+    <a href="/">Главная</a>
+    <a href="/demontazh-ogolovkov-bns/" class="">Оголовки БНС</a>
+    <a href="/termostabilizaciya-sou/" class="">Термостабилизация</a>
+    <a href="/tehnika/" class="">Техника</a>
+    <a href="/audit-kriolitozony/" class="">Аудит</a>
+    <a href="/proekty/" class="">Проекты</a>
+    <a href="/blog/" class="active">Блог</a>
+    <a href="/o-kompanii/" class="">О компании</a>
+  </nav>
+  <a class="btn btn-ice" href="/#cta">Заявка</a>
+</div></header>
+<main>
+  <div class="hero"><div class="wrap">
+    <div class="crumb"><a href="/">Главная</a> / <a href="/blog/">Блог</a> / Демонтаж оголовков в ПОС и ППР</div>
+    <h1>Безударный демонтаж оголовков БНС в ПОС и ППР</h1>
+    <p class="lead">Технология, которую нельзя применить на площадке, если о ней не подумали на бумаге. Что и куда написать, чтобы у подрядчика была возможность выбора.</p>
+    <div class="crumb" style="margin-top:14px">Проектирование · 10 августа 2026</div>
+  </div></div>
+
+  <div class="wrap">
+    <section style="padding-top:10px">
+      <img src="/images/bns-karkas.webp" alt="Арматурный каркас буронабивной сваи с закладными картриджами" width="1200" height="750" loading="eager" fetchpriority="high" decoding="async" style="width:100%;height:auto;border-radius:14px;display:block"/>
+    </section>
+
+    <section>
+      <h2>Почему это вопрос проектировщика, а не прораба</h2>
+      <p style="color:var(--muted);max-width:74ch">У закладной технологии есть жёсткое ограничение: картриджи с расширяющимся составом крепятся на арматурный каркас <b style="color:var(--text)">до бетонирования</b>. Как только бетон уложен, момент упущен — остаются механические способы.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px">Отсюда следствие, которое обычно обнаруживают поздно: решение принимается не тогда, когда оголовки уже стоят на площадке и мешают, а на стадии подготовки производства. Если в организационно-технологической документации записан только механический способ, подрядчик формально не может применить другой — и не будет.</p>
+    </section>
+
+    <section>
+      <h2>Кто что разрабатывает</h2>
+      <div class="tw"><table><thead>
+        <tr><th></th><th>ПОС</th><th>ППР</th></tr>
+      </thead><tbody>
+        <tr><td>Кто разрабатывает</td><td>проектная организация</td><td>подрядчик, выполняющий работы</td></tr>
+        <tr><td>Стадия</td><td>проектная документация</td><td>подготовка производства</td></tr>
+        <tr><td>Уровень детализации</td><td>принципиальные решения, укрупнённые объёмы и сроки</td><td>технология, последовательность, ресурсы, контроль качества</td></tr>
+        <tr><td>Что нужно нам</td><td>допустить метод как возможный</td><td>описать его как применяемый</td></tr>
+      </tbody></table></div>
+      <p style="color:var(--muted);margin-top:12px;max-width:74ch">Состав и порядок разработки организационно-технологической документации определяет СП 48.13330.2019 «Организация строительства». Практические рекомендации по оформлению ПОС и ППР — МДС 12-81.2007.</p>
+    </section>
+
+    <section>
+      <h2>Что должно попасть в ПОС</h2>
+      <p style="color:var(--muted);max-width:74ch">На этой стадии не нужны подробности. Нужна одна вещь: чтобы формулировка не запирала подрядчика в механическом способе.</p>
+      <ul style="color:var(--muted);max-width:74ch;line-height:1.7">
+        <li>Способ удаления оголовков буронабивных свай указывается без привязки к конкретному инструменту — «удаление оголовков до проектной отметки с сохранением арматурных выпусков», а не «срубка отбойными молотками».</li>
+        <li>Если объект в черте застройки — фиксируются ограничения по шуму и вибрации. Это сразу делает безударные способы предпочтительными и защищает подрядчика от требования уложиться в сроки при ограниченном рабочем окне.</li>
+        <li>В календарном плане операция выделяется отдельной строкой. Когда она спрятана внутри «устройства свайного основания», её влияние на критический путь не видно, и оптимизировать нечего.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Что должно попасть в ППР</h2>
+      <p style="color:var(--muted);max-width:74ch">Здесь метод описывается как применяемый. Минимальный состав:</p>
+      <ul style="color:var(--muted);max-width:74ch;line-height:1.7">
+        <li><b style="color:var(--text)">Технологическая последовательность:</b> изоляция арматурных выпусков → установка картриджей на каркас по проектной отметке → опускание каркаса и бетонирование → откопка → раскрытие трещины и подъём оголовка краном.</li>
+        <li><b style="color:var(--text)">Привязка к отметкам:</b> проектная отметка низа ростверка, отметка установки картриджей, допуск по высоте. От точности установки зависит положение плоскости отрыва.</li>
+        <li><b style="color:var(--text)">Контроль:</b> освидетельствование установки картриджей до бетонирования — скрытые работы, потом не проверить. Актирование в общем журнале и акт освидетельствования скрытых работ.</li>
+        <li><b style="color:var(--text)">Условие раскрытия:</b> момент подъёма определяется по фактическому набору прочности бетона, а не по календарю.</li>
+        <li><b style="color:var(--text)">Грузоподъёмные работы:</b> схема строповки оголовка, масса блока, требования к крану.</li>
+        <li><b style="color:var(--text)">Технологическая карта</b> на конкретный объект: действующие типовые ТТК описывают механические способы, поэтому карту под закладной метод готовят отдельно.</li>
+        <li><b style="color:var(--text)">Резервный сценарий:</b> что делает бригада, если трещина не раскрылась по проектному сечению. Наличие этого пункта снимает половину вопросов у технадзора.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Что запросить у поставщика технологии</h2>
+      <p style="color:var(--muted);max-width:74ch">Чтобы проектировщику было из чего писать, нужны исходные данные. Разумный запрос выглядит так:</p>
+      <ul style="color:var(--muted);max-width:74ch;line-height:1.7">
+        <li>диапазон применимости по диаметру и армированию свай;</li>
+        <li>схема расстановки картриджей на каркасе и допуск по отметке;</li>
+        <li>условия закладки и требования к бетонной смеси, если они есть;</li>
+        <li>критерий готовности к раскрытию трещины;</li>
+        <li>документы на состав и порядок обращения с ним;</li>
+        <li>исходные данные для технологической карты;</li>
+        <li>подтверждённый опыт применения на сопоставимом объекте.</li>
+      </ul>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px">Если поставщик не может дать что-то из этого списка — это сам по себе ответ.</p>
+    </section>
+
+    <section>
+      <h2>Три ошибки, которые закрывают дорогу методу</h2>
+      <div class="cat-grid" style="margin-top:16px">
+        <article class="card"><div class="c"><h3>Инструмент в тексте ПОС</h3><p>Формулировка «срубка отбойными молотками» вместо «удаление оголовков до проектной отметки». Способ оказывается зафиксирован там, где должен был остаться результат.</p></div></article>
+        <article class="card"><div class="c"><h3>Операция без отдельной строки</h3><p>Демонтаж растворён в «устройстве свайного основания». Влияние на сроки не видно ни в графике, ни в смете — экономить нечего, потому что нечего измерить.</p></div></article>
+        <article class="card"><div class="c"><h3>Решение после бетонирования</h3><p>О технологии вспоминают, когда сваи готовы. Это самый частый случай и единственный, который нельзя исправить: закладка возможна только до укладки бетона.</p></div></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Что мы даём проектировщику</h2>
+      <p style="color:var(--muted);max-width:74ch">Исходные данные для ПОС и ППР, схему расстановки картриджей, исходные данные для технологической карты, описание контрольных операций и результаты применения на капитальном ремонте моста через реку Ижору — там полный объём демонтажа выполнен за шесть рабочих дней вместо трёх недель по графику, в стеснённых условиях шпунтового ограждения.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px">Если технология в проект не проходит — скажем об этом прямо и назовём причину. Ложное «подходит везде» дороже честного «здесь не наш случай».</p>
+      <p style="margin-top:14px"><a href="/demontazh-ogolovkov-bns/" style="color:var(--ice2);font-weight:600">Технология безударного демонтажа →</a></p>
+      <p style="margin-top:8px"><a href="/blog/chem-zamenit-otbojnyj-molotok/" style="color:var(--ice2);font-weight:600">Сравнение способов удаления оголовков →</a></p>
+    </section>
+
+    <div class="cta" id="cta">
+      <h2>Исходные данные для ПОС и ППР</h2>
+      <p>Напишите объект, диаметр и количество свай — вернём материалы, которые можно положить в проект: схему закладки, контрольные операции, исходные данные для техкарты.</p>
+      <div class="row">
+        <a class="btn btn-ghost" href="mailto:info@geokriolog.ru">Написать на info@</a>
+        <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
+        <a class="btn btn-warm" href="https://wa.me/79119245467" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <form class="lf" id="leadForm" action="https://formsubmit.co/info@geokriolog.ru" method="POST" novalidate style="margin-top:16px">
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="hidden" name="_next" value="https://geokriolog.ru/#success"/>
+        <input type="hidden" name="_subject" value="Заявка: Статья: демонтаж в ПОС и ППР"/>
+        <input type="hidden" name="page" value="Статья: демонтаж в ПОС и ППР"/>
+        <input type="text" name="_honey" value="" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <div class="lf-row">
+          <div><label for="lf-name">Имя</label><input id="lf-name" name="name" required autocomplete="name" placeholder="Александр"/></div>
+          <div><label for="lf-phone">Телефон</label><input id="lf-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+()\-\s]{10,20}" minlength="10" placeholder="+7 (___) ___-__-__"/></div>
+        </div>
+        <div><label for="lf-msg">Задача</label><textarea id="lf-msg" name="message" placeholder="Объект, объём, сроки"></textarea></div>
+        <label class="lf-check" for="lf-consent"><input type="checkbox" id="lf-consent" name="consent" value="yes" required/>
+          <span>Согласен на обработку персональных данных (152-ФЗ). Заявка уйдёт на info@geokriolog.ru</span></label>
+        <div class="lf-msg lf-ok" id="lfOk" role="status" aria-live="polite">Заявка отправлена. Свяжемся в течение рабочего дня.</div>
+        <div class="lf-msg lf-err" id="lfErr" role="alert"></div>
+        <div><button class="btn btn-ice" type="submit" id="lfBtn">Отправить заявку</button></div>
+      </form>
+      <script>
+      (function(){
+        var f=document.getElementById('leadForm');if(!f)return;
+        var ok=document.getElementById('lfOk'),er=document.getElementById('lfErr'),bt=document.getElementById('lfBtn');
+        function goal(g){try{if(typeof ym==='function')ym(110604818,'reachGoal',g);}catch(e){}}
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){goal('call_click');});});
+        document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.addEventListener('click',function(){goal('email_click');});});
+        document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){a.addEventListener('click',function(){goal('wa_click');});});
+        f.addEventListener('submit',function(e){
+          e.preventDefault();er.classList.remove('show');
+          if(f.querySelector('[name="_honey"]').value)return;
+          if(!f.checkValidity()){f.reportValidity();er.textContent='Проверьте имя, телефон и согласие.';er.classList.add('show');return;}
+          bt.disabled=true;bt.textContent='Отправляем…';
+          fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+            .then(function(r){if(!r.ok)throw 0;goal('form_lead');ok.classList.add('show');f.reset();bt.textContent='Отправлено';})
+            .catch(function(){er.textContent='Не удалось отправить. Позвоните: +7 911 924-54-67';er.classList.add('show');bt.disabled=false;bt.textContent='Отправить заявку';});
+        });
+      })();
+      </script>
+    </div>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <div>© 2026 ООО «НПО ГЕОКРИОЛОГ» · ИНН 7817123404 · Санкт-Петербург</div>
+  <div><a href="mailto:info@geokriolog.ru">info@geokriolog.ru</a> · <a href="tel:+79119245467">+7 911 924-54-67</a></div>
+</div></footer>
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+</script>
+<script src="/assets/anim.js" defer></script>
+</body></html>
