@@ -1333,9 +1333,20 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
     if(err){ err.classList.remove('show'); err.hidden = true; err.textContent=''; }
     if(msg){ msg.textContent = text; msg.classList.add('show'); }
   }
-  function showErr(text){
+  function showErr(text, html){
     if(msg){ msg.classList.remove('show'); msg.textContent=''; }
-    if(err){ err.hidden=false; err.textContent=text; err.classList.add('show'); }
+    if(err){ err.hidden=false; if(html){ err.innerHTML=html; } else { err.textContent=text; } err.classList.add('show'); }
+  }
+  // Резервный канал: если внешний сервис отказал, собираем письмо из полей
+  // формы и даём ссылку mailto — заявка не теряется.
+  function mailtoLink(){
+    var f=document.getElementById('leadForm')||document.querySelector('form');
+    if(!f) return 'mailto:info@geokriolog.ru';
+    var q=function(n){var e=f.querySelector('[name="'+n+'"]');return e?(e.value||''):''};
+    var L=[['Имя',q('name')],['Телефон',q('phone')],['Тип объекта',q('type')],
+           ['Регион',q('region')],['Задача',q('message')],['Страница',q('page')||'Главная']];
+    var body=L.filter(function(x){return x[1]}).map(function(x){return x[0]+': '+x[1]}).join('\n');
+    return 'mailto:info@geokriolog.ru?subject='+encodeURIComponent('Заявка с сайта')+'&body='+encodeURIComponent(body);
   }
   function track(goal){
     try{
@@ -1402,7 +1413,7 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
       msg?.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'nearest'});
     }catch(ex){
       console.error(ex);
-      showErr('Не удалось отправить автоматически. Напишите на info@geokriolog.ru или нажмите WhatsApp - форма не потеряла ваши данные в полях ниже, если остались.');
+      showErr('', 'Не удалось отправить автоматически. <a href="'+mailtoLink()+'">Отправить письмом</a> — данные из формы уже подставлены. Или позвоните: <a href="tel:+79119245467">+7 911 924-54-67</a>.');
       // do not reset on error
     }finally{
       if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = prev || 'Отправить заявку'; }

@@ -208,6 +208,8 @@
       <script>
       (function(){
         var f=document.getElementById('leadForm');if(!f)return;
+  function mailtoLink(f){var q=function(n){var e=f.querySelector('[name="'+n+'"]');return e?(e.value||''):''};var L=[['Имя',q('name')],['Телефон',q('phone')],['Тип объекта',q('type')],['Регион',q('region')],['Задача',q('message')],['Страница',q('page')||document.title]];var body=L.filter(function(x){return x[1]}).map(function(x){return x[0]+': '+x[1]}).join('\n');return 'mailto:info@geokriolog.ru?subject='+encodeURIComponent('Заявка с сайта')+'&body='+encodeURIComponent(body)}
+
         var ok=document.getElementById('lfOk'),er=document.getElementById('lfErr'),bt=document.getElementById('lfBtn');
         function goal(g){try{if(typeof ym==='function')ym(110604818,'reachGoal',g);}catch(e){}}
         document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){goal('call_click');});});
@@ -220,7 +222,7 @@
           bt.disabled=true;bt.textContent='Отправляем…';
           fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
             .then(function(r){return r.json().catch(function(){return null}).then(function(d){/* FormSubmit отвечает 200 и на отказе: {"success":"false"} — без этой проверки посетитель видит «Отправлено», а заявки нет. */if(!r.ok||!d||String(d.success)!=='true')throw 0;goal('form_lead');ok.classList.add('show');f.reset();bt.textContent='Отправлено';});})
-            .catch(function(){er.textContent='Не удалось отправить. Позвоните: +7 911 924-54-67';er.classList.add('show');bt.disabled=false;bt.textContent='Отправить заявку';});
+            .catch(function(){er.innerHTML='Не удалось отправить автоматически. '+'<a href="'+mailtoLink(f)+'">Отправить письмом</a>'+' — данные из формы уже подставлены. Или позвоните: '+'<a href="tel:+79119245467">+7 911 924-54-67</a>';er.classList.add('show');bt.disabled=false;bt.textContent='Отправить заявку';});
         });
       })();
       </script>
