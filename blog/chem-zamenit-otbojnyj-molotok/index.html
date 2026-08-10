@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- lcp-preload -->
+<link rel="preload" as="image" href="/images/bns-kartridzhi.webp" fetchpriority="high">
+<!-- /lcp-preload -->
+<!-- local-fonts -->
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-400-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-700-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-800-cyrillic.woff2" crossorigin>
+<style>/* Локальные шрифты. Сгенерировано fetch_fonts.py — не править вручную. */
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<!-- /local-fonts -->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Чем заменить отбойный молоток при срубке оголовков свай</title>
+<meta name="description" content="Разбор четырёх способов удаления оголовков БНС: пневмоинструмент, алмазная резка, гидроклин и невзрывчатые разрушающие средства. Где каждый работает и где упирается."/>
+<link rel="canonical" href="https://geokriolog.ru/blog/chem-zamenit-otbojnyj-molotok/"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:url" content="https://geokriolog.ru/blog/chem-zamenit-otbojnyj-molotok/"/>
+<meta property="og:title" content="Чем заменить отбойный молоток при срубке оголовков свай"/>
+<meta property="og:description" content="Разбор четырёх способов удаления оголовков БНС: пневмоинструмент, алмазная резка, гидроклин и невзрывчатые разрушающие средства. Где каждый работает и где упирается."/>
+<meta property="og:image" content="https://geokriolog.ru/images/bns-kartridzhi.webp"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="icon" href="https://geokriolog.ru/images/logo.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="https://geokriolog.ru/images/logo.svg"/>
+
+
+<link rel="stylesheet" href="/assets/site.css"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Чем заменить отбойный молоток при срубке оголовков свай",
+  "description":"Разбор четырёх способов удаления оголовков БНС: пневмоинструмент, алмазная резка, гидроклин и невзрывчатые разрушающие средства. Где каждый работает и где упирается.",
+  "image":"https://geokriolog.ru/images/bns-kartridzhi.webp",
+  "datePublished":"2026-08-10",
+  "dateModified":"2026-08-10",
+  "author":{"@type":"Organization","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/"},
+  "publisher":{"@type":"Organization","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/"},
+  "mainEntityOfPage":"https://geokriolog.ru/blog/chem-zamenit-otbojnyj-molotok/"
+}
+</script>\n<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что такое НРС?","acceptedAnswer":{"@type":"Answer","text":"Невзрывчатые разрушающие средства — порошковые составы на основе оксида кальция. Их заливают водой и помещают в пробуренные шпуры. При гидратации состав увеличивается в объёме и создаёт давление на стенки шпура — бетон раскалывается без ударов, шума и разлёта осколков."}},{"@type":"Question","name":"Чем закладной картридж отличается от НРС в шпурах?","acceptedAnswer":{"@type":"Answer","text":"Моментом введения. НРС заливают в шпуры уже затвердевшего бетона — то есть сначала надо пробурить десятки отверстий в готовой свае. Закладной картридж ставится на арматурный каркас до бетонирования, бурить нечего и незачем: плоскость будущей трещины задана заранее."}},{"@type":"Question","name":"Можно ли применить закладную технологию на уже забетонированных сваях?","acceptedAnswer":{"@type":"Answer","text":"Нет. Если бетон уже уложен, момент упущен — остаются механические способы или НРС в шпурах. Решение о применении принимается на стадии подготовки арматурных каркасов."}},{"@type":"Question","name":"Сколько времени занимает установка картриджей?","acceptedAnswer":{"@type":"Answer","text":"Операция выполняется в подготовительный период вместе с армированием и не занимает времени на критическом пути. На объекте виден только результат: откопка и подъём оголовка краном."}},{"@type":"Question","name":"Что происходит с арматурными выпусками?","acceptedAnswer":{"@type":"Answer","text":"Они изолируются до бетонирования и остаются в проектном состоянии. Ударной нагрузки на арматуру нет, править и наращивать выпуски не требуется."}}]}
+</script>\n<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://geokriolog.ru/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://geokriolog.ru/blog/"},{"@type":"ListItem","position":3,"name":"Чем заменить отбойный молоток при срубке оголовков свай","item":"https://geokriolog.ru/blog/chem-zamenit-otbojnyj-molotok/"}]}
+</script>
+</head>
+<body>
+
+<header class="nav"><div class="nav-inner">
+  <a class="brand" href="/"><img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог" width="32" height="32" decoding="async"/><span>НПО ГЕОКРИОЛОГ</span></a>
+  <nav class="nav-links">
+    <a href="/">Главная</a>
+    <a href="/demontazh-ogolovkov-bns/" class="">Оголовки БНС</a>
+    <a href="/termostabilizaciya-sou/" class="">Термостабилизация</a>
+    <a href="/tehnika/" class="">Техника</a>
+    <a href="/audit-kriolitozony/" class="">Аудит</a>
+    <a href="/proekty/" class="">Проекты</a>
+    <a href="/blog/" class="active">Блог</a>
+    <a href="/o-kompanii/" class="">О компании</a>
+  </nav>
+  <a class="btn btn-ice" href="/#cta">Заявка</a>
+</div></header>
+<main>
+  <div class="hero"><div class="wrap">
+    <div class="crumb"><a href="/">Главная</a> / <a href="/blog/">Блог</a> / Чем заменить отбойный молоток</div>
+    <h1>Чем заменить отбойный молоток при срубке оголовков свай</h1>
+    <p class="lead">Четыре способа удаления оголовков буронабивных свай, честно о каждом: где работает, где упирается и почему выбор чаще всего делают не по технологии, а по привычке.</p>
+    <div class="crumb" style="margin-top:14px">Технология · 10 августа 2026</div>
+  </div></div>
+
+  <div class="wrap">
+    <section style="padding-top:10px">
+      <img src="/images/bns-kartridzhi.webp" alt="Закладные картриджи с расширяющимся составом на арматурном каркасе" width="1200" height="750" loading="eager" fetchpriority="high" decoding="async" style="width:100%;height:auto;border-radius:14px;display:block"/>
+    </section>
+
+    <section>
+      <h2>Почему вопрос вообще возникает</h2>
+      <p style="color:var(--muted);max-width:74ch">Верх буронабивной сваи бетонируют выше проектной отметки намеренно: так вытесняется загрязнённый шламом бетон и в рабочем сечении остаётся материал проектного качества. Дальше этот излишек — оголовок — надо убрать, сохранив арматурные выпуски.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px">Операция несложная. Проблема в количестве: на типовом искусственном сооружении оголовков от нескольких десятков до нескольких сотен, и все они стоят между свайными работами и ростверком. Пока последний оголовок не снят, следующий этап не начинается.</p>
+    </section>
+
+    <section>
+      <h2>Способ 1. Пневматический инструмент</h2>
+      <p style="color:var(--muted);max-width:74ch">Отбойные молотки. Самый распространённый способ, описанный в действующих типовых технологических картах.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px"><b style="color:var(--text)">Где работает:</b> везде, где есть компрессор и люди. Не требует подготовки, оборудование доступно, бригада обучается за смену.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px"><b style="color:var(--text)">Где упирается:</b> производительность падает с ростом диаметра и насыщенности армирования. Ударная нагрузка передаётся на конструкцию — отсюда непроектные трещины ниже отметки срубки и деформация арматурных выпусков, которые потом правят вручную. Шум, пыль и вибрация ограничивают время работы вблизи жилой застройки и действующих сооружений.</p>
+    </section>
+
+    <section>
+      <h2>Способ 2. Алмазная резка</h2>
+      <p style="color:var(--muted);max-width:74ch">Кольцевой пропил канатной или дисковой машиной по периметру сваи на проектной отметке.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px"><b style="color:var(--text)">Где работает:</b> там, где нужен точный рез и минимум вибрации — реконструкция, работа рядом с чувствительными конструкциями. Срез получается ровным.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px"><b style="color:var(--text)">Где упирается:</b> резать приходится вместе с арматурой — а выпуски нужно сохранить, значит требуется обход каркаса и ручная доработка. Нужны вода, шламоотвод и подготовленный оператор. На потоке из сотен свай стоимость машино-часа делает способ тяжёлым.</p>
+    </section>
+
+    <section>
+      <h2>Способ 3. Гидроклин</h2>
+      <p style="color:var(--muted);max-width:74ch">В пробуренные шпуры вставляют гидравлические клинья, распорное усилие раскалывает бетон.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px"><b style="color:var(--text)">Где работает:</b> удара нет, шум умеренный. Хорош при разовых объёмах и в стеснённых условиях.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px"><b style="color:var(--text)">Где упирается:</b> каждому расколу предшествует бурение шпуров — а это отдельная операция на каждой свае. Трещина идёт по пути наименьшего сопротивления, и предсказать её точно не всегда получается.</p>
+    </section>
+
+    <section>
+      <h2>Способ 4. Невзрывчатые разрушающие средства</h2>
+      <p style="color:var(--muted);max-width:74ch">НРС — порошковые составы на основе оксида кальция. Порошок затворяют водой и заливают в шпуры; при гидратации состав увеличивается в объёме и давит на стенки шпура изнутри. Бетон раскалывается через несколько часов, без удара, шума и разлёта осколков.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px"><b style="color:var(--text)">Где работает:</b> объекты с жёсткими ограничениями по шуму и вибрации, работа рядом с людьми и оборудованием. Не нужна тяжёлая техника.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px"><b style="color:var(--text)">Где упирается:</b> те же шпуры. На каждую сваю — десятки отверстий, и это не считая ожидания реакции. Скорость зависит от температуры: на холоде состав работает медленнее, а на северных объектах это половина года. Плюс требования к обращению — состав едкий.</p>
+    </section>
+
+    <section>
+      <h2>Что меняет закладка до бетонирования</h2>
+      <p style="color:var(--muted);max-width:74ch">Все четыре способа объединяет одно: они работают с уже затвердевшим бетоном. Отсюда и общая цена — энергия, время и оборудование тратятся на то, чтобы разрушить материал, который специально делали прочным.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px">Закладная технология переносит подготовку на стадию до бетонирования. Водопроницаемые картриджи с расширяющимся составом крепятся на арматурный каркас по проектной отметке. Состав увеличивается в объёме в щелочной среде цемента с образованием кристаллогидратов и формирует прогнозируемую магистральную трещину в заданном сечении — после набора бетоном пластической прочности, но до набора проектной. Энергии на это нужно на порядки меньше, чем на разрушение затвердевшего бетона.</p>
+      <p style="color:var(--muted);max-width:74ch;margin-top:12px">На площадке остаётся откопка и подъём оголовка краном вертикально вверх. Бурение шпуров, ударный инструмент и ручная доработка выпусков из процесса уходят.</p>
+    </section>
+
+    <section>
+      <h2>Сводка</h2>
+      <div class="tw"><table><thead>
+        <tr><th>Способ</th><th>Подготовка</th><th>Воздействие на конструкцию</th><th>Ограничение</th></tr>
+      </thead><tbody>
+        <tr><td>Отбойные молотки</td><td>не требуется</td><td>ударное</td><td>шум, пыль, вибрация; риск для арматуры и тела сваи</td></tr>
+        <tr><td>Алмазная резка</td><td>оборудование, вода, шламоотвод</td><td>без удара</td><td>режет арматуру; дорого на потоке</td></tr>
+        <tr><td>Гидроклин</td><td>бурение шпуров</td><td>без удара</td><td>шпуры на каждой свае; трещина не всегда предсказуема</td></tr>
+        <tr><td>НРС в шпурах</td><td>бурение шпуров, затворение</td><td>без удара</td><td>шпуры; замедление на холоде; едкий состав</td></tr>
+        <tr><td>Закладные картриджи</td><td>на каркасе до бетонирования</td><td>без удара</td><td>решение принимается до бетонирования; на готовых сваях неприменимо</td></tr>
+      </tbody></table></div>
+      <p style="color:var(--muted);margin-top:14px;max-width:74ch">Главное ограничение закладной технологии стоит назвать прямо: она требует решения заранее. Если сваи уже забетонированы, выбирать придётся из первых четырёх строк таблицы. Поэтому метод логично закладывать в проект производства работ на стадии подготовки, а не искать в момент, когда оголовки уже стоят на площадке.</p>
+    </section>
+
+    <section>
+      <h2>Практика</h2>
+      <p style="color:var(--muted);max-width:74ch">На капитальном ремонте моста через реку Ижору (автодорога «Красное Село — Гатчина — Павловск») полный объём демонтажа выполнен за шесть рабочих дней вместо трёх недель по графику, рассчитанному на механический способ. Работы шли в стеснённых условиях внутри шпунтового ограждения, арматурные выпуски сохранены, замечаний технадзора по демонтажу не было.</p>
+      <p style="margin-top:14px"><a href="/demontazh-ogolovkov-bns/" style="color:var(--ice2);font-weight:600">Технология безударного демонтажа →</a></p>
+      <p style="margin-top:8px"><a href="/proekty/" style="color:var(--ice2);font-weight:600">Кейс: мост через Ижору →</a></p>
+    </section>
+
+    <div class="cta" id="cta">
+      <h2>Пилот на вашем объекте</h2>
+      <p>Бригада демонтирует 5–10 оголовков на вашей площадке. Смотрите процесс и результат своими глазами — потом решаете.</p>
+      <div class="row">
+        <a class="btn btn-ghost" href="mailto:info@geokriolog.ru">Написать на info@</a>
+        <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
+        <a class="btn btn-warm" href="https://wa.me/79119245467" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <form class="lf" id="leadForm" action="https://formsubmit.co/info@geokriolog.ru" method="POST" novalidate style="margin-top:16px">
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="hidden" name="_next" value="https://geokriolog.ru/#success"/>
+        <input type="hidden" name="_subject" value="Заявка: Статья: чем заменить отбойный молоток"/>
+        <input type="hidden" name="page" value="Статья: чем заменить отбойный молоток"/>
+        <input type="text" name="_honey" value="" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <div class="lf-row">
+          <div><label for="lf-name">Имя</label><input id="lf-name" name="name" required autocomplete="name" placeholder="Александр"/></div>
+          <div><label for="lf-phone">Телефон</label><input id="lf-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+()\-\s]{10,20}" minlength="10" placeholder="+7 (___) ___-__-__"/></div>
+        </div>
+        <div><label for="lf-msg">Задача</label><textarea id="lf-msg" name="message" placeholder="Объект, объём, сроки"></textarea></div>
+        <label class="lf-check" for="lf-consent"><input type="checkbox" id="lf-consent" name="consent" value="yes" required/>
+          <span>Согласен на обработку персональных данных (152-ФЗ). Заявка уйдёт на info@geokriolog.ru</span></label>
+        <div class="lf-msg lf-ok" id="lfOk" role="status" aria-live="polite">Заявка отправлена. Свяжемся в течение рабочего дня.</div>
+        <div class="lf-msg lf-err" id="lfErr" role="alert"></div>
+        <div><button class="btn btn-ice" type="submit" id="lfBtn">Отправить заявку</button></div>
+      </form>
+      <script>
+      (function(){
+        var f=document.getElementById('leadForm');if(!f)return;
+        var ok=document.getElementById('lfOk'),er=document.getElementById('lfErr'),bt=document.getElementById('lfBtn');
+        function goal(g){try{if(typeof ym==='function')ym(110604818,'reachGoal',g);}catch(e){}}
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){goal('call_click');});});
+        document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.addEventListener('click',function(){goal('email_click');});});
+        document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){a.addEventListener('click',function(){goal('wa_click');});});
+        f.addEventListener('submit',function(e){
+          e.preventDefault();er.classList.remove('show');
+          if(f.querySelector('[name="_honey"]').value)return;
+          if(!f.checkValidity()){f.reportValidity();er.textContent='Проверьте имя, телефон и согласие.';er.classList.add('show');return;}
+          bt.disabled=true;bt.textContent='Отправляем…';
+          fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+            .then(function(r){if(!r.ok)throw 0;goal('form_lead');ok.classList.add('show');f.reset();bt.textContent='Отправлено';})
+            .catch(function(){er.textContent='Не удалось отправить. Позвоните: +7 911 924-54-67';er.classList.add('show');bt.disabled=false;bt.textContent='Отправить заявку';});
+        });
+      })();
+      </script>
+    </div>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <div>© 2026 ООО «НПО ГЕОКРИОЛОГ» · ИНН 7817123404 · Санкт-Петербург</div>
+  <div><a href="mailto:info@geokriolog.ru">info@geokriolog.ru</a> · <a href="tel:+79119245467">+7 911 924-54-67</a></div>
+</div></footer>
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+</script>
+<script src="/assets/anim.js" defer></script>
+</body></html>
