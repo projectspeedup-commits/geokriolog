@@ -81,7 +81,7 @@
 
 <header class="nav"><div class="nav-inner">
   <a class="brand" href="/"><img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог" width="32" height="32" decoding="async"/><span>НПО ГЕОКРИОЛОГ</span></a>
-  <nav class="nav-links">
+  <nav class="nav-links" id="navLinks">
     <a href="/">Главная</a>
     <a href="/demontazh-ogolovkov-bns/" class="">Оголовки БНС</a>
     <a href="/termostabilizaciya-sou/" class="">Термостабилизация</a>
@@ -92,6 +92,7 @@
     <a href="/o-kompanii/" class="">О компании</a>
   </nav>
   <a class="btn btn-ice" href="/#cta">Заявка</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Меню">☰</button>
 </div></header>
 <main>
   <div class="hero"><div class="wrap">
@@ -220,4 +221,5 @@ m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=
 ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
 </script>
 <script src="/assets/anim.js" defer></script>
+<script>(function(){var b=document.getElementById('menuBtn'),l=document.getElementById('navLinks');if(!b||!l)return;b.addEventListener('click',function(){l.classList.toggle('open')});l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open')})})})();</script>
 </body></html>

@@ -71,7 +71,7 @@
 
 <header class="nav"><div class="nav-inner">
   <a class="brand" href="/"><img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог" width="32" height="32" decoding="async"/><span>НПО ГЕОКРИОЛОГ</span></a>
-  <nav class="nav-links">
+  <nav class="nav-links" id="navLinks">
     <a href="/">Главная</a>
     <a href="/demontazh-ogolovkov-bns/" class="">Оголовки БНС</a>
     <a href="/termostabilizaciya-sou/" class="">Термостабилизация</a>
@@ -82,6 +82,7 @@
     <a href="/o-kompanii/" class="">О компании</a>
   </nav>
   <a class="btn btn-ice" href="/#cta">Заявка</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Меню">☰</button>
 </div></header>
 <main>
   <div class="hero"><div class="wrap">
@@ -137,13 +138,13 @@
 
       <h3 style="margin-top:30px">Фотоистория объекта</h3>
       <div class="projects-scroller" style="margin-top:14px">
-        <article class="proj"><div class="loc">1 · Подготовка</div><img src="/images/bns-kartridzhi.webp" alt="Картриджи с расширяющимся составом на кольце арматурного каркаса" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Картриджи закреплены по кольцу каркаса на проектной отметке</p></article>
-        <article class="proj"><div class="loc">2 · Каркас</div><img src="/images/bns-karkas.webp" alt="Арматурный каркас с картриджами перед спуском в скважину" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Каркас готов к спуску, выпуски в изоляции</p></article>
-        <article class="proj"><div class="loc">3 · Скважина</div><img src="/images/bns-skvazhina.webp" alt="Спуск арматурного каркаса в скважину" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Спуск в скважину и штатное бетонирование</p></article>
-        <article class="proj"><div class="loc">4 · Откопка</div><img src="/images/bns-otkopka.webp" alt="Откопка оголовков после набора прочности бетона" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Откопка: трещина проявилась по отметке</p></article>
-        <article class="proj"><div class="loc">5 · Оголовки</div><img src="/images/bns-ogolovki.webp" alt="Снятые оголовки буронабивных свай" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Оголовки отделились по плоскости закладки</p></article>
-        <article class="proj"><div class="loc">6 · Подъём</div><img src="/images/bns-stropovka.webp" alt="Строповка и подъём оголовка краном" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Строповка и подъём вертикально вверх</p></article>
-        <article class="proj"><div class="loc">7 · Результат</div><img src="/images/bns-svai-gotovo.webp" alt="Сваи с сохранёнными арматурными выпусками под ростверк" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Выпуски целы — свая готова под ростверк</p></article>
+        <article class="proj"><div class="loc">1 · Подготовка</div><img src="/images/bns-kartridzhi.webp" alt="Картриджи с расширяющимся составом на кольце арматурного каркаса" loading="eager" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Картриджи закреплены по кольцу каркаса на проектной отметке</p></article>
+        <article class="proj"><div class="loc">2 · Каркас</div><img src="/images/bns-karkas.webp" alt="Арматурный каркас с картриджами перед спуском в скважину" loading="eager" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Каркас готов к спуску, выпуски в изоляции</p></article>
+        <article class="proj"><div class="loc">3 · Скважина</div><img src="/images/bns-skvazhina.webp" alt="Спуск арматурного каркаса в скважину" loading="eager" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Спуск в скважину и штатное бетонирование</p></article>
+        <article class="proj"><div class="loc">4 · Откопка</div><img src="/images/bns-otkopka.webp" alt="Откопка оголовков после набора прочности бетона" loading="eager" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Откопка: трещина проявилась по отметке</p></article>
+        <article class="proj"><div class="loc">5 · Оголовки</div><img src="/images/bns-ogolovki.webp" alt="Снятые оголовки буронабивных свай" loading="eager" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Оголовки отделились по плоскости закладки</p></article>
+        <article class="proj"><div class="loc">6 · Подъём</div><img src="/images/bns-stropovka.webp" alt="Строповка и подъём оголовка краном" loading="eager" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Строповка и подъём вертикально вверх</p></article>
+        <article class="proj"><div class="loc">7 · Результат</div><img src="/images/bns-svai-gotovo.webp" alt="Сваи с сохранёнными арматурными выпусками под ростверк" loading="eager" decoding="async" style="border-radius:10px;aspect-ratio:16/10;object-fit:cover"/><p style="margin-top:10px">Выпуски целы — свая готова под ростверк</p></article>
       </div>
     </section>
 
@@ -238,4 +239,5 @@ m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=
 ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
 </script>
 <script src="/assets/anim.js" defer></script>
+<script>(function(){var b=document.getElementById('menuBtn'),l=document.getElementById('navLinks');if(!b||!l)return;b.addEventListener('click',function(){l.classList.toggle('open')});l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open')})})})();</script>
 </body></html>
