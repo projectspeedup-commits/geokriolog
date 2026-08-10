@@ -167,3 +167,41 @@ main p a[style*="font-weight:600"],
 main li a[style*="font-weight:600"] { text-decoration: none; }
 main p a[style*="font-weight:600"]:hover,
 main li a[style*="font-weight:600"]:hover { text-decoration: underline; }
+
+/* ── Форма заявки (подстраницы, класс .lf) ─────────────────────────────
+   До 10.08.2026 стилей у .lf не было вовсе: поля рендерились браузерными
+   белыми боксами на тёмном фоне, а плашка «Заявка отправлена» была видна
+   всегда, потому что .lf-msg никто не прятал. */
+.lf{display:grid;gap:14px;margin-top:18px;max-width:600px}
+.lf>div{min-width:0}
+.lf label{display:block;font-size:12px;letter-spacing:.04em;color:var(--muted);margin-bottom:6px}
+.lf input:not([type=checkbox]),.lf select,.lf textarea{
+  width:100%;height:48px;border-radius:12px;border:1px solid var(--line2);
+  background:rgba(0,0,0,.25);color:var(--text);padding:0 14px;
+  font:inherit;font-size:16px;outline:none;
+  transition:border-color .2s var(--ease),box-shadow .2s var(--ease)}
+.lf textarea{height:110px;padding:12px 14px;resize:vertical;line-height:1.45}
+.lf select{appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%239AA3B2' stroke-width='2' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+.lf ::placeholder{color:rgba(154,163,178,.5)}
+.lf input:focus,.lf select:focus,.lf textarea:focus{
+  border-color:rgba(94,200,192,.6);box-shadow:0 0 0 3px rgba(94,200,192,.15)}
+.lf input:not([type=checkbox]):hover,.lf select:hover,.lf textarea:hover{border-color:rgba(255,255,255,.24)}
+.lf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lf-check{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;line-height:1.5;color:var(--muted);cursor:pointer}
+.lf-check input{width:16px;height:16px;margin-top:2px;accent-color:var(--ice);flex:none;cursor:pointer}
+.lf-msg{display:none;padding:12px 14px;border-radius:12px;font-size:13.5px;line-height:1.45}
+.lf-msg.show{display:block}
+.lf-ok{background:rgba(107,203,142,.12);border:1px solid rgba(107,203,142,.35);color:var(--ok)}
+.lf-err{background:rgba(220,80,80,.1);border:1px solid rgba(220,80,80,.35);color:#f0a0a0}
+.lf-err a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.lf .btn[type=submit]{height:48px;padding:0 24px;font-size:14px;cursor:pointer;
+  transition:transform .15s var(--ease),filter .2s var(--ease)}
+.lf .btn[type=submit]:hover{filter:brightness(1.08)}
+.lf .btn[type=submit]:active{transform:translateY(1px)}
+.lf .btn[type=submit]:disabled{opacity:.6;cursor:default}
+@media(max-width:640px){
+  .lf-row{grid-template-columns:1fr}
+  .lf .btn[type=submit]{width:100%}
+}

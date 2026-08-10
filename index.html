@@ -370,11 +370,14 @@ section{padding:62px 0}
 .form{display:grid;gap:12px}
 .field label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}
 .field input,.field select,.field textarea{
-  width:100%;height:46px;border-radius:12px;border:1px solid var(--line2);
-  background:rgba(0,0,0,.25);padding:0 14px;outline:none;transition:border-color .2s
+  width:100%;height:48px;border-radius:12px;border:1px solid var(--line2);
+  background:rgba(0,0,0,.25);padding:0 14px;outline:none;
+  font:inherit;font-size:16px;color:var(--text); /* 16px — iPhone не зумит поле при фокусе */
+  transition:border-color .2s,box-shadow .2s
 }
+.field input:hover,.field select:hover,.field textarea:hover{border-color:rgba(255,255,255,.24)}
 .field textarea{height:96px;padding:12px 14px;resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(94,200,192,.55)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(94,200,192,.6);box-shadow:0 0 0 3px rgba(94,200,192,.15)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .check{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--muted)}
 .check input{margin-top:3px;accent-color:var(--ice)}
@@ -415,6 +418,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);f
 }
 @media (max-width:640px){
   .wrap{width:min(100% - 28px, var(--max))}
+  .form-actions .btn{width:100%}
   .strip-row{grid-template-columns:1fr 1fr}
   .bento,.cat-grid,.form-row,.tools,.cryo-gallery{grid-template-columns:1fr}
   .cryo-gallery figure:first-child{grid-column:auto}
