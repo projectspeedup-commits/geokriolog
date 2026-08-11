@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 44" fill="none">
-  <!-- Hexagon mark -->
-  <g transform="translate(4,4)">
-    <rect x="2" y="2" width="36" height="36" rx="8" fill="#0A0A0A" opacity="0.06"/>
-    <text x="20" y="26" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#0A0A0A" text-anchor="middle">Г</text>
-    <path d="M20 8 L28 14 L28 26 L20 32 L12 26 L12 14 Z" stroke="#0A0A0A" stroke-width="1.5" fill="none" opacity="0.25"/>
-  </g>
-  <!-- НПО -->
-  <text x="52" y="20" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#0A0A0A" letter-spacing="-0.02em">НПО</text>
-  <!-- ГЕОКРИОЛОГ -->
-  <text x="52" y="38" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="18" font-weight="800" fill="#0A0A0A" letter-spacing="-0.01em">ГЕОКРИОЛОГ</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" rx="14.1" fill="#FFFFFF"/><g transform="translate(7.432,9.772) scale(0.467957)"><path d="M11.895,44.0 L88.105,36.0 L88.105,72.0 L50.0,94.0 L11.895,72.0 Z" fill="#101720"/><g transform="translate(5.0,-5.0)"><path d="M11.895,44.0 L11.895,28.0 L50.0,6.0 L88.105,28.0 L88.105,36.0 Z" fill="#5EC8C0"/></g></g></svg>
