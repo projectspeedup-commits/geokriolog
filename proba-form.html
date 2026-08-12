@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>Проба: Яндекс Форма в дизайне geokriolog.ru</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0C10;--bg2:#11151C;--bg3:#171C26;--line:rgba(255,255,255,.08);
+  --line2:rgba(255,255,255,.14);--text:#EEF1F6;--muted:#9AA3B2;
+  --ice:#5EC8C0;--ice2:#8FE0D9;--max:1100px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;padding:40px 0}
+.wrap{width:min(100% - 40px,var(--max));margin-inline:auto}
+h2{font-size:26px;margin-bottom:6px}
+.lead{color:var(--muted);font-size:14px;margin-bottom:22px}
+.card{border:1px solid var(--line2);border-radius:22px;padding:24px;background:linear-gradient(160deg,#141A24,#0E1218);margin-bottom:40px}
+.tag{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ice2);border:1px solid rgba(94,200,192,.35);border-radius:999px;padding:4px 10px;margin-bottom:14px}
+/* наша родная форма — для сравнения */
+.lf{display:grid;gap:14px;max-width:600px}
+.lf label{display:block;font-size:12px;letter-spacing:.04em;color:var(--muted);margin-bottom:6px}
+.lf input,.lf textarea{width:100%;height:48px;border-radius:12px;border:1px solid var(--line2);background:rgba(0,0,0,.25);color:var(--text);padding:0 14px;font:inherit;font-size:16px;outline:none}
+.lf textarea{height:96px;padding:12px 14px}
+.lf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border-radius:999px;font-size:14px;font-weight:600;border:none;background:var(--ice);color:#06201E;cursor:pointer}
+iframe{width:100%;border:0;border-radius:14px;background:#11151C}
+.note{font-size:12.5px;color:var(--muted);margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="card">
+    <span class="tag">Вариант 1 — как сейчас</span>
+    <h2>Наша форма</h2>
+    <p class="lead">Шрифт Manrope, поля 48px, бирюзовая кнопка, тёмная карточка.</p>
+    <form class="lf">
+      <div class="lf-row">
+        <div><label>Имя</label><input placeholder="Александр"/></div>
+        <div><label>Телефон</label><input placeholder="+7 (___) ___-__-__"/></div>
+      </div>
+      <div><label>Задача</label><textarea placeholder="Объект, объём, сроки"></textarea></div>
+      <div><button class="btn" type="button">Отправить заявку</button></div>
+    </form>
+  </div>
+
+  <div class="card">
+    <span class="tag">Вариант 2 — Яндекс Форма встроенная</span>
+    <h2>Форма Яндекса с настроенной темой</h2>
+    <p class="lead">Тема подогнана под наши цвета: фон #11151C, кнопка #5EC8C0.</p>
+    <iframe src="https://forms.yandex.ru/u/6a7c247d84227c1a6b2baf19/?iframe=1" height="620" loading="lazy"></iframe>
+    <p class="note">Внизу формы Яндекс показывает свою подпись — убрать нельзя.</p>
+  </div>
+
+</div>
+</body>
+</html>
