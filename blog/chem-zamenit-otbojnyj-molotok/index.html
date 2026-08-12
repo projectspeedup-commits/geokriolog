@@ -173,7 +173,7 @@
       <div class="row">
         <a class="btn btn-ghost" href="mailto:info@geokriolog.ru">Написать на info@</a>
         <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
-        <a class="btn btn-warm" href="https://wa.me/79119245467" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-warm" href="mailto:info@geokriolog.ru?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0">Написать на info@</a>
       </div>
       <form class="lf" id="leadForm" action="https://formsubmit.co/info@geokriolog.ru" method="POST" novalidate style="margin-top:16px">
         <input type="hidden" name="_captcha" value="false"/>
@@ -202,7 +202,7 @@
         function goal(g){try{if(typeof ym==='function')ym(110604818,'reachGoal',g);}catch(e){}}
         document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){goal('call_click');});});
         document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.addEventListener('click',function(){goal('email_click');});});
-        document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){a.addEventListener('click',function(){goal('wa_click');});});
+        
         f.addEventListener('submit',function(e){
           e.preventDefault();er.classList.remove('show');
           if(f.querySelector('[name="_honey"]').value)return;
