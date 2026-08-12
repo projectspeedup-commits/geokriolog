@@ -7,15 +7,30 @@
      2. raw ветки endpoint — кэш CDN до 5 минут;
      3. файл на сайте — последний адрес на момент деплоя.
 
+   Каждый запрос ограничен по времени: мёртвый туннель может держать
+   соединение молча, а посетитель в это время смотрит на «Отправляем…».
    Если POST не прошёл, адрес перечитывается и попытка повторяется один
-   раз: посетитель мог нажать «Отправить» ровно в момент переподключения.
-   Не помогло — форма честно показывает ошибку и предлагает письмо
+   раз. Не помогло — форма честно показывает ошибку и предлагает письмо
    на info@ (фолбэк в самих страницах). */
 (function () {
   var API = 'https://api.github.com/repos/projectspeedup-commits/geokriolog/contents/form-endpoint.json?ref=endpoint';
   var RAW = 'https://raw.githubusercontent.com/projectspeedup-commits/geokriolog/endpoint/form-endpoint.json';
   var SITE = '/form-endpoint.json';
+  var READ_MS = 5000, POST_MS = 12000;
   var cached = '';
+
+  function timed(url, opts, ms) {
+    opts = opts || {};
+    if (typeof AbortController === 'function') {
+      var c = new AbortController();
+      opts.signal = c.signal;
+      var t = setTimeout(function () { c.abort(); }, ms);
+      return fetch(url, opts).then(
+        function (r) { clearTimeout(t); return r; },
+        function (e) { clearTimeout(t); throw e; });
+    }
+    return fetch(url, opts);
+  }
 
   function clean(v) {
     v = v && v.url ? String(v.url).replace(/\/+$/, '') : '';
@@ -24,7 +39,7 @@
   }
 
   function fromApi() {
-    return fetch(API, { cache: 'no-store' })
+    return timed(API, { cache: 'no-store' }, READ_MS)
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (j) {
         if (!j || !j.content) { throw new Error('пусто'); }
@@ -33,8 +48,8 @@
   }
 
   function fromUrl(u) {
-    return fetch(u + (u.indexOf('?') < 0 ? '?' : '&') + 'v=' + Date.now(),
-                 { cache: 'no-store' })
+    return timed(u + (u.indexOf('?') < 0 ? '?' : '&') + 'v=' + Date.now(),
+                 { cache: 'no-store' }, READ_MS)
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(clean);
   }
@@ -48,7 +63,7 @@
   }
 
   function post(url, params) {
-    return fetch(url + '/lead', { method: 'POST', body: params })
+    return timed(url + '/lead', { method: 'POST', body: params }, POST_MS)
       .then(function (res) {
         return res.json().catch(function () { return null; }).then(function (d) {
           if (!res.ok || !d || d.ok !== true) {
