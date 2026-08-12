@@ -63,7 +63,9 @@
   }
 
   function post(url, params) {
-    return timed(url + '/lead', { method: 'POST', body: params }, POST_MS)
+    // свой приёмник слушает /lead, Apps Script принимает POST на сам /exec
+    var target = /\/exec$/.test(url) ? url : url + '/lead';
+    return timed(target, { method: 'POST', body: params }, POST_MS)
       .then(function (res) {
         return res.json().catch(function () { return null; }).then(function (d) {
           if (!res.ok || !d || d.ok !== true) {
