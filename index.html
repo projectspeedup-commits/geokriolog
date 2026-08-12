@@ -1203,7 +1203,7 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
           </div>
           <p style="margin-top:20px;font-size:12.5px;color:var(--muted)">ООО «НПО ГЕОКРИОЛОГ» · ИНН 7817123404 · ОГРН 1227800134100 · Санкт-Петербург</p>
         </div>
-        <form class="form" id="leadForm" action="https://formsubmit.co/info@geokriolog.ru" method="POST" novalidate>
+        <form class="form" id="leadForm" action="#" method="POST" novalidate>
           <input type="hidden" name="_captcha" value="false"/>
           <input type="hidden" name="_template" value="table"/>
           <input type="hidden" name="_next" value="https://geokriolog.ru/#success"/>
@@ -1394,19 +1394,10 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
     if(submitBtn){ submitBtn.disabled = true; submitBtn.textContent = 'Отправляем…'; }
 
     try{
-      const res = await fetch('https://formsubmit.co/ajax/info@geokriolog.ru', {
-        method: 'POST',
-        body: fd,
-        headers: { 'Accept': 'application/json' }
-      });
-      let data = null;
-      try { data = await res.json(); } catch(_){}
-      // FormSubmit отвечает 200 и на отказе: {"success":"false", "message":"..."}.
-      // Проверять только res.ok значит показывать «Заявка отправлена» там,
-      // где письмо никуда не ушло.
-      if(!res.ok || !data || String(data.success) !== 'true'){
-        throw new Error((data && (data.message || data.error)) || ('Ошибка отправки: ' + res.status));
-      }
+      // Приёмник — наш сервис (linux-hermes за туннелем), адрес берётся
+      // из /form-endpoint.json. sendLead резолвится, только если письмо
+      // на info@ действительно принято; иначе сработает фолбэк ниже.
+      await sendLead(form, fd);
       showOk('Заявка отправлена на info@geokriolog.ru. Ответим в течение рабочего часа.');
       track('form_lead');
       form.reset();
@@ -1425,5 +1416,6 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
   });
 })();
 </script>
+  <script src="/assets/lead.js" defer></script>
 </body>
 </html>

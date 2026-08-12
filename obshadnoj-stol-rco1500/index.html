@@ -166,7 +166,7 @@
 .lf-ok{background:rgba(95,211,188,.12);border:1px solid rgba(95,211,188,.4);color:var(--ice2,#5fd3bc)}
 .lf-err{background:rgba(255,120,120,.1);border:1px solid rgba(255,120,120,.4);color:#ff9b9b}
 </style>
-<form class="lf" id="leadForm" action="https://formsubmit.co/info@geokriolog.ru" method="POST" novalidate>
+<form class="lf" id="leadForm" action="#" method="POST" novalidate>
   <input type="hidden" name="_captcha" value="false"/>
   <input type="hidden" name="_template" value="table"/>
   <input type="hidden" name="_next" value="https://geokriolog.ru/obshadnoj-stol-rco1500/#success"/>
@@ -219,7 +219,7 @@
     if(f.querySelector('[name="_honey"]').value)return;
     if(!f.checkValidity()){f.reportValidity();er.textContent='Проверьте обязательные поля: имя, телефон, тип объекта и согласие.';er.classList.add('show');return;}
     bt.disabled=true;bt.textContent='Отправляем…';
-    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+    sendLead(f)
       .then(function(r){return r.json().catch(function(){return null}).then(function(d){
         /* FormSubmit отвечает 200 и на отказе: {"success":"false"}. Без этой
            проверки посетитель видит «Заявка отправлена», а заявки нет. */
@@ -257,4 +257,5 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
 </script>
 <script src="/assets/anim.js" defer></script>
 <script>(function(){var b=document.getElementById('menuBtn'),l=document.getElementById('navLinks');if(!b||!l)return;b.addEventListener('click',function(){l.classList.toggle('open')});l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open')})})})();</script>
+  <script src="/assets/lead.js" defer></script>
 </body></html>
