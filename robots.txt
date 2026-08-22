@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Clean-param: cb
 
 Sitemap: https://geokriolog.ru/sitemap.xml
