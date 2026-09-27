@@ -205,3 +205,663 @@ main li a[style*="font-weight:600"]:hover { text-decoration: underline; }
   .lf-row{grid-template-columns:1fr}
   .lf .btn[type=submit]{width:100%}
 }
+
+/* ===== Дизайн-ревизия 2026-09-26: патч 1 ===== */
+/* Дизайн-ревизия: общая основа */
+body {
+  --max: 1180px;
+  --nav: 68px;
+}
+
+body .wrap,
+body .nav-inner {
+  width: min(100% - 48px, var(--max));
+}
+
+body .wrap {
+  overflow: visible;
+}
+
+body main p,
+body main li {
+  line-height: 1.65;
+}
+
+body .cat-grid {
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 20px;
+}
+
+body .cat-grid .card {
+  display: flex;
+  flex-direction: column;
+}
+
+body .cat-grid .card .c {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 22px;
+}
+
+body .cat-grid .card h3 {
+  line-height: 1.35;
+}
+
+body .cat-grid .card p {
+  font-size: 15px;
+  line-height: 1.65;
+  min-height: 0;
+}
+
+body .cat-grid .card .c > p:last-child:has(> a) {
+  margin-top: auto !important;
+  padding-top: 16px;
+}
+
+body .cat-grid .card .c > .row {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+body .kpis {
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+  gap: 16px;
+}
+
+body .kpi b,
+body .hero-meta b,
+body .case-nums b,
+body .strip-row b {
+  font-variant-numeric: tabular-nums;
+}
+
+body .kpi span,
+body .hero-meta span,
+body .cryo-gallery figcaption,
+body .tool span,
+body .projects-scroller .proj .loc {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+body .projects-scroller .proj p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+body footer {
+  padding-block: 32px;
+  font-size: 14px;
+}
+
+body .foot {
+  gap: 16px 28px;
+}
+
+body footer a {
+  text-underline-offset: 4px;
+}
+
+body footer a:hover {
+  text-decoration: underline;
+}
+
+/* Не переносить оформление внутренней CTA-карточки на секцию главной. */
+body.page-home main {
+  padding: 0;
+}
+
+body.page-home .cta {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+
+body.page-home h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 860px) {
+  body .wrap,
+  body .nav-inner {
+    width: min(100% - 32px, var(--max));
+  }
+
+  body .kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body .kpi {
+    padding: 14px;
+  }
+
+  body .kpi b {
+    font-size: 20px;
+  }
+}
+
+/* ===== Дизайн-ревизия 2026-09-26: патч 2 ===== */
+body .direction-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-block: 24px;
+}
+
+body .direction-links a {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  padding: 12px 16px;
+  border: 1px solid var(--line2);
+  border-radius: 12px;
+  background: var(--bg2);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+body .direction-links a:hover,
+body .direction-links a:focus-visible {
+  border-color: var(--ice);
+  color: var(--ice2);
+}
+
+body.page-home #services .bento {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body.page-home #services .tile,
+body.page-home #services .tile.big {
+  grid-row: auto;
+  min-height: 0;
+  padding: 24px;
+}
+
+body.page-home #services .tile:last-child {
+  grid-column: 1 / -1;
+}
+
+body.page-home #services .tile p {
+  max-width: none;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+body.page-home #services .tile.big img {
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+body.page-sou .cat-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 640px) {
+  body.page-home #services .bento,
+  body.page-sou .cat-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.page-home #services .tile:last-child {
+    grid-column: auto;
+  }
+
+  body .direction-links a {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+/* ===== Дизайн-ревизия 2026-09-26: патч 3 ===== */
+body .nav-inner {
+  gap: 16px;
+}
+
+body .brand {
+  min-width: 0;
+  flex: 0 1 auto;
+}
+
+body .brand img {
+  flex: none;
+}
+
+body .brand span {
+  min-width: 0;
+}
+
+body .nav-links {
+  gap: 14px;
+}
+
+body .nav-links a {
+  white-space: nowrap;
+}
+
+body .nav-links a.active,
+body .nav-links a[aria-current="page"] {
+  color: var(--ice2);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+body .menu-btn {
+  display: none;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+body .nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+}
+
+@media (max-width: 1200px) {
+  body.nav-ready .nav-links {
+    display: none;
+  }
+
+  body.nav-ready .menu-btn {
+    display: grid;
+    place-items: center;
+  }
+
+  body.nav-ready .nav-links.open {
+    position: absolute;
+    top: var(--nav);
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    max-height: calc(100dvh - var(--nav));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 12px 16px 20px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line2);
+  }
+
+  body.nav-ready .nav-links.open a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  body .nav-cta .btn-ghost {
+    display: none;
+  }
+
+  /* При отключённом JS ссылки остаются доступны. */
+  body:not(.nav-ready) .nav {
+    position: relative;
+    height: auto;
+    padding-block: 12px;
+  }
+
+  body:not(.nav-ready) .nav-inner {
+    flex-wrap: wrap;
+  }
+
+  body:not(.nav-ready) .nav-links {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+
+  /* Шапка без JS уже не фиксирована — отступ под неё не нужен. */
+  body:not(.page-home):not(.nav-ready) main {
+    padding-top: 28px;
+  }
+
+  body.page-home:not(.nav-ready) .hero {
+    padding-top: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  body .nav-inner {
+    gap: 8px;
+  }
+
+  body .brand {
+    flex: 1;
+    gap: 8px;
+  }
+
+  body .brand span {
+    overflow: hidden;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  body .nav a.btn {
+    flex: none;
+    padding-inline: 10px;
+    font-size: 12px;
+  }
+}
+
+/* ===== Дизайн-ревизия 2026-09-26: патч 4 ===== */
+html {
+  scroll-padding-top: 84px;
+}
+
+body a.btn {
+  height: auto;
+  min-height: 44px;
+  padding: 11px 18px;
+  line-height: 1.35;
+  text-align: center;
+  white-space: normal;
+}
+
+/* Перекрывает три старых inline height:36px в каталоге главной. */
+body.page-home #catalog a.btn {
+  height: auto !important;
+  min-height: 44px;
+}
+
+body .hero-actions {
+  gap: 12px;
+}
+
+body .hero-actions .btn-warm {
+  background: transparent;
+  border-color: var(--line2);
+  color: var(--text);
+}
+
+body a.btn-ice:hover {
+  background: var(--ice2);
+}
+
+body a.btn-ghost:hover,
+body .hero-actions .btn-warm:hover {
+  border-color: var(--ice);
+  color: var(--ice2);
+}
+
+body a:focus-visible,
+body .menu-btn:focus-visible,
+body summary:focus-visible,
+body [role="button"]:focus-visible,
+body .tw:focus-visible,
+body .projects-scroller:focus-visible,
+body .ts button:focus-visible {
+  outline: 3px solid var(--ice2);
+  outline-offset: 4px;
+}
+
+body .ts .ts-ctrl button,
+body .ts .ts-video-cap button {
+  min-width: 44px;
+  min-height: 44px;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  body .hero-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body .hero-actions a.btn {
+    width: 100%;
+  }
+}
+
+/* ===== Дизайн-ревизия 2026-09-26: патч 5 ===== */
+body .cat-grid .card > .media {
+  display: block;
+  flex: none;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+body .cat-grid .card > .media img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+body.page-equipment .cat-grid .card > img,
+body.page-home #catalog .card > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: var(--bg2);
+}
+
+body.page-equipment .grid-2 > .card .media {
+  aspect-ratio: 3 / 4;
+}
+
+body.page-equipment .grid-2 > .card .media img,
+body.page-audit .grid-2 > .card .media img {
+  object-fit: contain;
+}
+
+body.page-audit .grid-2 > .card .media {
+  aspect-ratio: 16 / 9;
+}
+
+body.page-home .hero-frame img {
+  object-fit: contain;
+}
+
+body.page-detail .grid-2 {
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+  gap: 32px;
+}
+
+body.page-detail .grid-2 > .card {
+  top: calc(var(--nav) + 24px);
+}
+
+body .projects-scroller img {
+  width: 100%;
+  height: auto;
+}
+
+/* На широком экране показываем все карточки, без скрытой ленты. */
+@media (min-width: 1100px) {
+  body .projects-scroller {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-columns: auto;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 860px) {
+  body.page-detail .grid-2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.page-detail .grid-2 > .card {
+    order: -1;
+    position: static;
+    width: min(100%, 480px);
+    margin-inline: auto;
+  }
+
+  body.page-equipment .grid-2 > .card .media {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* ===== Дизайн-ревизия 2026-09-26: патч 7 ===== */
+body.page-article main > .wrap,
+body.page-article .hero > .wrap {
+  width: min(100% - 48px, 760px);
+}
+
+body.page-article .hero h1 {
+  max-width: none;
+}
+
+body.page-article main > .wrap > section {
+  padding-block: 20px;
+}
+
+body.page-article main > .wrap > section p,
+body.page-article main > .wrap > section li {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+body.page-article .cat-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+body .tw {
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) var(--bg2);
+}
+
+body .tw th,
+body .tw td {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+body .tw--keyvalue table {
+  min-width: 0;
+  table-layout: fixed;
+}
+
+body .tw--keyvalue th {
+  width: 42%;
+  white-space: normal;
+}
+
+body .tw--keyvalue th,
+body .tw--keyvalue td {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 860px) {
+  body.page-article main > .wrap,
+  body.page-article .hero > .wrap {
+    width: min(100% - 32px, 760px);
+  }
+}
+
+@media (max-width: 480px) {
+  body .tw--keyvalue th,
+  body .tw--keyvalue td {
+    padding: 10px;
+  }
+}
+
+/* ===== Дизайн-ревизия 2026-09-26: патч 8 ===== */
+/* Главная читается сразу, в том числе без JavaScript. */
+body.page-home .reveal,
+body.page-home .reveal.on,
+body.page-home .hero-copy > *,
+body.page-home .hero-visual,
+body.page-home .hero-badge {
+  opacity: 1;
+  transform: none;
+  animation: none;
+  transition: none;
+}
+
+body.page-home .float-chip,
+body.page-home a.btn-ice.pulse,
+body.page-home a.btn-ice:hover {
+  animation: none;
+}
+
+body.page-home a.btn-ice {
+  background-image: none;
+}
+
+/* Перекрывает inline transform, который выставляет старый параллакс. */
+body.page-home .hero-frame img {
+  transform: none !important;
+  will-change: auto;
+  transition: none;
+}
+
+body .card:hover,
+body .proj:hover,
+body .tile:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+body.page-home .card:hover > img,
+body.page-home .about-card:hover > img,
+body.page-home .tech-panel:hover img,
+body.page-home .case-media:hover img {
+  transform: none;
+}
+
+body .card:focus-within,
+body .proj:focus-within,
+body .tile:focus-within {
+  border-color: var(--ice);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
+
+/* ===== Дизайн-ревизия 2026-09-26: патч 10 ===== */
+body.page-error {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.page-error .error-page {
+  flex: 1;
+  max-width: 760px;
+  padding-block: 40px 64px;
+}
+
+body.page-error .error-code {
+  margin-top: 48px;
+  color: var(--ice2);
+  font-size: clamp(72px, 16vw, 140px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.05em;
+  font-variant-numeric: tabular-nums;
+}
+
+body.page-error h1 {
+  margin-top: 24px;
+}
+
+body.page-error .direction-links {
+  margin-top: 40px;
+}

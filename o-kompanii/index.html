@@ -1,44 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<!-- lcp-preload -->
-<link rel="preload" as="image" href="/images/bns-svai-gotovo.webp" fetchpriority="high">
-<!-- /lcp-preload -->
-<!-- local-fonts -->
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-400-cyrillic.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-700-cyrillic.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-800-cyrillic.woff2" crossorigin>
-<style>/* Локальные шрифты. Сгенерировано fetch_fonts.py — не править вручную. */
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/jetbrains-mono-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrains-mono-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/manrope-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/manrope-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/manrope-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/manrope-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url('/assets/fonts/manrope-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
-<!-- /local-fonts -->
 <meta charset="utf-8"/>
+<!-- local-fonts -->
+<link rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/manrope-400-cyrillic.woff2"
+      crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-700-cyrillic.woff2" crossorigin/>
+<link rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/manrope-800-cyrillic.woff2"
+      crossorigin/>
+<link rel="stylesheet" href="/assets/fonts.css"/>
+<!-- /local-fonts -->
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>О компании — ООО «НПО ГЕОКРИОЛОГ», Санкт-Петербург</title>
 <meta name="description" content="НПО ГЕОКРИОЛОГ, Санкт-Петербург: демонтаж оголовков БНС без ударов, термостабилизация грунтов, аудит криолитозоны, техника TYSIM. Научная база МГУ и СПбГАСУ."/>
@@ -53,8 +30,11 @@
 <meta property="og:image" content="https://geokriolog.ru/images/bns-svai-gotovo.webp"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="theme-color" content="#0A0C10"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
 <link rel="icon" href="https://geokriolog.ru/images/logo.svg" type="image/svg+xml"/>
-<link rel="apple-touch-icon" href="https://geokriolog.ru/images/logo.svg"/>
+<link rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png"/>
 
 
 <link rel="stylesheet" href="/assets/site.css"/>
@@ -63,6 +43,7 @@
 </script>
 </head>
 <body>
+<script>document.body.classList.add('nav-ready')</script>
 
 <header class="nav"><div class="nav-inner">
   <a class="brand" href="/"><img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог" width="32" height="32" decoding="async"/><span>НПО ГЕОКРИОЛОГ</span></a>
@@ -76,8 +57,15 @@
     <a href="/blog/" class="">Блог</a>
     <a href="/o-kompanii/" class="active">О компании</a>
   </nav>
-  <a class="btn btn-ice" href="/#cta">Заявка</a>
-  <button class="menu-btn" id="menuBtn" aria-label="Меню">☰</button>
+  <div class="nav-cta">
+    <a class="btn btn-ice" href="#cta">Заявка</a>
+    <button class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Меню"
+          aria-controls="navLinks"
+          aria-expanded="false">☰</button>
+  </div>
 </div></header>
 <main>
   <div class="hero"><div class="wrap">
@@ -100,10 +88,16 @@
   <div class="wrap">
     <section>
       <h2>Чем занимаемся</h2>
+      <nav class="direction-links" aria-label="Направления работы">
+        <a href="/demontazh-ogolovkov-bns/">Оголовки БНС</a>
+        <a href="/termostabilizaciya-sou/">Термостабилизация</a>
+        <a href="/audit-kriolitozony/">Аудит</a>
+        <a href="/tehnika/">Техника</a>
+      </nav>
       <div class="cat-grid" style="margin-top:16px">
         <article class="card"><div class="c"><h3>Безударный демонтаж оголовков БНС</h3><p>Собственная технология: расширяющийся состав закладывается до бетонирования, оголовок снимается без ударных нагрузок. Сваи Ø 0,6–2,0 м.</p><p style="margin-top:10px"><a href="/demontazh-ogolovkov-bns/" style="color:var(--ice2);font-weight:600">Технология →</a></p></div></article>
         <article class="card"><div class="c"><h3>Геокриологический аудит</h3><p>Оценка грунтов в криолитозоне, подбор технологии, термостабилизация, мониторинг. Решение с цифрами и сроками.</p><p style="margin-top:10px"><a href="/audit-kriolitozony/" style="color:var(--ice2);font-weight:600">Аудит →</a></p></div></article>
-        <article class="card"><div class="c"><h3>Буровая техника и оснастка</h3><p>Роторные установки TYSIM, обсадные столы RCO, буровой инструмент. Зимний пакет, документы под сдачу, сервис из Санкт-Петербурга.</p><p style="margin-top:10px"><a href="/tysim-kr300m/" style="color:var(--ice2);font-weight:600">Техника →</a></p></div></article>
+        <article class="card"><div class="c"><h3>Буровая техника и оснастка</h3><p>Роторные установки TYSIM, обсадные столы RCO, буровой инструмент. Зимний пакет, документы под сдачу, сервис из Санкт-Петербурга.</p><p style="margin-top:10px"><a href="/tehnika/" style="color:var(--ice2);font-weight:600">Техника →</a></p></div></article>
       </div>
     </section>
 
@@ -146,7 +140,7 @@
 
     <section>
       <h2>Реквизиты</h2>
-      <div class="tw"><table><tbody>
+      <div class="tw tw--keyvalue"><table><tbody>
         <tr><th>Полное наименование</th><td>Общество с ограниченной ответственностью «Научно-производственное объединение ГЕОКРИОЛОГ»</td></tr>
         <tr><th>ИНН</th><td>7817123404</td></tr>
         <tr><th>ОГРН</th><td>1227800134100</td></tr>
@@ -217,6 +211,65 @@ m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=
 ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
 </script>
 <script src="/assets/anim.js" defer></script>
-<script>(function(){var b=document.getElementById('menuBtn'),l=document.getElementById('navLinks');if(!b||!l)return;b.addEventListener('click',function(){l.classList.toggle('open')});l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open')})})})();</script>
+<script>
+(function () {
+  const button = document.getElementById('menuBtn');
+  const links = document.getElementById('navLinks');
+  if (!button || !links) return;
+
+  const mobile = window.matchMedia('(max-width: 1200px)');
+
+  function setOpen(open, returnFocus) {
+    links.classList.toggle('open', open);
+    button.setAttribute('aria-expanded', String(open));
+
+    if (open) {
+      const firstLink = links.querySelector('a[href]');
+      if (firstLink) firstLink.focus({ preventScroll: true });
+    } else if (returnFocus) {
+      button.focus({ preventScroll: true });
+    }
+  }
+
+  button.addEventListener('click', function () {
+    setOpen(button.getAttribute('aria-expanded') !== 'true', false);
+  });
+
+  links.addEventListener('click', function (event) {
+    if (event.target.closest('a[href]')) setOpen(false, false);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' &&
+        button.getAttribute('aria-expanded') === 'true') {
+      setOpen(false, true);
+    }
+  });
+
+  document.addEventListener('pointerdown', function (event) {
+    if (!links.contains(event.target) && !button.contains(event.target)) {
+      setOpen(false, false);
+    }
+  });
+
+  document.addEventListener('focusin', function (event) {
+    if (mobile.matches &&
+        !links.contains(event.target) &&
+        !button.contains(event.target)) {
+      setOpen(false, false);
+    }
+  });
+
+  mobile.addEventListener('change', function () {
+    setOpen(false, false);
+  });
+
+  links.querySelectorAll('a.active').forEach(function (link) {
+    link.setAttribute('aria-current', 'page');
+  });
+
+  document.body.classList.add('nav-ready');
+})();
+</script>
   <script src="/assets/lead.js" defer></script>
 </body></html>
