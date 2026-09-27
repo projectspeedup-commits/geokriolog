@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<!-- local-fonts -->
+<link rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/manrope-400-cyrillic.woff2"
+      crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-700-cyrillic.woff2" crossorigin/>
+<link rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/manrope-800-cyrillic.woff2"
+      crossorigin/>
+<link rel="stylesheet" href="/assets/fonts.css"/>
+<!-- /local-fonts -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Строительство на вечной мерзлоте: принципы I и II по СП 25</title>
+<meta name="description" content="Сваи в вечной мерзлоте держатся смерзанием, а оно зависит от температуры грунта. Разбираем принципы I и II по СП 25, подполье, СОУ и мониторинг."/>
+<link rel="canonical" href="https://geokriolog.ru/blog/stroitelstvo-na-vechnoj-merzlote/"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2026-09-27"/>
+<meta property="article:modified_time" content="2026-09-27"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:url" content="https://geokriolog.ru/blog/stroitelstvo-na-vechnoj-merzlote/"/>
+<meta property="og:site_name" content="НПО ГЕОКРИОЛОГ"/>
+<meta property="og:title" content="Строительство на вечной мерзлоте: принципы I и II по СП 25"/>
+<meta property="og:description" content="Сваи в вечной мерзлоте держатся смерзанием, а оно зависит от температуры грунта. Разбираем принципы I и II по СП 25, подполье, СОУ и мониторинг."/>
+<meta property="og:image" content="https://geokriolog.ru/images/og/geo-project-1.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="https://geokriolog.ru/images/logo.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png"/>
+
+
+<link rel="stylesheet" href="/assets/site.css"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://geokriolog.ru/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://geokriolog.ru/blog/"},{"@type":"ListItem","position":3,"name":"Строительство на вечной мерзлоте: принципы I и II по СП 25","item":"https://geokriolog.ru/blog/stroitelstvo-na-vechnoj-merzlote/"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Строительство на вечной мерзлоте: принципы I и II по СП 25, сваи, термостабилизация, мониторинг","description":"Сваи в вечной мерзлоте держатся смерзанием, а оно зависит от температуры грунта. Разбираем принципы I и II по СП 25, подполье, СОУ и мониторинг.","image":"https://geokriolog.ru/images/og/geo-project-1.jpg","datePublished":"2026-09-27","dateModified":"2026-09-27","inLanguage":"ru-RU","author":{"@type":"Organization","@id":"https://geokriolog.ru/#org","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/"},"publisher":{"@type":"Organization","@id":"https://geokriolog.ru/#org","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/","logo":"https://geokriolog.ru/images/logo.svg","telephone":"+7-911-924-54-67","email":"info@geokriolog.ru"},"provider":{"@type":"Organization","@id":"https://geokriolog.ru/#org","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/","logo":"https://geokriolog.ru/images/logo.svg","telephone":"+7-911-924-54-67","email":"info@geokriolog.ru"},"mainEntityOfPage":"https://geokriolog.ru/blog/stroitelstvo-na-vechnoj-merzlote/","about":["вечная мерзлота","свайные фундаменты","СП 25.13330"],"citation":["СП 25.13330.2020 «Основания и фундаменты на вечномёрзлых грунтах»","СП 497.1325800.2020","ГОСТ 25358-2020"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что такое принцип I и принцип II строительства на вечной мерзлоте?","acceptedAnswer":{"@type":"Answer","text":"По СП 25.13330.2020 (п. 6.1.1) грунты основания либо сохраняют мёрзлыми весь срок строительства и службы здания (принцип I), либо используют в оттаивающем или оттаянном состоянии — оттаивают заранее или допускают оттаивание в эксплуатации и считают осадки (принцип II). Смешивать принципы в одном здании нельзя."}},{"@type":"Question","name":"Почему дома в вечной мерзлоте ставят на сваи?","acceptedAnswer":{"@type":"Answer","text":"Свая прорезает сезонно-талый слой и держится смерзанием с мёрзлым грунтом, а между полом и грунтом остаётся проветриваемое подполье: зимой холодный воздух уносит тепло здания. По СП 25 его высота — не менее 1,2 м, при прокладке коммуникаций — не менее 1,4 м, воздухозаборные отверстия продухов — выше наибольшего уровня снега (п. 6.3.2)."}},{"@type":"Question","name":"На чём держится свая в мёрзлом грунте?","acceptedAnswer":{"@type":"Answer","text":"Несущую способность дают две составляющие: сопротивление мёрзлого грунта под нижним концом сваи и силы смерзания по её боковой поверхности (СП 25, п. 7.2.2). Расчётное сопротивление смерзанию зависит прежде всего от температуры грунта: чем теплее мёрзлый грунт, тем меньше он держит."}},{"@type":"Question","name":"Когда нужна термостабилизация грунтов?","acceptedAnswer":{"@type":"Answer","text":"Когда объект построен или проектируется по принципу I, а тепло от сооружения или потепление угрожают оттаиванием основания. Сезонные охлаждающие устройства отводят тепло зимой и самозапираются летом, без электричества. При принципе II задача решается другими средствами."}},{"@type":"Question","name":"Обязателен ли мониторинг температуры грунта после сдачи?","acceptedAnswer":{"@type":"Answer","text":"Да. Раздел 15 СП 25 требует геотехнического мониторинга для всех зданий и сооружений (п. 15.3). По СП 497.1325800.2020 при принципе I температуру измеряют два раза в год; на объектах с термостабилизаторами первые пять лет — не реже двух раз в год, в максимум протаивания и максимум промерзания (п. 9.14). Государственный фоновый мониторинг (297-ФЗ) наблюдения за конкретным зданием не заменяет."}}]}
+</script>
+</head>
+<body class="page-article">
+<script>document.body.classList.add('nav-ready')</script>
+
+<header class="nav"><div class="nav-inner">
+  <a class="brand" href="/"><img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог" width="32" height="32" decoding="async"/><span>НПО ГЕОКРИОЛОГ</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="/">Главная</a>
+    <a href="/demontazh-ogolovkov-bns/" class="">Оголовки БНС</a>
+    <a href="/termostabilizaciya-sou/" class="">Термостабилизация</a>
+    <a href="/tehnika/" class="">Техника</a>
+    <a href="/audit-kriolitozony/" class="">Аудит</a>
+    <a href="/proekty/" class="">Проекты</a>
+    <a href="/blog/" class="active">Блог</a>
+    <a href="/o-kompanii/" class="">О компании</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ice" href="#cta">Заявка</a>
+    <button class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Меню"
+          aria-controls="navLinks"
+          aria-expanded="false">☰</button>
+  </div>
+</div></header>
+<main>
+  <div class="hero"><div class="wrap">
+    <div class="crumb"><a href="/">Главная</a> / <a href="/blog/">Блог</a> / Строительство на вечной мерзлоте</div>
+    <h1>Строительство на вечной мерзлоте: принципы I и II по СП 25, сваи, термостабилизация, мониторинг</h1>
+    <p class="lead">Карта решений для инженера ПТО и проектировщика: от выбора принципа до регламента наблюдений после сдачи, с нормами и ссылками на страницы работ.</p>
+    <div class="crumb" style="margin-top:14px">Мерзлота · 27 сентября 2026 · НПО ГЕОКРИОЛОГ</div>
+  </div></div>
+
+  <div class="wrap">
+    <article class="post">
+      <p>Расчётное сопротивление мёрзлого грунта смерзанию со сваей зависит от его температуры — так устроен расчёт по СП 25.13330.2020 «Основания и фундаменты на вечномёрзлых грунтах». Поэтому строительство на вечной мерзлоте начинается не с выбора сваи, а с вопроса: в каком состоянии будет грунт под зданием все годы службы.</p>
+      <p>Ниже — одна цепочка для инженера ПТО и проектировщика: почему мёрзлый грунт держит только мёрзлым, как выбирают принцип, что держит сваи, чем удерживают основание мёрзлым, что должно быть в изысканиях и в мониторинге. На каждой развилке — ссылка на страницу работ.</p>
+
+      <figure>
+        <img src="/images/geo-project-1.webp" alt="Строительство на вечной мерзлоте: буровая установка и свайное поле зимой" width="1200" height="675" loading="lazy" decoding="async"/>
+        <figcaption>Свайное поле в криолитозоне зимой. Кадр иллюстративный</figcaption>
+      </figure>
+
+      <h2>Почему мёрзлый грунт держит только мёрзлым</h2>
+      <p>Многолетнемёрзлые грунты (ММГ) — нормативное имя вечной мерзлоты; дальше в тексте оба термина. Прочность такому грунту даёт лёд: он цементирует частицы. Когда лёд тает, льдистый грунт теряет прочность и садится, причём неравномерно — под тёплой частью здания сильнее.</p>
+      <p>В расчёте состояние основания описывают льдистостью, температурой грунта на глубине нулевых годовых амплитуд и мощностью сезонно-талого слоя. Все три величины меняются, если тепло сооружения или климата доходит до основания. Отсюда наша позиция: основание в мерзлоте стабилизируют заранее — деградация грунта быстро ведёт к потере устойчивости.</p>
+
+      <h2>Два принципа использования грунтов по СП 25.13330</h2>
+      <p>СП 25.13330.2020, п. 6.1.1, допускает два принципа использования ММГ как основания. Выбор одного из них — первое проектное решение на объекте.</p>
+      <h3>Принцип I — грунт остаётся мёрзлым</h3>
+      <p>Грунты сохраняются мёрзлыми весь период строительства и эксплуатации: здание отделяют от грунта проветриваемым подпольем, а при угрозе оттаивания грунт охлаждают дополнительно.</p>
+      <h3>Принцип II — грунт оттаивает по расчёту</h3>
+      <p>Грунты используют в оттаивающем или оттаянном состоянии: оттаивают до строительства на расчётную глубину либо допускают оттаивание в эксплуатации и заранее считают осадки.</p>
+      <div class="tw" tabindex="0" role="region" aria-label="Таблица с горизонтальной прокруткой"><table>
+        <thead><tr><th>Параметр</th><th>Принцип I</th><th>Принцип II</th></tr></thead>
+        <tbody>
+          <tr><td>Состояние грунта</td><td>Мёрзлый весь срок службы</td><td>Оттаивающий или оттаянный</td></tr>
+          <tr><td>Что защищает основание</td><td>Проветриваемое подполье, при необходимости СОУ</td><td>Предпостроечное оттаивание или конструкции, рассчитанные на осадки</td></tr>
+          <tr><td>Запас на оттаивание</td><td>Нет</td><td>Заложен расчётом</td></tr>
+        </tbody>
+      </table></div>
+      <h3>Как выбирают принцип</h3>
+      <p>Принцип выбирают по данным изысканий, теплотехническому расчёту и технико-экономическому сравнению вариантов: важны льдистость и температура грунта, его тип, тепловыделение сооружения, возможность держать подполье открытым. Смешивать принципы в одном здании нельзя — у основания по принципу I нет запаса на оттаивание, а п. 6.1.5 СП 25 требует, как правило, одного принципа даже для всей застраиваемой территории: посёлка, микрорайона, промузла. Решение принимают на стадии изысканий и ПОС, после бетонирования его не изменить. Если данных не хватает, начинают с <a href="/audit-kriolitozony/" style="color:var(--ice2)">геокриологического аудита объекта</a>.</p>
+
+      <h2>Сваи в вечной мерзлоте: что их держит</h2>
+      <h3>Почему сваи, а не лента или плита</h3>
+      <p>Дома в вечной мерзлоте на сваях стоят не по традиции. Свая прорезает сезонно-талый слой и работает в мёрзлом массиве, где температура меняется мало. Между грунтом и полом остаётся проветриваемое подполье: зимой холодный воздух уносит тепло здания, и грунт под ним не греется.</p>
+      <div class="tw tw--keyvalue" tabindex="0" role="region" aria-label="Таблица с горизонтальной прокруткой"><table>
+        <tbody>
+          <tr><th>Высота подполья</th><td>Не менее 1,2 м (СП 25.13330.2020, п. 6.3.2)</td></tr>
+          <tr><th>При прокладке коммуникаций</th><td>Не менее 1,4 м</td></tr>
+          <tr><th>Под участками шириной до 6 м без коммуникаций и фундаментов</th><td>Допускается 0,6 м</td></tr>
+          <tr><th>Воздухозаборные отверстия продухов</th><td>Выше наибольшего уровня снегового покрова</td></tr>
+        </tbody>
+      </table></div>
+      <h3>Несущая способность: смерзание и температура</h3>
+      <p>По формуле (7.2) СП 25.13330.2020 (п. 7.2.2) несущая способность висячей сваи — сопротивление грунта под нижним концом плюс силы смерзания по боковой поверхности. Расчётное сопротивление смерзанию зависит прежде всего от температуры грунта (п. 7.2.3): грунт потеплел — несущая способность упала, хотя свая та же. По докладу Росгидромета о климате за 2024 год минимальная за год температура почвы на глубине 80 см в зоне мерзлоты растёт на 0,4–0,8 °C за десятилетие.</p>
+      <h3>Способы погружения свай в мёрзлые грунты</h3>
+      <p>СП 25.13330 делит сваи по способу погружения в мёрзлый грунт на буроопускные, опускные, бурозабивные (забивные), бурообсадные и винтовые. У каждого вида свои условия применения по температуре и составу грунта, а буроопускную сваю нагружают только после того, как грунт основания выйдет на расчётную температуру. Буронабивные сваи допускаются, если они не повышают температуру грунта и не снижают несущую способность сверх допустимого; это подтверждают полевыми испытаниями и теплотехническим расчётом. Тип сваи выбирают вместе с расчётной температурой, а не отдельно. Бурение под сваи и под термостабилизаторы выполняется одной техникой.</p>
+      <h3>Вторая сила — морозное пучение</h3>
+      <p>В слое сезонного промерзания-оттаивания на сваю действуют касательные силы пучения: грунт расширяется и тянет сваю вверх. СП 25.13330.2020 требует проверки на выпучивание (раздел 7.4), а п. 7.4.1 — покрывать боковую поверхность свай в этом слое противопучинистыми смазками. Почему сваю выдавливает даже ниже глубины промерзания — в <a href="/blog/moroznoe-puchenie-svai/" style="color:var(--ice2)">статье о морозном пучении свай</a>.</p>
+
+      <h2>Термостабилизация: как удерживают принцип I</h2>
+      <p>Сезонные охлаждающие устройства (СОУ) — мероприятие по принципу I, названное в СП 25.13330.2020 (п. 6.3.4). Зимой устройство отводит тепло из грунта в воздух, летом самозапирается: без электричества, насосов и персонала. Термосвая объединяет несущий элемент и охлаждающее устройство в одном теле. <a href="/blog/termosifon-vechnaya-merzlota/" style="color:var(--ice2)">Как устроен термосифон</a> — в отдельной статье.</p>
+      <figure>
+        <img src="/images/cryo-thermo.webp" alt="Схема сезонного охлаждающего устройства: зона промерзания грунта вокруг СОУ" width="800" height="450" loading="lazy" decoding="async"/>
+        <figcaption>Схема: зона промерзания грунта вокруг сезонного охлаждающего устройства</figcaption>
+      </figure>
+      <p>Когда нужна: объект по принципу I, а тепло сооружения или потепление угрожают оттаиванием основания. При принципе II задача решается другими средствами — метод не универсален. СОУ ставят и на существующий объект без остановки эксплуатации. Схему и число устройств задаёт теплотехнический расчёт, а не каталог: расчёт и монтаж — на странице <a href="/termostabilizaciya-sou/" style="color:var(--ice2)">термостабилизации грунтов</a>, изделие — на странице <a href="/termostabilizatory-grunta/" style="color:var(--ice2)">термостабилизаторов грунта</a>.</p>
+
+      <h2>Что должно быть в изысканиях до проекта</h2>
+      <p>По СП 25.13330.2020, п. 5.5, для расчёта мёрзлого основания дополнительно определяют льдистость, засолённость, теплофизические свойства, сопротивление сдвигу по поверхности смерзания и характеристики пучения сезонного слоя. Температуру меряют до глубины нулевых годовых колебаний, наблюдения ведут не меньше гидрологического года (СП 11-105-97, часть IV, п. 4.1 и 5.10; документ справочный, обязательны отдельные части СП 47.13330.2016).</p>
+      <p>Быстрая проверка отчёта: температуру замеряют после выстойки скважины, когда показания меняются не больше чем на 0,1 °C за трое суток (по ГОСТ 25358-2020). Если в отчёте нет отдельно дат бурения и дат замеров, выстойку не проверить. <a href="/audit-kriolitozony/" style="color:var(--ice2)">Аудит криолитозоны</a> изыскания не заменяет: он помогает принять технологические решения до проекта, первичный ответ — за 24 часа.</p>
+
+      <h2>Мониторинг после сдачи: что и как часто</h2>
+      <p>Раздел 15 СП 25.13330.2020 делает геотехнический мониторинг обязательным, а п. 15.3 распространяет его на все здания и сооружения, включая подземные коммуникации. Периодичность задаёт СП 497.1325800.2020.</p>
+      <div class="tw tw--keyvalue" tabindex="0" role="region" aria-label="Таблица с горизонтальной прокруткой"><table>
+        <tbody>
+          <tr><th>Основание по принципу I</th><td>Два раза в год: конец лета и середина зимы (табл. 9.1)</td></tr>
+          <tr><th>Объекты с термостабилизаторами, первые пять лет</th><td>Не реже двух раз в год: максимум протаивания (конец сентября — начало октября) и максимум промерзания (конец апреля — начало мая), п. 9.14</td></tr>
+          <tr><th>Инструменты</th><td>Термометрические скважины, нивелировка по маркам, тепловизионный контроль СОУ</td></tr>
+        </tbody>
+      </table></div>
+      <figure>
+        <img src="/images/cryo-monitoring.webp" alt="Тепловизионный контроль работы СОУ: термограмма над устройством" width="800" height="450" loading="lazy" decoding="async"/>
+        <figcaption>Схема тепловизионного контроля: термограмма над работающим СОУ</figcaption>
+      </figure>
+      <p>Государственный фоновый мониторинг (297-ФЗ и постановление Правительства 2024 года) следит за территорией, а не за зданием: объектный мониторинг остаётся за собственником.</p>
+
+      <h2>Что ломает принцип I в эксплуатации</h2>
+      <p>Проверка для эксплуатирующей организации — пять пунктов за один обход:</p>
+      <ul>
+        <li>продухи подполья открыты зимой и не заложены утеплителем;</li>
+        <li>снег не привален к цоколю и не заполняет подполье;</li>
+        <li>подполье не захламлено — воздух проходит по всей площади;</li>
+        <li>теплотрассы и водоводы рядом со зданием не текут;</li>
+        <li>температура в скважинах сверена с проектной, а не просто записана.</li>
+      </ul>
+
+      <h2>Что делаем мы</h2>
+      <p>Цепочка та же, что в статье: <a href="/audit-kriolitozony/" style="color:var(--ice2)">геокриологический аудит объекта</a> с первичным ответом за 24 часа → теплотехнический расчёт и <a href="/termostabilizaciya-sou/" style="color:var(--ice2)">термостабилизация СОУ или термосваями</a> → <a href="/tehnika/" style="color:var(--ice2)">бурение и обсадка</a> установками <a href="/tysim-kr300m/" style="color:var(--ice2)">TYSIM KR300M</a> и обсадным столом RCO1500 → регламент мониторинга по СП 497.</p>
+      <p>За командой 15+ проектов в многолетнемёрзлых породах. Среди <a href="/proekty/" style="color:var(--ice2)">объектов на Севере</a>: Апатиты — опоры трубопровода на свайном основании с термостабилизацией СОУ при сезонных оттайках, 120 свай диаметром 400 мм длиной 8 м; Мурманск — усиление фундамента в высокольдистых грунтах с лидерными скважинами, 200 свай диаметром 520 мм.</p>
+
+      <section>
+        <h2>Частые вопросы</h2>
+        <div class="faq">
+          <details><summary>Что такое принцип I и принцип II строительства на вечной мерзлоте?</summary><p>По СП 25.13330.2020 (п. 6.1.1) грунты основания либо сохраняют мёрзлыми весь срок строительства и службы здания (принцип I), либо используют в оттаивающем или оттаянном состоянии — оттаивают заранее или допускают оттаивание в эксплуатации и считают осадки (принцип II). Смешивать принципы в одном здании нельзя.</p></details>
+          <details><summary>Почему дома в вечной мерзлоте ставят на сваи?</summary><p>Свая прорезает сезонно-талый слой и держится смерзанием с мёрзлым грунтом, а между полом и грунтом остаётся проветриваемое подполье: зимой холодный воздух уносит тепло здания. По СП 25 его высота — не менее 1,2 м, при прокладке коммуникаций — не менее 1,4 м, воздухозаборные отверстия продухов — выше наибольшего уровня снега (п. 6.3.2).</p></details>
+          <details><summary>На чём держится свая в мёрзлом грунте?</summary><p>Несущую способность дают две составляющие: сопротивление мёрзлого грунта под нижним концом сваи и силы смерзания по её боковой поверхности (СП 25, п. 7.2.2). Расчётное сопротивление смерзанию зависит прежде всего от температуры грунта: чем теплее мёрзлый грунт, тем меньше он держит.</p></details>
+          <details><summary>Когда нужна термостабилизация грунтов?</summary><p>Когда объект построен или проектируется по принципу I, а тепло от сооружения или потепление угрожают оттаиванием основания. Сезонные охлаждающие устройства отводят тепло зимой и самозапираются летом, без электричества. При принципе II задача решается другими средствами.</p></details>
+          <details><summary>Обязателен ли мониторинг температуры грунта после сдачи?</summary><p>Да. Раздел 15 СП 25 требует геотехнического мониторинга для всех зданий и сооружений (п. 15.3). По СП 497.1325800.2020 при принципе I температуру измеряют два раза в год; на объектах с термостабилизаторами первые пять лет — не реже двух раз в год, в максимум протаивания и максимум промерзания (п. 9.14). Государственный фоновый мониторинг (297-ФЗ) наблюдения за конкретным зданием не заменяет.</p></details>
+        </div>
+      </section>
+    </article>
+
+    <section style="margin:8px 0 12px">
+      <div style="border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:18px 22px">
+        <h2 style="margin:0 0 8px;font-size:20px">Читайте также</h2>
+        <ul style="margin:0;padding-left:20px;line-height:1.7">
+          <li><a href="/audit-kriolitozony/" style="color:var(--ice2)">Геокриологический аудит объекта</a> — страница услуги</li>
+          <li><a href="/termostabilizaciya-sou/" style="color:var(--ice2)">Термостабилизация грунтов: расчёт и монтаж СОУ</a> — страница услуги</li>
+          <li><a href="/blog/termosifon-vechnaya-merzlota/" style="color:var(--ice2)">Термосифон на вечной мерзлоте: принцип работы и хладагенты</a> — в блоге</li>
+          <li><a href="/blog/moroznoe-puchenie-svai/" style="color:var(--ice2)">Морозное пучение и сваи: касательные силы и проверка на выпучивание</a> — в блоге</li>
+          <li><a href="https://dzen.ru/a/arQST9DgfHJzhHmp" target="_blank" rel="noopener" style="color:var(--ice2)">Почему сваю выдавливает из земли — даже если она ниже промерзания</a> — в Дзене</li>
+          <li><a href="https://dzen.ru/a/aqawOr1HfxcZyGZo" target="_blank" rel="noopener" style="color:var(--ice2)">34 тысячи домов на вечной мерзлоте: во что обойдётся её таяние</a> — в Дзене</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="cta" id="cta">
+      <h2>Объект в криолитозоне?</h2>
+      <p>Опишите объект и стадию — вернём схему работ: от <a href="/audit-kriolitozony/" style="color:var(--ice2)">геокриологического аудита</a> до <a href="/termostabilizaciya-sou/" style="color:var(--ice2)">термостабилизации грунтов</a> и регламента мониторинга.</p>
+      <div class="row">
+        <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
+      </div>
+      <form class="lf" id="leadForm" action="#" method="POST" novalidate style="margin-top:16px">
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="hidden" name="_next" value="https://geokriolog.ru/#success"/>
+        <input type="hidden" name="_subject" value="Заявка: Статья: строительство на вечной мерзлоте"/>
+        <input type="hidden" name="page" value="blog/stroitelstvo-na-vechnoj-merzlote"/>
+        <input type="text" name="_honey" value="" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <div class="lf-row">
+          <div><label for="lf-name">Имя</label><input id="lf-name" name="name" required autocomplete="name" placeholder="Александр"/></div>
+          <div><label for="lf-phone">Телефон</label><input id="lf-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+\(\)\s\-]{10,20}" minlength="10" placeholder="+7 (___) ___-__-__"/></div>
+        </div>
+        <div><label for="lf-msg">Задача</label><textarea id="lf-msg" name="message" placeholder="Объект, объём, сроки"></textarea></div>
+        <label class="lf-check" for="lf-consent"><input type="checkbox" id="lf-consent" name="consent" value="yes" required/>
+          <span>Согласен на обработку персональных данных (152-ФЗ). Заявка уйдёт на info@geokriolog.ru</span></label>
+        <div class="lf-msg lf-ok" id="lfOk" role="status" aria-live="polite">Заявка отправлена. Свяжемся в течение рабочего дня.</div>
+        <div class="lf-msg lf-err" id="lfErr" role="alert"></div>
+        <div><button class="btn btn-ice" type="submit" id="lfBtn">Отправить заявку</button></div>
+      </form>
+      <script>
+      (function(){
+        var f=document.getElementById('leadForm');if(!f)return;
+  function mailtoLink(f){var q=function(n){var e=f.querySelector('[name="'+n+'"]');return e?(e.value||''):''};var L=[['Имя',q('name')],['Телефон',q('phone')],['Тип объекта',q('type')],['Регион',q('region')],['Задача',q('message')],['Страница',q('page')||document.title]];var body=L.filter(function(x){return x[1]}).map(function(x){return x[0]+': '+x[1]}).join('\n');return 'mailto:info@geokriolog.ru?subject='+encodeURIComponent('Заявка с сайта')+'&body='+encodeURIComponent(body)}
+
+        var ok=document.getElementById('lfOk'),er=document.getElementById('lfErr'),bt=document.getElementById('lfBtn');
+        function goal(g){try{if(typeof ym==='function')ym(110604818,'reachGoal',g);}catch(e){}}
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){goal('call_click');});});
+        document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.addEventListener('click',function(){goal('email_click');});});
+
+        f.addEventListener('submit',function(e){
+          e.preventDefault();er.classList.remove('show');
+          if(f.querySelector('[name="_honey"]').value)return;
+          if(!f.checkValidity()){f.reportValidity();er.textContent='Проверьте имя, телефон и согласие.';er.classList.add('show');return;}
+          bt.disabled=true;bt.textContent='Отправляем…';
+          sendLead(f)
+            .then(function(){goal('form_lead');ok.classList.add('show');f.reset();bt.textContent='Отправлено';})
+            .catch(function(){er.innerHTML='Не удалось отправить автоматически. '+'<a href="'+mailtoLink(f)+'">Отправить письмом</a>'+' — данные из формы уже подставлены. Или позвоните: '+'<a href="tel:+79119245467">+7 911 924-54-67</a>';er.classList.add('show');bt.disabled=false;bt.textContent='Отправить заявку';});
+        });
+      })();
+      </script>
+    </div>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <div>© 2026 ООО «НПО ГЕОКРИОЛОГ» · ИНН 7817123404 · Санкт-Петербург</div>
+  <div><a href="mailto:info@geokriolog.ru">info@geokriolog.ru</a> · <a href="tel:+79119245467">+7 911 924-54-67</a></div>
+</div></footer>
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+</script>
+<script src="/assets/anim.js" defer></script>
+<script>
+(function () {
+  const button = document.getElementById('menuBtn');
+  const links = document.getElementById('navLinks');
+  if (!button || !links) return;
+
+  const mobile = window.matchMedia('(max-width: 1200px)');
+
+  function setOpen(open, returnFocus) {
+    links.classList.toggle('open', open);
+    button.setAttribute('aria-expanded', String(open));
+
+    if (open) {
+      const firstLink = links.querySelector('a[href]');
+      if (firstLink) firstLink.focus({ preventScroll: true });
+    } else if (returnFocus) {
+      button.focus({ preventScroll: true });
+    }
+  }
+
+  button.addEventListener('click', function () {
+    setOpen(button.getAttribute('aria-expanded') !== 'true', false);
+  });
+
+  links.addEventListener('click', function (event) {
+    if (event.target.closest('a[href]')) setOpen(false, false);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' &&
+        button.getAttribute('aria-expanded') === 'true') {
+      setOpen(false, true);
+    }
+  });
+
+  document.addEventListener('pointerdown', function (event) {
+    if (!links.contains(event.target) && !button.contains(event.target)) {
+      setOpen(false, false);
+    }
+  });
+
+  document.addEventListener('focusin', function (event) {
+    if (mobile.matches &&
+        !links.contains(event.target) &&
+        !button.contains(event.target)) {
+      setOpen(false, false);
+    }
+  });
+
+  mobile.addEventListener('change', function () {
+    setOpen(false, false);
+  });
+
+  links.querySelectorAll('a.active').forEach(function (link) {
+    link.setAttribute('aria-current', 'page');
+  });
+
+  document.body.classList.add('nav-ready');
+})();
+</script>
+  <script src="/assets/lead.js" defer></script>
+</body></html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<!-- local-fonts -->
+<link rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/manrope-400-cyrillic.woff2"
+      crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-700-cyrillic.woff2" crossorigin/>
+<link rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/manrope-800-cyrillic.woff2"
+      crossorigin/>
+<link rel="stylesheet" href="/assets/fonts.css"/>
+<!-- /local-fonts -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Морозное пучение свай: силы, расчёт по СП 25 и СП 22, защита</title>
+<meta name="description" content="Касательные силы морозного пучения: проверка сваи на выпучивание по СП 25, глубина промерзания по СП 22, таблица сил по грунтам и меры защиты."/>
+<link rel="canonical" href="https://geokriolog.ru/blog/moroznoe-puchenie-svai/"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2026-09-27"/>
+<meta property="article:modified_time" content="2026-09-27"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:url" content="https://geokriolog.ru/blog/moroznoe-puchenie-svai/"/>
+<meta property="og:site_name" content="НПО ГЕОКРИОЛОГ"/>
+<meta property="og:title" content="Морозное пучение свай: силы, расчёт по СП 25 и СП 22, защита"/>
+<meta property="og:description" content="Касательные силы морозного пучения: проверка сваи на выпучивание по СП 25, глубина промерзания по СП 22, таблица сил по грунтам и меры защиты."/>
+<meta property="og:image" content="https://geokriolog.ru/images/og/bns-skvazhina.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="https://geokriolog.ru/images/logo.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png"/>
+
+
+<link rel="stylesheet" href="/assets/site.css"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://geokriolog.ru/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://geokriolog.ru/blog/"},{"@type":"ListItem","position":3,"name":"Морозное пучение и сваи: касательные силы, проверка на выпучивание по СП 25 и защита фундамента","item":"https://geokriolog.ru/blog/moroznoe-puchenie-svai/"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Морозное пучение и сваи: касательные силы, проверка на выпучивание по СП 25 и защита фундамента","description":"Касательные силы морозного пучения: проверка сваи на выпучивание по СП 25, глубина промерзания по СП 22, таблица сил по грунтам и меры защиты.","image":"https://geokriolog.ru/images/og/bns-skvazhina.jpg","datePublished":"2026-09-27","dateModified":"2026-09-27","inLanguage":"ru","keywords":"морозное пучение, касательные силы морозного пучения, расчёт сваи на морозное пучение, СП 25.13330, СП 22.13330, ГОСТ 25100-2020","author":{"@type":"Organization","@id":"https://geokriolog.ru/#org","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/"},"provider":{"@type":"Organization","@id":"https://geokriolog.ru/#org","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/","logo":"https://geokriolog.ru/images/logo.svg","telephone":"+7-911-924-54-67","email":"info@geokriolog.ru"},"publisher":{"@type":"Organization","@id":"https://geokriolog.ru/#org","name":"ООО «НПО ГЕОКРИОЛОГ»","url":"https://geokriolog.ru/","logo":"https://geokriolog.ru/images/logo.svg","telephone":"+7-911-924-54-67","email":"info@geokriolog.ru"},"mainEntityOfPage":"https://geokriolog.ru/blog/moroznoe-puchenie-svai/"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Почему сваю выдавливает, если её конец ниже глубины промерзания?","acceptedAnswer":{"@type":"Answer","text":"Выпучивающую силу собирает только участок сваи в промерзающем слое: грунт смерзается с ним и при подъёме тянет сваю вверх, а глубина нижнего конца на эту силу не влияет. Противостоят ей нагрузка сверху и нижний участок — смерзанием с вечномёрзлым грунтом или трением в талом. При коротком нижнем участке и лёгкой конструкции сваю поднимет."}},{"@type":"Question","name":"Сколько составляют касательные силы морозного пучения?","acceptedAnswer":{"@type":"Answer","text":"По таблице СП 25.13330 и пособию МГУ 2018 года (Роман, Царапов и др.) для бетонной поверхности — от 50 до 130 кПа в зависимости от грунта и глубины промерзания: сильнее всего у пылевато-глинистых грунтов с IL > 0,5, мелких и пылеватых песков с Sr > 0,95 при промерзании на 1 м (130 кПа); для металлических поверхностей вводят коэффициент 0,7."}},{"@type":"Question","name":"Какие грунты считаются пучинистыми?","acceptedAnswer":{"@type":"Answer","text":"По ГОСТ 25100-2020 — по относительной деформации пучения: до 0,01 непучинистый, 0,01–0,035 слабо-, 0,035–0,07 средне-, 0,07–0,10 сильно-, от 0,10 чрезмерно пучинистый. В группе риска супеси, суглинки, глины, мелкие и пылеватые пески; гравий и чистые крупные пески практически не пучат."}},{"@type":"Question","name":"Как рассчитать глубину промерзания?","acceptedAnswer":{"@type":"Answer","text":"По СП 22.13330: нормативная глубина — коэффициент d0 по виду грунта, умноженный на корень из суммы среднемесячных отрицательных температур за зиму; расчётная — с поправкой на тепловой режим сооружения. Одной цифры на регион нет. В криолитозоне вместо неё работает мощность сезонно-талого слоя из изысканий."}},{"@type":"Question","name":"Как защитить сваи от морозного пучения?","acceptedAnswer":{"@type":"Answer","text":"Снизить касательные силы в промерзающем слое (противопучинная смазка, оболочка, обсыпка непучинистым грунтом), увеличить удерживающие силы (заглубление ниже деятельного слоя с запасом, уширение или анкер, пригруз), отвести воду от фундамента. На мерзлоте — удержать основание холодным термостабилизацией: с потеплением грунта сопротивление смерзанию падает."}}]}
+</script>
+</head>
+<body class="page-article">
+<script>document.body.classList.add('nav-ready')</script>
+
+<header class="nav"><div class="nav-inner">
+  <a class="brand" href="/"><img src="https://geokriolog.ru/images/logo.svg" alt="Геокриолог" width="32" height="32" decoding="async"/><span>НПО ГЕОКРИОЛОГ</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="/">Главная</a>
+    <a href="/demontazh-ogolovkov-bns/" class="">Оголовки БНС</a>
+    <a href="/termostabilizaciya-sou/" class="">Термостабилизация</a>
+    <a href="/tehnika/" class="">Техника</a>
+    <a href="/audit-kriolitozony/" class="">Аудит</a>
+    <a href="/proekty/" class="">Проекты</a>
+    <a href="/blog/" class="active">Блог</a>
+    <a href="/o-kompanii/" class="">О компании</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ice" href="#cta">Заявка</a>
+    <button class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Меню"
+          aria-controls="navLinks"
+          aria-expanded="false">☰</button>
+  </div>
+</div></header>
+<main>
+  <div class="hero"><div class="wrap">
+    <div class="crumb"><a href="/">Главная</a> / <a href="/blog/">Блог</a> / Морозное пучение и сваи</div>
+    <h1>Морозное пучение и сваи: касательные силы, проверка на выпучивание по СП 25 и защита фундамента</h1>
+    <p class="lead">По ГОСТ 25100-2020 грунт считают чрезмерно пучинистым при относительной деформации от 0,10: метр промерзания даёт от 10 см подъёма. Сваю тянет вверх промерзающий грунт, смёрзшийся с её боковой поверхностью. Разбираем таблицу касательных сил, проверку сваи по СП 25.13330 и глубину промерзания по СП 22.13330.</p>
+    <div class="crumb" style="margin-top:14px">Мерзлота · 27 сентября 2026 · НПО ГЕОКРИОЛОГ</div>
+  </div></div>
+
+  <div class="wrap">
+    <article class="post">
+      <h2>Что такое морозное пучение по ГОСТ 25100-2020</h2>
+      <p>По ГОСТ 25100-2020 пучинистый грунт увеличивается в объёме при промерзании вследствие кристаллизации поровой и мигрирующей воды. Главное слово — мигрирующей: расширение поровой воды при замерзании примерно на 9 % поднимает грунт немного, основной подъём дают прослойки льда из влаги, которая подтягивается к фронту промерзания.</p>
+      <p>Раздел М. Н. Царапова в пособии МГУ 2018 года из <a href="/o-kompanii/" style="color:var(--ice2)">научной базы компании</a> перечисляет факторы пучения: состав грунта, влажность и подток воды, скорость и глубина промерзания, нагрузка.</p>
+
+      <h3>Какие грунты пучат</h3>
+      <p>Степень пучинистости задаёт относительная деформация ε<sub>fh</sub> — отношение подъёма поверхности к глубине промерзания.</p>
+      <div class="tw"
+     tabindex="0"
+     role="region"
+     aria-label="Таблица с горизонтальной прокруткой"><table>
+        <thead><tr><th>Степень пучинистости</th><th>ε<sub>fh</sub></th><th>На 1 м промерзания</th></tr></thead>
+        <tbody>
+          <tr><td>Непучинистый</td><td>менее 0,01</td><td>до 1 см</td></tr>
+          <tr><td>Слабопучинистый</td><td>0,01–0,035</td><td>1–3,5 см</td></tr>
+          <tr><td>Среднепучинистый</td><td>0,035–0,07</td><td>3,5–7 см</td></tr>
+          <tr><td>Сильнопучинистый</td><td>0,07–0,10</td><td>7–10 см</td></tr>
+          <tr><td>Чрезмерно пучинистый</td><td>от 0,10</td><td>от 10 см</td></tr>
+        </tbody>
+      </table></div>
+      <p>По СП 22.13330 в группе риска супеси, суглинки, глины, мелкие и пылеватые пески; гравий и чистые пески — крупные и средней крупности — практически не пучат. Степень пучинистости определяют в лаборатории по ГОСТ 28622, касательные силы в поле — по ГОСТ 27217.</p>
+
+      <h2>Силы морозного пучения: касательные и нормальные</h2>
+      <p>Нормальные силы давят на подошву снизу вверх, а также на наклонные грани фундамента. Касательные — по боковой поверхности: промерзающий грунт смерзается с бетоном или металлом и при подъёме тянет конструкцию за собой. Касательные силы в расчётах принимают равными предельному сопротивлению смерзания грунта с боковой поверхностью фундамента.</p>
+      <div class="tw"
+     tabindex="0"
+     role="region"
+     aria-label="Таблица с горизонтальной прокруткой"><table>
+        <thead><tr><th>Грунт в слое промерзания</th><th>τ<sub>fh</sub>, кПа, при промерзании 1 м</th><th>2 м</th><th>3 м</th></tr></thead>
+        <tbody>
+          <tr><td>Пылевато-глинистые при I<sub>L</sub> &gt; 0,5; пески мелкие и пылеватые при S<sub>r</sub> &gt; 0,95</td><td>130</td><td>110</td><td>90</td></tr>
+          <tr><td>Пылевато-глинистые при 0,25 &lt; I<sub>L</sub> ≤ 0,5; пески мелкие и пылеватые при 0,8 &lt; S<sub>r</sub> ≤ 0,95</td><td>100</td><td>90</td><td>70</td></tr>
+          <tr><td>Пылевато-глинистые при I<sub>L</sub> ≤ 0,25; пески мелкие и пылеватые при 0,6 &lt; S<sub>r</sub> ≤ 0,8</td><td>80</td><td>70</td><td>50</td></tr>
+        </tbody>
+      </table></div>
+      <p>Значения — для бетонной поверхности по таблице удельных касательных сил СП 25.13330; та же таблица есть в пособии МГУ 2018 года (Роман, Царапов и др.). Для металла вводят коэффициент 0,7; значения и границы групп при проектировании сверяйте с действующей редакцией СП. Нормальные силы могут намного превышать давление от сооружения, поэтому фундаменты заглубляют ниже глубины промерзания либо предусматривают противопучинные меры.</p>
+
+      <h2>Как пучение действует на сваю и почему «ниже промерзания» — не гарантия</h2>
+      <p>Конец сваи ниже глубины промерзания, но верхний участок зимой оказывается в промерзающем слое: грунт смерзается с боковой поверхностью и тянет вверх с силой τ<sub>fh</sub> на каждый квадратный метр. Удерживают сваю нагрузка сверху и участок ниже промерзания — смерзанием с вечномёрзлым грунтом или трением в талом. Где именно конец, для выпучивающей силы безразлично.</p>
+      <figure>
+        <img src="/images/bns-skvazhina.webp" alt="Арматурный каркас буронабивной сваи над обсадной трубой на площадке у воды" width="1280" height="720" loading="lazy" decoding="async"/>
+        <figcaption>Арматурный каркас буронабивной сваи (БНС) над обсадной трубой. У готовой сваи боковая поверхность в слое сезонного промерзания — площадь, по которой собираются касательные силы</figcaption>
+      </figure>
+      <p>Группа риска — лёгкие и недогруженные конструкции: свайное поле без ростверка, опоры эстакад и ограждений. Нагрузка сверху мала, а площадь смерзания та же. Весной свая опускается не до конца: нижняя часть зажата, а зазор под приподнятым концом за это время заполняют грунт и вода. За несколько зим набегают сантиметры, заметные по перекосу ростверка. Причину устанавливают до ремонта: просадку от выпучивания отличают нивелировка по маркам и температура грунта в скважинах, а меры против них разные. Обе проверки входят в <a href="/audit-kriolitozony/" style="color:var(--ice2)">геокриологический аудит</a> существующего объекта.</p>
+
+      <h2>Проверка сваи на выпучивание по СП 25.13330</h2>
+      <p>Раздел 7.4 СП 25.13330 — расчёт устойчивости фундаментов на действие касательных сил морозного пучения. Смысл: выпучивающая сила не должна превышать сумму удерживающих.</p>
+      <p style="text-align:center;font-size:20px"><strong>τ<sub>fh</sub> · A<sub>fh</sub> − F ≤ (γ<sub>c</sub> / γ<sub>n</sub>) · F<sub>r</sub></strong></p>
+      <div class="tw tw--keyvalue"
+     tabindex="0"
+     role="region"
+     aria-label="Таблица с горизонтальной прокруткой"><table>
+        <tbody>
+          <tr><th>τ<sub>fh</sub></th><td>удельная касательная сила пучения — по таблице СП 25.13330 или полевым испытаниям</td></tr>
+          <tr><th>A<sub>fh</sub></th><td>площадь боковой поверхности смерзания в слое сезонного промерзания</td></tr>
+          <tr><th>F</th><td>расчётная нагрузка на сваю по наиболее невыгодному сочетанию</td></tr>
+          <tr><th>F<sub>r</sub></th><td>сила, удерживающая сваю смерзанием с вечномёрзлым грунтом ниже деятельного слоя; в талых грунтах — трением</td></tr>
+          <tr><th>γ<sub>c</sub>, γ<sub>n</sub></th><td>коэффициенты условий работы и надёжности по назначению сооружения — по тексту СП 25.13330</td></tr>
+        </tbody>
+      </table></div>
+      <p>Значения коэффициентов и правила сбора нагрузки берут по тексту СП 25.13330; в талых грунтах свайные фундаменты считают по СП 24.13330. Для проектировщика формула — три рычага: уменьшить τ<sub>fh</sub> · A<sub>fh</sub> (смазка, оболочка, обсыпка), увеличить F (пригруз, ранняя загрузка), увеличить F<sub>r</sub> (заглубление, уширение, анкер).</p>
+
+      <h2>Глубина промерзания: как считать по СП 22.13330</h2>
+      <p>Нормативная глубина промерзания по СП 22.13330: d<sub>fn</sub> = d<sub>0</sub> · √M<sub>t</sub>, где M<sub>t</sub> — сумма абсолютных значений среднемесячных отрицательных температур за зиму, d<sub>0</sub> — коэффициент по виду грунта. Расчётная d<sub>f</sub> = k<sub>h</sub> · d<sub>fn</sub>; k<sub>h</sub> учитывает тепловой режим сооружения, для наружных фундаментов неотапливаемых сооружений он равен 1,1.</p>
+      <div class="tw tw--keyvalue"
+     tabindex="0"
+     role="region"
+     aria-label="Таблица с горизонтальной прокруткой"><table>
+        <thead><tr><th>Грунт</th><th>d<sub>0</sub>, м</th></tr></thead>
+        <tbody>
+          <tr><th>Суглинки и глины</th><td>0,23</td></tr>
+          <tr><th>Супеси, пески мелкие и пылеватые</th><td>0,28</td></tr>
+          <tr><th>Пески гравелистые, крупные и средней крупности</th><td>0,30</td></tr>
+          <tr><th>Крупнообломочные грунты</th><td>0,34</td></tr>
+        </tbody>
+      </table></div>
+      <p>Одной цифры «глубина промерзания по области» нет: она меняется с грунтом, зимой и режимом сооружения, а для сваи напрямую задаёт A<sub>fh</sub>.</p>
+
+      <h2>Особенности в криолитозоне</h2>
+      <p>На вечной мерзлоте A<sub>fh</sub> задаёт не d<sub>fn</sub>, а мощность сезонно-талого слоя из изысканий. СП 25.13330 в п. 7.4.1 прямо требует противопучинные смазки. F<sub>r</sub> здесь — смерзание с вечномёрзлым грунтом, и оно держит, пока основание холодное. Как его сохраняют — на странице <a href="/termostabilizaciya-sou/" style="color:var(--ice2)">термостабилизации грунтов: СОУ и термосваи</a> и в статье <a href="/blog/stroitelstvo-na-vechnoj-merzlote/" style="color:var(--ice2)">о строительстве на вечной мерзлоте</a>.</p>
+      <figure>
+        <img src="/images/cryo-thermo.webp" alt="Схема сезонного охлаждающего устройства: надземная часть, испарительная часть в грунте и зона промерзания вокруг неё" width="800" height="450" loading="lazy" decoding="async"/>
+        <figcaption>Сезонное охлаждающее устройство (СОУ) и зона промерзания вокруг него: холодный грунт сохраняет силу смерзания F<sub>r</sub></figcaption>
+      </figure>
+
+      <h2>Как защитить сваи и фундамент от морозного пучения</h2>
+      <div class="tw"
+     tabindex="0"
+     role="region"
+     aria-label="Таблица с горизонтальной прокруткой"><table>
+        <thead><tr><th>Мера</th><th>На что действует</th><th>Где уместна</th><th>Ограничение</th></tr></thead>
+        <tbody>
+          <tr><td>Заглубление ниже деятельного слоя с запасом</td><td>F<sub>r</sub></td><td>Базовое решение</td><td>Растёт длина сваи</td></tr>
+          <tr><td>Уширение или анкер у нижнего конца</td><td>F<sub>r</sub></td><td>Лёгкие конструкции</td><td>Нужен контроль исполнения</td></tr>
+          <tr><td>Пригруз, ранняя загрузка</td><td>F</td><td>Свайные поля на зиму</td><td>Зависит от графика монтажа</td></tr>
+          <tr><td>Противопучинная смазка, оболочка</td><td>τ<sub>fh</sub></td><td>Слой промерзания; в криолитозоне — требование СП 25</td><td>Срок службы покрытия</td></tr>
+          <tr><td>Обсыпка непучинистым грунтом</td><td>τ<sub>fh</sub>, ε<sub>fh</sub></td><td>Отдельные опоры</td><td>Заиливание обсыпки</td></tr>
+          <tr><td>Термостабилизация: СОУ, термосваи</td><td>F<sub>r</sub> через температуру</td><td>Криолитозона, основание надо сохранить мёрзлым</td><td>Нужен теплотехнический расчёт по СП 25.13330</td></tr>
+        </tbody>
+      </table></div>
+      <p>Термостабилизация не универсальна: если проект допускает оттаивание основания, задача решается другими средствами. Отдельно — водоотвод, он убирает подток влаги к фронту промерзания. Как работает СОУ без электричества — в статье <a href="/blog/termosifon-vechnaya-merzlota/" style="color:var(--ice2)">как устроен термосифон</a>.</p>
+
+      <h2>Что прислать для проверки основания</h2>
+      <p>Регион и тип объекта; геология, льдистость и температура грунтов, если есть изыскания; проект свай или длина, диаметр и материал; признаки деформаций — фото, нивелировка по маркам. Первичный ответ — в течение 24 часов; аудит не заменяет изыскания. Объект уже деформируется — <a href="/audit-kriolitozony/" style="color:var(--ice2)">геокриологический аудит объекта</a>; надо удержать мерзлоту под сваями — <a href="/termostabilizaciya-sou/" style="color:var(--ice2)">термостабилизация грунтов</a>. Заявка — <a href="#cta" style="color:var(--ice2)">в форме ниже</a>.</p>
+      <figure>
+        <img src="/images/cryo-monitoring.webp" alt="Схема тепловизионного контроля сезонного охлаждающего устройства" width="800" height="450" loading="lazy" decoding="async"/>
+        <figcaption>Схема тепловизионного контроля СОУ. На объектах с термостабилизацией его ведут вместе с замерами в термометрических скважинах и нивелировкой по маркам</figcaption>
+      </figure>
+
+      <h2>Частые вопросы</h2>
+      <div class="faq">
+        <details><summary>Почему сваю выдавливает, если её конец ниже глубины промерзания?</summary><p>Выпучивающую силу собирает только участок сваи в промерзающем слое: грунт смерзается с ним и при подъёме тянет сваю вверх, а глубина нижнего конца на эту силу не влияет. Противостоят ей нагрузка сверху и нижний участок — смерзанием с вечномёрзлым грунтом или трением в талом. При коротком нижнем участке и лёгкой конструкции сваю поднимет.</p></details>
+        <details><summary>Сколько составляют касательные силы морозного пучения?</summary><p>По таблице СП 25.13330 и пособию МГУ 2018 года (Роман, Царапов и др.) для бетонной поверхности — от 50 до 130 кПа в зависимости от грунта и глубины промерзания: сильнее всего у пылевато-глинистых грунтов с IL &gt; 0,5, мелких и пылеватых песков с Sr &gt; 0,95 при промерзании на 1 м (130 кПа); для металлических поверхностей вводят коэффициент 0,7.</p></details>
+        <details><summary>Какие грунты считаются пучинистыми?</summary><p>По ГОСТ 25100-2020 — по относительной деформации пучения: до 0,01 непучинистый, 0,01–0,035 слабо-, 0,035–0,07 средне-, 0,07–0,10 сильно-, от 0,10 чрезмерно пучинистый. В группе риска супеси, суглинки, глины, мелкие и пылеватые пески; гравий и чистые крупные пески практически не пучат.</p></details>
+        <details><summary>Как рассчитать глубину промерзания?</summary><p>По СП 22.13330: нормативная глубина — коэффициент d0 по виду грунта, умноженный на корень из суммы среднемесячных отрицательных температур за зиму; расчётная — с поправкой на тепловой режим сооружения. Одной цифры на регион нет. В криолитозоне вместо неё работает мощность сезонно-талого слоя из изысканий.</p></details>
+        <details><summary>Как защитить сваи от морозного пучения?</summary><p>Снизить касательные силы в промерзающем слое (противопучинная смазка, оболочка, обсыпка непучинистым грунтом), увеличить удерживающие силы (заглубление ниже деятельного слоя с запасом, уширение или анкер, пригруз), отвести воду от фундамента. На мерзлоте — удержать основание холодным термостабилизацией: с потеплением грунта сопротивление смерзанию падает.</p></details>
+      </div>
+    </article>
+
+    <section style="margin:8px 0 12px">
+      <div style="border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:18px 22px">
+        <h2 style="margin:0 0 8px;font-size:20px">Читайте также</h2>
+        <ul style="margin:0;padding-left:20px;line-height:1.7">
+          <li><a href="https://dzen.ru/a/arQST9DgfHJzhHmp" target="_blank" rel="noopener" style="color:var(--ice2)">Почему сваю выдавливает из земли — даже если она ниже промерзания</a> — в Дзене</li>
+          <li><a href="/blog/stroitelstvo-na-vechnoj-merzlote/" style="color:var(--ice2)">Строительство на вечной мерзлоте: принципы СП 25</a> — статья блога</li>
+          <li><a href="/blog/termosifon-vechnaya-merzlota/" style="color:var(--ice2)">Термосифон на вечной мерзлоте: принцип работы</a> — статья блога</li>
+          <li><a href="/termostabilizaciya-sou/" style="color:var(--ice2)">Термостабилизация грунтов: СОУ</a> — услуга</li>
+          <li><a href="/audit-kriolitozony/" style="color:var(--ice2)">Геокриологический аудит объекта</a> — если сваи деформируются</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="cta" id="cta">
+      <h2>Проверить основание на выпучивание?</h2>
+      <p>Опишите объект — разберём исходные данные: с этого начинается <a href="/audit-kriolitozony/" style="color:var(--ice2)">геокриологический аудит объекта</a>.</p>
+      <div class="row">
+        <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
+      </div>
+      <form class="lf" id="leadForm" action="#" method="POST" novalidate style="margin-top:16px">
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="hidden" name="_next" value="https://geokriolog.ru/#success"/>
+        <input type="hidden" name="_subject" value="Заявка: Статья: морозное пучение и сваи"/>
+        <input type="hidden" name="page" value="blog/moroznoe-puchenie-svai"/>
+        <input type="text" name="_honey" value="" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <div class="lf-row">
+          <div><label for="lf-name">Имя</label><input id="lf-name" name="name" required autocomplete="name" placeholder="Александр"/></div>
+          <div><label for="lf-phone">Телефон</label><input id="lf-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+\(\)\s\-]{10,20}" minlength="10" placeholder="+7 (___) ___-__-__"/></div>
+        </div>
+        <div><label for="lf-msg">Задача</label><textarea id="lf-msg" name="message" placeholder="Объект, объём, сроки"></textarea></div>
+        <label class="lf-check" for="lf-consent"><input type="checkbox" id="lf-consent" name="consent" value="yes" required/>
+          <span>Согласен на обработку персональных данных (152-ФЗ). Заявка уйдёт на info@geokriolog.ru</span></label>
+        <div class="lf-msg lf-ok" id="lfOk" role="status" aria-live="polite">Заявка отправлена. Свяжемся в течение рабочего дня.</div>
+        <div class="lf-msg lf-err" id="lfErr" role="alert"></div>
+        <div><button class="btn btn-ice" type="submit" id="lfBtn">Отправить заявку</button></div>
+      </form>
+      <script>
+      (function(){
+        var f=document.getElementById('leadForm');if(!f)return;
+  function mailtoLink(f){var q=function(n){var e=f.querySelector('[name="'+n+'"]');return e?(e.value||''):''};var L=[['Имя',q('name')],['Телефон',q('phone')],['Тип объекта',q('type')],['Регион',q('region')],['Задача',q('message')],['Страница',q('page')||document.title]];var body=L.filter(function(x){return x[1]}).map(function(x){return x[0]+': '+x[1]}).join('\n');return 'mailto:info@geokriolog.ru?subject='+encodeURIComponent('Заявка с сайта')+'&body='+encodeURIComponent(body)}
+
+        var ok=document.getElementById('lfOk'),er=document.getElementById('lfErr'),bt=document.getElementById('lfBtn');
+        function goal(g){try{if(typeof ym==='function')ym(110604818,'reachGoal',g);}catch(e){}}
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){goal('call_click');});});
+        document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.addEventListener('click',function(){goal('email_click');});});
+
+        f.addEventListener('submit',function(e){
+          e.preventDefault();er.classList.remove('show');
+          if(f.querySelector('[name="_honey"]').value)return;
+          if(!f.checkValidity()){f.reportValidity();er.textContent='Проверьте имя, телефон и согласие.';er.classList.add('show');return;}
+          bt.disabled=true;bt.textContent='Отправляем…';
+          sendLead(f)
+            .then(function(){goal('form_lead');ok.classList.add('show');f.reset();bt.textContent='Отправлено';})
+            .catch(function(){er.innerHTML='Не удалось отправить автоматически. '+'<a href="'+mailtoLink(f)+'">Отправить письмом</a>'+' — данные из формы уже подставлены. Или позвоните: '+'<a href="tel:+79119245467">+7 911 924-54-67</a>';er.classList.add('show');bt.disabled=false;bt.textContent='Отправить заявку';});
+        });
+      })();
+      </script>
+    </div>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <div>© 2026 ООО «НПО ГЕОКРИОЛОГ» · ИНН 7817123404 · Санкт-Петербург</div>
+  <div><a href="mailto:info@geokriolog.ru">info@geokriolog.ru</a> · <a href="tel:+79119245467">+7 911 924-54-67</a></div>
+</div></footer>
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+</script>
+<script src="/assets/anim.js" defer></script>
+<script>
+(function () {
+  const button = document.getElementById('menuBtn');
+  const links = document.getElementById('navLinks');
+  if (!button || !links) return;
+
+  const mobile = window.matchMedia('(max-width: 1200px)');
+
+  function setOpen(open, returnFocus) {
+    links.classList.toggle('open', open);
+    button.setAttribute('aria-expanded', String(open));
+
+    if (open) {
+      const firstLink = links.querySelector('a[href]');
+      if (firstLink) firstLink.focus({ preventScroll: true });
+    } else if (returnFocus) {
+      button.focus({ preventScroll: true });
+    }
+  }
+
+  button.addEventListener('click', function () {
+    setOpen(button.getAttribute('aria-expanded') !== 'true', false);
+  });
+
+  links.addEventListener('click', function (event) {
+    if (event.target.closest('a[href]')) setOpen(false, false);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' &&
+        button.getAttribute('aria-expanded') === 'true') {
+      setOpen(false, true);
+    }
+  });
+
+  document.addEventListener('pointerdown', function (event) {
+    if (!links.contains(event.target) && !button.contains(event.target)) {
+      setOpen(false, false);
+    }
+  });
+
+  document.addEventListener('focusin', function (event) {
+    if (mobile.matches &&
+        !links.contains(event.target) &&
+        !button.contains(event.target)) {
+      setOpen(false, false);
+    }
+  });
+
+  mobile.addEventListener('change', function () {
+    setOpen(false, false);
+  });
+
+  links.querySelectorAll('a.active').forEach(function (link) {
+    link.setAttribute('aria-current', 'page');
+  });
+
+  document.body.classList.add('nav-ready');
+})();
+</script>
+  <script src="/assets/lead.js" defer></script>
+</body></html>
