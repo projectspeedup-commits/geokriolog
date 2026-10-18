@@ -6,9 +6,35 @@
   var PHONE = '+79119245467';
   var initialized = new WeakSet();
   var automaticProducts = new WeakMap();
+  var OFFERS = {
+    '/tehnika/': 'equipment', '/tysim-kr300m/': 'equipment',
+    '/obshadnoj-stol-rco1500/': 'equipment', '/obsadnye-truby/': 'equipment',
+    '/kelli-shtangi/': 'equipment', '/burovoj-instrument/': 'equipment',
+    '/demontazh-ogolovkov-bns/': 'pile_heads', '/audit-kriolitozony/': 'audit',
+    '/termostabilizaciya-sou/': 'thermal', '/termostabilizatory-grunta/': 'thermal'
+  };
 
-  function track(goal) {
-    try { if (typeof window.ym === 'function') window.ym(COUNTER, 'reachGoal', goal); } catch (_) {}
+  function track(goal, parameters) {
+    try {
+      if (typeof window.ym !== 'function') return;
+      if (parameters) window.ym(COUNTER, 'reachGoal', goal, parameters);
+      else window.ym(COUNTER, 'reachGoal', goal);
+    } catch (_) {}
+  }
+
+  function trackArticleOffer(href) {
+    var articlePath = window.location.pathname;
+    if (!/^\/blog\/[a-z0-9-]+\/?$/.test(articlePath)) return;
+    var url;
+    try { url = new URL(href, window.location.href); } catch (_) { return; }
+    if (url.origin !== window.location.origin) return;
+    var offerPath = url.pathname.replace(/\/$/, '') + '/';
+    if (!Object.prototype.hasOwnProperty.call(OFFERS, offerPath)) return;
+    track('article_offer_click', {
+      direction: OFFERS[offerPath],
+      article_path: articlePath.replace(/\/$/, '') + '/',
+      offer_path: offerPath
+    });
   }
 
   function field(form, name) { return form.querySelector('[name="' + name + '"]'); }
@@ -164,6 +190,7 @@
       var href = target.getAttribute('href') || '';
       if (/^tel:/i.test(href)) track('call_click');
       if (/^mailto:/i.test(href)) track('email_click');
+      trackArticleOffer(href);
       if (href !== '#cta') return;
       var form = document.querySelector('form#leadForm, form[data-lead-form]');
       if (!form) return;

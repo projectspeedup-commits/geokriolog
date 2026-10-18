@@ -283,3 +283,36 @@ test('BNS construction and estimate articles default to equipment without select
     assert.equal(payload.get('product'), '');
   }
 });
+
+test('article offer clicks track only internal whitelisted paths with three safe parameters', () => {
+  const h = working({ href: 'https://geokriolog.ru/blog/ustrojstvo-buronabivnyh-svaj/?phone=private#secret' });
+  h.loadForm();
+  assert.equal(h.goals.length, 0, 'loading does not count as a click');
+  const offers = {
+    tehnika: 'equipment', 'tysim-kr300m': 'equipment', 'obshadnoj-stol-rco1500': 'equipment',
+    'obsadnye-truby': 'equipment', 'kelli-shtangi': 'equipment', 'burovoj-instrument': 'equipment',
+    'demontazh-ogolovkov-bns': 'pile_heads', 'audit-kriolitozony': 'audit',
+    'termostabilizaciya-sou': 'thermal', 'termostabilizatory-grunta': 'thermal'
+  };
+  for (const [slug, direction] of Object.entries(offers)) {
+    h.document.dispatch('click', new Node('a', { href: '/' + slug + '/?email=private&utm_source=private#contact' }));
+    const goal = h.goals.at(-1);
+    assert.equal(goal[0], 110604818);
+    assert.equal(goal[2], 'article_offer_click');
+    assert.equal(goal.length, 4);
+    assert.deepEqual(JSON.parse(JSON.stringify(goal[3])), {
+      direction, article_path: '/blog/ustrojstvo-buronabivnyh-svaj/', offer_path: '/' + slug + '/'
+    });
+  }
+  assert.equal(h.goals.length, 10);
+  for (const href of ['https://external.example/tehnika/', 'https://geokriolog.ru.external.example/tehnika/', '/o-kompanii/', '/blog/', '/blog/termosvai/', '#cta', '/tehnika/nested/']) {
+    h.document.dispatch('click', new Node('a', { href }));
+  }
+  assert.equal(h.goals.length, 10, 'external, nonoffer and CTA links do not count');
+  for (const pathname of ['/blog/', '/', '/tysim-kr300m/']) {
+    h.context.location.pathname = pathname;
+    h.document.dispatch('click', new Node('a', { href: '/tehnika/' }));
+  }
+  assert.equal(h.goals.length, 10, 'only an article can be the source');
+  assert.doesNotMatch(JSON.stringify(h.goals), /private|secret|email|phone|utm_/);
+});
