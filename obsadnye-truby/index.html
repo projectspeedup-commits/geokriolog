@@ -158,7 +158,7 @@
     <a href="/o-kompanii/" class="">О компании</a>
   </nav>
   <div class="nav-cta">
-    <a class="btn btn-ice" href="#cta">Заявка</a>
+    <a class="btn btn-ice" href="#cta" data-lead-direction="equipment" data-lead-product="Обсадные трубы" data-lead-cta="obsadnye-truby-cta-7854">Заявка</a>
     <button class="menu-btn"
           id="menuBtn"
           type="button"
@@ -173,7 +173,7 @@
     <h1>Обсадные трубы для буронабивных свай</h1>
     <p class="lead">Инвентарные обсадные трубы под роторные буровые и обсадные столы: диаметр под сваю, число секций под глубину, наконечник под грунт. Поставляем со своего склада в Санкт-Петербурге и через партнёров, в том числе Robit: подбираем трубу под установку и проект, наличие под ваш диаметр и сроки подтверждаем по запросу.</p>
     <div class="hero-actions">
-      <a class="btn btn-ice" href="#cta">Оставить заявку</a>
+      <a class="btn btn-ice" href="#cta" data-lead-direction="equipment" data-lead-product="Обсадные трубы" data-lead-cta="obsadnye-truby-cta-8682">Оставить заявку</a>
       <a class="btn btn-ghost" href="tel:+79119245467">+7 911 924-54-67</a>
       <a class="btn btn-warm" href="mailto:info@geokriolog.ru?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0">Написать на info@</a>
     </div>
@@ -217,7 +217,7 @@
           <tr><td>300, 400, 600 мм</td><td>ниже каталожного ряда инвентарных труб — подбираем отдельно под установку и тип сваи</td></tr>
         </tbody>
       </table></div>
-      <p>Пришлите диаметр и глубину свай — назовём типоразмер и число секций. <a href="#cta">Оставить заявку</a>.</p>
+      <p>Пришлите диаметр и глубину свай — назовём типоразмер и число секций. <a href="#cta" data-lead-direction="equipment" data-lead-product="Обсадные трубы" data-lead-cta="obsadnye-truby-cta-12366">Оставить заявку</a>.</p>
     </section>
 
     <section>
@@ -299,12 +299,12 @@
 
     <section>
       <h2>Цена</h2>
-      <p>Ориентир цены инвентарных обсадных труб Ø 1000–1500 мм — от 100 000 ₽ за погонный метр; точная цена — после подбора под диаметр и грунты. <a href="#cta">Запросить цену и наличие</a>.</p>
+      <p>Ориентир цены инвентарных обсадных труб Ø 1000–1500 мм — от 100 000 ₽ за погонный метр; точная цена — после подбора под диаметр и грунты. <a href="#cta" data-lead-direction="equipment" data-lead-product="Обсадные трубы" data-lead-cta="obsadnye-truby-cta-21156">Запросить цену и наличие</a>.</p>
     </section>
 
     <div class="cta" id="cta">
       <h2>Заявка в НПО ГЕОКРИОЛОГ</h2>
-      <p>Кратко опишите объект - вернём схему работ и ориентир по срокам. Почта info@geokriolog.ru</p>
+      <p>Выберите направление или кратко опишите задачу. Уточним исходные данные и согласуем следующий шаг.</p>
       <div class="row">
         <a class="btn btn-ghost" href="tel:+79119245467">Позвонить</a>
       </div>
@@ -334,13 +334,25 @@
   <input type="hidden" name="page" value="obsadnye-truby"/>
   <input type="text" name="_honey" value="" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"/>
   <div class="lf-row">
-    <div><label for="lf-name">Имя</label><input id="lf-name" name="name" required autocomplete="name" placeholder="Александр"/></div>
+    <div class=""><label for="lead-direction">Направление</label>
+      <select id="lead-direction" name="direction">
+        <option value="">Помогите выбрать</option>
+        <option value="equipment">Техника и инструмент</option>
+        <option value="pile_heads">Оголовки свай</option>
+        <option value="audit">Геокриологический аудит</option>
+        <option value="thermal">Термостабилизация</option>
+      </select>
+    </div>
+    <div class=""><label for="lead-product">Товар или услуга — необязательно</label><input id="lead-product" name="product" maxlength="180" placeholder="Например, KR300M или обсадные трубы"/></div>
+  </div>
+  <div class="lf-row">
+    <div><label for="lf-name">Имя — необязательно</label><input id="lf-name" name="name" autocomplete="name" placeholder="Александр"/></div>
     <div><label for="lf-phone">Телефон</label><input id="lf-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+\(\)\s\-]{10,20}" minlength="10" placeholder="+7 (___) ___-__-__"/></div>
   </div>
   <div class="lf-row">
     <div>
-      <label for="lf-type">Тип объекта</label>
-      <select id="lf-type" name="type" required>
+      <label for="lf-type">Тип объекта — необязательно</label>
+      <select id="lf-type" name="type">
         <option value="" disabled selected>- выберите -</option>
         <option value="Мост / эстакада">Мост / эстакада</option>
         <option value="Авто / ж/д">Авто / ж/д</option>
@@ -361,33 +373,10 @@
   <div class="lf-msg lf-ok" id="lfOk" role="status" aria-live="polite">Заявка отправлена. Свяжемся в течение рабочего дня.</div>
   <div class="lf-msg lf-err" id="lfErr" role="alert"></div>
   <div><button class="btn btn-ice" type="submit" id="lfBtn">Отправить заявку</button></div>
-  <p class="lf-note">Ответим на почту или телефон из формы. Обычно в течение 24 часов.</p>
+  <p class="lf-note">Для отправки достаточно телефона и согласия. Остальные поля можно заполнить позже. Первичный ответ — в течение 24 часов.</p>
+<p class="lf-note">Связаться напрямую: <a href="tel:+79119245467">+7 911 924-54-67</a> · <a href="mailto:info@geokriolog.ru">info@geokriolog.ru</a></p>
 </form>
-<script>
-(function(){
-  var f=document.getElementById('leadForm');if(!f)return;
-  function mailtoLink(f){var q=function(n){var e=f.querySelector('[name="'+n+'"]');return e?(e.value||''):''};var L=[['Имя',q('name')],['Телефон',q('phone')],['Тип объекта',q('type')],['Регион',q('region')],['Задача',q('message')],['Страница',q('page')||document.title]];var body=L.filter(function(x){return x[1]}).map(function(x){return x[0]+': '+x[1]}).join('\n');return 'mailto:info@geokriolog.ru?subject='+encodeURIComponent('Заявка с сайта')+'&body='+encodeURIComponent(body)}
 
-  var ok=document.getElementById('lfOk'),er=document.getElementById('lfErr'),bt=document.getElementById('lfBtn');
-  function goal(g){try{if(typeof ym==='function')ym(110604818,'reachGoal',g);}catch(e){}}
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){goal('call_click');});});
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.addEventListener('click',function(){goal('email_click');});});
-
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    er.classList.remove('show');
-    if(f.querySelector('[name="_honey"]').value)return;
-    if(!f.checkValidity()){f.reportValidity();er.textContent='Проверьте обязательные поля: имя, телефон, тип объекта и согласие.';er.classList.add('show');return;}
-    bt.disabled=true;bt.textContent='Отправляем…';
-    sendLead(f)
-      .then(function(){goal('form_lead');ok.classList.add('show');f.reset();bt.textContent='Отправлено';})
-      .catch(function(){
-        er.innerHTML='Не удалось отправить автоматически. '+'<a href="'+mailtoLink(f)+'">Отправить письмом</a>'+' — данные из формы уже подставлены. Или позвоните: '+'<a href="tel:+79119245467">+7 911 924-54-67</a>';
-        er.classList.add('show');bt.disabled=false;bt.textContent='Отправить заявку';
-      });
-  });
-})();
-</script>
 <!-- /lead-form -->
     </div>
     <div class="links" style="margin-top:18px">
@@ -473,4 +462,5 @@ ym(110604818, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
 })();
 </script>
   <script src="/assets/lead.js" defer></script>
+  <script src="/assets/lead-form.js" defer></script>
 </body></html>
