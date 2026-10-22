@@ -1,0 +1,14 @@
+/* Подбор оборудования: стили ограничены двумя товарными страницами. */
+.equipment-nav{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+.equipment-nav a{color:var(--ice2);text-underline-offset:4px;padding:6px 0;margin-right:14px}
+.equipment-catalog,.equipment-purchase{scroll-margin-top:100px}
+.equipment-note{color:var(--muted);font-size:14px;line-height:1.65}
+.equipment-catalog .tw table{min-width:660px}
+.equipment-catalog .tw td,.equipment-catalog .tw th{vertical-align:middle}
+.equipment-catalog .btn{padding:9px 12px;font-size:13px;white-space:nowrap}
+.equipment-purchase{border:1px solid var(--line);border-radius:18px;background:var(--bg2);padding:22px}
+.equipment-purchase h2{margin-top:0}
+.equipment-purchase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px}
+.equipment-purchase-grid p{margin:0}
+.equipment-purchase .hero-actions{margin-bottom:0}
+@media(max-width:640px){.equipment-purchase{padding:18px}.equipment-purchase-grid{grid-template-columns:1fr}.equipment-catalog .tw table{min-width:620px}}
